@@ -1,0 +1,194 @@
+.event-timelines {
+  margin-top: 3rem;
+}
+
+
+
+
+/*COURSES*/
+
+.courses-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 50px;
+}
+
+.course {
+  background: var(--color-bg1);
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.course:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.course-info {
+  padding: 2rem;
+}
+
+.course-info p {
+  margin: 1.2rem 0 2rem;
+  font: 0.5rem;
+  text-align: ce;
+}
+
+@media screen and (max-width: 1024px) {
+
+  .header {
+    height: 100%;
+    padding: 14rem 0 0;
+  }
+
+  .description-header-container {
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .description-header-left {
+    margin-bottom: 6rem;
+  }
+
+  .description-header-right {
+    align-items: flex-end;
+    height: 100%;
+  }
+
+  .header-right-bg {
+    width: 30rem;
+    height: 30rem;
+    right: 40%;
+    bottom: 40%;
+    transform: translate(50%, 50%);
+  }
+
+  .header-image {
+    bottom: -1rem;
+    right: -18rem;
+    width: 250%;
+  }
+
+
+  .courses {
+    margin-top: 0;
+  }
+
+  .courses-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .header {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .description-header-container {
+    grid-template-columns: 1fr;
+    margin-top: 4.4rem;
+    gap: 0;
+  }
+
+  .description-header-left {
+    text-align: center;
+
+  }
+
+  .description-header-left p {
+    margin: 0.5rem 0 1.2rem;
+    text-align: justify;
+    font-size: .875rem;
+  }
+
+  .description-header-left h4 {
+    margin-top: 2rem;
+    font-size: 1rem;
+  }
+
+  .description-header-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .description-header-left h5 {
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+
+
+  .header-image {
+    width: 75%;
+    left: 4rem;
+    bottom: -2rem;
+
+  }
+
+  .header-right-bg {
+    bottom: -180%;
+    left: -12rem;
+  }
+
+
+  .courses-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 450px) {
+
+  .header {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .description-header-container {
+    grid-template-columns: 1fr;
+    margin-top: 4.4rem;
+    gap: 0;
+  }
+
+  .description-header-left {
+    text-align: center;
+
+  }
+
+  .description-header-left p {
+    margin: 0.5rem 0 1.2rem;
+    text-align: justify;
+    font-size: .775rem;
+  }
+
+  .description-header-left h4 {
+    margin-top: 2rem;
+    font-size: .957rem;
+  }
+
+  .description-header-left h1 {
+    font-size: 1.4rem;
+  }
+
+  .description-header-left h5 {
+    font-size: .975rem;
+    margin-top: 1rem;
+  }
+
+  .header-image {
+    width: 75%;
+    left: 3rem;
+    bottom: 1.5rem;
+
+  }
+
+  .header-right-bg {
+    bottom: -170%;
+    left: -16rem;
+
+  }
+
+
+}
