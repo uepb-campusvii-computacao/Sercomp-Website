@@ -196,7 +196,7 @@ header {
     border-radius: 10%;
     overflow: hidden;
     margin: 0 auto 1rem;
-    
+
 }
 
 .partner-info {
@@ -374,8 +374,8 @@ header {
 }
 
 .avatar {
-    width: 6rem;
-    height: 6rem;
+    width: 8rem;
+    height: 8rem;
     border-radius: 50%;
     overflow: hidden;
     margin: 0 auto 1rem;
@@ -397,7 +397,7 @@ header {
     content: "";
     display: block;
     background: linear-gradient(
-        135deg, 
+        135deg,
         transparent,
         var(--color-primary), var(--color-primary),
         var(--color-primary));
@@ -416,7 +416,7 @@ footer {
     background: var(--color-bg1);
     padding-top: 5rem;
     font-size: 0.9rem;
-    
+
 }
 
 .footer-container {
@@ -552,7 +552,7 @@ footer ul li a:hover {
         transform-origin: top right;
     }
 
-    
+
 
     .nav-menu li a {
         background: var(--color-primary);
@@ -644,7 +644,7 @@ footer ul li a:hover {
     .btn-primary{
         margin-top: 10px;
     }
-    
+
 
     /*CATEGORIES*/
 
@@ -654,12 +654,12 @@ footer ul li a:hover {
     }
 
     /*ORGANIZATION*/
-    
+
     .org-body {
         padding:  1.2rem;
-       
+
     }
-    
+
 
     /*FOOTER*/
 
