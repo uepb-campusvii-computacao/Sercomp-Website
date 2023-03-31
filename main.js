@@ -1,4 +1,4 @@
-// CHANGE NAVBAR STYLES ON SCROLL 
+// CHANGE NAVBAR STYLES ON SCROLL
 
 window.addEventListener('scroll', () => {
     document.querySelector('nav').classList.toggle
@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 //CREATE A COUNTER UNTIL EVENT
 const countdown = () => {
 
-  const finalDate = new Date("May 23, 2023 00:00:00").getTime()
+  const finalDate = new Date("May 22, 2023 00:00:00").getTime()
   const nowDate = new Date().getTime()
 
   const diference = finalDate - nowDate;
@@ -49,11 +49,11 @@ faqs.forEach(faq => {
         //change icon
 
         const icon = faq.querySelector('faq-icon i');
-        if(icon.className === 'uil uil-plus') 
+        if(icon.className === 'uil uil-plus')
         {
             icon.className = 'uil uil-minus';
         }
-        else 
+        else
         {
             icon.className = 'uil uil-plus';
         }
