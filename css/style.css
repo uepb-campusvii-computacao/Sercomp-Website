@@ -92,19 +92,18 @@ img {
     background: var(--color-white);
     color: var(--color-black);
     padding: 1rem 2rem;
-    border: 1px solid transparent;
     font-weight: 500;
 }
 
 .btn:hover {
-    background: transparent;
-    color: var(--color-white);
-    border-color: var(--color-white);
+    background-position: left bottom;
 }
 
 .btn-primary {
-    background: var(--color-danger);
-    color: var(--color-white);
+    background: linear-gradient(to right, #f5503a 50%, var(--color-danger) 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 300ms ease-out;
 }
 
 /*NAVBAR BEGIN*/
