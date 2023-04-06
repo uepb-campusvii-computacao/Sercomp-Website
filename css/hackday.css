@@ -1,0 +1,11 @@
+h2 {
+  padding: 1rem;
+}
+
+.hackList li {
+  list-style: circle;
+}
+
+p {
+  padding: 1rem;
+}
