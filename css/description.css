@@ -1,7 +1,6 @@
 
 /*HEADER*/
 .header {
-  height: calc(100vh - 5rem);
   position: relative;
   top: 5rem;
   display: grid;
@@ -12,9 +11,9 @@
 
 }
 
-.description-header-container {
-  display: grid;
-  grid-template-columns: 55% 45%;
+.description-header-container{
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
@@ -82,7 +81,7 @@
   border-bottom: 1px solid var(--color-primary);
 }
 
-.section-title, 
+.section-title,
 .section-subtitle {
 text-align: center;
 }
@@ -226,7 +225,7 @@ section.tools-services {
 
 .tools-left i {
   font-size: 7rem;
-  
+
 }
 
 .tools-left h4 {
@@ -260,7 +259,7 @@ section.tools-services {
 
 .tools-card:hover {
   box-shadow: -1.5rem 0 2rem rgba(0, 0, 0, 0.3);
-    
+
 }
 
 .tools-card  span i {
@@ -293,7 +292,7 @@ section.tools-services {
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 20px;
-  
+
 }
 
 .portfolio .main-video-container{
@@ -313,7 +312,7 @@ section.tools-services {
 .portfolio .main-video-container .main-vid-title {
   font-size: 20px;
   font-weight: 100;
-  
+
 }
 
 .portfolio .video-list-container {
@@ -367,7 +366,7 @@ section.tools-services {
 .portfolio .video-list-container .list .list-title {
   font-size: 15px;
   font-weight: 100;
-  
+
 }
 
 
@@ -474,7 +473,7 @@ section.tools-services {
   .portfolio .video-list-container .list .list-video {
     width: 100%;
   }
-  
+
   .portfolio .video-list-container .list .list-title {
     font-size: 15px;
     text-align: center;
@@ -485,11 +484,11 @@ section.tools-services {
 @media screen and (max-width: 1024px) {
 
   .need-container {
-      
+
       justify-content: center;
       grid-template-columns: repeat(2, max-content);
   }
-  
+
   .need-container {
       column-gap: 6rem;
 
@@ -497,7 +496,7 @@ section.tools-services {
 
   .need-info {
       grid-template-columns: repeat(3, 1fr);
-      
+
   }
 
   .need-title {
@@ -522,7 +521,7 @@ section.tools-services {
 @media screen and (max-width: 600px) {
 
   .need-container {
-      
+
       justify-content: center;
       grid-template-columns: repeat(2, max-content);
   }
@@ -530,18 +529,18 @@ section.tools-services {
   .need-container {
       column-gap: 5rem;
   }
-  
+
   .need-info {
       grid-template-columns: repeat(2, 1fr);
-      
+
   }
-  
+
 }
 
 @media screen and (max-width: 800px) {
 
   .need-container {
-      
+
       justify-content: center;
       grid-template-columns: repeat(2, max-content);
   }
@@ -549,9 +548,9 @@ section.tools-services {
   .need-container {
       column-gap: 5rem;
   }
-  
+
   .need-info {
       grid-template-columns: repeat(2, 1fr);
-      
+
   }
 }

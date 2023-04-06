@@ -38,11 +38,6 @@
 
 @media screen and (max-width: 1024px) {
 
-  .header {
-    height: 100%;
-    padding: 14rem 0 0;
-  }
-
   .description-header-container {
     align-items: flex-end;
     height: 100%;
@@ -57,21 +52,6 @@
     height: 100%;
   }
 
-  .header-right-bg {
-    width: 30rem;
-    height: 30rem;
-    right: 40%;
-    bottom: 40%;
-    transform: translate(50%, 50%);
-  }
-
-  .header-image {
-    bottom: -1rem;
-    right: -18rem;
-    width: 250%;
-  }
-
-
   .courses {
     margin-top: 0;
   }
@@ -82,11 +62,6 @@
 }
 
 @media screen and (max-width: 600px) {
-
-  .header {
-    height: 100vh;
-    padding: 0;
-  }
 
   .description-header-container {
     grid-template-columns: 1fr;
@@ -120,19 +95,6 @@
   }
 
 
-  .header-image {
-    width: 75%;
-    left: 4rem;
-    bottom: -2rem;
-
-  }
-
-  .header-right-bg {
-    bottom: -180%;
-    left: -12rem;
-  }
-
-
   .courses-container {
     grid-template-columns: 1fr;
   }
@@ -140,11 +102,6 @@
 }
 
 @media screen and (max-width: 450px) {
-
-  .header {
-    height: 100vh;
-    padding: 0;
-  }
 
   .description-header-container {
     grid-template-columns: 1fr;
@@ -175,19 +132,6 @@
   .description-header-left h5 {
     font-size: .975rem;
     margin-top: 1rem;
-  }
-
-  .header-image {
-    width: 75%;
-    left: 3rem;
-    bottom: 1.5rem;
-
-  }
-
-  .header-right-bg {
-    bottom: -170%;
-    left: -16rem;
-
   }
 
 
