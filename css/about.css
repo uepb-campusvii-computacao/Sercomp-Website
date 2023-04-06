@@ -5,7 +5,6 @@
 
 /*HEADER*/
 .header{
-    height: calc(100vh - 5rem);
     position: relative;
     top: 5rem;
     display: grid;
@@ -17,8 +16,8 @@
   }
 
   .description-header-container{
-    display: grid;
-    grid-template-columns: 55% 45%;
+    display: flex;
+    flex-direction: column;
     height: 100%;
   }
 
@@ -45,24 +44,14 @@
     height: 100%;
   }
 
-
-  .header-right-bg {
-    width: 50rem;
-    height: 50rem;
-    border-radius: 50%;
-    background: var(--color-warning);
-    position: absolute;
-    right: -20rem;
-    bottom: -22rem;
+  .header-image {
+    display: flex;
+    justify-content: center;
   }
 
+  .header-image img {
+    width: 50%;
 
-  .header-image {
-    width: 220%;
-    position: absolute;
-    bottom: -10rem;
-    right: -20rem;
-    z-index: 1;
   }
 
 /*TEAM*/
@@ -254,10 +243,10 @@
 
 @media screen and (max-width: 1024px) {
 
-    .header{
-        height: 100%;
-        padding: 14rem 0 0;
-    }
+    .header-image img {
+        width: 100%;
+
+      }
 
     .description-header-container {
         align-items: flex-end;
@@ -281,11 +270,6 @@
         transform: translate(50%, 50%);
     }
 
-    .header-image {
-        bottom: -1rem;
-        right: -14rem;
-        width: 200%;
-    }
 
     .about-achivements {
         margin-top: 2rem;
@@ -332,17 +316,10 @@
 /*MEDIA QUERIES PHONE*/
 
 @media screen and ( max-width: 600px){
+    .header-image img {
+        width: 100%;
 
-    .header {
-        height: 100vh;
-        padding: 0;
-    }
-
-    .description-header-container {
-        grid-template-columns: 1fr;
-        margin-top: 4.4rem;
-        gap: 0;
-    }
+      }
 
     .description-header-left {
         text-align: center;
@@ -355,16 +332,6 @@
     }
     .description-header-left h3 {
         font-size: 2.2rem;
-    }
-
-    .header-image {
-        width: 75%;
-        left: 5rem;
-
-    }
-
-    .header-right-bg {
-        bottom: -10%;
     }
 
     .achivements-cards {
@@ -392,16 +359,11 @@
 
 @media screen and ( max-width: 450px){
 
-    .header {
-        height: 100vh;
-        padding: 0;
-    }
+    .header-image img {
+        width: 100%;
 
-    .description-header-container {
-        grid-template-columns: 1fr;
-        margin-top: 4.4rem;
-        gap: 0;
-    }
+      }
+
 
     .description-header-left {
         text-align: center;
@@ -417,16 +379,6 @@
         font-size: 1.8rem;
     }
 
-    .header-image {
-        width: 75%;
-        left: 4rem;
-        bottom: 2rem;
-
-    }
-
-    .header-right-bg {
-        bottom: -60%;
-    }
 
 
 }
