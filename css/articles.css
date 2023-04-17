@@ -2,16 +2,21 @@ h2 {
   padding: 0.5rem;
 }
 
-.titulo-base {
+p, ul li {
+  line-height: 1.2;
+}
+
+.titulo-base, .titulo-principal {
   margin-bottom: 0.1rem;
   font-weight: 500;
   margin-bottom: 80px;
   position: relative;
   margin-top: 80px;
+  font-size: 1.5rem;
 }
 
 
-.titulo-base::after {
+.titulo-base::after, .titulo-principal::after {
   position: absolute;
   content: '';
   width: 50%;
@@ -20,6 +25,11 @@ h2 {
   bottom: -5px;
   background-image: linear-gradient(to right,  rgb(106, 6, 236), rgb(220, 0, 240));
   transform: translateX(-50%);
+}
+
+.titulo-principal {
+  font-size: 2rem;
+  text-align: center;
 }
 
 
