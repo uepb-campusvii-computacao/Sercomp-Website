@@ -15,13 +15,13 @@
     justify-content:space-evenly;
     border-radius: 30px;
     padding: 10px 5px;
-    
+
 }
 
 .tabs-toggle {
     margin: 0 5px;
     padding: 7px 25px;
-   
+
     border-radius: 20px;
     cursor: pointer;
     transition: .5s;
@@ -54,10 +54,6 @@ small {
 /*TIMELINE*/
 
 .timeline-main {
-    
-}
-
-.timeline-main {
     width: 100%;
     height: auto;
     padding: 50px 0;
@@ -66,7 +62,7 @@ small {
 }
 
 .timeline-main .heading {
-    
+
     font-weight: 500;
     margin-bottom: 80px;
     position: relative;
@@ -168,7 +164,7 @@ ul li .date {
     border-radius: 50%;
     position: absolute;
     top: 0;
-    
+
 }
 
 .timeline-container ul li .circle::after {
@@ -201,7 +197,7 @@ ul li .date {
         transform: translateX(15px);
     }
 
-    
+
 }
 
 @media screen and (max-width: 600px) {
@@ -214,7 +210,7 @@ ul li .date {
     small {
         font-size: 22px;
     }
-    
+
     .timeline-container {
         width: 80%;
     }
