@@ -629,6 +629,10 @@ footer ul li a:hover {
         right: 3%;
     }
 
+    .nav-menu li {
+        height: 4rem;
+    }
+
     /*HEADER*/
     header {
         height: 100vh;
