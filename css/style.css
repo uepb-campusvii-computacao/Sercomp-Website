@@ -137,7 +137,7 @@ nav button {
 .nav-menu {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 .nav-menu a {
@@ -524,7 +524,6 @@ footer ul li a:hover {
     }
 
     /*NAVBAR*/
-
     nav button {
         display: inline-block;
         background: transparent;
