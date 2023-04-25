@@ -53,6 +53,7 @@
 .cron-member-image img {
   width: 15rem;
   margin-right: 2rem;
+  margin-bottom: 1rem;
 }
 
 .cron-member-info * {
