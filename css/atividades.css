@@ -132,10 +132,16 @@
   .cron-member p {
       margin-bottom: 1.5rem ;
   }
+
+  .cron-member-image {
+    flex-direction: column;
+  }
 }
 
 @media screen and ( max-width: 450px){
-
+  .cron-member-image {
+    flex-direction: column;
+  }
 
 }
 
