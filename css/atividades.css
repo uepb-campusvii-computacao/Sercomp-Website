@@ -19,7 +19,6 @@
 
 .cron {
   margin-top: 3rem;
-
 }
 
 .cron-container {
@@ -69,6 +68,30 @@
 
 .cron-member-info h4 {
   margin-bottom: 1rem;
+}
+
+.card-sem-texto .cron-member-image {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.card-sem-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-sem-texto .cron-details-title {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cron-member-image div {
+  text-align: center;
 }
 
 /* MEDIA QUERIES TABLET*/
