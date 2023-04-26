@@ -73,6 +73,7 @@
 .card-sem-texto .cron-member-image {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   text-align: center;
 
 }
