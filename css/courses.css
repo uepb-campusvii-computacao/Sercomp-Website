@@ -9,8 +9,9 @@
 
 .courses-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
+  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -30,10 +31,13 @@
   padding: 2rem;
 }
 
+.course-image {
+  width: 25rem;
+}
+
 .course-info p {
   margin: 1.2rem 0 2rem;
   font: 0.5rem;
-  text-align: ce;
 }
 
 @media screen and (max-width: 1024px) {
@@ -134,5 +138,8 @@
     margin-top: 1rem;
   }
 
+  .course-image {
+    width: 21rem;
+  }
 
 }
