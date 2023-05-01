@@ -24,12 +24,17 @@
   text-align: center;
 }
 
+.pagList-whats {
+  text-align: center;
+  font-size: 1rem;
+}
+
 .pagList {
   margin-bottom: 0.5rem;
 }
 
 .pagList li {
-  list-style: numeric;
+  list-style: disc;
   text-align: justify;
 }
 
