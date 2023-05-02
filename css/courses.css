@@ -63,6 +63,11 @@
   .courses-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  .course-image {
+    width: 22rem;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -101,6 +106,10 @@
 
   .courses-container {
     grid-template-columns: 1fr;
+  }
+
+  .course-image {
+    width: 28rem;
   }
 
 }
@@ -142,4 +151,10 @@
     width: 24rem;
   }
 
+}
+
+@media screen and (max-width: 380px) {
+  .course-image {
+    width: 22rem;
+  }
 }
