@@ -36,6 +36,23 @@
 .pagList li {
   list-style: disc;
   text-align: justify;
+  display: flex;
+}
+
+.destaque-text {
+  margin-right: 0.5rem;
+  text-decoration: underline;
+  color: var(--color-warning);
+}
+
+.center-text {
+  display: flex;
+  justify-content: center;
+  word-wrap: break-word;
+}
+
+.pag-button {
+  text-align: right;
 }
 
 .paragrafo {
@@ -44,6 +61,15 @@
 }
 
 .pagLink {
+  text-decoration: underline;
+  color: var(--color-danger);
+}
+
+.org-info p {
+  color: var(--color-danger);
+}
+
+.org-info a {
   text-decoration: underline;
   color: var(--color-danger);
 }

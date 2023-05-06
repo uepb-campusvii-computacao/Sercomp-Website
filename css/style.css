@@ -395,7 +395,6 @@ header {
 .orgs-container {
     overflow-x: hidden;
     position: relative;
-    margin-bottom: 5rem;
 }
 
 .org {
