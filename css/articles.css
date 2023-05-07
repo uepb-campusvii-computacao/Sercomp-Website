@@ -15,6 +15,10 @@ p, ul li {
   text-align: justify;
 }
 
+.articleList-risc {
+  text-decoration: line-through;
+}
+
 .paragrafo {
   padding: 1rem;
   text-align: justify;
