@@ -139,6 +139,26 @@ small {
     font-weight: 500;
 }
 
+.block-info-timeline {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+.block-info-timeline-right {
+    justify-content: right;
+}
+
+.block-info-timeline-right p {
+    margin-right: 0.5rem;
+}
+
+.block-info-timeline img {
+    width: 3rem;
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+}
+
 ul li p {
     font-size: 15px;
     margin: 7px 0;
