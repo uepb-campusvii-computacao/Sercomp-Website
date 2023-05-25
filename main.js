@@ -9,10 +9,16 @@ window.addEventListener('scroll', () => {
 //CREATE A COUNTER UNTIL EVENT
 const countdown = () => {
 
-  const finalDate = new Date("May 22, 2023 00:00:00").getTime()
+  const finalDate = new Date("May 25, 2023 00:00:00").getTime()
   const nowDate = new Date().getTime()
 
-  const diference = finalDate - nowDate;
+  if(finalDate <= nowDate) {
+    document.getElementById("days").innerHTML = "00";
+    document.getElementById("hours").innerHTML = "00";
+    document.getElementById("minutes").innerHTML = "00";
+    document.getElementById("seconds").innerHTML = "00";
+  }else {
+    const diference = finalDate - nowDate;
 
   const seconds = 1000;
   const minutes = seconds * 60;
@@ -33,6 +39,9 @@ const countdown = () => {
   document.getElementById("hours").innerHTML = timeHours;
   document.getElementById("minutes").innerHTML = timeMinutes;
   document.getElementById("seconds").innerHTML = timeSeconds;
+  }
+
+
 }
 
 setInterval(countdown, 1000)
