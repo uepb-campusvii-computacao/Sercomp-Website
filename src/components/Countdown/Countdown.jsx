@@ -13,7 +13,7 @@ export default function Countdown() {
 
   useEffect(() => {
     const countdown = () => {
-      const finalDate = new Date("May 21, 2024 00:00:00").getTime();
+      const finalDate = new Date("May 25, 2023 00:00:00").getTime();
       const nowDate = new Date().getTime();
 
       if (!(finalDate <= nowDate)) {
@@ -50,7 +50,7 @@ export default function Countdown() {
 
   return (
       <div className={styles['container-timer']}> {/* Utiliza a classe do CSS Module */}
-        <h1>Contagem Regressiva até o VI SERCOMP</h1>
+        <h1>Contagem Regressiva até o V SERCOMP</h1>
 
         <div className={styles.countdown}> {/* Utiliza a classe do CSS Module */}
 
