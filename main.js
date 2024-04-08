@@ -9,7 +9,7 @@ window.addEventListener('scroll', () => {
 //CREATE A COUNTER UNTIL EVENT
 const countdown = () => {
 
-  const finalDate = new Date("May 25, 2023 00:00:00").getTime()
+  const finalDate = new Date("May 24, 2024 00:00:00").getTime()
   const nowDate = new Date().getTime()
 
   if(finalDate <= nowDate) {
