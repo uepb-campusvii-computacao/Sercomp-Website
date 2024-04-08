@@ -1,0 +1,64 @@
+/*TEAM*/
+
+.team {
+    margin-top: 3rem;
+}
+
+.teamContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.teamMember {
+    background: var(--color-bg2);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.teamMember:hover {
+    background: transparent;
+    border-color: var(--color-primary);
+}
+
+.teamMemberImage img {
+    filter: saturate(0);
+}
+
+.teamMemberImage:hover img {
+    filter: saturate(1);
+}
+
+.teamMemberInfo * {
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.teamMemberInfo p {
+    color: var(--color-light);
+    margin-top: 0;
+}
+
+.teamMemberSocials {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-primary);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(0, 0, 0, 0.3);
+    transition: var(--transition);
+}
+
+.teamMember:hover .teamMemberSocials {
+    right: 0;
+}
+
+.teamMemberSocials a {
+    padding: 1rem;
+}

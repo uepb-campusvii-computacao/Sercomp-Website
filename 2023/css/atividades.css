@@ -1,0 +1,148 @@
+.titulo-base {
+  margin-bottom: 0.1rem;
+  font-weight: 500;
+  position: relative;
+  font-size: 2rem;
+}
+
+
+.titulo-base::after {
+  position: absolute;
+  content: '';
+  width: 30%;
+  height: 3px;
+  left: 50%;
+  bottom: -5px;
+  background-image: linear-gradient(to right,  rgb(106, 6, 236), rgb(220, 0, 240));
+  transform: translateX(-50%);
+}
+
+.cron {
+  margin-top: 3rem;
+}
+
+.cron-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cron-details p {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.cron-member {
+  background: var(--color-bg2);
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cron-member:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.cron-member-image img {
+  width: 15rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cron-member-info * {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.cron-member-info p {
+  text-align: justify;
+  color: var(--color-light);
+  margin-top: 0;
+}
+
+.cron-member-info h4 {
+  margin-bottom: 1rem;
+}
+
+.card-sem-texto .cron-member-image {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+
+}
+
+.card-sem-texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-sem-texto .cron-details-title {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cron-member-image div {
+  text-align: center;
+}
+
+/* MEDIA QUERIES TABLET*/
+
+
+
+@media screen and (max-width: 1024px) {
+  .cron-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .cron-details {
+      display: flex;
+      align-items: center;
+    }
+
+    .cron-member {
+      padding: 1rem;
+      flex-direction: column;
+  }
+
+}
+
+/*MEDIA QUERIES PHONE*/
+
+@media screen and ( max-width: 600px){
+
+  .cron-container {
+      grid-template-columns: 1fr 1fr;
+      gap: 0.7rem;
+  }
+
+  .cron-details {
+    display: block;
+  }
+
+  .cron-member p {
+      margin-bottom: 1.5rem ;
+  }
+
+  .cron-member-image {
+    flex-direction: column;
+  }
+}
+
+@media screen and ( max-width: 450px){
+  .cron-member-image {
+    flex-direction: column;
+  }
+
+}
+

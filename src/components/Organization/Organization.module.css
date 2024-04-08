@@ -1,0 +1,66 @@
+.orgsContainer {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.org {
+  padding: 2rem;
+}
+
+.avatar {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 1rem;
+  border: 1rem solid var(--color-bg1);
+}
+
+.orgInfo {
+  text-align: center;
+}
+
+.orgBody {
+  background: var(--color-primary);
+  padding: 2rem;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.orgBody::before {
+  content: "";
+  display: block;
+  background: linear-gradient(
+      135deg,
+      transparent,
+      var(--color-primary), var(--color-primary),
+      var(--color-primary));
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  left: 50%;
+  top: -1.5rem;
+  transform: rotate(45deg);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+  /*FAQs*/
+  .faqsContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .faq {
+    padding: 1.5rem;
+  }
+}
+
+/* MEDIA QUERIES (PHONES) */
+
+@media screen and (max-width: 600px) {
+  /*ORGANIZATION*/
+  .orgBody {
+    padding: 1.2rem;
+  }
+}

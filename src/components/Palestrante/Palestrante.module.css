@@ -1,0 +1,42 @@
+.cronDetails p {
+  margin-top: 1rem;
+  width: 80%;
+}
+
+.cronMember {
+  background: var(--color-bg2);
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cronMember:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.cronMemberImage img {
+  width: 15rem;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cronMemberInfo * {
+  text-align: center;
+  margin-top: 1.4rem;
+}
+
+.cronMemberInfo p {
+  text-align: justify;
+  color: var(--color-light);
+  margin-top: 0;
+}
+
+.cronMemberInfo h4 {
+  margin-bottom: 1rem;
+}
