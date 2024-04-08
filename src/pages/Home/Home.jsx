@@ -1,6 +1,6 @@
 import Partners from '../../components/Partners/Partners';
 import Countdown from '../../components/Countdown/Countdown'
-import logo from '../../assets/images/logo.png'
+import logo from '../../assets/images/logo_vvisercomp.png'
 import FAQ from '../../components/FAQ/FAQ';
 import Organization from '../../components/Organization/Organization';
 
