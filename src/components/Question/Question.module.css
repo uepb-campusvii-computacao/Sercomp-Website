@@ -1,0 +1,35 @@
+.faq {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--color-primary);
+    cursor: pointer;
+  }
+  
+  .faq h4 {
+    font-size: 1rem;
+    line-height: 2.2;
+  }
+  
+  .faq-icon {
+    align-self: flex-start;
+    font-size: 1.2rem;
+  }
+  
+  .faq p {
+    margin-top: 0.8rem;
+    display: none;
+  }
+  
+  .faq.open p {
+    display: block;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .faq {
+      padding: 1.5rem;
+    }
+  }
+  
