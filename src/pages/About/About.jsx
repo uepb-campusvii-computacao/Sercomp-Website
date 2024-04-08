@@ -5,7 +5,7 @@ import styles from './About.module.css';
 function About() {
     return (
         <>
-            <section className={styles.header}>
+<section className={styles.header}>
                 <div className={`container ${styles.descriptionHeaderContainer}`}>
 
                     <div className={styles.descriptionHeaderLeft}>
