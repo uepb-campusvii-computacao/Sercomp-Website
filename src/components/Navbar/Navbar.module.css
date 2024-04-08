@@ -30,10 +30,6 @@ nav button {
   gap: 2rem;
 }
 
-.open {
-  display: flex; /* Exibe o menu quando a classe 'open' está presente */
-}
-
 .navMenu a {
   font-size: 0.9rem;
   transition: var(--transition);

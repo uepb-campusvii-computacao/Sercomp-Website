@@ -48,15 +48,22 @@ main {
 }
 
 .main-container .main-left h1{
-  font-size: 3.75rem;
+  font-size: 48px;
+  font-weight: 700;
 }
 
 .main-container .main-left h3{
-  font-size: 1.875rem;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main-container .main-left h5{
+  margin-top: 8px;
+  font-size: 18px;
 }
 
 .main-container .main-left p {
-  margin-top: 2rem;
+  margin-top: 26px;
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
