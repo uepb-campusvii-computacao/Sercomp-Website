@@ -5,7 +5,7 @@ export default function Footer(){
         <footer className={styles.footer}>
             <div className={`container ${styles.footerContainer}`}>
                 <div className={styles.footer1}>
-                    <a href="index.html" className={styles.footerLogo}>
+                    <a href="/" className={styles.footerLogo}>
                         <h4>SERCOMP</h4>
                     </a>
                     <p>Segurança em Tecnologia da Informação e Sistemas Inteligentes.</p>
@@ -13,10 +13,10 @@ export default function Footer(){
                 <div className={styles.footer2}>
                     <h4>Permalinks</h4>
                     <ul className={styles.permalinks}>
-                        <li><a href="index.html">Incio</a></li>
-                        <li><a href="courses.html">Programação</a></li>
-                        <li><a href="about.html">Sobre</a></li>
-                        <li><a href="contact.html">Contato</a></li>
+                        <li><a href="/">Incio</a></li>
+                        <li><a href="timeline">Programação</a></li>
+                        <li><a href="about">Sobre</a></li>
+                        <li><a href="contact">Contato</a></li>
                     </ul>
                 </div>
                 <div className={styles.footer3}>
