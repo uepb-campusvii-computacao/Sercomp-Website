@@ -31,10 +31,8 @@
 
 main {
   position: relative;
-  top: 5rem;
   overflow: hidden;
-  height: 80vh;
-  margin-bottom: 5rem;
+  min-height: 100vh;
   background: var(--color-bg1);
 }
 
@@ -43,7 +41,7 @@ main {
   grid-template-columns: repeat(2, minmax(0, 1fr));;
   align-items: center;
   gap: 5rem;
-  height: 100%;
+  min-height: 100vh;
   text-align: center;
 }
 
@@ -183,6 +181,9 @@ img {
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
+  .main-container {
+    margin-top: 4rem;
+  }
 
   .container {
     width: var(--container-width-md);

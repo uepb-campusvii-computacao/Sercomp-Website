@@ -8,6 +8,7 @@
   }
   
   .container-timer h1 {
+    text-align: center;
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;

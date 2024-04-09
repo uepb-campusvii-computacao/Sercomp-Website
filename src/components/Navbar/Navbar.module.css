@@ -53,13 +53,22 @@ nav button {
   }
 
   .navMenu {
-    position: fixed;
+    position: absolute;
     top: 5rem;
-    right: 5%;
-    height: fit-content;
+    right: 0;
+    overflow: auto;
     width: 18rem;
+    height: 100vh;
     flex-direction: column;
     gap: 0;
+    display: none;
+  }
+
+  .menuOpened{
+    display: flex;
+  }
+
+  .menuClosed{
     display: none;
   }
 
