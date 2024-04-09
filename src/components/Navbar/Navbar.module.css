@@ -4,6 +4,9 @@
   height: 5rem;
   position: fixed;
   top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   z-index: 11;
   background: var(--color-bg1);
 }
@@ -17,11 +20,18 @@
   height: 100%;
   display: flex;
   justify-content: space-between;
+  gap: 32px;
   align-items: center;
 }
 
 nav button {
   display: none;
+}
+
+.navContainer a img{
+  height: 64px;
+  width: auto;
+  margin-right: 24px;
 }
 
 .navMenu {
@@ -46,6 +56,10 @@ nav button {
     font-size: 1.8rem;
     color: var(--color-white);
     cursor: pointer;
+  }
+
+  .navContainer a img{
+    height: 48px;
   }
 
   nav button.close-menu-btn {
