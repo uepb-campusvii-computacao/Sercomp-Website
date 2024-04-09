@@ -1,8 +1,9 @@
-import styles from './Footer.module.css';
+import styles from './Footer.module.css'
+import footerBackground from '../../assets/images/footer_background.webp'
 
 export default function Footer(){
     return (
-        <footer className={styles.footer}>
+        <footer className={styles.footer} style={{backgroundImage: `url(${footerBackground})`}}>
             <div className={`container ${styles.footerContainer}`}>
                 <div className={styles.footer1}>
                     <a href="/" className={styles.footerLogo}>
