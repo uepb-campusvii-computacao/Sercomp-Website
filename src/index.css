@@ -6,6 +6,7 @@
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
 
 :root {
@@ -28,25 +29,43 @@
   --transition: all 400ms ease;
 }
 
-header {
+main {
   position: relative;
   top: 5rem;
   overflow: hidden;
-  height: 70vh;
+  height: 80vh;
   margin-bottom: 5rem;
   background: var(--color-bg1);
 }
 
-.header-container {
+.main-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, minmax(0, 1fr));;
   align-items: center;
   gap: 5rem;
   height: 100%;
+  text-align: center;
 }
 
-.header-left p {
-  margin: 1rem 0 2.4rem;
+.main-container .main-left h1{
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.main-container .main-left h3{
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.main-container .main-left h5{
+  margin-top: 8px;
+  font-size: 18px;
+}
+
+.main-container .main-left p {
+  margin-top: 26px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
 }
 
 .section-buttons a {
@@ -193,6 +212,12 @@ img {
 
   .container {
     width: var(--container-width-sm);
+  }
+
+  .main-container{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+    height: 100vh;
   }
 
 }
