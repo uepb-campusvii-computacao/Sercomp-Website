@@ -12,7 +12,7 @@ export default function FAQ() {
                     question={"Onde será o evento?"}
                     answer={
                         <p>
-                            O evento será realizado na UEPB Campus VII em Patos-PB, nos dias 22 a 24 de Maio de 2023.
+                           O evento será realizado na UEPB Campus VII em Patos-PB, no dias 21 a 24 de Maio de 2024.
                         </p>
                     }
                 />
