@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
+import { linksData } from "../../data/LinksData";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -24,71 +25,31 @@ export default function Navbar() {
   }, []);
 
   const toggleMenu = () => {
-    setMenuOpen((prev) => !prev);
+    setMenuOpen(!menuOpen);
   };
 
   return (
-    <nav ref={navRef} className={styles.nav}>
+    <nav className={`${styles.nav} ${menuOpen ? styles.windowScroll : ""}`}>
       <div className={`container ${styles.navContainer}`}>
         <a href="/">
-          <h4>V SERCOMP</h4>
+          <h4>VI SERCOMP</h4>
         </a>
-        <ul className={`${styles.navMenu} ${menuOpen ? styles.open : ""}`}>
-          <li>
-            <a className={styles.link} href="/">
-              Inicio
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="inscricao">
-              Inscrição
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="atividades">
-              Atividades
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="timeline">
-              Programação
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="hackthon">
-              Hackthon
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="articles">
-              Artigos
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="about">
-              Sobre
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="parceiros">
-              Parceiros
-            </a>
-          </li>
-          <li>
-            <a className={styles.link} href="contact">
-              Contato
-            </a>
-          </li>
+        <ul className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${styles.navMenu}`}>
+          {linksData.map((link, index) => (
+            <li key={index}>
+              <a className={styles.link} href={link.href}>
+                {link.text}
+              </a>
+            </li>
+          ))}
         </ul>
-        {!menuOpen ? (
-          <button onClick={toggleMenu}>
-            <i className="uil uil-bars"></i>
-          </button>
-        ) : (
-          <button onClick={toggleMenu}>
+        <button className={styles.menuButton} onClick={toggleMenu}>
+          {menuOpen ? (
             <i className="uil uil-multiply"></i>
-          </button>
-        )}
+          ) : (
+            <i className="uil uil-bars"></i>
+          )}
+        </button>
       </div>
     </nav>
   );
