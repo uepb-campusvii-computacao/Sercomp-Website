@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'react';
-import styles from './Navbar.module.css';
+import { useEffect, useRef, useState } from "react";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -16,15 +16,15 @@ export default function Navbar() {
       }
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   const toggleMenu = () => {
-    setMenuOpen(prev => !prev);
+    setMenuOpen((prev) => !prev);
   };
 
   return (
@@ -33,22 +33,62 @@ export default function Navbar() {
         <a href="/">
           <h4>V SERCOMP</h4>
         </a>
-        <ul className={`${styles.navMenu} ${menuOpen ? styles.open : ''}`}>
-          <li><a className={styles.link} href="/">Inicio</a></li>
-          <li><a className={styles.link} href="inscricao">Inscrição</a></li>
-          <li><a className={styles.link} href="atividades">Atividades</a></li>
-          <li><a className={styles.link} href="timeline">Programação</a></li>
-          <li><a className={styles.link} href="hackday">HackDay</a></li>
-          <li><a className={styles.link} href="articles">Artigos</a></li>
-          <li><a className={styles.link} href="about">Sobre</a></li>
-          <li><a className={styles.link} href="parceiros">Parceiros</a></li>
-          <li><a className={styles.link} href="contact">Contato</a></li>
+        <ul className={`${styles.navMenu} ${menuOpen ? styles.open : ""}`}>
+          <li>
+            <a className={styles.link} href="/">
+              Inicio
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="inscricao">
+              Inscrição
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="atividades">
+              Atividades
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="timeline">
+              Programação
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="hackthon">
+              Hackthon
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="articles">
+              Artigos
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="about">
+              Sobre
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="parceiros">
+              Parceiros
+            </a>
+          </li>
+          <li>
+            <a className={styles.link} href="contact">
+              Contato
+            </a>
+          </li>
         </ul>
-        {!menuOpen ? 
-            <button onClick={toggleMenu}><i className="uil uil-bars"></i></button>
-          :
-            <button onClick={toggleMenu}><i className="uil uil-multiply"></i></button>
-        }
+        {!menuOpen ? (
+          <button onClick={toggleMenu}>
+            <i className="uil uil-bars"></i>
+          </button>
+        ) : (
+          <button onClick={toggleMenu}>
+            <i className="uil uil-multiply"></i>
+          </button>
+        )}
       </div>
     </nav>
   );
