@@ -80,22 +80,23 @@ nav button {
 
   .menuOpened{
     display: flex;
+    animation: slideOpen 0.5s ease forwards;
   }
 
   .menuClosed{
+    animation: slideClose 0.5s ease forwards;
     display: none;
   }
 
   .navMenu li {
     width: 100%;
     height: 5.8rem;
-    animation: animateNavItens 400ms linear forwards;
     transform-origin: top right;
   }
 
   .navMenu li a {
     background: var(--color-primary);
-    box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+    border-bottom: 0.5px solid var(--color-black);
     width: 100%;
     height: 100%;
     display: grid;
@@ -119,5 +120,23 @@ nav button {
 
   .navMenu li {
     height: 4rem;
+  }
+}
+
+@keyframes slideOpen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideClose {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
