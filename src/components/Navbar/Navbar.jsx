@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { linksData } from "../../data/LinksData";
+import logotipo from "../../assets/images/logotipo_vvisercomp.png"
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -30,9 +31,9 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.nav} ${menuOpen ? styles.windowScroll : ""}`}>
-      <div className={`container ${styles.navContainer}`}>
+      <div className={`${styles.navContainer}`}>
         <a href="/">
-          <h4>VI SERCOMP</h4>
+          <img src={logotipo} alt="vi sercomp" />
         </a>
         <ul className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${styles.navMenu}`}>
           {linksData.map((link, index) => (
