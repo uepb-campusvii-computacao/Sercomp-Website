@@ -14,7 +14,7 @@ export default function Footer(){
                 <div className={styles.footer2}>
                     <h4>Permalinks</h4>
                     <ul className={styles.permalinks}>
-                        <li><a href="/">Incio</a></li>
+                        <li><a href="/">Início</a></li>
                         <li><a href="timeline">Programação</a></li>
                         <li><a href="about">Sobre</a></li>
                         <li><a href="contact">Contato</a></li>
@@ -29,7 +29,7 @@ export default function Footer(){
                 <div className={styles.footer4}>
                     <h4>Contato</h4>
                     <div>
-                        <p>Qualquer duvida que tiver sobre palestras, minicursos, oficinas, cadastro e tudo mais, entre em contato com a nossa equipe e tire suas duvidas!</p>
+                        <p>Qualquer dúvida que tiver sobre palestras, minicursos, oficinas, cadastro e tudo mais, entre em contato com a nossa equipe e tire suas dúvidas!</p>
                         <p className={`uil uil-phone ${styles.contactInfo}`}>+55 (83) 99404-0841</p>
                         <p className={`uil uil-at ${styles.contactInfo}`}>cacccampusvii@gmail.com</p>
                     </div>
