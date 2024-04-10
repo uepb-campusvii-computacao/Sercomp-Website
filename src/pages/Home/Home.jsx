@@ -1,6 +1,6 @@
 import Partners from '../../components/Partners/Partners';
 import Countdown from '../../components/Countdown/Countdown'
-import logo from '../../assets/images/logo_vvisercomp.png'
+import logo from '../../assets/images/logo_header_home.webp'
 import FAQ from '../../components/FAQ/FAQ';
 import Organization from '../../components/Organization/Organization';
 
@@ -19,7 +19,7 @@ function Home() {
 
           <div className="main-right">
             <div className="main-right-image">
-              <img src={logo} alt="estudantes" />
+              <img loading="lazy" src={logo} alt="estudantes" />
             </div>
           </div>
 
