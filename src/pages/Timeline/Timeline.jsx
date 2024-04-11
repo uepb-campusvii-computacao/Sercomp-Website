@@ -1,13 +1,9 @@
 import programacao from '../../data/ProgramacaoData.jsx'
 
 import TimelineComponent from '../../components/Timeline/Timeline.jsx';
-import { Mensagem } from '../../components/Mensagem/Mensagem.jsx';
 
-export default function Timeline(){
+export default function Timeline() {
     return (
-        <Mensagem texto={"Mais informações em breve..."}/>
+        <TimelineComponent timelines={programacao} />
     );
-    // return (
-    //     <TimelineComponent timelines={programacao} />
-    // );
 }
