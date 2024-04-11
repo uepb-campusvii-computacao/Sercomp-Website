@@ -1,11 +1,11 @@
 export const linksData = [
     {
         text: "Inicio",
-        href: "/", 
+        href: "/",
     },
     {
         text: "Inscrição",
-        href: "/inscricao"
+        href: "/inscricao",
     },
     {
         text: "Atividades",

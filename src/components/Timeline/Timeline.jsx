@@ -25,7 +25,9 @@ function EventItem({
       <p>
         <i className="uil uil-clock">{time}</i>
         <br />
-        <i className="uil uil-map-marker">{location}</i>
+        {location ?
+          <i className="uil uil-map-marker">{location}</i> : null
+        }
       </p>
       {participants &&
         participants.map((participant, index) => (
@@ -38,11 +40,11 @@ function EventItem({
             }
           >
             <p>{participant.name}</p>
-            <img src={participant.photo} alt={participant.name} 
-              style={{ 
-                marginRight: shouldAlignParticipantImageRight() ? '12px' : '0', 
-                marginLeft: shouldAlignParticipantImageRight() ? '0' : '12px' 
-              }} 
+            <img src={participant.photo} alt={participant.name}
+              style={{
+                marginRight: shouldAlignParticipantImageRight() ? '12px' : '0',
+                marginLeft: shouldAlignParticipantImageRight() ? '0' : '12px'
+              }}
             />
           </div>
         ))}
