@@ -10,6 +10,15 @@ function EventItem({
   timeStr,
   eventIndex,
 }) {
+
+  const shouldAlignParticipantImageRight = () => {
+    return eventIndex % 2 == 0
+  }
+
+  const decideParticipantsAlignment = () => {
+    return shouldAlignParticipantImageRight() ? styles.blockInfoTimelineRight : styles.blockInfoTimelineLeft
+  }
+
   return (
     <li>
       <h3 className={styles.title}>{title}</h3>
@@ -20,14 +29,21 @@ function EventItem({
       </p>
       {participants &&
         participants.map((participant, index) => (
-          <div
-            key={index}
-            className={`${styles.blockInfoTimeline} ${
-              eventIndex % 2 === 0 ? styles.blockInfoTimelineRight : ""
-            }`}
+          <div key={index}
+            className={`
+              ${styles.blockInfoTimeline} 
+              ${decideParticipantsAlignment()} 
+              ${styles.participantWrapper} 
+              ${shouldAlignParticipantImageRight() ? '' : styles.alignLeft}`
+            }
           >
             <p>{participant.name}</p>
-            <img src={participant.photo} alt={participant.name} />
+            <img src={participant.photo} alt={participant.name} 
+              style={{ 
+                marginRight: shouldAlignParticipantImageRight() ? '12px' : '0', 
+                marginLeft: shouldAlignParticipantImageRight() ? '0' : '12px' 
+              }} 
+            />
           </div>
         ))}
       <span className={styles.circle}></span>
@@ -132,9 +148,8 @@ function Timeline({ timelines }) {
           {timelines.map((timeline, index) => (
             <div
               key={index}
-              className={`${styles.tabsToggle} ${
-                index === 0 ? styles.isActive : ""
-              }`}
+              className={`${styles.tabsToggle} ${index === 0 ? styles.isActive : ""
+                }`}
             >
               <span className={styles.tabsName}>{timeline.date}</span>
               <p>{timeline.day}</p>

@@ -10,7 +10,7 @@
 }
 
 /* Timeline.css */
-  
+
 .tabsHead {
     display: flex;
     align-items: center;
@@ -72,7 +72,7 @@
     height: 3px;
     left: 50%;
     bottom: -5px;
-    background-image: linear-gradient(to right,  rgb(106, 6, 236), rgb(220, 0, 240));
+    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
     transform: translateX(-50%);
 }
 
@@ -92,7 +92,7 @@
 }
 
 .timelineContainer ul li p {
-    font-weight:bold ;
+    font-weight: bold;
 }
 
 .timelineContainer ul li {
@@ -100,7 +100,7 @@
     height: auto;
     padding: 15px 20px;
     background: var(--color-bg1);
-    box-shadow:  0 0 3rem rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 3rem rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     margin-bottom: 30px;
     z-index: 1;
@@ -144,11 +144,27 @@
     margin-right: 0.5rem;
 }
 
+.blockInfoTimelineLeft {
+    justify-content: left;
+}
+
+.blockInfoTimelineLeft p {
+    margin-left: 0.5rem;
+}
+
+.participantWrapper {
+    display: flex;
+    flex-direction: row;
+}
+
+.alignLeft {
+    flex-direction: row-reverse;
+}
+
 .blockInfoTimeline img {
     height: 48px;
     width: auto;
     border-radius: 100%;
-    margin-left: 12px;
 }
 
 ul li p {
@@ -210,7 +226,7 @@ ul li .date {
         transform: translateX(15px);
     }
 
-    .tabsHead{
+    .tabsHead {
         flex-direction: column;
         align-items: normal;
         text-align: center;
@@ -258,7 +274,7 @@ ul li .date {
 
     .timelineContainer ul li:nth-child(odd) .circle {
         left: -30px;
-        transform: translate(-50% , -50%);
+        transform: translate(-50%, -50%);
     }
 
     .timelineContainer ul li:nth-child(even) {
