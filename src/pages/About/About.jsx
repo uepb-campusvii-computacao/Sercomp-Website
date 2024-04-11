@@ -22,8 +22,8 @@ function About() {
             </section>
 
             <TeamSection title="Membros do CACC" membersData={caccMembers} />
-            <TeamSection title="Professores Participantes do V SERCOMP" membersData={teachers} />
-            <TeamSection title="Convidados do V SERCOMP" membersData={guests} />
+            <TeamSection title="Professores Participantes do VI SERCOMP" membersData={teachers} />
+            <TeamSection title="Convidados do VI SERCOMP" membersData={guests} />
         </>
     );
 }
