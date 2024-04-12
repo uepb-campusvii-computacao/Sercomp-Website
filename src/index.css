@@ -84,7 +84,7 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 section h2 {
@@ -183,6 +183,11 @@ img {
 @media screen and (max-width: 1024px) {
   .main-container {
     margin-top: 4rem;
+  }
+
+  .main-right{
+    padding: 24px;
+    padding-bottom: 32px;
   }
 
   .container {

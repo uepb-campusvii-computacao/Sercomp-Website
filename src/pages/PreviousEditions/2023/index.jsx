@@ -81,24 +81,24 @@ function Edition2023() {
                 Mesa Redonda "ChapGPT: possibilidades e desafios no cenário
                 acadêmico e profissional em Computação"
               </p>
-              <div className={`${styles.cronMemberImage}`}>
-                <div>
+              <div>
+                <div className={`${styles.cronMemberImage}`}>
                   <img src={rosangela} alt="Rosângela" />
                   <p>Rosângela Araújo de Medeiros</p>
                 </div>
-                <div>
+                <div className={`${styles.cronMemberImage}`}>
                   <img src={janderson} alt="Janderson" />
                   <p>Janderson Jason Barbosa Aguiar</p>
                 </div>
-                <div>
+                <div className={`${styles.cronMemberImage}`}>
                   <img src={jannayna} alt="Jannayna" />
                   <p>Jannayna Domingues Barros Filgueira</p>
                 </div>
-                <div>
+                <div className={`${styles.cronMemberImage}`}>
                   <img src={filipe} alt="Filipe" />
                   <p>Filipe Lucena Medeiros de Andrade</p>
                 </div>
-                <div>
+                <div className={`${styles.cronMemberImage}`}>
                   <img src={luanderson} alt="Luanderson" />
                   <p>Luanderson Bruno Martins Silva</p>
                 </div>

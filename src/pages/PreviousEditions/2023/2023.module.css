@@ -3,7 +3,7 @@
   font-weight: 500;
   position: relative;
   font-size: 2rem;
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 .tituloBase::after {
@@ -28,7 +28,7 @@
 }
 
 .cron {
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
 .h2 {
@@ -101,8 +101,8 @@
 }
 
 .cronDetails p {
-  margin-top: 1rem;
-  width: 80%;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .cronMember {
@@ -170,19 +170,38 @@
 /* MEDIA QUERIES TABLET*/
 
 @media screen and (max-width: 1024px) {
+
   .cronContainer {
     grid-template-columns: repeat(3, 1fr);
     gap: 1.5rem;
   }
 
   .cronDetails {
+    width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
   .cronMember {
     padding: 1rem;
     flex-direction: column;
+  }
+
+  .cronMemberImage {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .cronDetails p {
+    margin-top: 1rem;
+  }
+
+  .cronMemberImage img {
+    margin: 0;
   }
 }
 
