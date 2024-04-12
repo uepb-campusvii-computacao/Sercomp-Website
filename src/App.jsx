@@ -12,6 +12,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import Inscricoes from "./pages/Inscricoes/Inscricoes";
 import Atividades from "./pages/Atividades/Atividades";
 import Error404 from "./pages/Error404/Error404";
+import Edition2023 from "./pages/PreviousEditions/2023";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/inscricao" element={<Inscricoes />} />
           <Route exact path="/atividades" element={<Atividades />} />
+          <Route exact path="/2023" element={<Edition2023 />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Layout>
