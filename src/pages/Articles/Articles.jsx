@@ -1,7 +1,7 @@
-import Comissao from '../../components/Comissao/Comissao';
+//import Comissao from '../../components/Comissao/Comissao';
 import { Mensagem } from '../../components/Mensagem/Mensagem.jsx';
-import { comissaoArtigosData } from '../../data/ComissoesData.js';
-import styles from './Articles.module.css';
+//import { comissaoArtigosData } from '../../data/ComissoesData.js';
+//import styles from './Articles.module.css';
 
 export default function Articles() {
     return (
