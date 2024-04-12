@@ -1,0 +1,142 @@
+.nav {
+  background: transparent;
+  width: 100vw;
+  height: 5rem;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 11;
+  background: var(--color-bg1);
+}
+
+.windowScroll {
+  background: var(--color-primary);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.navContainer {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: center;
+}
+
+nav button {
+  display: none;
+}
+
+.navContainer a img{
+  height: 64px;
+  width: auto;
+  margin-right: 24px;
+}
+
+.navMenu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navMenu a {
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.navMenu a:hover {
+  color: var(--color-bg2);
+}
+
+@media screen and (max-width: 1024px) {
+  nav button {
+    display: inline-block;
+    background: transparent;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    cursor: pointer;
+  }
+
+  .navContainer a img{
+    height: 48px;
+  }
+
+  nav button.close-menu-btn {
+    display: none;
+  }
+
+  .navMenu {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    overflow: auto;
+    width: 18rem;
+    height: 100vh;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+
+  .menuOpened{
+    display: flex;
+    animation: slideOpen 0.5s ease forwards;
+  }
+
+  .menuClosed{
+    animation: slideClose 0.5s ease forwards;
+    display: none;
+  }
+
+  .navMenu li {
+    width: 100%;
+    height: 5.8rem;
+    transform-origin: top right;
+  }
+
+  .navMenu li a {
+    background: var(--color-primary);
+    border-bottom: 0.5px solid var(--color-black);
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+  }
+
+  .navMenu li a:hover {
+    background: var(--color-bg2);
+    color: var(--color-white);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  .navMenu {
+    right: 3%;
+  }
+
+  .navMenu li {
+    height: 4rem;
+  }
+}
+
+@keyframes slideOpen {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideClose {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

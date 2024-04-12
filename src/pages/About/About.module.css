@@ -1,0 +1,197 @@
+.header {
+    position: relative;
+    top: 5rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: var(--color-bg1);
+    margin-bottom: 6rem;
+
+}
+
+.descriptionHeaderContainer {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.descriptionHeaderLeft {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.descriptionHeaderLeft h3 {
+    font-size: 50px;
+}
+
+.descriptionHeaderLeft h4 {
+    margin-bottom: 0.6rem;
+}
+
+.descriptionHeaderLeft p {
+    margin: 1.2rem 0 2rem;
+
+}
+
+.descriptionHeaderRight {
+    position: relative;
+    height: 100%;
+}
+
+.headerImage {
+    display: flex;
+    justify-content: center;
+}
+
+.headerImage img {
+    width: 50%;
+
+}
+
+.aboutAchivements {
+    margin-top: 3rem;
+}
+
+/* MEDIA QUERIES TABLET*/
+@media screen and (max-width: 1024px) {
+
+    .headerImage img {
+        width: 100%;
+
+    }
+
+    .descriptionHeaderContainer {
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .descriptionHeaderLeft {
+        margin-bottom: 6rem;
+    }
+
+    .descriptionHeaderRight {
+        align-items: flex-end;
+        height: 100%;
+    }
+
+    .headerRightBg {
+        width: 25rem;
+        height: 25rem;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 50%);
+    }
+
+
+    .aboutAchivements {
+        margin-top: 2rem;
+    }
+
+    .aboutAchivementsContainer {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+
+    .aboutAchivementsLeft {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .teamContainer {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+
+    .teamMember {
+        padding: 1rem;
+    }
+
+    /*PRICES*/
+
+    .servicesBoxContainer {
+        flex-wrap: wrap;
+    }
+
+    .services {
+        height: auto;
+    }
+
+    .servicesHeading {
+        margin: 15px;
+    }
+
+    .servicesBox {
+        flex-grow: 1;
+    }
+}
+
+/*MEDIA QUERIES PHONE*/
+
+@media screen and (max-width: 600px) {
+    .headerImage img {
+        width: 100%;
+
+    }
+
+    .descriptionHeaderLeft {
+        text-align: center;
+
+    }
+
+    .descriptionHeaderLeft p {
+        margin: 0.5rem 0 1.2rem;
+        text-align: justify;
+    }
+
+    .descriptionHeaderLeft h3 {
+        font-size: 2.2rem;
+    }
+
+    .achivementsCards {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .achivementsCard p {
+        font-size: 0.7rem;
+    }
+
+    .teamContainer {
+        grid-template-columns: 1fr 1fr;
+        gap: 0.7rem;
+    }
+
+    .teamMember {
+        padding: 0;
+    }
+
+    .teamMember p {
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .headerImage img {
+        width: 100%;
+
+    }
+
+
+    .descriptionHeaderLeft {
+        text-align: center;
+
+    }
+
+    .descriptionHeaderLeft p {
+        margin: 0.5rem 0 1.2rem;
+        text-align: justify;
+        font-size: .975rem;
+    }
+
+    .descriptionHeaderLeft h3 {
+        font-size: 1.8rem;
+    }
+
+}

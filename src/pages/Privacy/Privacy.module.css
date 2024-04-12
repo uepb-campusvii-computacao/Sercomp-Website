@@ -1,0 +1,50 @@
+.h2 {
+    font-size: 1rem;
+}
+
+.p,
+.ulLi {
+    line-height: 1.2;
+}
+
+.tituloBase,
+.tituloPrincipal {
+    margin-bottom: 0.1rem;
+    font-weight: 500;
+    margin-bottom: 80px;
+    position: relative;
+    margin-top: 80px;
+    font-size: 1.5rem;
+}
+
+
+.tituloBase::after,
+.tituloPrincipal::after {
+    position: absolute;
+    content: '';
+    width: 30%;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
+    transform: translateX(-50%);
+}
+
+.tituloPrincipal {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.paragrafo {
+    padding: 1rem;
+    text-align: justify;
+}
+
+.politicaList {
+    margin-bottom: 0.5rem;
+}
+
+.politicaList li {
+    list-style: disc;
+    text-align: justify;
+}
