@@ -1,31 +1,34 @@
-import TeamSection from "../../components/TeamSection/TeamSection";
-import { caccMembers, guests, teachers } from "../../data/SobreData";
-import styles from './About.module.css';
+// import TeamSection from "../../components/TeamSection/TeamSection";
+// import { caccMembers, guests, teachers } from "../../data/SobreData";
+// import styles from './About.module.css';
+import { Mensagem } from '../../components/Mensagem/Mensagem.jsx';
 
 function About() {
-    return (
-        <>
-            <section className={styles.header}>
-                <div className={`container ${styles.descriptionHeaderContainer}`}>
+    return (<Mensagem texto={"Mais informações em breve..."}/>)
 
-                    <div className={styles.descriptionHeaderLeft}>
-                        <div>
-                            <h4>Sobre o VI SERCOMP</h4>
-                            <p>
-                                INSERIR TEXTO
-                            </p>
+    // return (
+    //     <>
+    //         <section className={styles.header}>
+    //             <div className={`container ${styles.descriptionHeaderContainer}`}>
 
-                        </div>
-                    </div>
+    //                 <div className={styles.descriptionHeaderLeft}>
+    //                     <div>
+    //                         <h4>Sobre o VI SERCOMP</h4>
+    //                         <p>
+    //                             INSERIR TEXTO
+    //                         </p>
 
-                </div>
-            </section>
+    //                     </div>
+    //                 </div>
 
-            <TeamSection title="Membros do CACC" membersData={caccMembers} />
-            <TeamSection title="Professores Participantes do VI SERCOMP" membersData={teachers} />
-            <TeamSection title="Convidados do VI SERCOMP" membersData={guests} />
-        </>
-    );
+    //             </div>
+    //         </section>
+
+    //         <TeamSection title="Membros do CACC" membersData={caccMembers} />
+    //         <TeamSection title="Professores Participantes do VI SERCOMP" membersData={teachers} />
+    //         <TeamSection title="Convidados do VI SERCOMP" membersData={guests} />
+    //     </>
+    // );
 }
 
 export default About;
