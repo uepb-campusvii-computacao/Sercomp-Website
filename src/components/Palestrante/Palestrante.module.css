@@ -1,5 +1,6 @@
 .cronDetails p {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
+  text-align: center;
   width: 80%;
 }
 
@@ -39,4 +40,38 @@
 
 .cronMemberInfo h4 {
   margin-bottom: 1rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .cronContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cronDetails {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cronMember {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .cronMemberImage {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .cronMemberImage img {
+    margin: 0;
+  }
 }
