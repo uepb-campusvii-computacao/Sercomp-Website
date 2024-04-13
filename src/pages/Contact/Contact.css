@@ -1,12 +1,12 @@
 .contact-container {
-    width: var(--container-width-lg);
+    width: auto;
     background: var(--color-bg1);
     padding: 4rem;
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 4rem;
     height: 30rem;
-    margin: 7rem auto;
+    margin: 8rem 3rem;
     border-radius: 1rem;
 }
 
@@ -14,10 +14,12 @@
 
 .contact-aside {
     background: var(--color-primary);
-    padding: 3rem;
+    padding: 2rem;
     border-radius: 1rem;
     position: relative;
-    bottom: 10rem;
+    margin-top: 40%;
+    transform: translateY(-50%);
+    text-align: left;
 }
 
 .aside-image {
@@ -100,36 +102,24 @@ textarea {
 @media screen and (max-width: 1024px) {
     .contact-container {
         gap: 1.5rem;
-        margin-top: 3rem;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        margin: 8rem 1rem;
         height: auto;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .contact-aside {
-        width: auto;
+        margin-top: 0;
         padding: 1.5rem;
-        bottom: 0;
+        transform: translateY(0%);
     }
 
     .contact-form {
         align-items: center;
-        margin-right: 1.5rem;
-        
-    }
-
-
-}
-
-@media screen and (max-width: 600px) {
-    .contact-container {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-        margin-top: 0;
-        padding: 0;
-    }
-    
-    .contact-form {
-        margin: 0 1.5rem 3rem;
+        justify-items: center;
+        margin-right: 0;
+        width: 100%;        
     }
 
 
