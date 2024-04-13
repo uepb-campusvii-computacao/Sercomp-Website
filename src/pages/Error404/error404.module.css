@@ -1,0 +1,42 @@
+.container{
+    display: flex;
+    padding-top: 8rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container p{
+    padding-top: 2rem;
+    font-size: 3rem;
+}
+
+.container h1{
+    font-size: 10rem;
+}
+
+/*MEDIA QUERIES PHONE*/
+
+@media screen and (max-width: 600px) {
+    .container p{
+        padding-top: 2rem;
+        font-size: 3rem;
+    }
+    
+    .container h1{
+        font-size: 10rem;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    .container p{
+        padding-top: 2rem;
+        font-size: 2rem;
+    }
+    
+    .container h1{
+        font-size: 6rem;
+    }
+  }
+  
