@@ -16,24 +16,8 @@ export const linksData = [
     href: "/timeline",
   },
   {
-    text: "Hackthon",
-    href: "/hackthon",
-  },
-  {
-    text: "Artigos",
-    href: "articles",
-  },
-  {
-    text: "Sobre",
-    href: "/about",
-  },
-  {
     text: "Parceiros",
     href: "/parceiros",
-  },
-  {
-    text: "Contato",
-    href: "/contact",
   },
   {
     text: "Edições Anteriores",
