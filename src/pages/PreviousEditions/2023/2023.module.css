@@ -143,11 +143,17 @@
   margin-bottom: 1rem;
 }
 
-.cardWithoutText .cronMemberImage {
+.cronMemberImage {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.cronMemberImage p{
+  padding-right: 32px;
 }
 
 .cardWithoutText {
@@ -203,6 +209,10 @@
   .cronMemberImage img {
     margin: 0;
   }
+
+  .cronMemberImage p{
+    padding-right: 0;
+  }
 }
 
 /*MEDIA QUERIES PHONE*/
@@ -219,10 +229,6 @@
 
   .cronMember p {
     margin-bottom: 1.5rem;
-  }
-
-  .cronMemberImage {
-    flex-direction: column;
   }
 }
 
