@@ -84,7 +84,7 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: 2rem 0;
 }
 
 section h2 {
@@ -151,12 +151,12 @@ img {
 
 .titulo-base,
 .titulo-principal {
-  margin-bottom: 0.1rem;
-  font-weight: 500;
-  margin-bottom: 80px;
+  margin-bottom: 44px;
   position: relative;
-  margin-top: 80px;
-  font-size: 1.5rem;
+  margin-top: 32px;
+  font-size: 44px;
+  font-weight: 700;
+  text-align: center;
 }
 
 
@@ -167,14 +167,13 @@ img {
   width: 30%;
   height: 3px;
   left: 50%;
-  bottom: -5px;
+  bottom: -8px;
   background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
   transform: translateX(-50%);
 }
 
 .titulo-principal {
-  font-size: 2rem;
-  text-align: center;
+  margin-top: 88px;
 }
 
 
@@ -185,8 +184,19 @@ img {
     margin-top: 4rem;
   }
 
+  .main-right{
+    padding: 24px;
+    padding-bottom: 32px;
+  }
+
   .container {
     width: var(--container-width-md);
+  }
+
+
+  .titulo-base,
+  .titulo-principal {
+    font-size: 28px;
   }
 
   h1 {
