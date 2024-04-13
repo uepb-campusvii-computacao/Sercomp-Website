@@ -9,11 +9,16 @@
 
 .articleList {
   margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 0.5rem;
 }
 
 .articleList li {
   list-style: disc;
   text-align: justify;
+  list-style-position: inside;
 }
 
 .articleListRisc {
@@ -23,6 +28,7 @@
 .paragrafo {
   padding: 1rem;
   text-align: justify;
+  font-size: 18px;
 }
 
 .articleLink {
