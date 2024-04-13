@@ -1,7 +1,7 @@
 import Accordion from "../../components/Accordion/Accordion.jsx";
 import Comissao from "../../components/Comissao/Comissao";
-import { comissaoArtigosData } from "../../data/ComissoesData.js";
 import styles from "./Articles.module.css";
+import PropTypes from 'prop-types';
 
 function ImportantsDate() {
   return (
@@ -172,6 +172,24 @@ function Presentation() {
   );
 }
 
+function SectionButton({ href }) {
+  return (
+    <div className={styles.sectionButtons}>
+      <a
+        href={href}
+        className="btn btn-primary"
+        target="_blank"
+      >
+        Visualizar modelo de banner{" "}
+      </a>
+    </div>
+  )
+}
+
+SectionButton.propTypes = {
+  href: PropTypes.string.isRequired
+}
+
 export default function Articles() {
   return (
     <section className={"container"}>
@@ -189,23 +207,17 @@ export default function Articles() {
       />
       <Accordion title={"Publicação"} content={<Publication />} />
       <Accordion title={"Apresentação"} content={<Presentation />} />
-      <Comissao
-        comissaoData={comissaoArtigosData}
-        title={"Comitê de Programa"}
-        description={
-          "O Comitê de Programa é formado pelos seguintes professores do curso de Ciência da Computação da Universidade Estadual da Paraíba, Campus VII."
-        }
-      />
 
-      <div className={styles.sectionButtons}>
-        <a
-          href="https://www.canva.com/design/DAFhLbfm-5c/GAtVL-XUzMgLc-WuIHSxEQ/view?utm_content=DAFhLbfm-5c&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-          className="btn btn-primary"
-          target="_blank"
-        >
-          Visualizar modelo de banner{" "}
-        </a>
-      </div>
+      {/* 
+        <Comissao
+          comissaoData={comissaoArtigosData}
+          title={"Comitê de Programa"}
+          description={
+            "O Comitê de Programa é formado pelos seguintes professores do curso de Ciência da Computação da Universidade Estadual da Paraíba, Campus VII."
+          }
+        />
+      */}
+
     </section>
   );
 }
