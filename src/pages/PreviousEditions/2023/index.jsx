@@ -81,7 +81,7 @@ function Edition2023() {
                 Mesa Redonda "ChapGPT: possibilidades e desafios no cenário
                 acadêmico e profissional em Computação"
               </p>
-              <div>
+              <div className={styles.mesaContainer}>
                 <div className={`${styles.cronMemberImage}`}>
                   <img src={rosangela} alt="Rosângela" />
                   <p>Rosângela Araújo de Medeiros</p>
