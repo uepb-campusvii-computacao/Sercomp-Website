@@ -23,7 +23,7 @@ export default function Footer(){
                 <div className={styles.footer3}>
                     <h4>Privacidade</h4>
                     <ul className={styles.privacy}>
-                        <li><a href="privacy.html">Políticas Gerais</a></li>
+                        <li><a href="privacy">Políticas Gerais</a></li>
                     </ul>
                 </div>
                 <div className={styles.footer4}>
