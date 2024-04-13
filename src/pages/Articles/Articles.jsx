@@ -1,5 +1,5 @@
 import Accordion from "../../components/Accordion/Accordion.jsx";
-import Comissao from "../../components/Comissao/Comissao";
+// import Comissao from "../../components/Comissao/Comissao";
 import styles from "./Articles.module.css";
 import PropTypes from 'prop-types';
 
