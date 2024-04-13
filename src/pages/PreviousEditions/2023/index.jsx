@@ -356,11 +356,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={almeida} alt="Wlad'myr" />
+              <p>
+                OF01: Construindo um aplicativo completo com Flutter: aprenda a
+                criar um CRUD do zero!
+              </p>
             </div>
-            <p>
-              OF01: Construindo um aplicativo completo com Flutter: aprenda a
-              criar um CRUD do zero!
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -400,11 +400,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={jucelio} alt="Jucelio" />
+              <p>
+                OF02: Introdução à Data Science: algoritmos de classificação e
+                métodos de análise
+              </p>
             </div>
-            <p>
-              OF02: Introdução à Data Science: algoritmos de classificação e
-              métodos de análise
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -455,11 +455,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={demetrio} alt="Demetrio" />
+              <p>
+                OF03: Exploring the possibilities of integrating ChatGPT and
+                Whisper APIs into Springboot-based microservices
+              </p>
             </div>
-            <p>
-              OF03: Exploring the possibilities of integrating ChatGPT and
-              Whisper APIs into Springboot-based microservices
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -491,11 +491,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={esdras} alt="Esdras" />
+              <p>
+                OF04: Developing an Application (CRUD) with Node.js and MongoDB
+                - User Registration
+              </p>
             </div>
-            <p>
-              OF04: Developing an Application (CRUD) with Node.js and MongoDB -
-              User Registration
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -524,11 +524,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={mikaelle} alt="Mikaelle" />
+              <p>
+                OF05: LaTeX for Scientific Production: Introduction to Academic
+                Document Creation
+              </p>
             </div>
-            <p>
-              OF05: LaTeX for Scientific Production: Introduction to Academic
-              Document Creation
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -566,11 +566,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={francisco} alt="Francisco" />
+              <p>
+                OF06: Electronic Spreadsheets: Organizing and Simplifying Your
+                Work through Automation
+              </p>
             </div>
-            <p>
-              OF06: Electronic Spreadsheets: Organizing and Simplifying Your
-              Work through Automation
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -609,11 +609,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={daniel} alt="Daniel" />
+              <p>
+                OF07: Exploring Robotics: Initial Programming Concepts for Youth
+                and Beginners
+              </p>
             </div>
-            <p>
-              OF07: Exploring Robotics: Initial Programming Concepts for Youth
-              and Beginners
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
@@ -656,11 +656,11 @@ function Edition2023() {
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
               <img src={jairo} alt="Jairo" />
+              <p>
+                OF08: Software Testing in Back-End: Strategies and Tools to
+                Ensure System Quality
+              </p>
             </div>
-            <p>
-              OF08: Software Testing in Back-End: Strategies and Tools to Ensure
-              System Quality
-            </p>
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
