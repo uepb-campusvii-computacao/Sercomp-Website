@@ -10,7 +10,7 @@ import Hackthon from "./pages/Hackthon/Hackthon";
 import Timeline from "./pages/Timeline/Timeline";
 import Privacy from "./pages/Privacy/Privacy";
 import Inscricoes from "./pages/Inscricoes/Inscricoes";
-import Atividades from "./pages/Atividades/Atividades";
+import Atividades from "./pages/Activities/Activities";
 import Error404 from "./pages/Error404/Error404";
 import Edition2023 from "./pages/PreviousEditions/2023";
 
