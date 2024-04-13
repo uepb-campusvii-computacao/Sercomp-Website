@@ -11,30 +11,14 @@ export const linksData = [
     text: "Atividades",
     href: "/atividades",
   },
-  // {
-  //   text: "Programação",
-  //   href: "/timeline",
-  // },
-  // {
-  //   text: "Hackthon",
-  //   href: "/hackthon",
-  // },
-  // {
-  //   text: "Artigos",
-  //   href: "articles",
-  // },
-  // {
-  //   text: "Sobre",
-  //   href: "/about",
-  // },
+  {
+    text: "Programação",
+    href: "/timeline",
+  },
   {
     text: "Parceiros",
     href: "/parceiros",
   },
-  // {
-  //   text: "Contato",
-  //   href: "/contact",
-  // },
   {
     text: "Edições Anteriores",
     href: "/2023",

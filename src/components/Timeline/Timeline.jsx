@@ -58,7 +58,7 @@ EventItem.propTypes = {
   title: PropTypes.string.isRequired,
   time: PropTypes.string.isRequired,
   timeStr: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  location: PropTypes.string,
   eventIndex: PropTypes.number.isRequired,
   participants: PropTypes.arrayOf(
     PropTypes.shape({
@@ -127,7 +127,7 @@ TabsContent.propTypes = {
       title: PropTypes.string.isRequired,
       time: PropTypes.string.isRequired,
       timeStr: PropTypes.string.isRequired,
-      location: PropTypes.string.isRequired,
+      location: PropTypes.string,
       eventIndex: PropTypes.number.isRequired,
       participants: PropTypes.arrayOf(
         PropTypes.shape({
@@ -180,7 +180,7 @@ Timeline.propTypes = {
           title: PropTypes.string.isRequired,
           time: PropTypes.string.isRequired,
           timeStr: PropTypes.string.isRequired,
-          location: PropTypes.string.isRequired,
+          location: PropTypes.string,
           participants: PropTypes.arrayOf(
             PropTypes.shape({
               name: PropTypes.string.isRequired,
