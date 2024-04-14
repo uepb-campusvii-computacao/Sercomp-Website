@@ -31,7 +31,7 @@ export const linksData = [
   },
   {
     text: "Atividades Confirmadas",
-    href: "/timeline",
+    href: "/confirmed-activities",
   },
   {
     text: "Parceiros",

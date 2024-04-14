@@ -16,6 +16,7 @@ import Edition2023 from "./pages/PreviousEditions/2023";
 import Ideathon from "./pages/Ideathon/Ideathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
+import ConfirmedActivities from "./pages/ConfirmedActivities/ConfirmedActivities";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="/chamadas" element={<Activities />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />
+          <Route exact path="/confirmed-activities" element={<ConfirmedActivities />} />
           <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />
           <Route exact path="/2023" element={<Edition2023 />} />
           <Route path="*" element={<Error404 />} />
