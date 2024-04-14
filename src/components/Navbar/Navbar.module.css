@@ -58,16 +58,26 @@ nav button {
   color: var(--color-white);
   border-radius: 8px;
   width: 12ch;
-  text-align: center;
   background-color: var(--color-primary);
   display: none;
+  text-align: center;
   flex-direction: column;
   line-height: 16px;
-  gap: 12px;
 }
 
 .menuSuspenso a{
-  padding: 0;
+  width: 100%;
+  padding: 12px;
+  border-bottom: solid var(--color-white) 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuSuspenso a:last-child{
+  border-bottom: none;
 }
 
 
