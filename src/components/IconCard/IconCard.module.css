@@ -1,0 +1,48 @@
+.activitieCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 350px;
+  background-color: #424890;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.activitieHeader {
+  margin-bottom: 20px; /* Adiciona espaçamento entre o header e o body */
+}
+
+.activitieBody {
+  flex-grow: 1; /* Permite que o body ocupe o espaço restante */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza verticalmente o body */
+}
+
+.activitieTitle {
+  font-size: 40px;
+}
+
+.activitieText {
+  text-align: center;
+}
+
+.activitieFooter {
+  margin-top: 20px;
+  margin-bottom: 10px; /* Adiciona espaçamento entre o body e o footer */
+}
+
+.activitieAcessURL {
+  width: 100%;
+  padding: 16px 30px;
+  font-size: 22px;
+  font-weight: 600;
+  transition: 0.3s;
+  border-radius: 16px;
+}
+
+.activitieAcessURL:hover {
+  background-color: #5159b5;
+}

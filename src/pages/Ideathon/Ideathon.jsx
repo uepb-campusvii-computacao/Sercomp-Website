@@ -1,7 +1,7 @@
+import { Mensagem } from "../../components/Mensagem/Mensagem";
 
 export default function Ideathon() {
    return (
-      <div className={"container main-container"}>
-         Ideathon</div>
+      <Mensagem texto={"Mais informações sobre o Ideathon em breve..."}/>
    )
 }
