@@ -31,7 +31,7 @@ function App() {
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/inscricao" element={<Inscricoes />} />
-          <Route exact path="/atividades" element={<Activities />} />
+          <Route exact path="/chamadas" element={<Activities />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />
           <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />

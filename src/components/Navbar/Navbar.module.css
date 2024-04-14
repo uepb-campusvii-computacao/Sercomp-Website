@@ -42,11 +42,41 @@ nav button {
 
 .navMenu a {
   font-size: 0.9rem;
+  padding-bottom: 16px;
   transition: var(--transition);
 }
 
-.navMenu a:hover {
+.navMenu a:hover{
   color: var(--color-bg2);
+}
+
+.menuSuspenso{
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-white);
+  border-radius: 8px;
+  width: 12ch;
+  text-align: center;
+  background-color: var(--color-primary);
+  display: none;
+  flex-direction: column;
+  line-height: 16px;
+  gap: 12px;
+}
+
+.menuSuspenso a{
+  padding: 0;
+}
+
+
+.navMenu a:hover + .menuSuspenso{
+  display: flex;
+}
+
+.menuSuspenso:hover {
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
@@ -60,6 +90,14 @@ nav button {
 
   .navContainer a img{
     height: 48px;
+  }
+
+  .navMenu a:hover + .menuSuspenso{
+    display: none;
+  }
+
+  .navMenu a {
+    padding-bottom: 0;
   }
 
   nav button.close-menu-btn {
