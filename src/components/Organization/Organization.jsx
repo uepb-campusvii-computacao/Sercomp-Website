@@ -6,13 +6,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import styles from './Organization.module.css'
 import orgMembersData from '../../data/OrganizationData.js';
+import styles from './Organization.module.css';
 
 export default function Organization() {
     return (
         <section className={`${styles.orgsContainer} container mySwiper`}>
-            <h2>ORGANIZAÇÃO DO V SERCOMP</h2>
+            <h2>ORGANIZAÇÃO DO VI SERCOMP</h2>
             <Swiper
                 modules={[Autoplay]}
                 className={`mySwiper ${styles.mySwiper}`}
@@ -36,10 +36,6 @@ export default function Organization() {
                         <article className={`org swiper-slide ${styles.org}`}>
                             <div className={styles.avatar}>
                                 <img src={member.image} alt={member.alt}/>
-                            </div>
-                            <div className={styles.orgInfo}>
-                                <h5>{member.nome}</h5>
-                                <small>{member.cargo}</small>
                             </div>
                         </article>
                     </SwiperSlide>
