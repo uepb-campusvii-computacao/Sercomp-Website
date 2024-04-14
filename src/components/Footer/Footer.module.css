@@ -1,5 +1,4 @@
 .footer {
-  background-position: top;
   background-size: cover;
   padding-top: 25rem;
   font-size: 0.9rem;
@@ -80,12 +79,13 @@ footer ul li a:hover {
 /* MEDIA QUERIES (PHONES) */
 
 @media screen and (max-width: 600px) {
-  footer {
-      background-position: top left;
+  .footer {
+      background-position: top left; /* Posição da imagem na esquerda */
+      padding-top: 35rem; /* Ajuste o espaçamento superior para mover a imagem um pouco para cima */
   }
 
   .footerContainer {
-      margin-top: 25rem;
+      margin-top: 15rem; /* Ajusta o espaço entre o conteúdo e a imagem */
       grid-template-columns: 1fr;
       text-align: center;
       gap: 2rem;

@@ -19,7 +19,7 @@ const programacao = [
                 time: '19:00 - 21:00', timeStr: 'NOITE', location: "Auditório Celso Furtado"
             },
             { title: 'Apresentação Cultural II', time: '21:00 - 21:30', timeStr: 'NOITE', location: "Auditório Celso Furtado" }
-        ]
+            ,]
     },
     {
         date: <>22/<small>MAIO</small></>,

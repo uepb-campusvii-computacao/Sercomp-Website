@@ -10,9 +10,12 @@ import Hackthon from "./pages/Hackthon/Hackthon";
 import Timeline from "./pages/Timeline/Timeline";
 import Privacy from "./pages/Privacy/Privacy";
 import Inscricoes from "./pages/Inscricoes/Inscricoes";
-import Atividades from "./pages/Atividades/Atividades";
+import Activities from "./pages/Activities/Activities";
 import Error404 from "./pages/Error404/Error404";
 import Edition2023 from "./pages/PreviousEditions/2023";
+import Ideathon from "./pages/Ideathon/Ideathon";
+import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
+import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
 
 function App() {
   return (
@@ -24,11 +27,14 @@ function App() {
           <Route exact path="/parceiros" element={<Partners />} />
           <Route exact path="/about" element={<About />} />
           <Route exact path="/articles" element={<Articles />} />
-          <Route exact path="/hackthon" element={<Hackthon />} />
+          <Route exact path="/hackathon" element={<Hackthon />} />
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/inscricao" element={<Inscricoes />} />
-          <Route exact path="/atividades" element={<Atividades />} />
+          <Route exact path="/atividades" element={<Activities />} />
+          <Route exact path="/ideathon" element={<Ideathon />} />
+          <Route exact path="/technology-fair" element={<TechnologyFair />} />
+          <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />
           <Route exact path="/2023" element={<Edition2023 />} />
           <Route path="*" element={<Error404 />} />
         </Routes>

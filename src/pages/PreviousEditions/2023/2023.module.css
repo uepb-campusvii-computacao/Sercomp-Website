@@ -21,6 +21,12 @@
   transform: translateX(-50%);
 }
 
+.mesaContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .cronContainer {
   display: flex;
   flex-direction: column;
@@ -94,12 +100,6 @@
   margin-top: 3rem;
 }
 
-.cronContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .cronDetails p {
   margin-bottom: 1rem;
   text-align: center;
@@ -146,13 +146,13 @@
 .cronMemberImage {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
 }
 
 .cronMemberImage p{
+  max-width: 15rem;
   padding-right: 32px;
 }
 
@@ -177,19 +177,6 @@
 
 @media screen and (max-width: 1024px) {
 
-  .cronContainer {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-  }
-
-  .cronDetails {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-
   .cronMember {
     padding: 1rem;
     flex-direction: column;
@@ -207,11 +194,16 @@
   }
 
   .cronMemberImage img {
+    width: 20rem;
     margin: 0;
   }
 
   .cronMemberImage p{
     padding-right: 0;
+  }
+
+  .mesaContainer{
+    display: inline;
   }
 }
 
@@ -227,13 +219,26 @@
     display: block;
   }
 
+  .cronMemberImage img {
+    width: 15rem;
+    margin: 0;
+  }
+
   .cronMember p {
     margin-bottom: 1.5rem;
+  }
+
+  .mesaContainer{
+    display: inline;
   }
 }
 
 @media screen and (max-width: 450px) {
   .cronMemberImage {
     flex-direction: column;
+  }
+
+  .mesaContainer{
+    display: inline;
   }
 }
