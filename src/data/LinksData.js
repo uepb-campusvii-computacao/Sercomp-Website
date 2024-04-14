@@ -8,11 +8,29 @@ export const linksData = [
     href: "/inscricao",
   },
   {
-    text: "Atividades",
-    href: "/atividades",
+    text: "Chamadas",
+    href: "/chamadas",
+    sublinks: [
+      {
+        text: 'Hackathon',
+        href: '/hackathon'
+      },
+      {
+        text: 'Ideathon',
+        href: '/ideathon'
+      },
+      {
+        text: 'Maratona de Programação',
+        href: '/programming-marathon'
+      }
+    ]
   },
   {
     text: "Programação",
+    href: "/timeline",
+  },
+  {
+    text: "Atividades Confirmadas",
     href: "/timeline",
   },
   {
