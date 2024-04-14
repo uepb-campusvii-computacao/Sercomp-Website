@@ -1,7 +1,7 @@
 import Accordion from "../../components/Accordion/Accordion.jsx";
 // import Comissao from "../../components/Comissao/Comissao";
 import styles from "./Articles.module.css";
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
 function ImportantsDate() {
   return (
@@ -172,23 +172,19 @@ function Presentation() {
   );
 }
 
-function SectionButton({ href }) {
+function SectionButton() {
   return (
     <div className={styles.sectionButtons}>
-      <a
-        href={href}
-        className="btn btn-primary"
-        target="_blank"
-      >
-        Visualizar modelo de banner{" "}
+      <a href={"https://docs.google.com/document/d/1hbuUeGbLZSlfIjUT8niSL4XUU3dnIyubB6RZgG39ozI/edit?usp=sharing"} className="btn btn-primary" target="_blank">
+        Modelo de documento
+      </a>
+      <a href={"https://docs.google.com/forms/d/e/1FAIpQLSeIeyduMf1UCN6TeZpARKE3EBx7b3kZgCz4-ay0_C8TuYnbZA/viewform"} className="btn btn-primary" target="_blank">
+        Submissão de artigos
       </a>
     </div>
-  )
+  );
 }
 
-SectionButton.propTypes = {
-  href: PropTypes.string.isRequired
-}
 
 export default function Articles() {
   return (
@@ -207,6 +203,7 @@ export default function Articles() {
       />
       <Accordion title={"Publicação"} content={<Publication />} />
       <Accordion title={"Apresentação"} content={<Presentation />} />
+      <SectionButton />
 
       {/* 
         <Comissao
@@ -217,7 +214,6 @@ export default function Articles() {
           }
         />
       */}
-
     </section>
   );
 }

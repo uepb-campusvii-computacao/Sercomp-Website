@@ -45,7 +45,7 @@ export default function Navbar() {
               <a className={styles.link} href={link.href}>
                 {link.text}
               </a>
-              <div className={styles.menuSuspenso} style={{padding: link.sublinks ? '16px' : '0'}}>
+              <div className={styles.menuSuspenso} style={{padding: link.sublinks ? 'auto 16px' : '0'}}>
                 {link.sublinks && link.sublinks.map((sublink, index) => (   
                   <a key={index} href={sublink.href}>{sublink.text}</a>
                 ))}
