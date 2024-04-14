@@ -1,8 +1,7 @@
+import { Mensagem } from "../../components/Mensagem/Mensagem";
 
 export default function ProgrammingMarathon() {
    return (
-      <div className={"container main-container"}>
-         ProgrammingMarathon
-      </div>
+      <Mensagem texto={"Mais informações sobre a maratona de programação em breve..."}/>
    )
 }

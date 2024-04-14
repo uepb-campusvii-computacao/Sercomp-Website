@@ -1,7 +1,6 @@
 import Accordion from "../../components/Accordion/Accordion.jsx";
 // import Comissao from "../../components/Comissao/Comissao";
 import styles from "./Articles.module.css";
-import PropTypes from "prop-types";
 
 function ImportantsDate() {
   return (
@@ -176,10 +175,10 @@ function SectionButton() {
   return (
     <div className={styles.sectionButtons}>
       <a href={"https://docs.google.com/document/d/1hbuUeGbLZSlfIjUT8niSL4XUU3dnIyubB6RZgG39ozI/edit?usp=sharing"} className="btn btn-primary" target="_blank">
-        Modelo de documento
+        Template de Artigo
       </a>
       <a href={"https://docs.google.com/forms/d/e/1FAIpQLSeIeyduMf1UCN6TeZpARKE3EBx7b3kZgCz4-ay0_C8TuYnbZA/viewform"} className="btn btn-primary" target="_blank">
-        Submissão de artigos
+        Submissão de Artigos
       </a>
     </div>
   );

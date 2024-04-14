@@ -8,7 +8,7 @@ import { Mensagem } from "../../components/Mensagem/Mensagem";
 export default function Articles() {
 
   return (
-    <Mensagem texto={"Mais informações em breve..."}/>
+    <Mensagem texto={"Mais informações sobre o hackathon em breve..."}/>
   );
 
   // return (

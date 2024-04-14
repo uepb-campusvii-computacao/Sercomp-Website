@@ -12,6 +12,10 @@ export const linksData = [
     href: "/chamadas",
     sublinks: [
       {
+        text: 'Trabalhos Científicos',
+        href: '/articles'
+      },
+      {
         text: 'Hackathon',
         href: '/hackathon'
       },
