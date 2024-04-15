@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import logo from "../../../assets/images/v-sercomp.png";
-import Organization from "../../../components/Organization/Organization";
+import OrganizationPeople from "../../../components/Organization/OrganizationPeople";
 import styles from "./2023.module.css";
 import Palestrante from "../../../components/Palestrante/Palestrante";
 
@@ -32,6 +32,7 @@ import TimelineComponent from "../../../components/Timeline/Timeline.jsx";
 import shedule from "./schedule.jsx";
 import { comissaoArtigosData } from "./commissions.js";
 import Comissao from "../../../components/Comissao/Comissao";
+import orgMembersData from '../../../data/orgData2023.js';
 
 function Edition2023() {
   return (
@@ -52,7 +53,7 @@ function Edition2023() {
           </div>
         </div>
       </main>
-      <Organization />
+      <OrganizationPeople title={"ORGANIZAÇÃO DO V SERCOMP"} members={orgMembersData}/>
       <section className={styles.cron}>
         <h2 className={styles.tituloBase}>Palestras</h2>
 

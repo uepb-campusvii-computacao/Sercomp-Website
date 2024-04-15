@@ -1,8 +1,8 @@
-import CarlosImg from '../assets/images/organizacao/carlos.png';
-import YuriImg from '../assets/images/organizacao/yuri.png';
-import LuanImg from '../assets/images/organizacao/luan.png';
-import AliciaImg from '../assets/images/organizacao/alicia.png';
-import VictorImg from '../assets/images/organizacao/victor.png';
+import CarlosImg from '../assets/images/organizacao/2023/carlos.png';
+import YuriImg from '../assets/images/organizacao/2023/yuri.png';
+import LuanImg from '../assets/images/organizacao/2023/luan.png';
+import AliciaImg from '../assets/images/organizacao/2023/alicia.png';
+import VictorImg from '../assets/images/organizacao/2023/victor.png';
 
 const responsaveisInscricoes = [
     {

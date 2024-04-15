@@ -8,7 +8,7 @@ import 'swiper/css/scrollbar';
 
 import styles from './ResponsaveisInscricao.module.css';
 
-import responsaveisInscricao from '../../data/ResponsaveisInscricoes.js'
+import responsaveisInscricao from '../../data/ResponsaveisInscricoes2023.js'
 
 const Comissao = () => {
     return (

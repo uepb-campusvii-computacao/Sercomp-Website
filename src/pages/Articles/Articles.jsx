@@ -2,24 +2,37 @@ import Accordion from "../../components/Accordion/Accordion.jsx";
 // import Comissao from "../../components/Comissao/Comissao";
 import styles from "./Articles.module.css";
 
-function ImportantsDate() {
-  return (
-    <ul className={styles.articleList}>
-      <li className={`${styles.ulLi}`}>
-        Prazo Inicial de submissão de short paper: 07/04/2024;
-      </li>
-      <li className={`${styles.ulLi}`}>
-        Prazo final de submissão de short paper: 06/05/2024;
-      </li>
-      <li className={`${styles.ulLi}`}>
-        Notificação dos autores dos short paper aprovados: 15/05/2024;
-      </li>
-      <li className={`${styles.ulLi}`}>
-        Apresentação dos short paper: 22/05/2024.
-      </li>
-    </ul>
-  );
-}
+import ArticleList from '../../components/TextList/TextList.jsx'
+
+const importantDates = [
+  <><strong>Prazo Inicial de submissão de short paper:</strong> 07/04/2024;</>,
+  <><strong>Prazo final de submissão de short paper:</strong> 06/05/2024;</>,
+  <><strong>Notificação dos autores dos short paper aprovados:</strong> 15/05/2024;</>,
+  <><strong>Apresentação dos short paper:</strong> 22/05/2024.</>
+]
+
+const interestTopics = [
+  <>Internet das Coisas (IoT);</>,
+  <>Segurança da Informação;</>,
+  <>Computação em Nuvem;</>,
+  <>Redes de Computadores;</>,
+  <>Sistemas Distribuídos;</>,
+  <>Realidade Virtual e Aumentada;</>,
+  <>Computação Gráfica;</>,
+  <>Interação Humano-Computador;</>,
+  <>Inteligência Artificial;</>,
+  <>Aprendizado de Máquina;</>,
+  <>Processamento de Linguagem Natural;</>,
+  <>Computação Móvel;</>,
+  <>Robótica;</>,
+  <>Sistemas Inteligentes;</>,
+  <>Blockchain;</>,
+  <>Ética em Tecnologia;</>,
+  <>Inovação Tecnológica;</>,
+  <>Educação em Computação;</>,
+  <>Informática na Educação na Web 3.0;</>,
+  <> Aplicações de Inteligência Artificial na Saúde, Agricultura, Meio Ambiente, entre outros. </>
+]
 
 function TopicsOfInterest() {
   return (
@@ -35,34 +48,67 @@ function TopicsOfInterest() {
       <p className={`paragrafo ${styles.p}`}>
         Outros tópicos são também esperados, mas não limitados a:
       </p>
-      <ul className={styles.articleList}>
-        <li className={styles.ulLi}>Internet das Coisas (IoT);</li>
-        <li className={styles.ulLi}>Segurança da Informação;</li>
-        <li className={styles.ulLi}>Computação em Nuvem;</li>
-        <li className={styles.ulLi}>Redes de Computadores;</li>
-        <li className={styles.ulLi}>Sistemas Distribuídos;</li>
-        <li className={styles.ulLi}>Realidade Virtual e Aumentada;</li>
-        <li className={styles.ulLi}>Computação Gráfica;</li>
-        <li className={styles.ulLi}>Interação Humano-Computador;</li>
-        <li className={styles.ulLi}>Inteligência Artificial;</li>
-        <li className={styles.ulLi}>Aprendizado de Máquina;</li>
-        <li className={styles.ulLi}>Processamento de Linguagem Natural;</li>
-        <li className={styles.ulLi}>Computação Móvel;</li>
-        <li className={styles.ulLi}>Robótica;</li>
-        <li className={styles.ulLi}>Sistemas Inteligentes;</li>
-        <li className={styles.ulLi}>Blockchain;</li>
-        <li className={styles.ulLi}>Ética em Tecnologia;</li>
-        <li className={styles.ulLi}>Inovação Tecnológica;</li>
-        <li className={styles.ulLi}>Educação em Computação;</li>
-        <li className={styles.ulLi}>Informática na Educação na Web 3.0;</li>
-        <li className={styles.ulLi}>
-          Aplicações de Inteligência Artificial na Saúde, Agricultura, Meio
-          Ambiente, entre outros.
-        </li>
-      </ul>
+      <ArticleList items={interestTopics} />
     </>
   );
 }
+
+const subInstructions = [
+  <>
+    É sugerido que os trabalhos descrevam claramente a metodologia
+    científica empregada e apresentem uma análise dos resultados,
+    destacando as contribuições de pesquisa em Computação e para a área de
+    aplicação. Os trabalhos devem ser posicionados em relação a outras
+    obras na área;
+  </>,
+  <>
+    Todas as produções podem ser submetidas em Português ou Inglês, em
+    formato PDF e seguindo o{" "}
+    <a
+      className={styles.link}
+      target="_blank"
+      href="https://docs.google.com/document/d/1hbuUeGbLZSlfIjUT8niSL4XUU3dnIyubB6RZgG39ozI/edit?usp=sharing"
+    >
+      template
+    </a>{" "}
+    para publicação conforme as regras da ABNT. As submissões devem ser
+    feitas por meio do{" "}
+    <a
+      className={styles.link}
+      target="_blank"
+      href="https://docs.google.com/forms/d/e/1FAIpQLSeIeyduMf1UCN6TeZpARKE3EBx7b3kZgCz4-ay0_C8TuYnbZA/viewform"
+    >
+      formulário
+    </a>
+    . Submissões em inglês são recomendadas. Os short papers devem conter
+    apenas um abstract, mesmo que escrito em português;
+  </>,
+  <>
+    Os trabalhos submetidos não devem ter sido publicados nem estar em
+    processo de avaliação ou edição para publicação em outro lugar;
+  </>,
+  <>
+    Na versão de submissão do trabalho, o cabeçalho não deverá conter
+    qualquer tipo de identificação dos autores. Toda e qualquer referência
+    que identifique a proveniência do trabalho deve ser removida, como
+    nomes de projetos, instituições, ferramentas e citações que
+    identifiquem os autores. Trabalhos que possuírem identificação serão
+    rejeitados nesta etapa. Caso aceitos, os autores deverão incluir na
+    versão final seus dados, como nomes, filiações, e-mails, bem como
+    demais informações necessárias ao artigo, incluindo citações a outros
+    trabalhos dos autores;
+  </>,
+  <>
+    A seleção de trabalhos será realizada por membros do Comitê de
+    Programa do VI SERCOMP. O processo de revisão será conduzido de forma
+    duplamente anônima (double-blind review) por pelo menos dois
+    revisores;
+  </>,
+  <>
+    Os seguintes critérios serão considerados na avaliação: relevância ao
+    escopo, qualidade técnica, clareza e pertinência.
+  </>
+]
 
 function SubmissionInstructions() {
   return (
@@ -78,98 +124,33 @@ function SubmissionInstructions() {
       <p className={`paragrafo ${styles.p}`}>
         Alguns aspectos adicionais devem ser observados:
       </p>
-      <ul className={styles.articleList}>
-        <li className={styles.ulLi}>
-          É sugerido que os trabalhos descrevam claramente a metodologia
-          científica empregada e apresentem uma análise dos resultados,
-          destacando as contribuições de pesquisa em Computação e para a área de
-          aplicação. Os trabalhos devem ser posicionados em relação a outras
-          obras na área;
-        </li>
-        <li className={styles.ulLi}>
-          Todas as produções podem ser submetidas em Português ou Inglês, em
-          formato PDF e seguindo o{" "}
-          <a
-            className={styles.articleLink}
-            target="_blank"
-            href="https://docs.google.com/document/d/1hbuUeGbLZSlfIjUT8niSL4XUU3dnIyubB6RZgG39ozI/edit?usp=sharing"
-          >
-            template
-          </a>{" "}
-          para publicação conforme as regras da ABNT. As submissões devem ser
-          feitas por meio do{" "}
-          <a
-            className={styles.articleLink}
-            target="_blank"
-            href="https://docs.google.com/forms/d/e/1FAIpQLSeIeyduMf1UCN6TeZpARKE3EBx7b3kZgCz4-ay0_C8TuYnbZA/viewform"
-          >
-            formulário
-          </a>
-          . Submissões em inglês são recomendadas. Os short papers devem conter
-          apenas um abstract, mesmo que escrito em português;
-        </li>
-        <li className={styles.ulLi}>
-          Os trabalhos submetidos não devem ter sido publicados nem estar em
-          processo de avaliação ou edição para publicação em outro lugar;
-        </li>
-        <li className={styles.ulLi}>
-          Na versão de submissão do trabalho, o cabeçalho não deverá conter
-          qualquer tipo de identificação dos autores. Toda e qualquer referência
-          que identifique a proveniência do trabalho deve ser removida, como
-          nomes de projetos, instituições, ferramentas e citações que
-          identifiquem os autores. Trabalhos que possuírem identificação serão
-          rejeitados nesta etapa. Caso aceitos, os autores deverão incluir na
-          versão final seus dados, como nomes, filiações, e-mails, bem como
-          demais informações necessárias ao artigo, incluindo citações a outros
-          trabalhos dos autores;
-        </li>
-        <li className={styles.ulLi}>
-          A seleção de trabalhos será realizada por membros do Comitê de
-          Programa do VI SERCOMP. O processo de revisão será conduzido de forma
-          duplamente anônima (double-blind review) por pelo menos dois
-          revisores;
-        </li>
-        <li className={styles.ulLi}>
-          Os seguintes critérios serão considerados na avaliação: relevância ao
-          escopo, qualidade técnica, clareza e pertinência.
-        </li>
-      </ul>
+      <ArticleList items={subInstructions} />
     </>
   );
 }
 
-function Publication() {
-  return (
-    <>
-      <ul className={styles.articleList}>
-        <li className={styles.ulLi}>
-          Para que os short papers aceitos sejam publicados nos anais do evento,
-          será necessário passar por uma segunda etapa, na qual serão
-          transformados em artigos completos (full papers) com 7 a 10 páginas. A
-          publicação está condicionada à inscrição de pelo menos um dos autores
-          no VI SERCOMP, assim como à apresentação do trabalho durante o evento;
-        </li>
-        <li className={styles.ulLi}>
-          As datas para esta segunda etapa serão divulgadas posteriormente, e os
-          autores serão informados por e-mail com instruções e confirmação.
-        </li>
-      </ul>
-    </>
-  );
-}
+const publication = [
+  <>
+    Para que os short papers aceitos sejam publicados nos anais do evento,
+    será necessário passar por uma segunda etapa, na qual serão
+    transformados em artigos completos (full papers) com 7 a 10 páginas. A
+    publicação está condicionada à inscrição de pelo menos um dos autores
+    no VI SERCOMP, assim como à apresentação do trabalho durante o evento;
+  </>,
+  <>
+    As datas para esta segunda etapa serão divulgadas posteriormente, e os
+    autores serão informados por e-mail com instruções e confirmação.
+  </>
+]
 
-function Presentation() {
-  return (
-    <>
-      <p className={`paragrafo ${styles.p}`}>
-        Cada trabalho aceito deve ter pelo menos um autor inscrito para
-        apresentá-lo durante uma sessão técnica. Cada apresentação terá a
-        duração de 10 minutos e será realizada oralmente em uma sessão
-        coordenada, cujos detalhes serão divulgados no início do evento.
-      </p>
-    </>
-  );
-}
+const presentation = [
+  <>
+    Cada trabalho aceito deve ter pelo menos um autor inscrito para
+    apresentá-lo durante uma sessão técnica. Cada apresentação terá a
+    duração de 10 minutos e será realizada oralmente em uma sessão
+    coordenada, cujos detalhes serão divulgados no início do evento.
+  </>
+]
 
 function SectionButton() {
   return (
@@ -191,7 +172,7 @@ export default function Articles() {
       <h1 className={"titulo-principal"}>
         Conheça mais sobre a <strong>Submissão de Artigos</strong>
       </h1>
-      <Accordion title={"Datas Importantes"} content={<ImportantsDate />} />
+      <Accordion title={"Datas Importantes"} content={<ArticleList items={importantDates} />} />
       <Accordion
         title={"Tópicos de Interesse"}
         content={<TopicsOfInterest />}
@@ -200,8 +181,9 @@ export default function Articles() {
         title={"Instruções para Submissão"}
         content={<SubmissionInstructions />}
       />
-      <Accordion title={"Publicação"} content={<Publication />} />
-      <Accordion title={"Apresentação"} content={<Presentation />} />
+      <Accordion title={"Publicação"} content={<ArticleList items={publication} />} />
+      <Accordion title={"Apresentação"} content={<ArticleList items={presentation}/>} />
+
       <SectionButton />
 
       {/* 
