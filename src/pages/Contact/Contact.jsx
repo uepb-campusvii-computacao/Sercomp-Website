@@ -1,13 +1,13 @@
 import './Contact.css'
 import contato from '../../assets/images/contato.png'
 
-export default function Contact(){
+export default function Contact() {
     return (
         <section >
             <div className="contact-container">
                 <aside className="contact-aside">
                     <div className="aside-image">
-                        <img src={contato} alt="contato"/>
+                        <img src={contato} alt="contato" />
                     </div>
                     <h2>Entre em contato conosco</h2>
                     <p>
@@ -35,14 +35,14 @@ export default function Contact(){
 
                 </aside>
 
-                <form action="https://formspree.io/f/mlekppyd"  method="POST" className="contact-form">
+                <form action="https://formspree.io/f/mlekppyd" method="POST" className="contact-form">
                     <div className="form-name">
-                        <input type="text" name="Primeiro nome" placeholder="Primeiro Nome" required/>
-                        <input type="text" name="Sobrenome" placeholder="Sobrenome" required/>
+                        <input type="text" name="Primeiro nome" placeholder="Primeiro Nome" required />
+                        <input type="text" name="Sobrenome" placeholder="Sobrenome" required />
                     </div>
-                    <input type="email" name="Email" placeholder="Digite seu email" required/>
+                    <input type="email" name="Email" placeholder="Digite seu email" required />
 
-                    <textarea name="Message" rows="7" required></textarea>
+                    <textarea name="Message" placeholder="Inserir texto" rows="7" required></textarea>
                     <button type="submit" className="btn btn-primary"> Enviar Mensagem</button>
                 </form>
             </div>
