@@ -109,7 +109,7 @@ function TabsContent({ events }) {
   return (
     <div className={styles.tabsContent}>
       <div className={styles.timelineMain}>
-        <div className={styles.timelineContainer}>
+        <div className={`${styles.list} ${styles.timelineContainer}`}>
           <ul>
             {events.map((event, index) => (
               <EventItem key={index} {...event} />

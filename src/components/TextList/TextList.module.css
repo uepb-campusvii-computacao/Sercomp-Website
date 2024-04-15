@@ -1,0 +1,42 @@
+  .p,
+  .ulLi,
+  .olLi {
+    line-height: 1.8;
+  }
+  
+  .articleList {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 0.5rem;
+  }
+  
+  .articleList {
+    list-style: none; /* Remove os marcadores padrão */
+    text-align: justify;
+    list-style-position: inside;
+  }
+  
+  .articleList li {
+    position: relative;
+    margin-left: 1.5em;
+  }
+  
+  .articleList li::before {
+    content: '•';
+    font-weight: bold;
+    color: yellow;
+    position: absolute;
+    left: -1.5em;
+  }
+  
+  .link{
+    font-weight: bold;
+    color: yellow;
+    text-decoration: underline;
+  }
+  
+  .articleListRisc {
+    text-decoration: line-through;
+  }

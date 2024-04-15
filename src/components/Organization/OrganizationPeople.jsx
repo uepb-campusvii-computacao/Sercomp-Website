@@ -6,10 +6,10 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import styles from './Organization.module.css';
+import styles from './OrganizationPeople.module.css';
 import PropTypes from "prop-types";
 
-export default function Organization({title, members}) {
+export default function OrganizationPeople({title, members}) {
     return (
         <section className={`${styles.orgsContainer} container mySwiper`}>
             <h2>{title}</h2>
@@ -37,6 +37,10 @@ export default function Organization({title, members}) {
                             <div className={styles.avatar}>
                                 <img src={member.image} alt={member.alt}/>
                             </div>
+                            <div className={styles.orgInfo}>
+                                <h5>{member.nome}</h5>
+                                <small>{member.cargo}</small>
+                            </div>
                         </article>
                     </SwiperSlide>
                 ))}
@@ -45,12 +49,14 @@ export default function Organization({title, members}) {
     );
 }
 
-Organization.propTypes = {
+OrganizationPeople.propTypes = {
     title: PropTypes.string.isRequired,
     members: PropTypes.arrayOf(
         PropTypes.shape({
             image: PropTypes.string.isRequired,
-            alt: PropTypes.string.isRequired
+            alt: PropTypes.string.isRequired,
+            nome: PropTypes.string.isRequired,
+            cargo: PropTypes.string,
         })
     )
 }

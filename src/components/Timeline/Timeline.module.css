@@ -167,12 +167,12 @@
     border-radius: 100%;
 }
 
-ul li p {
+.list ul li p {
     font-size: 15px;
     margin: 7px 0;
 }
 
-ul li .date {
+.list ul li .date {
     position: absolute;
     top: -36px;
     width: 135px;
