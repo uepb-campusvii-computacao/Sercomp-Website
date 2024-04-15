@@ -1,8 +1,9 @@
 // import Partners from '../../components/Partners/Partners';
-import Countdown from '../../components/Countdown/Countdown'
-import logo from '../../assets/images/logo_header_home.webp'
+import logo from '../../assets/images/logo_header_home.webp';
+import Countdown from '../../components/Countdown/Countdown';
 // import FAQ from '../../components/FAQ/FAQ';
-// import Organization from '../../components/Organization/Organization';
+import Organization from '../../components/Organization/Organization';
+import orgMembersData from '../../data/orgData2024.js';
 
 function Home() {
   
@@ -26,13 +27,13 @@ function Home() {
         </div>
       </main>
 
-      {/*<Partners />*/}
-
       <Countdown />
 
+      {/*<Partners />*/}
+      
       {/*<FAQ />*/}
 
-      {/*<Organization />*/}
+      <Organization title={"ORGANIZAÇÃO DO VI SERCOMP"}  members={orgMembersData}/>
     </>
   );
 }

@@ -10,9 +10,13 @@ import Hackthon from "./pages/Hackthon/Hackthon";
 import Timeline from "./pages/Timeline/Timeline";
 import Privacy from "./pages/Privacy/Privacy";
 import Inscricoes from "./pages/Inscricoes/Inscricoes";
-import Activities from "./pages/Activities/Activities";
+import Chamadas from "./pages/Chamadas/Chamadas";
 import Error404 from "./pages/Error404/Error404";
 import Edition2023 from "./pages/PreviousEditions/2023";
+import Ideathon from "./pages/Ideathon/Ideathon";
+import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
+import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
+import ConfirmedActivities from "./pages/ConfirmedActivities/ConfirmedActivities";
 
 function App() {
   return (
@@ -28,7 +32,11 @@ function App() {
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/inscricao" element={<Inscricoes />} />
-          <Route exact path="/atividades" element={<Activities />} />
+          <Route exact path="/chamadas" element={<Chamadas />} />
+          <Route exact path="/ideathon" element={<Ideathon />} />
+          <Route exact path="/technology-fair" element={<TechnologyFair />} />
+          <Route exact path="/confirmed-activities" element={<ConfirmedActivities />} />
+          <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />
           <Route exact path="/2023" element={<Edition2023 />} />
           <Route path="*" element={<Error404 />} />
         </Routes>

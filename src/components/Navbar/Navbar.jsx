@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.css";
 import { linksData } from "../../data/LinksData";
-import logotipo from "../../assets/images/logotipo_vvisercomp.png"
+import logotipo from "../../assets/images/logotipo_vvisercomp.png";
 
 export default function Navbar() {
   const navRef = useRef(null);
@@ -35,12 +35,21 @@ export default function Navbar() {
         <a href="/">
           <img src={logotipo} alt="vi sercomp" />
         </a>
-        <ul className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${styles.navMenu}`}>
+        <ul
+          className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${
+            styles.navMenu
+          }`}
+        >
           {linksData.map((link, index) => (
-            <li key={index}>
+            <li style={{position: 'relative'}} key={index}>
               <a className={styles.link} href={link.href}>
                 {link.text}
               </a>
+              <div className={styles.menuSuspenso} style={{padding: link.sublinks ? 'auto 16px' : '0'}}>
+                {link.sublinks && link.sublinks.map((sublink, index) => (   
+                  <a key={index} href={sublink.href}>{sublink.text}</a>
+                ))}
+              </div>
             </li>
           ))}
         </ul>

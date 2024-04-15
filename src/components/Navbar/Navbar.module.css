@@ -22,6 +22,7 @@
   justify-content: space-between;
   gap: 32px;
   align-items: center;
+  text-align: center;
 }
 
 nav button {
@@ -42,11 +43,51 @@ nav button {
 
 .navMenu a {
   font-size: 0.9rem;
+  padding-bottom: 16px;
   transition: var(--transition);
 }
 
-.navMenu a:hover {
+.navMenu a:hover{
   color: var(--color-bg2);
+}
+
+.menuSuspenso{
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--color-white);
+  border-radius: 8px;
+  width: 12ch;
+  background-color: var(--color-primary);
+  display: none;
+  text-align: center;
+  flex-direction: column;
+  line-height: 16px;
+}
+
+.menuSuspenso a{
+  width: 100%;
+  padding: 12px;
+  border-bottom: solid var(--color-white) 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menuSuspenso a:last-child{
+  border-bottom: none;
+}
+
+
+.navMenu a:hover + .menuSuspenso{
+  display: flex;
+}
+
+.menuSuspenso:hover {
+  display: flex;
 }
 
 @media screen and (max-width: 1024px) {
@@ -60,6 +101,14 @@ nav button {
 
   .navContainer a img{
     height: 48px;
+  }
+
+  .navMenu a:hover + .menuSuspenso{
+    display: none;
+  }
+
+  .navMenu a {
+    padding-bottom: 0;
   }
 
   nav button.close-menu-btn {

@@ -1,15 +1,15 @@
-import vanderleiaImage from "../assets/images/organizacao/vanderleia.png";
-import franciscoImage from "../assets/images/organizacao/francisco.png";
-import luizImage from "../assets/images/organizacao/luiz.png";
+import vanderleiaImage from "../assets/images/organizacao/2023/vanderleia.png";
+import franciscoImage from "../assets/images/organizacao/2023/francisco.png";
+import luizImage from "../assets/images/organizacao/2023/luiz.png";
 import jucelioImage from "../assets/images/professores/jucelio.png";
-import arthurImage from "../assets/images/organizacao/arthur.png";
-import francileudoImage from "../assets/images/organizacao/francileudo.png";
-import yohannaImage from "../assets/images/organizacao/yohanna.png";
-import hallanImage from "../assets/images/organizacao/hallan.png";
-import rebecaImage from "../assets/images/organizacao/rebeca.png";
-import emersonImage from "../assets/images/organizacao/emerson.png";
-import daniloImage from "../assets/images/organizacao/danilo.png";
-import kemyImage from "../assets/images/organizacao/kemy.png";
+import arthurImage from "../assets/images/organizacao/2023/arthur.png";
+import francileudoImage from "../assets/images/organizacao/2023/francileudo.png";
+import yohannaImage from "../assets/images/organizacao/2023/yohanna.png";
+import hallanImage from "../assets/images/organizacao/2023/hallan.png";
+import rebecaImage from "../assets/images/organizacao/2023/rebeca.png";
+import emersonImage from "../assets/images/organizacao/2023/emerson.png";
+import daniloImage from "../assets/images/organizacao/2023/danilo.png";
+import kemyImage from "../assets/images/organizacao/2023/kemy.png";
 
 const organizationData = [
   {

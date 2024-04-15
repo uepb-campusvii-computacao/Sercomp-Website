@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: 40% 60%;
     gap: 4rem;
-    height: 30rem;
+    height: 40rem;
     margin: 8rem 3rem;
     border-radius: 1rem;
 }
@@ -17,8 +17,7 @@
     padding: 2rem;
     border-radius: 1rem;
     position: relative;
-    margin-top: 40%;
-    transform: translateY(-50%);
+
     text-align: left;
 }
 
@@ -56,7 +55,7 @@
     border-radius: 50%;
     font-size: 0.9rem;
     transition: var(--transition);
-    
+
 }
 
 .contact-socials a:hover {
@@ -81,7 +80,7 @@
     width: 50%;
 }
 
-input, 
+input,
 textarea {
     width: 100%;
     padding: 1rem;
@@ -119,7 +118,7 @@ textarea {
         align-items: center;
         justify-items: center;
         margin-right: 0;
-        width: 100%;        
+        width: 100%;
     }
 
 
