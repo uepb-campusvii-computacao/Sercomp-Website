@@ -146,7 +146,7 @@ img {
   background-position: left bottom;
 }
 
-.swiper-slide:not(.swiper-slide-active) {
+.confirmed-activities .swiper-slide:not(.swiper-slide-active) {
   filter: blur(2px);
 }
 
