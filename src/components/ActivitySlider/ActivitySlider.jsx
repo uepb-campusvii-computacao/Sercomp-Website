@@ -24,7 +24,7 @@ export default function ActivitySlider({ activities }) {
   };
 
   return (
-    <div className={styles.activitySliderContainer}>
+    <div className={`${styles.activitySliderContainer} confirmed-activities`}>
       <Swiper
         ref={swiperRef}
         className={`mySwiper ${styles.activitySliderSwiper}`}
