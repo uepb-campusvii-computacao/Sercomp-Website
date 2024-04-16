@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-
+import PropTypes from "prop-types";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -70,3 +70,14 @@ export default function ActivitySlider({ activities }) {
     </div>
   );
 }
+
+ActivitySlider.propTypes = {
+  activities: PropTypes.arrayOf(
+    PropTypes.shape({
+      imagem_ministrante: PropTypes.string.isRequired,
+      nome_ministrante: PropTypes.string.isRequired,
+      titulo_atividade_confirmada: PropTypes.string.isRequired,
+      descricao_atividade_confirmada: PropTypes.string.isRequired,
+    })
+  ).isRequired,
+};

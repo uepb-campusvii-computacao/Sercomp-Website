@@ -146,6 +146,10 @@ img {
   background-position: left bottom;
 }
 
+.swiper-slide:not(.swiper-slide-active) {
+  filter: blur(2px);
+}
+
 .btn-primary {
   background: var(--color-danger);
   background-size: 200% 100%;
@@ -201,8 +205,7 @@ img {
 
   .container {
     width: var(--container-width-md);
-  }
-
+  }  
 
   .titulo-base,
   .titulo-principal {
