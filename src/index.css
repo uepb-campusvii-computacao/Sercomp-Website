@@ -76,6 +76,7 @@ body {
   color: var(--color-white);
   background: var(--color-bg);
   background-image: url("./assets/images/bg-stars.svg");
+  overflow-x: hidden;
 }
 
 .container {

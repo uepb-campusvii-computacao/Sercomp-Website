@@ -1,0 +1,35 @@
+.activitySliderContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+}
+
+.activitySliderNextButton,
+.activitySliderPrevButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-size: 64px;
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.activitySliderNextButton {
+  right: 32px;
+}
+.activitySliderPrevButton {
+  left: 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .activitySliderNextButton {
+        right: 12px;
+      }
+      .activitySliderPrevButton {
+        left: -32px;
+      }
+}

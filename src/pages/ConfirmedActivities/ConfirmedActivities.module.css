@@ -1,0 +1,13 @@
+.confirmedActivitiesContainer{
+    padding-top: 7rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.confirmedActivitiesContainer h1{
+    font-weight: 700;
+    font-size: 52px;
+    text-align: center;
+}
