@@ -8,9 +8,9 @@ export default function ConfirmedActivities() {
 
   return (
     <section className={styles.confirmedActivitiesContainer}>
-      <h1>Workshop</h1>
+      <h1 className="titulo-base">Workshop</h1>
       <ActivitySlider activities={data1}/>
-      <h1>Palestras</h1>
+      <h1 className="titulo-base">Palestras</h1>
       <ActivitySlider activities={data2}/>
     </section>
   );
