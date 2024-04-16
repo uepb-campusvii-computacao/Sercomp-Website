@@ -2,13 +2,25 @@ import Accordion from "../../components/Accordion/Accordion.jsx";
 // import Comissao from "../../components/Comissao/Comissao";
 import styles from "./Articles.module.css";
 
-import ArticleList from '../../components/TextList/TextList.jsx'
+import ArticleList from '../../components/TextList/TextList.jsx';
+
+function dateIsValid(date) {
+  return new Date(date) < new Date()
+}
 
 const importantDates = [
-  <><strong>Prazo Inicial de submissão de short paper:</strong> 07/04/2024;</>,
-  <><strong>Prazo final de submissão de short paper:</strong> 06/05/2024;</>,
-  <><strong>Notificação dos autores dos short paper aprovados:</strong> 15/05/2024;</>,
-  <><strong>Apresentação dos short paper:</strong> 22/05/2024.</>
+    <div key={0} style={{textDecoration: dateIsValid("04/07/2024") ? 'line-through' : 'none'}}>
+      <strong>Prazo Inicial de submissão de short paper:</strong> 07/04/2024;
+    </div>,
+    <div key={1} style={{textDecoration: dateIsValid("05/06/2024") ? 'line-through' : 'none'}}>
+      <strong>Prazo final de submissão de short paper:</strong> 06/05/2024;
+    </div>,
+    <div key={2} style={{textDecoration: dateIsValid("05/15/2024") ? 'line-through' : 'none'}}>
+      <strong>Notificação dos autores dos short paper aprovados:</strong> 15/05/2024;
+    </div>,
+    <div key={3} style={{textDecoration: dateIsValid("05/22/2024") ? 'line-through' : 'none'}}>
+      <strong>Apresentação dos short paper:</strong> 22/05/2024.
+    </div>
 ]
 
 const interestTopics = [
