@@ -21,62 +21,96 @@
     transform: translateX(-50%);
 }
 
-.centerText {
-    display: flex;
-    justify-content: center;
-    word-wrap: break-word;
-  }
-
-.pagList-whats {
-    text-align: center;
-    font-size: 1rem;
-}
-
-.pagList {
-    margin-bottom: 0.5rem;
-}
-
-.pagList li {
-    list-style: disc;
-    text-align: justify;
-    display: flex;
-}
-
-.destaqueText {
-    margin-right: 0.5rem;
-    text-decoration: underline;
-    color: var(--color-warning);
-}
-
-.pagButton {
-    text-align: right;
-}
-
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
-}
-
-.pagLink {
-    text-decoration: underline;
-    color: var(--color-danger);
-}
-
 .tituloPrincipal {
     font-size: 2rem;
     text-align: center;
 }
 
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
+.formContainer {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+    background-color: var(--color-bg2);
 }
 
-.politicaList {
-    margin-bottom: 0.5rem;
+.inputContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.politicaList li {
-    list-style: disc;
-    text-align: justify;
+.inputGroup {
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem 0;
+}
+
+input {
+    color: var(--color-black);
+    caret-color: var(--color-black);
+    border-radius: 9999px;
+    background-color: var(--color-white);
+}
+
+.selectContainer {
+    width: 100%;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 1rem;
+    background-color: var(--color-bg2);
+}
+
+.selectGroup {
+    width: 100%;
+}
+
+select {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 8px;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.8rem 4rem;
+    border-radius: 9999px;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: var(--color-light);
+}
+
+@media (max-width: 640px) {
+    .formContainer {
+        padding: 2rem 0;
+    }
+
+    .inputContainer {
+        flex-direction: column;
+    }
+
+    .inputGroup {
+        padding: 0.5rem;
+    }
+
+    .selectContainer {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem 0;
+    }
 }
