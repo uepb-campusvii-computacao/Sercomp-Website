@@ -1,0 +1,102 @@
+.mesaContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.cronContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cron {
+  margin-top: 1rem;
+}
+
+.cronDetails p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.cronMember {
+  background: var(--color-bg2);
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cronMember:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.cronDetailsTitle {
+  padding-bottom: 30px;
+}
+
+.cronMemberImage img {
+  width: 15rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.mesaContainer p {
+  max-width: 15rem;
+}
+
+.cardWithoutText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardWithoutText .cronDetailsTitle {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.cronMemberImage div {
+  text-align: center;
+}
+
+/*MEDIA QUERIES PHONE*/
+
+@media screen and (max-width: 690px) {
+  .cronContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .cronDetails {
+    display: block;
+  }
+
+  .cronMember p {
+    margin-bottom: 1.5rem;
+  }
+
+  .cronMemberImage {
+    flex-direction: column;
+  }
+
+  .cronMemberImage img {
+    width: 350px;
+  }
+  
+  .mesaContainer p {
+    max-width: 350px;
+  }
+
+}
