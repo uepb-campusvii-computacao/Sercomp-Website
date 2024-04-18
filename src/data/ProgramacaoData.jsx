@@ -1,7 +1,14 @@
 const programacao = [
     {
-        date: <>21/<small>MAIO</small></>,
+        date: <>20/<small>MAIO</small></>,
         day: '1º Dia',
+        events: [
+            { title: 'Noite Nerd', time: '18:30 - 21:30', timeStr: 'NOITE' }
+            ,]
+    },
+    {
+        date: <>21/<small>MAIO</small></>,
+        day: '2º Dia',
         events: [
             { title: 'CREDENCIAMENTO', time: '07:00 - 08:00', timeStr: 'MANHÃ', location: 'Hall de Entrada da UEPB' },
             { title: 'CERIMONIAL DE ABERTURA', time: '08:00 - 08:30', timeStr: 'MANHÃ', location: "Auditório Celso Furtado" },
@@ -23,7 +30,7 @@ const programacao = [
     },
     {
         date: <>22/<small>MAIO</small></>,
-        day: '2º Dia',
+        day: '3º Dia',
         events: [
             { title: 'CREDENCIAMENTO (Participantes da Feira Tecnológica e do Hackathon)', time: '07:00 - 08:00', timeStr: 'MANHÃ', location: 'Hall de Entrada da UEPB' },
             {
@@ -42,7 +49,7 @@ const programacao = [
     },
     {
         date: <>23/<small>MAIO</small></>,
-        day: '3º Dia',
+        day: '4º Dia',
         events: [
             {
                 title: 'Painel II - Deserto Digital: Estratégias das Universidades para um Mundo mais Conectado',
@@ -57,11 +64,10 @@ const programacao = [
     },
     {
         date: <>24/<small>MAIO</small></>,
-        day: '4º Dia',
+        day: '5º Dia',
         events: [
             { title: 'Assembleia, premiação (artigos, hackathon, pitchday) e encerramento', time: '08:00 - 11:30', timeStr: 'MANHÃ' },
-            { title: 'Intervalo', time: '11:30 - 18:30', timeStr: 'TARDE' },
-            { title: 'Noite Nerd', time: '18:30 - 21:30', timeStr: 'NOITE' }
+            { title: 'Intervalo', time: '11:30 - 18:30', timeStr: 'TARDE' }
         ]
     }
 ];
