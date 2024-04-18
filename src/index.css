@@ -76,7 +76,6 @@ body {
   color: var(--color-white);
   background: var(--color-bg);
   background-image: url("./assets/images/bg-stars.svg");
-  overflow-x: hidden;
 }
 
 .container {
@@ -146,19 +145,6 @@ img {
   background-position: left bottom;
 }
 
-.confirmed-activities .swiper-slide:not(.swiper-slide-active) {
-  filter: blur(2px);
-}
-
-.confirmed-activities .swiper-pagination {
-  background-color: #3f3f3f;
-  width: 50px;
-  border-radius: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
 .btn-primary {
   background: var(--color-danger);
   background-size: 200% 100%;
@@ -214,7 +200,8 @@ img {
 
   .container {
     width: var(--container-width-md);
-  }  
+  }
+
 
   .titulo-base,
   .titulo-principal {

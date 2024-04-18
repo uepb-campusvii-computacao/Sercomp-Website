@@ -418,6 +418,48 @@
   text-align: center;
 }
 
+/* MEDIA QUERIES TABLET*/
+
+@media screen and (max-width: 1024px) {
+
+  .cronContainer {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .cronDetails {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cronMember {
+    padding: 1rem;
+    flex-direction: column;
+  }
+
+  .cronMemberImage {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .cronDetails p {
+    margin-top: 1rem;
+  }
+
+  .cronMemberImage img {
+    margin: 0;
+  }
+
+  .cronMemberImage p{
+    padding-right: 0;
+  }
+}
+
 /*MEDIA QUERIES PHONE*/
 
 @media screen and (max-width: 600px) {

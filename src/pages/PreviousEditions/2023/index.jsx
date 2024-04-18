@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import logo from "../../../assets/images/v-sercomp.png";
 import OrganizationPeople from "../../../components/Organization/OrganizationPeople";
 import styles from "./2023.module.css";
@@ -5,6 +6,8 @@ import Palestrante from "../../../components/Palestrante/Palestrante";
 
 import cleisson from "../../../assets/images/participacoes/cleisson.png";
 import karliane from "../../../assets/images/participacoes/karliane.png";
+import filipe from "../../../assets/images/participacoes/filipe.png";
+import luanderson from "../../../assets/images/participacoes/luanderson.png";
 import matheus from "../../../assets/images/participacoes/matheus.png";
 import marcio from "../../../assets/images/participacoes/marcio.png";
 import klayton from "../../../assets/images/participacoes/klayton.png";
@@ -16,6 +19,8 @@ import daniel from "../../../assets/images/participacoes/daniel.png";
 import jairo from "../../../assets/images/participacoes/jairo.png";
 
 import rosangela from "../../../assets/images/professores/rosangela.png";
+import janderson from "../../../assets/images/professores/janderson.png";
+import jannayna from "../../../assets/images/professores/jannayna.png";
 import demetrio from "../../../assets/images/professores/demetrio.png";
 import vinicius from "../../../assets/images/professores/vinicius.png";
 import jucelio from "../../../assets/images/professores/jucelio.png";
@@ -28,8 +33,6 @@ import shedule from "./schedule.jsx";
 import { comissaoArtigosData } from "./commissions.js";
 import Comissao from "../../../components/Comissao/Comissao";
 import orgMembersData from '../../../data/orgData2023.js';
-import { mesaData } from './mesaData.js'
-import MesaRedonda from "../../../components/MesaRedonda/MesaRedonda.jsx";
 
 function Edition2023() {
   return (
@@ -72,10 +75,38 @@ function Edition2023() {
       </section>
       <section>
         <h2 className={styles.tituloBase}>Mesa</h2>
-        <MesaRedonda 
-          titulo="ChapGPT: possibilidades e desafios no cenário acadêmico e profissional em Computação"
-          membros={mesaData}
-        />
+        <section className={`container ${styles.cronContainer}`}>
+          <article className={`${styles.cronMember} ${styles.cardWithoutText}`}>
+            <div className={`${styles.cronDetails}`}>
+              <p className={`${styles.cronDetailsTitle}`}>
+                Mesa Redonda "ChapGPT: possibilidades e desafios no cenário
+                acadêmico e profissional em Computação"
+              </p>
+              <div className={styles.mesaContainer}>
+                <div className={`${styles.cronMemberImage}`}>
+                  <img src={rosangela} alt="Rosângela" />
+                  <p>Rosângela Araújo de Medeiros</p>
+                </div>
+                <div className={`${styles.cronMemberImage}`}>
+                  <img src={janderson} alt="Janderson" />
+                  <p>Janderson Jason Barbosa Aguiar</p>
+                </div>
+                <div className={`${styles.cronMemberImage}`}>
+                  <img src={jannayna} alt="Jannayna" />
+                  <p>Jannayna Domingues Barros Filgueira</p>
+                </div>
+                <div className={`${styles.cronMemberImage}`}>
+                  <img src={filipe} alt="Filipe" />
+                  <p>Filipe Lucena Medeiros de Andrade</p>
+                </div>
+                <div className={`${styles.cronMemberImage}`}>
+                  <img src={luanderson} alt="Luanderson" />
+                  <p>Luanderson Bruno Martins Silva</p>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
       </section>
 
       <section className={`container ${styles.cronContainer}`}>
@@ -197,7 +228,7 @@ function Edition2023() {
             <div className={`${styles.cronMemberImage}`}>
               <img src={harllem} alt="Harllem" />
               <img src={samuel} alt="Samuel" />
-              <p>MC04: Introdução a API`&apos;`s Rest em Java com Spring Boot</p>
+              <p>MC04: Introdução a API's Rest em Java com Spring Boot</p>
             </div>
           </div>
           <div className={`${styles.cronMemberInfo}`}>
@@ -334,7 +365,7 @@ function Edition2023() {
           </div>
 
           <div className={`${styles.cronMemberInfo}`}>
-            <h4>Wlad`&apos;`myr Almeida da Silva</h4>
+            <h4>Wlad'myr Almeida da Silva</h4>
             <p>
               Objetivo: Adquirir habilidades no desenvolvimento de aplicativos
               utilizando o framework Flutter e aplicar esse conhecimento para
