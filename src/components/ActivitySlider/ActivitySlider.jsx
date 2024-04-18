@@ -5,8 +5,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { useRef } from "react";
-import ActivityCard from "../ActivityCard/ActivityCard";
 import styles from "./ActivitySlider.module.css";
+import ActivityCardMultipleImage from "../ActivityCard/ActivityCardMultipleImage";
 
 export default function ActivitySlider({ activities }) {
   const swiperRef = useRef(null);
@@ -45,9 +45,8 @@ export default function ActivitySlider({ activities }) {
       >
         {activities.map((activity, index) => (
           <SwiperSlide key={index}>
-            <ActivityCard
-              image_url={activity.imagem_ministrante}
-              name={activity.nome_ministrante}
+            <ActivityCardMultipleImage
+              ministrantes={activity.ministrantes}
               title={activity.titulo_atividade_confirmada}
               description={activity.descricao_atividade_confirmada}
             />
@@ -74,8 +73,12 @@ export default function ActivitySlider({ activities }) {
 ActivitySlider.propTypes = {
   activities: PropTypes.arrayOf(
     PropTypes.shape({
-      imagem_ministrante: PropTypes.string.isRequired,
-      nome_ministrante: PropTypes.string.isRequired,
+      ministrantes: PropTypes.arrayOf(
+        PropTypes.shape({
+          imagem_ministrante: PropTypes.string.isRequired,
+          nome_ministrante: PropTypes.string.isRequired,
+        })
+      ).isRequired,
       titulo_atividade_confirmada: PropTypes.string.isRequired,
       descricao_atividade_confirmada: PropTypes.string.isRequired,
     })

@@ -1,110 +1,157 @@
 .activityCardContainer {
-    border-radius: 16px;
-    background-color: var(--color-bg2);
-    display: flex;
-    flex-direction: row;
-    padding: 24px;
+  border-radius: 16px;
+  background-color: var(--color-bg2);
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
 }
 
-.link{
-    font-weight: bold;
-    color: yellow;
-    text-decoration: underline;
-}  
+.ministrantes {
+  display: flex;
+  flex-direction: row;
+  margin: 1.1rem;
+  text-align: center;
+}
+
+.ministrante {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background-color: #1f274096;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.swiperImages {
+  width: 350px;
+}
+
+.ministrante1:hover,
+.ministrante2:hover {
+  z-index: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px black;
+  border-radius: 8px;
+}
+
+.ministrante span {
+  font-weight: bold;
+  text-align: center;
+  font-size: medium;
+}
+
+.link {
+  font-weight: bold;
+  color: yellow;
+  text-decoration: underline;
+}
 
 .activityCardHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .activityCardBody {
-    flex-grow: 1;
-    margin-left: 1.3rem;
-    text-align: justify;
-}
-
-.activityCardPerson img {
-    border-radius: 8px;
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 350px;
-    max-height: 550;
+  flex-grow: 1;
+  margin-left: 1.3rem;
+  text-align: justify;
 }
 
 .activityCardFooter {
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .activityCardFooter button {
-    background: none;
-    padding: 8px 16px;
-    border: none;
-    cursor: pointer;
+  background: none;
+  padding: 8px 16px;
+  border: none;
+  cursor: pointer;
 }
 
 .activityCardBody h2 {
-    margin-bottom: 8px;
+  margin-bottom: 8px;
 }
 
 .activityCardPerson {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: baseline;
-    gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  gap: 8px;
 }
 
 .activityCardPerson img {
-    border-radius: 8px;
+  border-radius: 8px;
 }
 
 .activityCardDescription {
-    position: relative;
-    padding-bottom: 16px;
-    padding-right: 16px;
+  position: relative;
+  padding-bottom: 16px;
+  padding-right: 16px;
 }
 
 .activityCardDescription h2 {
-    margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .activityCardDescription button {
-    position: absolute;
-    background: none;
-    color: var(--color-white);
-    padding-top: 12px;
-    right: 12px;
+  position: absolute;
+  background: none;
+  color: var(--color-white);
+  padding-top: 12px;
+  right: 12px;
 }
 
-@media screen and (max-width: 1024px) {
-    .activityCardContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 32px;
-        text-align: center;
-        padding: 16px;
-    }
+@media screen and (max-width: 1300px) {
+  .activityCardContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    text-align: center;
+    padding: 16px;
+  }
 
-    .activityCardPerson img {
-        max-width: 350px;
-        min-width: 100px;
-    }
+  .activityCardPerson img {
+    max-width: 350px;
+    min-width: 100px;
+  }
 
-    .activityCardBody {
-        margin: 0.5rem;
-    }
+  .activityCardBody {
+    margin: 0.5rem;
+  }
 
-    .activityCardContainer p {
-        text-align: justify;
-    }
+  .activityCardContainer p {
+    text-align: justify;
+  }
 
-    .activityCardDescription {
-        position: relative;
-        padding-left: 32px;
-        padding-right: 32px;
-        padding-bottom: 32px;
-    }
+  .activityCardDescription {
+    position: relative;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+  .ministrante1 {
+    transform: none;
+    margin-left: -100px;
+  }
+  
+  .ministrante2 {
+    transform: none;
+  }
+
+  .swiperImages {
+    width: 250px;
+  }  
+
 }

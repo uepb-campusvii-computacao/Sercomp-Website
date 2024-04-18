@@ -5,7 +5,7 @@ import styles from "./ConfirmedActivities.module.css"
 export default function ConfirmedActivities() {
   const data1 = ConfirmedActivitiesData;
   const data2 = ConfirmedActivitiesData;
-
+  
   return (
     <section className={styles.confirmedActivitiesContainer}>
       <h1 className="titulo-base">Workshop</h1>
