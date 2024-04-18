@@ -27,7 +27,7 @@
 
 .spinner {
     animation: spin 0.7s linear infinite;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 @keyframes spin {
