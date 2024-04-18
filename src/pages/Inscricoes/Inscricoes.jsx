@@ -1,18 +1,19 @@
+import { useForm } from 'react-hook-form';
 
 import styles from './Inscricoes.module.css';
 
 const Inscricoes = () => {
-	async function onSubmit(event) {
-		event.preventDefault()
+	const {
+    register,
+    handleSubmit,
+    formState: { isSubmitting },
+  } = useForm({
+		mode: 'all',
+	})
 
-		console.log({
-				0: event.target[0].value,
-				1: event.target[1].value,
-				2: event.target[2].value,
-				3: event.target[3].value
-		})
-
-		console.log(event)
+	async function onSubmit(data) {
+		await new Promise((resolve) => setTimeout(resolve, 3000))
+		console.log(data)
 	}
 
     return (
@@ -22,23 +23,50 @@ const Inscricoes = () => {
               <strong>Inscrições</strong>
             </h1>
             
-            <form onSubmit={onSubmit} className={styles.formContainer}>
+            <form onSubmit={handleSubmit(onSubmit)} className={styles.formContainer}>
 							<h3>Dados Pessoais</h3>
 							<div className={styles.inputContainer}>
 								<div className={styles.inputGroup}>
-									<input required type="text" name="nome" placeholder="Nome" />
-									<input required type="text" name="nomeCracha" placeholder="Nome no crachá" />
+									<input 
+										{...register("nome")}
+										disabled={isSubmitting}
+										required
+										type="text"
+										placeholder="Nome"
+									/>
+
+									<input 
+										{...register("nomeCracha")}
+										disabled={isSubmitting}
+										required
+										type="text"
+										placeholder="Nome no crachá"
+									/>
 								</div>
 								<div className={styles.inputGroup}>
-									<input required type="email" name="email" placeholder="Email" />
-									<input required type="text" name="instituicao" placeholder="Instituição" />
+									<input 
+										{...register("email")}
+										disabled={isSubmitting}
+										required
+										type="email"
+										placeholder="Email"
+									/>
+
+									<input 
+										{...register("instituicao")}
+										disabled={isSubmitting}
+										required
+										type="text"
+										placeholder="Instituição"
+									/>
+
 								</div>
 							</div>
 
 							<div className={styles.selectContainer}>
 								<div className={styles.selectGroup}>
 									<h3>Minicursos</h3>
-									<select name="minicursos" id="minicursos">
+									<select {...register("minicurso")} required>
 										<option value="minicurso-1">Minicurso 1</option>
 										<option value="minicurso-2">Minicurso 2</option>
 									</select>
@@ -46,7 +74,7 @@ const Inscricoes = () => {
 
 								<div className={styles.selectGroup}>
 									<h3>Workshops</h3>
-									<select required name="workshops" id="workshops">
+									<select {...register("workshop")} required>
 										<option value="workshop-1">Workshop 1</option>
 										<option value="workshop-2">Workshop 2</option>
 									</select>
@@ -54,14 +82,16 @@ const Inscricoes = () => {
 
 								<div className={styles.selectGroup}>
 									<h3>Oficinas</h3>
-									<select required name="oficinas" id="oficinas">
+									<select {...register("oficina")} required>
 										<option value="oficina-1">Oficina 1</option>
 										<option value="oficina-2">Oficina 2</option>
 									</select>
 								</div>
 							</div>
 
-							<button type="submit">Cadastre-se</button>
+							<button type="submit" disabled={isSubmitting}>
+								{isSubmitting ? 'Cadastrando...' : 'Cadastre-se'}
+							</button>
             </form>
         </section>
         </>
