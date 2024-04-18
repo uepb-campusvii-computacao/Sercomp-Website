@@ -150,6 +150,15 @@ img {
   filter: blur(2px);
 }
 
+.confirmed-activities .swiper-pagination {
+  background-color: #3f3f3f;
+  width: 50px;
+  border-radius: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .btn-primary {
   background: var(--color-danger);
   background-size: 200% 100%;
