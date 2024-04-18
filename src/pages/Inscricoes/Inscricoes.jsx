@@ -1,15 +1,9 @@
 import { useForm } from "react-hook-form";
-import { useState } from "react";
 import { FaSpinner } from "react-icons/fa";  // Importe o ícone de Spinner
 
 import styles from "./Inscricoes.module.css";
 
 const Inscricoes = () => {
-	const [selectedOptions, setSelectedOptions] = useState({
-		minicurso: "",
-		workshop: "",
-		oficina: "",
-	});
 
 	const {
 		register,
@@ -20,15 +14,31 @@ const Inscricoes = () => {
 	});
 
 	async function onSubmit(data) {
+		
 		await new Promise((resolve) => setTimeout(resolve, 3000));
-		console.log(data);
-		console.log(selectedOptions);
-	}
+		
+		const workshop_id = data.workshop
+		const minicurso_id = data.oficina
+		const oficina_id = data.minicurso
 
-	const handleSelectChange = (e) => {
-		const { name, value } = e.target;
-		setSelectedOptions({ ...selectedOptions, [name]: value });
-	};
+		const {
+			nome,
+			nome_cracha,
+			email,
+			instituicao			
+		} = data;
+
+		const requestData = {
+			nome,
+			nome_cracha,
+			email,
+			instituicao,	 
+			atividades: [workshop_id, minicurso_id, oficina_id]
+		}
+
+		console.log(requestData);
+
+	}
 
 	return (
 		<section className={styles.container}>
@@ -75,11 +85,10 @@ const Inscricoes = () => {
 						<p>Minicursos</p>
 						<select
 							{...register("minicurso")}
-							onChange={handleSelectChange}
 						>
 							<option value="">Selecione...</option>
-							<option value="minicurso-1">Minicurso 1</option>
-							<option value="minicurso-2">Minicurso 2</option>
+							<option value="minicurso-id-1">Minicurso 1</option>
+							<option value="minicurso-id-2">Minicurso 2</option>
 						</select>
 					</div>
 
@@ -87,11 +96,10 @@ const Inscricoes = () => {
 						<p>Workshops</p>
 						<select
 							{...register("workshop")}
-							onChange={handleSelectChange}
 						>
 							<option value="">Selecione...</option>
-							<option value="workshop-1">Workshop 1</option>
-							<option value="workshop-2">Workshop 2</option>
+							<option value="workshop-id-1">Workshop 1</option>
+							<option value="workshop-id-2">Workshop 2</option>
 						</select>
 					</div>
 
@@ -99,11 +107,10 @@ const Inscricoes = () => {
 						<p>Oficinas</p>
 						<select
 							{...register("oficina")}
-							onChange={handleSelectChange}
 						>
 							<option value="">Selecione...</option>
-							<option value="oficina-1">Oficina 1</option>
-							<option value="oficina-2">Oficina 2</option>
+							<option value="oficina-id-1">Oficina 1</option>
+							<option value="oficina-id-2">Oficina 2</option>
 						</select>
 					</div>
 				</div>
