@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import { FaSpinner } from "react-icons/fa";  // Importe o ícone de Spinner
+import { FaSpinner } from "react-icons/fa"; // Importe o ícone de Spinner
 
 import styles from "./Inscricoes.module.css";
 
@@ -46,7 +46,11 @@ const Inscricoes = () => {
 				<strong>Inscrição</strong>
 			</h1>
 
-			<form onSubmit={handleSubmit(onSubmit)} className={styles.formContainer}>
+
+			<form 
+				onSubmit={handleSubmit(onSubmit)} 
+				className={styles.formContainer} 
+			>
 
 				<div className={styles.inputGroup}>
 					<p>Dados Pessoais</p>
