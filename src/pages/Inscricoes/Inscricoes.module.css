@@ -1,82 +1,85 @@
-.tituloBase,
-.tituloPrincipal {
-    margin-bottom: 0.1rem;
-    font-weight: 500;
-    margin-bottom: 80px;
-    position: relative;
-    margin-top: 80px;
-    font-size: 1.5rem;
+.container {
+    padding: 2rem;
 }
 
-
-.tituloBase::after,
-.tituloPrincipal::after {
-    position: absolute;
-    content: '';
-    width: 30%;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-    transform: translateX(-50%);
-}
-
-.centerText {
+.formContainer {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1rem;
     display: flex;
-    justify-content: center;
-    word-wrap: break-word;
-  }
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #424890;
+}
 
-.pagList-whats {
-    text-align: center;
+.formContainer p {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.spinner {
+    animation: spin 0.7s linear infinite;
+    margin-right: 10px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.formContainer input,
+select {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+.formContainer button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: #F29D35;
+    color: white;
     font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.pagList {
-    margin-bottom: 0.5rem;
+.formContainer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
 }
 
-.pagList li {
-    list-style: disc;
-    text-align: justify;
+.formContainer button:hover {
+    border-width: 3px;
+}
+
+.selectContainer {
     display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
 
-.destaqueText {
-    margin-right: 0.5rem;
-    text-decoration: underline;
-    color: var(--color-warning);
+.selectGroup {
+    flex: 1 1 30%;
 }
 
-.pagButton {
-    text-align: right;
-}
-
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
-}
-
-.pagLink {
-    text-decoration: underline;
-    color: var(--color-danger);
-}
-
-.tituloPrincipal {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
-}
-
-.politicaList {
-    margin-bottom: 0.5rem;
-}
-
-.politicaList li {
-    list-style: disc;
-    text-align: justify;
+@media screen and (max-width: 600px) {
+    .formContainer {
+        padding: 2rem;
+    }
 }

@@ -1,60 +1,133 @@
-import styles from './Inscricoes.module.css';
+import { useForm } from "react-hook-form";
+import { FaSpinner } from "react-icons/fa";  // Importe o ícone de Spinner
 
-import Partners from '../../components/Partners/Partners'
-
-import ResponsaveisInscricao from '../../components/ResponsaveisInscricao/ResponsaveisInscricao'
-import { Mensagem } from '../../components/Mensagem/Mensagem';
+import styles from "./Inscricoes.module.css";
 
 const Inscricoes = () => {
-    return (
-        <Mensagem texto={"Inscrições em breve..."}/>
-    );
-    // return (
-    //     <>
-    //     <section className="container">
-    //         <h1 className={styles.tituloPrincipal}>Instruções para a <strong>Inscrição</strong></h1>
-    //         <p className={`${styles.paragrafo}`}>Ao se inscrever, o participante deverá fornecer seu nome completo e endereço de e-mail, além de escolher até duas atividades simultâneas, como um minicurso e uma oficina. Todas as outras atividades oferecidas, como palestras, mesa-redonda, apresentação de artigos, feira tecnológica, hackday e noite nerd, estão incluídas no valor da inscrição, a saber:</p>
 
-    //         <p className={styles.destaqueText}>R$ 30,00</p>
+	const {
+		register,
+		handleSubmit,
+		formState: { isSubmitting },
+	} = useForm({
+		mode: "all",
+	});
 
-    //         <div className={styles.pagButton}>
-    //             <a href="/privacy" className="btn btn-primary" target="_blank">
-    //                 Políticas do Evento
-    //             </a>
-    //         </div>
+	async function onSubmit(data) {
+		
+		await new Promise((resolve) => setTimeout(resolve, 3000));
+		
+		const workshop_id = data.workshop
+		const minicurso_id = data.oficina
+		const oficina_id = data.minicurso
 
-    //         <p className={`${styles.paragrafo}`}>Para garantir a sua participação no V SERCOMP, siga os seguintes passos:</p>
+		const {
+			nome,
+			nome_cracha,
+			email,
+			instituicao			
+		} = data;
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 1: Fale com um representante e garanta sua inscrição</h2>
+		const requestData = {
+			nome,
+			nome_cracha,
+			email,
+			instituicao,	 
+			atividades: [workshop_id, minicurso_id, oficina_id]
+		}
 
-    //         <p className={`${styles.paragrafo}`}>As inscrições serão efetuadas de forma online através do aplicativo WhatsApp, seguindo os horários de atendimento dos nossos representantes.</p>
+		console.log(requestData);
 
-    //         <ResponsaveisInscricao />            
+	}
 
-    //         <p className={`${styles.paragrafo}`}>Informe no ato da inscrição seu nome completo e email.</p>
+	return (
+		<section className={styles.container}>
+			<h1 className="titulo-principal">
+				<strong>Inscrição</strong>
+			</h1>
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 2: Escolha das atividades Simultâneas</h2>
+			<form onSubmit={handleSubmit(onSubmit)} className={styles.formContainer}>
 
-    //         <p className={`${styles.paragrafo}`}>Leia atentamente os pré-requisitos dos minicursos e oficinas disponíveis no site. E escolha até duas atividades simultâneas: um minicurso e uma oficina.</p>
+				<div className={styles.inputGroup}>
+					<p>Dados Pessoais</p>
+					<input
+						{...register("nome")}
+						disabled={isSubmitting}
+						required
+						type="text"
+						placeholder="Nome"
+					/>
+					<input
+						{...register("nome_cracha")}
+						disabled={isSubmitting}
+						required
+						type="text"
+						placeholder="Nome no crachá"
+					/>
+					<input
+						{...register("email")}
+						disabled={isSubmitting}
+						required
+						type="email"
+						placeholder="Email"
+					/>
+					<input
+						{...register("instituicao")}
+						disabled={isSubmitting}
+						required
+						type="text"
+						placeholder="Instituição"
+					/>
+				</div>
 
-    //         <p className={`${styles.paragrafo}`}>É altamente recomendável ler os pré-requisitos de cada atividade, que estão disponíveis em <a className={styles.pagLink} href="http://sercomppb.com.br/atividades.html" target="_blank">http://sercomppb.com.br/atividades.html</a>.</p>
+				<div className={styles.selectContainer}>
+					<div className={styles.selectGroup}>
+						<p>Minicursos</p>
+						<select
+							{...register("minicurso")}
+						>
+							<option value="">Selecione...</option>
+							<option value="minicurso-id-1">Minicurso 1</option>
+							<option value="minicurso-id-2">Minicurso 2</option>
+						</select>
+					</div>
 
-    //         <p className={`${styles.paragrafo}`}>Para os minicursos e oficinas, serão exigidas algumas habilidades prévias, além de ser necessário trazer o próprio dispositivo com algumas ferramentas já instaladas. É possível que, no momento da inscrição, o minicurso ou oficina desejado não esteja mais disponível devido às limitações de vagas.</p>
+					<div className={styles.selectGroup}>
+						<p>Workshops</p>
+						<select
+							{...register("workshop")}
+						>
+							<option value="">Selecione...</option>
+							<option value="workshop-id-1">Workshop 1</option>
+							<option value="workshop-id-2">Workshop 2</option>
+						</select>
+					</div>
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 3: Forma de Pagamento e Confirmação da Inscrição</h2>
+					<div className={styles.selectGroup}>
+						<p>Oficinas</p>
+						<select
+							{...register("oficina")}
+						>
+							<option value="">Selecione...</option>
+							<option value="oficina-id-1">Oficina 1</option>
+							<option value="oficina-id-2">Oficina 2</option>
+						</select>
+					</div>
+				</div>
 
-    //         <p className={`${styles.paragrafo}`}>Realize o pagamento da taxa de inscrição por meio de transferência via Pix. O V SERCOMP aceitará apenas pagamento por meio de pix, utilizando a seguinte chave: </p>
-
-    //         <p className={`${styles.paragrafo} ${styles.centerText} ${styles.destaqueText}`}>vanderleiapereira2002@gmail.com</p>
-
-    //         <p className={`${styles.paragrafo}`}>É importante lembrar que a inscrição só será confirmada após o pagamento e o envio do comprovante para o número de WhatsApp do representante responsável pela inscrição.</p>
-
-    //         <p className={`${styles.paragrafo}`}>Certifique-se de realizar o pagamento dentro do prazo estipulado para evitar problemas e garantir sua participação no evento. Caso tenha qualquer dúvida em relação ao pagamento, não hesite em entrar em contato com nossa equipe.</p>
-
-    //     </section>
-    //     <Partners />
-    //     </>
-    // );
+				<button type="submit" disabled={isSubmitting}>
+					{isSubmitting ? (
+						<>
+							<FaSpinner className={styles.spinner} />
+							Aguarde...
+						</>
+					) : (
+						"Inscrever-se"
+					)}
+				</button>
+			</form>
+		</section>
+	);
 };
 
 export default Inscricoes;
