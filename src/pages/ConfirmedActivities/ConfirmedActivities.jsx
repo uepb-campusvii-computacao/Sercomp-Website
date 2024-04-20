@@ -16,9 +16,9 @@ export default function ConfirmedActivities() {
       <h1 className="titulo-base">Palestras</h1>
       <ActivitySlider activities={data2}/>
       <h1 className="titulo-base">Oficina</h1>
-      <ActivitySlider activities={data2}/>
+      <ActivitySlider activities={data3}/>
       <h1 className="titulo-base">Minicurso</h1>
-      <ActivitySlider activities={data2}/>
+      <ActivitySlider activities={data4}/>
       
     </section>
   );
