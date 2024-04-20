@@ -8,13 +8,14 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import Tooltip from "../ToolTip/ToolTip";
 
-function ActivityCardMultipleImage({ ministrantes, title, description }) {
+function ActivityCardMultipleImage({ ministrantes, title, description, texto_resumo }) {
   return (
     <ActivityCardBase
-      slidesPerView={'auto'}
       title={title}
       description={description}
+      texto_resumo={texto_resumo}
       imageNode={
         <Swiper
           className={styles.swiperImages}
@@ -30,8 +31,12 @@ function ActivityCardMultipleImage({ ministrantes, title, description }) {
         >
           {ministrantes.map((ministrante, index) => (
             <SwiperSlide key={index} className={styles.ministrante}>
-                <span>{ministrante.nome_ministrante}</span>
-                <img src={ministrante.imagem_ministrante} alt={ministrante.nome_ministrante} />                
+              <Tooltip text={ministrante.nome_ministrante}>
+                <span className={styles.imageHeaderTextTruncated}>
+                  {ministrante.nome_ministrante}
+                </span>                
+              </Tooltip>
+              <img src={ministrante.imagem_ministrante} alt={ministrante.nome_ministrante} />
             </SwiperSlide>
           ))}
         </Swiper>
@@ -48,7 +53,8 @@ ActivityCardMultipleImage.propTypes = {
     })
   ).isRequired,
   title: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.node.isRequired,
+  texto_resumo: PropTypes.string.isRequired,
 };
 
 export default ActivityCardMultipleImage;
