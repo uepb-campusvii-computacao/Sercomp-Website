@@ -1,10 +1,7 @@
 import partnersData from '../../data/PartnersData.js';
 import styles from './Partners.module.css';
-// import { Mensagem } from '../../components/Mensagem/Mensagem.jsx';
 
 function Partners() {
-    // return (<Mensagem texto={"Mais informações em breve..."} />)
-
     return (
         <section className="container">
             <h1 className="titulo-principal">Conheça as instituições que apoiam o <strong>SERCOMP</strong></h1>
