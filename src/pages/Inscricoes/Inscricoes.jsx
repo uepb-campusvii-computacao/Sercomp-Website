@@ -14,7 +14,7 @@ const Inscricoes = () => {
 
   async function fecthApiData() {
     await api
-      .get("/events/7bb55311-d21f-4fbc-add6-025623b0f305/activities")
+      .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/activities`)
       .then((response) => {
         setAtividades(response.data.atividades);
       })
@@ -50,8 +50,8 @@ const Inscricoes = () => {
       atividades: [workshop_id, minicurso_id, oficina_id],
     };
 
-    api
-      .post("/register/4f46fb6d-b076-4137-9bb8-964e6c0e6b82", requestData)
+    await api
+      .post(`/register/${import.meta.env.VITE_LOTE_UUID}`, requestData)
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   }
