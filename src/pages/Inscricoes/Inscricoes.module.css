@@ -19,6 +19,39 @@
     font-size: larger;
 }
 
+.inputGroupLotes{
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.loteContainer{
+    padding: 16px;
+    border: 2px solid var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.loteContainer input[type="radio"]{
+    display: none;
+}
+
+.loteContainerChecked{
+    background-color: #bbf7d0;
+    color: #16a34a;
+}
+
+.loteContainer .loteContent{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.loteContent span{
+    font-weight: 400;
+    font-size: 16px;
+}
+
 .inputGroup {
     display: flex;
     flex-direction: column;
@@ -70,7 +103,7 @@ select {
 
 .selectContainer {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 1rem;
 }
 
@@ -79,6 +112,10 @@ select {
 }
 
 @media screen and (max-width: 600px) {
+    .inputGroupLotes{
+        grid-template-columns: 1fr;
+    }
+
     .formContainer {
         padding: 2rem;
     }
