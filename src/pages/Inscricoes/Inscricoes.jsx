@@ -1,9 +1,10 @@
 import { useForm } from "react-hook-form";
 import { FaSpinner } from "react-icons/fa"; // Importe o ícone de Spinner
 
-import styles from "./Inscricoes.module.css";
-import { api } from "../../lib/axios";
 import { useEffect, useState } from "react";
+import { api } from "../../lib/axios";
+
+import styles from "./Inscricoes.module.css";
 
 const Inscricoes = () => {
   const [atividades, setAtividades] = useState({
