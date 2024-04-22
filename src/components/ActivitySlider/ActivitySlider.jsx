@@ -49,6 +49,7 @@ export default function ActivitySlider({ activities }) {
               ministrantes={activity.ministrantes}
               title={activity.titulo_atividade_confirmada}
               description={activity.descricao_atividade_confirmada}
+              texto_resumo={activity.texto_resumo}
             />
           </SwiperSlide>
         ))}
@@ -80,7 +81,8 @@ ActivitySlider.propTypes = {
         })
       ).isRequired,
       titulo_atividade_confirmada: PropTypes.string.isRequired,
-      descricao_atividade_confirmada: PropTypes.string.isRequired,
+      descricao_atividade_confirmada: PropTypes.node.isRequired,
+      texto_resumo: PropTypes.string.isRequired
     })
   ).isRequired,
 };
