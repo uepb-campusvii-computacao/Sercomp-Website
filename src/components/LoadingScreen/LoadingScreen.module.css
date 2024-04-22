@@ -1,0 +1,27 @@
+.screenLoadingSpinner {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.screenLoadingSpinnerIcon {
+  font-size: 70px;
+}
+
+.screenLoadingContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
