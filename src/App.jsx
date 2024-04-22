@@ -1,6 +1,8 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import DateConditional from "./components/DateConditional/DateConditional";
 import Layout from "./components/Layout/Layout";
+import { Mensagem } from "./components/Mensagem/Mensagem";
 import About from "./pages/About/About";
 import Articles from "./pages/Articles/Articles";
 import Chamadas from "./pages/Chamadas/Chamadas";
@@ -32,8 +34,14 @@ function App() {
           <Route exact path="/hackathon" element={<Hackthon />} />
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/inscricao" element={<Inscricoes />} />
-          <Route exact path="/pagamento" element={<Pagamento />} />
+          <Route exact path="/inscricao" element={
+            <DateConditional
+              until="2024/04/22"
+              renderIfTrue={<Inscricoes />}
+              renderIfFalse={<Mensagem texto="Inscrições encerradas!"/>}
+            />
+          } />
+          <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />
