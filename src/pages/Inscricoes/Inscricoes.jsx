@@ -12,11 +12,26 @@ const Inscricoes = () => {
     workshops: [],
   });
 
+  const [lotes, setLotes] = useState([]);
+
+  const [loteSelecionado, setLoteSelecionado] = useState();
+
+  const handleRadioChange = (event) => {
+    setLoteSelecionado(event.target.value);
+  };
+
   async function fecthApiData() {
     await api
-      .get("/events/7bb55311-d21f-4fbc-add6-025623b0f305/activities")
+      .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`)
       .then((response) => {
-        setAtividades(response.data.atividades);
+        setAtividades(response.data);
+      })
+      .catch((err) => console.log(err));
+
+    await api
+      .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`)
+      .then((response) => {
+        setLotes(response.data);
       })
       .catch((err) => console.log(err));
   }
@@ -48,10 +63,13 @@ const Inscricoes = () => {
       email,
       instituicao,
       atividades: [workshop_id, minicurso_id, oficina_id],
+      lote_id: loteSelecionado || lotes[0].uuid_lote,
     };
 
-    api
-      .post("/register/4f46fb6d-b076-4137-9bb8-964e6c0e6b82", requestData)
+    console.log(requestData);
+
+    await api
+      .post(`/register/${import.meta.env.VITE_LOTE_UUID}`, requestData)
       .then((response) => console.log(response))
       .catch((err) => console.log(err));
   }
@@ -95,13 +113,46 @@ const Inscricoes = () => {
           />
         </div>
 
+        <div className={styles.inputGroup}>
+          <p>Selecione o lote</p>
+          <div className={styles.inputGroupLotes}>
+            {lotes.map((lote) => (
+              <label
+                key={lote.uuid_lote}
+                htmlFor={lote.uuid_lote}
+                className={`${styles.loteContainer} ${
+                  loteSelecionado == lote.uuid_lote
+                    ? styles.loteContainerChecked
+                    : ""
+                }`}
+              >
+                <div className={styles.loteContent}>
+                  {lote.nome} <br></br> <span> Valor - R${lote.preco}</span>{" "}
+                </div>
+                <input
+                  id={lote.uuid_lote}
+                  type="radio"
+                  required
+                  disabled={isSubmitting}
+                  value={lote.uuid_lote}
+                  onChange={handleRadioChange}
+                  checked={loteSelecionado === lote.uuid_lote}
+                />
+              </label>
+            ))}
+          </div>
+        </div>
+
         <div className={styles.selectContainer}>
           <div className={styles.selectGroup}>
             <p>Minicursos</p>
             <select {...register("minicurso")}>
               <option value="">Selecione...</option>
               {atividades.minicursos.map((minicurso) => (
-                <option key={minicurso.uuid_atividade} value={minicurso.uuid_atividade}>
+                <option
+                  key={minicurso.uuid_atividade}
+                  value={minicurso.uuid_atividade}
+                >
                   {minicurso.nome}
                 </option>
               ))}
@@ -113,7 +164,12 @@ const Inscricoes = () => {
             <select {...register("workshop")}>
               <option value="">Selecione...</option>
               {atividades.workshops.map((workshop) => (
-                <option key={workshop.uuid_atividade} value={workshop.uuid_atividade}>{workshop.nome}</option>
+                <option
+                  key={workshop.uuid_atividade}
+                  value={workshop.uuid_atividade}
+                >
+                  {workshop.nome}
+                </option>
               ))}
             </select>
           </div>
@@ -123,7 +179,12 @@ const Inscricoes = () => {
             <select {...register("oficina")}>
               <option value="">Selecione...</option>
               {atividades.oficinas.map((oficina) => (
-                <option key={oficina.uuid_atividade} value={oficina.uuid_atividade}>{oficina.nome}</option>
+                <option
+                  key={oficina.uuid_atividade}
+                  value={oficina.uuid_atividade}
+                >
+                  {oficina.nome}
+                </option>
               ))}
             </select>
           </div>
