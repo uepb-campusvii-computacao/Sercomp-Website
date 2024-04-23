@@ -36,7 +36,7 @@ function App() {
           <Route exact path="/privacy" element={<Privacy />} />
           <Route exact path="/inscricao" element={
             <DateConditional
-              until="2024/04/22"
+              until="2024/05/20"
               renderIfTrue={<Inscricoes />}
               renderIfFalse={<Mensagem texto="Inscrições encerradas!"/>}
             />

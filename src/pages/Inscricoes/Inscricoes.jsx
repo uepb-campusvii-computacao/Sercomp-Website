@@ -74,7 +74,7 @@ const Inscricoes = () => {
       nome_cracha,
       email,
       instituicao,
-      atividades: [workshop_id, minicurso_id, oficina_id],
+      atividades: {workshop_id, minicurso_id, oficina_id},
       lote_id: lote || lotes[0].uuid_lote,
     };
 
@@ -89,8 +89,7 @@ const Inscricoes = () => {
 
       navigate(`/pagamento/user/${data.uuid_user}/lote/${selectedLote}`);
     } catch (error) {
-      console.log(error);
-      toast.error("Erro ao criar inscrição ou link de pagamento");
+      toast.error(error.response.data);
     }
   }
 
