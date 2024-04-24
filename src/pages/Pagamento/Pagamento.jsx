@@ -15,7 +15,6 @@ const Pagamento = () => {
 
   async function fecthApiData() {
     await api.get(`/lote/${lote_id}/inscricoes/user/${user_id}`).then((res) => {
-      console.log(res.data);
       setUserInfomation(res.data);
     });
 
@@ -73,10 +72,10 @@ const Pagamento = () => {
                     Atividades selecionadas: <br></br>
                   </span>
                   {userInformations.atividades?.length > 0 ? (
-                    userInformations.atividades.map((atividade) => (
-                      <>
+                    userInformations.atividades.map((atividade, index) => (
+                      <div key={index}>
                         {atividade.nome} - {atividade.tipo} <br></br>{" "}
-                      </>
+                      </div>
                     ))
                   ) : (
                     <>Nenhuma</>
