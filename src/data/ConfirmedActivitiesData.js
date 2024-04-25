@@ -24,7 +24,7 @@ export const ConfirmedActivitiesData = {
                 },
               ],
               texto_resumo: "Mostrar aos participantes a oportunidade de alavancar suas carreiras por meio do LinkedIn, fornecendo estratégias eficazes para aumentar sua visibilidade, expandir sua rede e explorar oportunidades profissionais na plataforma.",
-              descricao_atividade_confirmada: <>
+              descricao_atividade_confirmada: `
                 <p>
                   <strong>Idicação de Público: </strong>Todos os públicos.
                 </p>
@@ -49,7 +49,9 @@ export const ConfirmedActivitiesData = {
               </>,
               titulo_atividade_confirmada:
                 "LinkedIn na Prática: Estratégias e Oportunidades para Impulsionar sua Carreira",
+                `
             },
+            
         
       {
           ministrantes: [
@@ -59,7 +61,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Introduzir o aluno a um universo mais profundo em Java e backend",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>Estudantes que gostem de programação principalmente em Java, POO, etc.
             </p>
@@ -80,7 +82,9 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Explorando o Spring Boot: Criando uma API Java para Operações CRUD",
+          `
       },
+      
       {
           ministrantes: [
               {
@@ -89,7 +93,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Ensinar aos alunos conceitos de tratamento de dados e plotagem de gráficos",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>Alunos do p1-p4.
             </p>
@@ -110,6 +114,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Plotagem de Gráficos com Pandas e Matplotlib a partir de Arquivos CSV",
+          `
       },
       {
           ministrantes: [
@@ -119,7 +124,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Nesta oficina, os participantes serão guiados através das principais etapas do processo de elaboração de um Trabalho de Conclusão de Curso (TCC) com foco na aplicação de técnicas de Inteligência Artificial (IA).",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição:Nesta oficina, os participantes serão guiados através das principais etapas do processo de elaboração de um Trabalho de Conclusão de Curso (TCC) com foco na aplicação de técnicas de Inteligência Artificial (IA).</strong>.
             </p>
@@ -158,6 +163,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Princípios Essenciais de Design UI/UX no Figma",
+          `
       },
       {
       ministrantes: [
@@ -167,7 +173,7 @@ export const ConfirmedActivitiesData = {
           }
       ],
       texto_resumo: "Os participantes aprenderão a utilizar as estruturas de dados da biblioteca Collections em Java para resolver problemas de manipulação de dados de forma eficiente e elegante. Através de exemplos práticos e exercícios, os participantes irão explorar diferentes tipos de coleções, como Listas, Conjuntos e Mapas, e aprenderão a aplicar operações comuns, como adição, remoção, busca e ordenação de elementos.",
-      descricao_atividade_confirmada: <>
+      descricao_atividade_confirmada: `
         <p>
           <strong>Descrição: Os participantes aprenderão a utilizar as estruturas de dados da biblioteca Collections em Java para resolver problemas de manipulação de dados de forma eficiente e elegante. Através de exemplos práticos e exercícios, os participantes irão explorar diferentes tipos de coleções, como Listas, Conjuntos e Mapas, e aprenderão a aplicar operações comuns, como adição, remoção, busca e ordenação de elementos.</strong>.
         </p>
@@ -182,6 +188,7 @@ export const ConfirmedActivitiesData = {
         </p>
       </>,
       titulo_atividade_confirmada: "Utilizando Collections em Java para Resolução de Problemas de Manipulação de Dados",
+      `
       },
       {
       ministrantes: [
@@ -191,7 +198,7 @@ export const ConfirmedActivitiesData = {
           }
       ],
       texto_resumo: "Os participantes serão introduzidos aos princípios e práticas fundamentais do desenvolvimento front-end para criação de experiências web atrativas e funcionais. Através de uma abordagem prática e orientada a projetos, os participantes irão explorar conceitos de HTML, CSS e JavaScript.",
-      descricao_atividade_confirmada: <>
+      descricao_atividade_confirmada: `
         <p>
           <strong>Descrição: Os participantes serão introduzidos aos princípios e práticas fundamentais do desenvolvimento front-end para criação de experiências web atrativas e funcionais. Através de uma abordagem prática e orientada a projetos, os participantes irão explorar conceitos de HTML, CSS e JavaScript.</strong> .
         </p>
@@ -206,6 +213,7 @@ export const ConfirmedActivitiesData = {
         </p>
       </>,
       titulo_atividade_confirmada: "Front-end: Criando Experiências Web Atraentes e Funcionais.",
+      `
   },
   {
     ministrantes: [
@@ -215,7 +223,7 @@ export const ConfirmedActivitiesData = {
         }
     ],
     texto_resumo: "Os participantes aprenderão a desenvolver aplicativos que podem ser executados em diversos sistemas operacionais, incluindo Windows, Linux e macOS, utilizando as ferramentas e recursos fornecidos pelo .NET Core.",
-    descricao_atividade_confirmada: <>
+    descricao_atividade_confirmada: `
       <p>
         <strong>Descrição: Os participantes aprenderão a desenvolver aplicativos que podem ser executados em diversos sistemas operacionais, incluindo Windows, Linux e macOS, utilizando as ferramentas e recursos fornecidos pelo .NET Core.</strong> .
       </p>
@@ -230,6 +238,7 @@ export const ConfirmedActivitiesData = {
       </p>
     </>,
     titulo_atividade_confirmada: "Desenvolvimento Multiplataforma com C# utilizando . NET Core.",
+    `
 }        
      
   ],
@@ -250,7 +259,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>O minicurso tem como público alvo quaisquer pessoas que queiram aprender sobre como utilizar as ferramentas Git e GitHub.
             </p>
@@ -271,6 +280,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Git e GitHub: Do Básico ao Avançado",
+          `
       },
       {
           ministrantes: [
@@ -284,7 +294,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Introduzir a linguagem C# na Universidade.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>Alunos de qualquer período.
             </p>
@@ -305,6 +315,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Programação C# para iniciantes",
+          `
       },
       {
           ministrantes: [
@@ -314,7 +325,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição: Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.</strong> .
             </p>
@@ -329,6 +340,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Criando Jogos 2D com Construct 2",
+          `
       },
       {
           ministrantes: [
@@ -338,7 +350,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>Pessoas de computação que tenham interesse por programação e linguagem JAVA.
             </p>
@@ -359,6 +371,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Explorando o Potencial do Spring Boot para Integração com IA: Conceitos Básicos e Aplicações Práticas",
+          `
       },
       {
           ministrantes: [
@@ -368,7 +381,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição: Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.</strong>.
             </p>
@@ -383,6 +396,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Introdução à Visualização de Dados com Vega-lite",
+          `
       },
       {
           ministrantes: [
@@ -392,7 +406,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição: Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.</strong>.
             </p>
@@ -407,6 +421,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Tratamento de Exceções em Aplicações Java",
+          `
       },
       {
           ministrantes: [
@@ -416,7 +431,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Idicação de Público: </strong>Pessoas que queiram aprender programação web mas ainda não tem uma base.
             </p>
@@ -437,6 +452,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
+          `
       }
               
   ],
@@ -449,7 +465,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "É um workshop inovador projetado para proporcionar uma experiência de aprendizado inclusiva e acessível para pessoas surdas interessadas em computação. Este workshop tem como objetivo introduzir os participantes aos conceitos básicos da Computação através da Linguagem Brasileira de Sinais (Libras).",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição: É um workshop inovador projetado para proporcionar uma experiência de aprendizado inclusiva e acessível para pessoas surdas interessadas em computação. Este workshop tem como objetivo introduzir os participantes aos conceitos básicos da Computação através da Linguagem Brasileira de Sinais (Libras).</strong>.
             </p>
@@ -464,6 +480,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Code em Libras: Aprendendo Computação com Sinais",
+          `
       },
       {
         ministrantes: [
@@ -473,7 +490,7 @@ export const ConfirmedActivitiesData = {
             }
         ],
         texto_resumo: "Workshop projetado para oferecer aos participantes uma introdução detalhada e prática ao testRigor, uma ferramenta de automação de testes de software. Durante o workshop, os participantes serão guiados por meio dos recursos e funcionalidades do testRigor, aprendendo como criar e executar testes automatizados de forma eficiente.",
-        descricao_atividade_confirmada: <>
+        descricao_atividade_confirmada: `
           <p>
             <strong>Descrição: Workshop projetado para oferecer aos participantes uma introdução detalhada e prática ao testRigor, uma ferramenta de automação de testes de software. Durante o workshop, os participantes serão guiados por meio dos recursos e funcionalidades do testRigor, aprendendo como criar e executar testes automatizados de forma eficiente.</strong>.
           </p>
@@ -488,6 +505,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>,
         titulo_atividade_confirmada: "Explorando o testRigor: Um Guia Prático",
+        `
     },
       {
           ministrantes: [
@@ -497,7 +515,7 @@ export const ConfirmedActivitiesData = {
               }
           ],
           texto_resumo: "Workshop focado em fornecer aos participantes uma compreensão abrangente e prática do framework Django para desenvolvimento web em Python.",
-          descricao_atividade_confirmada: <>
+          descricao_atividade_confirmada: `
             <p>
               <strong>Descrição: Workshop focado em fornecer aos participantes uma compreensão abrangente e prática do framework Django para desenvolvimento web em Python.</strong>.
             </p>
@@ -512,6 +530,7 @@ export const ConfirmedActivitiesData = {
             </p>
           </>,
           titulo_atividade_confirmada: "Django em Foco: Tecnologias, Arquitetura e Projeto Prático",
+          `
       },
       {
         ministrantes: [
@@ -525,7 +544,7 @@ export const ConfirmedActivitiesData = {
           }
         ],
         texto_resumo: "O Workshop oferece uma introdução envolvente aos fundamentos da animação 2D utilizando uma das ferramentas mais populares do mercado, o Paint Tool SAI. Durante este workshop, os participantes serão guiados em uma jornada emocionante através dos princípios essenciais da animação.",
-        descricao_atividade_confirmada: <>
+        descricao_atividade_confirmada: `
           <p>
             <strong>Descrição: O Workshop oferece uma introdução envolvente aos fundamentos da animação 2D utilizando uma das ferramentas mais populares do mercado, o Paint Tool SAI. Durante este workshop, os participantes serão guiados em uma jornada emocionante através dos princípios essenciais da animação.</strong>.
           </p>
@@ -540,6 +559,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>,
         titulo_atividade_confirmada: "Explorando os Princípios da Animação 2D com Paint Tool SAI",
+        `
     },
   ]
 };
