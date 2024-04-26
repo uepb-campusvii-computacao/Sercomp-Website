@@ -1,13 +1,52 @@
-.confirmedActivitiesContainer{
+.confirmedActivitiesContainer {
     padding-top: 7rem;
     padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
     gap: 32px;
-}
-
-.confirmedActivitiesContainer h1{
+  }
+  
+  .confirmedActivitiesContainer h1 {
     font-weight: 700;
     font-size: 52px;
     text-align: center;
-}
+  }
+  
+  .buttonGroup {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  
+  .categoryButton {
+    padding: 10px 20px;
+    background: lightgray;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 15px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .categoryButton.active {
+    background: #007bff;
+    color: white;
+  }
+  
+  .categoryButton:hover {
+    background: gray;
+  }
+  
+  @media (min-width: 645px) {
+    .buttonGroup {
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+  

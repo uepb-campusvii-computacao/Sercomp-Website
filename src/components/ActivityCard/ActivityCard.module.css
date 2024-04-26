@@ -7,6 +7,10 @@
   max-width: 1200px;
 }
 
+.imagemMinistrante {
+  height: 350px;
+}
+
 .group {
   width: 100%;
 }
@@ -42,14 +46,6 @@
 .bodyDescription p strong{
   font-weight: bold;
   color: yellow;
-}
-
-.ministrante1:hover,
-.ministrante2:hover {
-  z-index: 1;
-  transform: scale(1.1);
-  box-shadow: 0 0 10px black;
-  border-radius: 8px;
 }
 
 .ministrante span {
@@ -132,6 +128,10 @@
   text-overflow: ellipsis;
 }
 
+.textTruncated h2 {
+  font-size: 1.5rem;
+}
+
 .imageHeaderTextTruncated {
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -179,6 +179,11 @@
   .activityCardContainer {
     min-height: 580px;
   }
+
+  .textTruncated h2 {
+    font-size: 1.2rem;
+  }
+
   .ministrante1 {
     transform: none;
     margin-left: -100px;
