@@ -143,25 +143,19 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição:Nesta oficina, os participantes serão guiados através
+            <strong>Descrição: </strong>Nesta oficina, os participantes serão guiados através
               das principais etapas do processo de elaboração de um Trabalho de
               Conclusão de Curso (TCC) com foco na aplicação de técnicas de
               Inteligência Artificial (IA).
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito:Ter conhecimento básico de metodologia científica.{" "}
-            </strong>
-            .
+            <strong>Pré-Requisito:</strong> Ter conhecimento básico de metodologia científica.
           </p>
           <p>
-            <strong>Recursos: Notebooks carregados para 2h de oficina.</strong>.
+            <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>Instalação de Softwares: Navegador. </strong>.
+            <strong>Instalação de Softwares:</strong> Navegador.
           </p>
         </>
       ),
@@ -180,33 +174,24 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Nesta oficina, os participantes serão introduzidos aos
+            <strong>Descrição:</strong> Nesta oficina, os participantes serão introduzidos aos
               princípios essenciais de Design de Interface do Usuário (UI) e
               Experiência do Usuário (UX), utilizando a ferramenta Figma.
               Através de exemplos práticos e exercícios guiados, os
               participantes aprenderão a criar designs de interface atraentes e
               funcionais, levando em consideração aspectos como usabilidade,
               acessibilidade e estética.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de design gráfico e/ou
-              interesse em aprender sobre design de interfaces
-            </strong>
-            .
+            <strong>Pré-Requisito:</strong> Conhecimento básico de design gráfico e/ou
+              interesse em aprender sobre design de interfaces.
           </p>
           <p>
-            <strong>Recursos: Computador.</strong>.
+            <strong>Recursos:</strong> Computador.
           </p>
           <p>
-            <strong>
-              Instalação de Softwares: Ter acesso a um computador com conexão à
-              internet para utilizar o Figma.{" "}
-            </strong>
-            .
+            <strong>Instalação de Softwares:</strong> Ter acesso a um computador com conexão à
+              internet para utilizar o Figma.
           </p>
         </>
       ),
@@ -225,31 +210,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Os participantes aprenderão a utilizar as estruturas de
+            <strong>Descrição:</strong> Os participantes aprenderão a utilizar as estruturas de
               dados da biblioteca Collections em Java para resolver problemas de
               manipulação de dados de forma eficiente e elegante. Através de
               exemplos práticos e exercícios, os participantes irão explorar
               diferentes tipos de coleções, como Listas, Conjuntos e Mapas, e
               aprenderão a aplicar operações comuns, como adição, remoção, busca
               e ordenação de elementos.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de programação em Java.
-            </strong>
-            .
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em Java.
           </p>
           <p>
-            <strong>Recursos: Notebooks carregados para 2h de oficina</strong>.
+            <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>
-              Instalação de Softwares: VSCode com o java instalado na máquina
-            </strong>
-            .
+            <strong>Instalação de Softwares:</strong> VSCode com o java instalado na máquina.
           </p>
         </>
       ),
@@ -268,30 +244,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Os participantes serão introduzidos aos princípios e
+            <strong>Descrição:</strong> Os participantes serão introduzidos aos princípios e
               práticas fundamentais do desenvolvimento front-end para criação de
               experiências web atrativas e funcionais. Através de uma abordagem
               prática e orientada a projetos, os participantes irão explorar
               conceitos de HTML, CSS e JavaScript.
-            </strong>{" "}
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de HTML, CSS e JavaScript.
-            </strong>{" "}
-            .
+            <strong>Pré-Requisito:</strong> Conhecimento básico de HTML, CSS e JavaScript.
+            
           </p>
           <p>
-            <strong>Recursos: Notebooks carregados para 2h de oficina</strong> .
+            <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>
-              Instalação de Softwares:VSCode, Ferramentas de Inspeção de
+            <strong>Instalação de Softwares:</strong> VSCode, Ferramentas de Inspeção de
               Navegador e Figma.
-            </strong>{" "}
-            .
           </p>
         </>
       ),
@@ -310,25 +278,19 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Os participantes aprenderão a desenvolver aplicativos
+            <strong>Descrição:</strong> Os participantes aprenderão a desenvolver aplicativos
               que podem ser executados em diversos sistemas operacionais,
               incluindo Windows, Linux e macOS, utilizando as ferramentas e
               recursos fornecidos pelo .NET Core.
-            </strong>{" "}
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de programação em C#..
-            </strong>{" "}
-            .
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em C#.            
           </p>
           <p>
-            <strong>Recursos: Notebooks carregados para 2h de oficina</strong> .
+            <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>Instalação de Softwares:VSCode e .NET Core SDK.</strong> .
+            <strong>Instalação de Softwares:</strong> VSCode e .NET Core SDK.
           </p>
         </>
       ),
@@ -449,30 +411,21 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Minicurso projetado para introduzir os participantes ao
+            <strong>Descrição:</strong> Minicurso projetado para introduzir os participantes ao
               desenvolvimento de jogos 2D usando a plataforma Construct 2. Este
               curso é ideal para entusiastas de jogos que desejam aprender a
               criar seus próprios jogos sem a necessidade de codificação
               complexa.
-            </strong>{" "}
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Criatividade e disposição para experimentar e
+            <strong>Pré-Requisito:</strong> Criatividade e disposição para experimentar e
               explorar novas ideias.
-            </strong>{" "}
-            .
           </p>
           <p>
-            <strong>
-              Recursos: Sim, notebooks carregados para 2h de minicurso.
-            </strong>{" "}
-            .
+            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de minicurso.
           </p>
           <p>
-            <strong>Instalação de Softwares: Construct 2.</strong> .
+            <strong>Instalação de Softwares:</strong> Construct 2.
           </p>
         </>
       ),
@@ -529,31 +482,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Minicurso projetado para fornecer aos participantes uma
+            <strong>Descrição:</strong> Minicurso projetado para fornecer aos participantes uma
               introdução prática e acessível à visualização de dados usando a
               biblioteca Vega-lite. Este curso é ideal para iniciantes e
               profissionais que desejam aprender a criar visualizações de dados
               informativas e envolventes de forma eficaz.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de programação, familiaridade
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação, familiaridade
               com linguagens de marcação como JSON e YAML, noções básicas de
               estatística e análise de dados.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Recursos: Notebooks carregados para 2h de minicurso.
-            </strong>
-            .
+            <strong>Recursos:</strong> Notebooks carregados para 2h de minicurso.
           </p>
           <p>
-            <strong>Instalação de Softwares: Navegador.</strong>.
+            <strong>Instalação de Softwares:</strong> Navegador.
           </p>
         </>
       ),
@@ -572,34 +516,23 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Minicurso focado em fornecer aos participantes uma
+            <strong>Descrição:</strong> Minicurso focado em fornecer aos participantes uma
               compreensão abrangente e prática do tratamento de exceções em
               aplicações Java. Este curso é projetado para desenvolvedores Java
               de todos os níveis de habilidade que desejam aprimorar suas
               habilidades no tratamento de erros e exceções em seus aplicativos.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de programação em Java,
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em Java,
               experiência com desenvolvimento de aplicativos Java, compreensão
               básica de exceções e acesso a um ambiente de desenvolvimento Java.
-            </strong>
-            .
+            
           </p>
           <p>
-            <strong>
-              Recursos: Notebooks carregados para 2h de minicurso.
-            </strong>
-            .
+            <strong>Recursos:</strong> Notebooks carregados para 2h de minicurso.
           </p>
           <p>
-            <strong>
-              Instalação de Softwares: VSCode com o java instalado na máquina.
-            </strong>
-            .
+            <strong>Instalação de Softwares:</strong> VSCode com o java instalado na máquina.
           </p>
         </>
       ),
@@ -713,26 +646,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: É um workshop inovador projetado para proporcionar uma
+            <strong>Descrição:</strong> É um workshop inovador projetado para proporcionar uma
               experiência de aprendizado inclusiva e acessível para pessoas
               surdas interessadas em computação. Este workshop tem como objetivo
               introduzir os participantes aos conceitos básicos da Computação
               através da Linguagem Brasileira de Sinais (Libras).
-            </strong>
+            
             .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Nenhum conhecimento prévio é necessário
-            </strong>
-            .
+            <strong>Pré-Requisito:</strong> Nenhum conhecimento prévio é necessário.
           </p>
           <p>
-            <strong>Recursos: Nenhum recurso é necessário.</strong>.
+            <strong>Recursos:</strong>. Nenhum recurso é necessário.
           </p>
           <p>
-            <strong>Instalação de Softwares: Não é necessário.</strong>.
+            <strong>Instalação de Softwares:</strong>. Não é necessário.
           </p>
         </>
       ),
@@ -751,28 +680,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Workshop projetado para oferecer aos participantes uma
+            <strong>Descrição:</strong> Workshop projetado para oferecer aos participantes uma
               introdução detalhada e prática ao testRigor, uma ferramenta de
               automação de testes de software. Durante o workshop, os
               participantes serão guiados por meio dos recursos e
               funcionalidades do testRigor, aprendendo como criar e executar
               testes automatizados de forma eficiente.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de testes de software e
+            <strong>Pré-Requisito:</strong> Conhecimento básico de testes de software e
               familiaridade com conceitos de automação de testes.
-            </strong>
-            .
           </p>
           <p>
-            <strong>Recursos: Não é necessário.</strong>.
+            <strong>Recursos:</strong> Não é necessário.
           </p>
           <p>
-            <strong>Instalação de Softwares: Não é necessário.</strong>.
+            <strong>Instalação de Softwares:</strong> Não é necessário.
           </p>
         </>
       ),
@@ -790,30 +713,21 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: Workshop focado em fornecer aos participantes uma
+            <strong>Descrição:</strong> Workshop focado em fornecer aos participantes uma
               compreensão abrangente e prática do framework Django para
               desenvolvimento web em Python.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de Python, familiaridade com
+            <strong>Pré-Requisito:</strong> Conhecimento básico de Python, familiaridade com
               desenvolvimento web.
-            </strong>
-            .
           </p>
           <p>
-            <strong>Recursos: Não é necessário.</strong>.
+            <strong>Recursos:</strong> Não é necessário.
           </p>
           <p>
-            <strong>
-              Instalação de Softwares: Python, Django, um ambiente virtual
+            <strong>Instalação de Softwares:</strong> Python, Django, um ambiente virtual
               (opcional), um editor de texto ou IDE e um banco de dados
               relacional.
-            </strong>
-            .
           </p>
         </>
       ),
@@ -837,29 +751,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>
-              Descrição: O Workshop oferece uma introdução envolvente aos
+            <strong>Descrição:</strong> O Workshop oferece uma introdução envolvente aos
               fundamentos da animação 2D utilizando uma das ferramentas mais
               populares do mercado, o Paint Tool SAI. Durante este workshop, os
               participantes serão guiados em uma jornada emocionante através dos
               princípios essenciais da animação.
-            </strong>
-            .
           </p>
           <p>
-            <strong>
-              Pré-Requisito: Conhecimento básico de desenho digital, computador
+            <strong>Pré-Requisito:</strong> Conhecimento básico de desenho digital, computador
               com Paint Tool SAI instalado, interesse em animação 2D e motivação
               para praticar.
-            </strong>
-            .
           </p>
           <p>
-            <strong>Recursos: Notebooks carregados para 3h de workshop.</strong>
-            .
+            <strong>Recursos:</strong> Notebooks carregados para 3h de workshop.
           </p>
           <p>
-            <strong>Instalação de Softwares: Paint Tool SAI.</strong>.
+            <strong>Instalação de Softwares:</strong> Paint Tool SAI.
           </p>
         </>
       ),
