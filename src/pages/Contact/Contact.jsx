@@ -1,5 +1,5 @@
-import './Contact.css'
-import contato from '../../assets/images/contato.png'
+import contato from '../../assets/images/contato.png';
+import './Contact.css';
 
 export default function Contact() {
     return (
@@ -19,12 +19,12 @@ export default function Contact() {
 
                         <li>
                             <i className="uil uil-phone-times"></i>
-                            <h5>+55 (83) 99404-0841</h5>
+                            <h5>+55 (83) 99394-0726</h5>
                         </li>
 
                         <li>
                             <i className="uil uil-envelope"></i>
-                            <h5>cacccampusvii@gmail.com</h5>
+                            <h5>sercomp@evento.uepb.edu.br</h5>
                         </li>
 
                         <li>
@@ -35,7 +35,7 @@ export default function Contact() {
 
                 </aside>
 
-                <form action="https://formspree.io/f/mlekppyd" method="POST" className="contact-form">
+                <form action="https://formspree.io/f/xbjnqnak" method="POST" className="contact-form">
                     <div className="form-name">
                         <input type="text" name="Primeiro nome" placeholder="Primeiro Nome" required />
                         <input type="text" name="Sobrenome" placeholder="Sobrenome" required />
