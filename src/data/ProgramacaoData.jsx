@@ -23,7 +23,25 @@ const programacao = [
             { title: 'CREDENCIAMENTO', time: '18:00 - 19:00', timeStr: 'TARDE', location: 'Hall de Entrada da UEPB' },
             {
                 title: 'Painel I - Desafios e Oportunidades da Ciência de Dados: Navegando pelas Fronteiras da Inovação e Aplicações Práticas',
-                time: '19:00 - 21:00', timeStr: 'NOITE', location: "Auditório Celso Furtado"
+                time: '19:00 - 21:00', timeStr: 'NOITE', location: "Auditório Celso Furtado",
+                participants: [
+                    {
+                        name: <div><strong>Mediador:</strong> Jannayna Domingues Barros Filgueira</div>,
+                        photo: "src/assets/images/professores/jannayna.png"
+                    },
+                    {
+                        name: <div>Dra. Angélica Félix de Castro (UFERSA)</div>,
+                        photo: "src/assets/images/participacoes/angelica-felix-ufersa.png"
+                    },
+                    {
+                        name: <div>Dr. Jucelio Soares dos Santos (UEPB)</div>,
+                        photo: "src/assets/images/professores/jucelio.png"
+                    },
+                    {
+                        name: <div>Danilo Coura Moreira (UFCG)</div>,
+                        photo: "src/assets/images/image-not-found.png"
+                    }
+                ]
             },
             { title: 'Apresentação Cultural II', time: '21:00 - 21:30', timeStr: 'NOITE', location: "Auditório Celso Furtado" }
             ,]
@@ -41,7 +59,7 @@ const programacao = [
             { title: 'Apresentação dos Artigos Científicos / Hackathon (Desenvolvimento)', time: '14:00 - 17:00', timeStr: 'TARDE' },
             { title: 'Intervalo', time: '17:00 - 18:30', timeStr: 'TARDE' },
             {
-                title: 'Painel III - Negócios em Rede: Estratégias de Inovação no Cenário de Transformação Digital',
+                title: 'Painel II - Negócios em Rede: Estratégias de Inovação no Cenário de Transformação Digital',
                 time: '18:30 - 20:00', timeStr: 'NOITE', location: "Auditório Celso Furtado"
             },
             { title: 'PitchDay (Apresentação)', time: '20:00 - 21:30', timeStr: 'NOITE' }
@@ -52,8 +70,22 @@ const programacao = [
         day: '4º Dia',
         events: [
             {
-                title: 'Painel II - Deserto Digital: Estratégias das Universidades para um Mundo mais Conectado',
-                time: '08:00 - 09:30', timeStr: 'MANHÃ', location: "Auditório Celso Furtado"
+                title: 'Painel III - Deserto Digital: Estratégias das Universidades para um Mundo mais Conectado',
+                time: '08:00 - 09:30', timeStr: 'MANHÃ', location: "Auditório Celso Furtado",
+                participants: [
+                    {
+                        name: <div><strong>Mediador:</strong> Dr. Jucelio Soares dos Santos (UEPB)</div>,
+                        photo: "src/assets/images/professores/jucelio.png"
+                    },
+                    {
+                        name: <div>Dr. Josemir Moura Maia (UEPB)</div>,
+                        photo: "src/assets/images/image-not-found.png"
+                    },
+                    {
+                        name: <div>Ingridt Millena Vieira Dantas (Virtus)</div>,
+                        photo: "src/assets/images/participacoes/ingridt.png"
+                    }
+                ]
             },
             { title: 'Oficinas', time: '09:30 - 11:30', timeStr: 'MANHÃ' },
             { title: 'Intervalo', time: '11:30 - 14:00', timeStr: 'TARDE' },
@@ -66,8 +98,10 @@ const programacao = [
         date: <>24/<small>MAIO</small></>,
         day: '5º Dia',
         events: [
-            { title: 'Assembleia, premiação (artigos, hackathon, pitchday) e encerramento', time: '08:00 - 11:30', timeStr: 'MANHÃ' },
-            { title: 'Intervalo', time: '11:30 - 18:30', timeStr: 'TARDE' }
+            { title: 'Assembleia', time: '08:00 - 08:30', timeStr: 'MANHÃ' },
+            { title: 'Premiação (Artigos, Hackathon, Maratona de Programação e Ideathon)', time: '09:30 - 10:00', timeStr: 'MANHÃ' },
+            { title: 'Sorteios', time: '08:00 - 11:30', timeStr: 'MANHÃ' },
+            { title: 'Apresentação Cultural', time: '10:00 - 11:30', timeStr: 'TARDE' }
         ]
     }
 ];

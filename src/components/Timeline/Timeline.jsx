@@ -39,11 +39,11 @@ function EventItem({
               ${shouldAlignParticipantImageRight() ? '' : styles.alignLeft}`
             }
           >
-            <p>{participant.name}</p>
+            {participant.name}
             <img src={participant.photo} alt={participant.name}
               style={{
-                marginRight: shouldAlignParticipantImageRight() ? '12px' : '0',
-                marginLeft: shouldAlignParticipantImageRight() ? '0' : '12px'
+                marginRight: shouldAlignParticipantImageRight() ? '0' : '12px',
+                marginLeft: shouldAlignParticipantImageRight() ? '12px' : '0'
               }}
             />
           </div>
@@ -62,7 +62,7 @@ EventItem.propTypes = {
   eventIndex: PropTypes.number.isRequired,
   participants: PropTypes.arrayOf(
     PropTypes.shape({
-      name: PropTypes.string.isRequired,
+      name: PropTypes.node.isRequired,
       photo: PropTypes.string.isRequired,
     })
   ),
@@ -131,7 +131,7 @@ TabsContent.propTypes = {
       eventIndex: PropTypes.number.isRequired,
       participants: PropTypes.arrayOf(
         PropTypes.shape({
-          name: PropTypes.string.isRequired,
+          name: PropTypes.node.isRequired,
           photo: PropTypes.string.isRequired,
         })
       ),
@@ -183,7 +183,7 @@ Timeline.propTypes = {
           location: PropTypes.string,
           participants: PropTypes.arrayOf(
             PropTypes.shape({
-              name: PropTypes.string.isRequired,
+              name: PropTypes.node.isRequired,
               photo: PropTypes.string.isRequired,
             })
           ),
