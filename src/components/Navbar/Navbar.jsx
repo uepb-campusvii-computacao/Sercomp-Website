@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
-import styles from "./Navbar.module.css";
-import { linksData } from "../../data/LinksData";
 import logotipo from "../../assets/images/logotipo_vvisercomp.png";
+import { linksData } from "../../data/LinksData";
+import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const navRef = useRef(null);

@@ -1,8 +1,8 @@
-import React, { useState } from "react";
 import PropTypes from "prop-types";
-import styles from "./ActivityCard.module.css";
-import useWindowWidth from "../../hooks/useWindowWidth"
+import React, { useState } from "react";
+import useWindowWidth from "../../hooks/useWindowWidth";
 import Tooltip from "../ToolTip/ToolTip";
+import styles from "./ActivityCard.module.css";
 
 const extractTextFromFragment = (node) => {
   let text = "";
@@ -40,7 +40,7 @@ export default function ActivityCardBase({ imageNode, title, description, texto_
         <div className={styles.activityCardBody}>
           <Tooltip text={title}>
             <div className={styles.textTruncated}>
-              <h2 style={{ fontSize: "1.5rem" }}>{title}</h2>
+              <h2>{title}</h2>
             </div>
           </Tooltip>         
           <div className={styles.bodyDescription}>

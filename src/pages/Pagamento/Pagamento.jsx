@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { FaCopy } from "react-icons/fa";
 import { useLocation, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
-import styles from "./Pagamento.module.css";
 import { api } from "../../lib/axios";
+import styles from "./Pagamento.module.css";
 
 const Pagamento = () => {
   const location = useLocation();
@@ -99,8 +99,8 @@ const Pagamento = () => {
             <span className={styles.destaque}>*</span>Para validar esse recibo
             acesse:<span className={styles.destaque}>*</span>
           </span>
-          <a className={`${styles.link}`} href={fullUrl}>
-            aqui
+          <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
+            {fullUrl}
           </a>
         </div>
       </section>

@@ -1,13 +1,13 @@
 import PropTypes from "prop-types";
-import ActivityCardBase from "./ActivityCardBase";
-import styles from "./ActivityCard.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styles from "./ActivityCard.module.css";
+import ActivityCardBase from "./ActivityCardBase";
 
 import 'swiper/css';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
-import { Pagination, Navigation, Autoplay } from 'swiper/modules';
+import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Tooltip from "../ToolTip/ToolTip";
 
 function ActivityCardMultipleImage({ ministrantes, title, description, texto_resumo }) {
@@ -36,7 +36,7 @@ function ActivityCardMultipleImage({ ministrantes, title, description, texto_res
                   {ministrante.nome_ministrante}
                 </span>                
               </Tooltip>
-              <img src={ministrante.imagem_ministrante} alt={ministrante.nome_ministrante} />
+              <img className={styles.imagemMinistrante} src={ministrante.imagem_ministrante} alt={ministrante.nome_ministrante} />
             </SwiperSlide>
           ))}
         </Swiper>
