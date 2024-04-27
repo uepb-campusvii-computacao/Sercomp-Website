@@ -1,6 +1,6 @@
+import PropTypes from "prop-types";
 import { useState } from "react";
 import styles from './ToolTip.module.css'; // Arquivo CSS para estilos do tooltip
-import PropTypes from "prop-types";
 
 function ToolTip({ children, text }) {
   const [visible, setVisible] = useState(false);
@@ -14,6 +14,7 @@ function ToolTip({ children, text }) {
       onMouseEnter={showTooltip}
       onMouseLeave={hideTooltip}
       onTouchStart={showTooltip}
+      onTouchEnd={hideTooltip}
     >
       {children}
       {visible && (

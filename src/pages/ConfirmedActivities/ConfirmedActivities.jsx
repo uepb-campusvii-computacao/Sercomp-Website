@@ -24,35 +24,40 @@ export default function ConfirmedActivities() {
   };
 
   return (
-    <section className={styles.confirmedActivitiesContainer}>
-      <div className={styles.buttonGroup}>
-        <button
-          onClick={() => handleCategoryChange('Workshop')}
-          className={`${styles.categoryButton} ${
-            activeCategory === 'Workshop' ? styles.active : ''
-          }`}
-        >
-          Workshop
-        </button>
-        <button
-          onClick={() => handleCategoryChange('Oficina')}
-          className={`${styles.categoryButton} ${
-            activeCategory === 'Oficina' ? styles.active : ''
-          }`}
-        >
-          Oficina
-        </button>
-        <button
-          onClick={() => handleCategoryChange('Minicurso')}
-          className={`${styles.categoryButton} ${
-            activeCategory === 'Minicurso' ? styles.active : ''
-          }`}
-        >
-          Minicurso
-        </button>
-      </div>
+    <>
+      <h1 className={"titulo-principal"} style={{paddingTop: '2rem'}}>
+        Atividades Confirmadas
+      </h1>
+      <section className={styles.confirmedActivitiesContainer}>      
+        <div className={styles.buttonGroup}>
+          <button
+            onClick={() => handleCategoryChange('Workshop')}
+            className={`${styles.categoryButton} ${
+              activeCategory === 'Workshop' ? styles.active : ''
+            }`}
+          >
+            Workshops
+          </button>
+          <button
+            onClick={() => handleCategoryChange('Oficina')}
+            className={`${styles.categoryButton} ${
+              activeCategory === 'Oficina' ? styles.active : ''
+            }`}
+          >
+            Oficinas
+          </button>
+          <button
+            onClick={() => handleCategoryChange('Minicurso')}
+            className={`${styles.categoryButton} ${
+              activeCategory === 'Minicurso' ? styles.active : ''
+            }`}
+          >
+            Minicursos
+          </button>
+        </div>
 
-      <ActivitySlider activities={getActivitiesForCategory(activeCategory)} />
-    </section>
+        <ActivitySlider activities={getActivitiesForCategory(activeCategory)} />
+      </section>
+    </>
   );
 }
