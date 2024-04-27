@@ -31,7 +31,7 @@ const programacao = [
                     },
                     {
                         name: <div>Dra. Angélica Félix de Castro (UFERSA)</div>,
-                        photo: "src/assets/images/participacoes/angelica-felix-ufersa.png"
+                        photo: "src/assets/images/participacoes/2024/angelica-felix-ufersa.webp"
                     },
                     {
                         name: <div>Dr. Jucelio Soares dos Santos (UEPB)</div>,
@@ -83,7 +83,7 @@ const programacao = [
                     },
                     {
                         name: <div>Ingridt Millena Vieira Dantas (Virtus)</div>,
-                        photo: "src/assets/images/participacoes/ingridt.png"
+                        photo: "src/assets/images/participacoes/2024/ingridt.webp"
                     }
                 ]
             },

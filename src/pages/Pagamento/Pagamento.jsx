@@ -100,7 +100,7 @@ const Pagamento = () => {
             acesse:<span className={styles.destaque}>*</span>
           </span>
           <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
-            aqui
+            {fullUrl}
           </a>
         </div>
       </section>
