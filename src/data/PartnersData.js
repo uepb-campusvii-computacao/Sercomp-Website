@@ -1,9 +1,9 @@
-import guedes from '../assets/images/parceiros/guedes.png'
-import eletrolaser from '../assets/images/parceiros/eletrolaser.png'
-import moinhopatoense from '../assets/images/parceiros/moinhopatoense.png'
-import papelariapatoense from '../assets/images/parceiros/papelariapatoense.png'
-import nutrimassa from '../assets/images/parceiros/nutrimassa.png'
-import inovatec from '../assets/images/parceiros/inovatec.png'
+import eletrolaser from '../assets/images/parceiros/2024/eletrolaser.webp'
+import guedes from '../assets/images/parceiros/2024/guedes.webp'
+import inovatec from '../assets/images/parceiros/2024/inovatec.webp'
+import moinhopatoense from '../assets/images/parceiros/2024/moinhopatoense.webp'
+import nutrimassa from '../assets/images/parceiros/2024/nutrimassa.webp'
+import papelariapatoense from '../assets/images/parceiros/2024/papelariapatoense.webp'
 
 const partnersData = [
     {
