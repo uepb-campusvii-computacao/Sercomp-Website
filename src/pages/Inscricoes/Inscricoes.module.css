@@ -1,82 +1,134 @@
-.tituloBase,
-.tituloPrincipal {
-    margin-bottom: 0.1rem;
-    font-weight: 500;
-    margin-bottom: 80px;
-    position: relative;
-    margin-top: 80px;
-    font-size: 1.5rem;
+.container {
+  padding: 2rem;
 }
 
-
-.tituloBase::after,
-.tituloPrincipal::after {
-    position: absolute;
-    content: '';
-    width: 30%;
-    height: 3px;
-    left: 50%;
-    bottom: -5px;
-    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
-    transform: translateX(-50%);
+.submitButtonContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.centerText {
-    display: flex;
-    justify-content: center;
-    word-wrap: break-word;
+.formContainer {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 4rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #424890;
+}
+
+.formContainer p {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.inputGroupLotes {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.loteContainer {
+  padding: 16px;
+  border: 2px solid var(--color-white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.loteContainer input[type="radio"] {
+  display: none;
+}
+
+.loteContainerChecked {
+  background-color: #f8af55;
+  color: #502c00;
+}
+
+.loteContainer .loteContent {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.loteContent span {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.spinner {
+  animation: spin 0.7s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.formContainer input,
+select {
+  width: 100%;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  color: #000;
+  border: 1px solid #ccc;
+}
+
+.formContainer button {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.5rem;
+  width: 30%;
+  background-color: #f29d35;
+  color: #502c00;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formContainer button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.formContainer button:hover {
+  background-color: #ff7300;
+  color: white;
+}
+
+.selectContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selectGroup {
+  flex: 1 1 30%;
+}
+
+@media screen and (max-width: 650px) {
+  .inputGroupLotes {
+    grid-template-columns: 1fr;
   }
 
-.pagList-whats {
-    text-align: center;
-    font-size: 1rem;
-}
+  .formContainer {
+    padding: 2rem;
+  }
 
-.pagList {
-    margin-bottom: 0.5rem;
-}
-
-.pagList li {
-    list-style: disc;
-    text-align: justify;
-    display: flex;
-}
-
-.destaqueText {
-    margin-right: 0.5rem;
-    text-decoration: underline;
-    color: var(--color-warning);
-}
-
-.pagButton {
-    text-align: right;
-}
-
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
-}
-
-.pagLink {
-    text-decoration: underline;
-    color: var(--color-danger);
-}
-
-.tituloPrincipal {
-    font-size: 2rem;
-    text-align: center;
-}
-
-.paragrafo {
-    padding: 1rem;
-    text-align: justify;
-}
-
-.politicaList {
-    margin-bottom: 0.5rem;
-}
-
-.politicaList li {
-    list-style: disc;
-    text-align: justify;
+  .formContainer button {
+    width: 80%;
+  }
 }

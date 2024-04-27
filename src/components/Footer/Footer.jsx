@@ -1,5 +1,5 @@
-import styles from './Footer.module.css'
-import footerBackground from '../../assets/images/footer_background.webp'
+import footerBackground from '../../assets/images/footer_background.webp';
+import styles from './Footer.module.css';
 
 export default function Footer(){
     return (
@@ -30,8 +30,8 @@ export default function Footer(){
                     <h4>Contato</h4>
                     <div>
                         <p>Qualquer dúvida que tiver sobre palestras, minicursos, oficinas, cadastro e tudo mais, entre em contato com a nossa equipe e tire suas dúvidas!</p>
-                        <p className={`uil uil-phone ${styles.contactInfo}`}>+55 (83) 99404-0841</p>
-                        <p className={`uil uil-at ${styles.contactInfo}`}>cacccampusvii@gmail.com</p>
+                        <p className={`uil uil-phone ${styles.contactInfo}`}>+55 (83) 99394-0726</p>
+                        <p className={`uil uil-at ${styles.contactInfo}`}>sercomp@evento.uepb.edu.br</p>
                     </div>
                     <ul className={styles.footerSocials}>
                         <li><a href="https://instagram.com/SERCOMPpb?igshid=YmMyMTA2M2Y=" target="_blank"><i className={`uil uil-instagram-alt ${styles.socialIcon}`} /></a></li>

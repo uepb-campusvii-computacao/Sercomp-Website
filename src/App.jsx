@@ -1,22 +1,25 @@
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
+import DateConditional from "./components/DateConditional/DateConditional";
 import Layout from "./components/Layout/Layout";
-import Home from "./pages/Home/Home";
-import Contact from "./pages/Contact/Contact";
-import Partners from "./pages/Partners/Partners";
+import { Mensagem } from "./components/Mensagem/Mensagem";
 import About from "./pages/About/About";
 import Articles from "./pages/Articles/Articles";
-import Hackthon from "./pages/Hackthon/Hackthon";
-import Timeline from "./pages/Timeline/Timeline";
-import Privacy from "./pages/Privacy/Privacy";
-import Inscricoes from "./pages/Inscricoes/Inscricoes";
 import Chamadas from "./pages/Chamadas/Chamadas";
-import Error404 from "./pages/Error404/Error404";
-import Edition2023 from "./pages/PreviousEditions/2023";
-import Ideathon from "./pages/Ideathon/Ideathon";
-import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
-import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
 import ConfirmedActivities from "./pages/ConfirmedActivities/ConfirmedActivities";
+import Contact from "./pages/Contact/Contact";
+import Error404 from "./pages/Error404/Error404";
+import Hackthon from "./pages/Hackthon/Hackthon";
+import Home from "./pages/Home/Home";
+import Ideathon from "./pages/Ideathon/Ideathon";
+import Inscricoes from "./pages/Inscricoes/Inscricoes";
+import Pagamento from "./pages/Pagamento/Pagamento";
+import Partners from "./pages/Partners/Partners";
+import Edition2023 from "./pages/PreviousEditions/2023";
+import Privacy from "./pages/Privacy/Privacy";
+import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
+import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
+import Timeline from "./pages/Timeline/Timeline";
 
 function App() {
   return (
@@ -31,7 +34,14 @@ function App() {
           <Route exact path="/hackathon" element={<Hackthon />} />
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/inscricao" element={<Inscricoes />} />
+          <Route exact path="/inscricao" element={
+            <DateConditional
+              until="2024/05/20"
+              renderIfTrue={<Inscricoes />}
+              renderIfFalse={<Mensagem texto="Inscrições encerradas!"/>}
+            />
+          } />
+          <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />

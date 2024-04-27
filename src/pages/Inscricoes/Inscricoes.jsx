@@ -1,60 +1,247 @@
-import styles from './Inscricoes.module.css';
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import { FaSpinner } from "react-icons/fa"; // Importe o ícone de Spinner
+import { ToastContainer, toast } from "react-toastify";
+import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
+import { api } from "../../lib/axios";
 
-import Partners from '../../components/Partners/Partners'
-
-import ResponsaveisInscricao from '../../components/ResponsaveisInscricao/ResponsaveisInscricao'
-import { Mensagem } from '../../components/Mensagem/Mensagem';
+import { useNavigate } from "react-router-dom";
+import "react-toastify/dist/ReactToastify.css";
+import styles from "./Inscricoes.module.css";
 
 const Inscricoes = () => {
-    return (
-        <Mensagem texto={"Inscrições em breve..."}/>
-    );
-    // return (
-    //     <>
-    //     <section className="container">
-    //         <h1 className={styles.tituloPrincipal}>Instruções para a <strong>Inscrição</strong></h1>
-    //         <p className={`${styles.paragrafo}`}>Ao se inscrever, o participante deverá fornecer seu nome completo e endereço de e-mail, além de escolher até duas atividades simultâneas, como um minicurso e uma oficina. Todas as outras atividades oferecidas, como palestras, mesa-redonda, apresentação de artigos, feira tecnológica, hackday e noite nerd, estão incluídas no valor da inscrição, a saber:</p>
+  const navigate = useNavigate();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { isSubmitting },
+  } = useForm({
+    mode: "all",
+  });
 
-    //         <p className={styles.destaqueText}>R$ 30,00</p>
+  const [atividades, setAtividades] = useState({
+    minicursos: [],
+    oficinas: [],
+    workshops: [],
+  });
+  const [isLoading, setIsLoading] = useState(true);
 
-    //         <div className={styles.pagButton}>
-    //             <a href="/privacy" className="btn btn-primary" target="_blank">
-    //                 Políticas do Evento
-    //             </a>
-    //         </div>
+  const [lotes, setLotes] = useState([]);
 
-    //         <p className={`${styles.paragrafo}`}>Para garantir a sua participação no V SERCOMP, siga os seguintes passos:</p>
+  const selectedLote = watch("lote");
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 1: Fale com um representante e garanta sua inscrição</h2>
+  async function fecthApiData() {
+    try {
+      const atividadesPromise = api.get(
+        `/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`
+      );
+      const lotesPromise = api
+        .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`)
 
-    //         <p className={`${styles.paragrafo}`}>As inscrições serão efetuadas de forma online através do aplicativo WhatsApp, seguindo os horários de atendimento dos nossos representantes.</p>
+      const [atividadesResponse, lotesResponse] = await Promise.all([
+        atividadesPromise,
+        lotesPromise
+      ]);
 
-    //         <ResponsaveisInscricao />            
+      setAtividades(atividadesResponse.data);
+      setLotes(lotesResponse.data);
+      setIsLoading(false);
+    } catch (err) {
+      setIsLoading(false);
+      console.log(err);
+      toast.error("Erro ao buscar dados da API");
+    }
+  }
 
-    //         <p className={`${styles.paragrafo}`}>Informe no ato da inscrição seu nome completo e email.</p>
+  useEffect(() => {
+    fecthApiData();
+  }, []);
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 2: Escolha das atividades Simultâneas</h2>
+  async function onSubmit(data) {
+    const workshop_id = data.workshop;
+    const minicurso_id = data.oficina;
+    const oficina_id = data.minicurso;
 
-    //         <p className={`${styles.paragrafo}`}>Leia atentamente os pré-requisitos dos minicursos e oficinas disponíveis no site. E escolha até duas atividades simultâneas: um minicurso e uma oficina.</p>
+    const { nome, nome_cracha, email, instituicao, lote } = data;
 
-    //         <p className={`${styles.paragrafo}`}>É altamente recomendável ler os pré-requisitos de cada atividade, que estão disponíveis em <a className={styles.pagLink} href="http://sercomppb.com.br/atividades.html" target="_blank">http://sercomppb.com.br/atividades.html</a>.</p>
+    if (!lote) {
+      toast.error("O lote é obrigatório!");
+    }
 
-    //         <p className={`${styles.paragrafo}`}>Para os minicursos e oficinas, serão exigidas algumas habilidades prévias, além de ser necessário trazer o próprio dispositivo com algumas ferramentas já instaladas. É possível que, no momento da inscrição, o minicurso ou oficina desejado não esteja mais disponível devido às limitações de vagas.</p>
+    const requestData = {
+      nome,
+      nome_cracha,
+      email,
+      instituicao,
+      atividades: {workshop_id, minicurso_id, oficina_id},
+      lote_id: lote || lotes[0].uuid_lote,
+    };
 
-    //         <h2 className={`${styles.tituloBase}`}>Passo 3: Forma de Pagamento e Confirmação da Inscrição</h2>
+    try {
+      const { data } = await api.post(
+        `/register/${import.meta.env.VITE_EVENTO_UUID}`,
+        requestData
+      );
 
-    //         <p className={`${styles.paragrafo}`}>Realize o pagamento da taxa de inscrição por meio de transferência via Pix. O V SERCOMP aceitará apenas pagamento por meio de pix, utilizando a seguinte chave: </p>
+      toast.success("Inscrição realizada!");
+      await new Promise((r) => setTimeout(r, 3000));
 
-    //         <p className={`${styles.paragrafo} ${styles.centerText} ${styles.destaqueText}`}>vanderleiapereira2002@gmail.com</p>
+      navigate(`/pagamento/user/${data.uuid_user}/lote/${selectedLote}`);
+    } catch (error) {
+      toast.error(error.response.data);
+    }
+  }
 
-    //         <p className={`${styles.paragrafo}`}>É importante lembrar que a inscrição só será confirmada após o pagamento e o envio do comprovante para o número de WhatsApp do representante responsável pela inscrição.</p>
+  return (
+    <section className={styles.container}>
+      <ToastContainer autoClose={1500} />
+      <h1 className="titulo-principal">
+        <strong>Inscrição</strong>
+      </h1>
 
-    //         <p className={`${styles.paragrafo}`}>Certifique-se de realizar o pagamento dentro do prazo estipulado para evitar problemas e garantir sua participação no evento. Caso tenha qualquer dúvida em relação ao pagamento, não hesite em entrar em contato com nossa equipe.</p>
+      {isLoading ? (
+        <LoadingScreen />
+      ) : (
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className={styles.formContainer}
+        >
+          <div className={styles.inputGroup}>
+            <div>
+              <p>Nome</p>
+              <input
+                disabled={isSubmitting}
+                required
+                type="text"
+                placeholder="Nome"
+                {...register("nome", { required: true })}
+              />
+            </div>
+            <div>
+              <p>Nome no crachá</p>
+              <input
+                disabled={isSubmitting}
+                required
+                type="text"
+                placeholder="Nome no crachá"
+                {...register("nome_cracha", { required: true })}
+              />
+            </div>
+            <div>
+              <p>E-mail</p>
+              <input
+                disabled={isSubmitting}
+                required
+                type="email"
+                placeholder="Email"
+                {...register("email", { required: true })}
+              />
+            </div>
+            <div>
+              <p>Instituição</p>
+              <input
+                disabled={isSubmitting}
+                required
+                type="text"
+                placeholder="Instituição"
+                {...register("instituicao", { required: true })}
+              />
+            </div>
+          </div>
 
-    //     </section>
-    //     <Partners />
-    //     </>
-    // );
+          <div className={styles.inputGroup}>
+            <p>Selecione o lote</p>
+            <div className={styles.inputGroupLotes}>
+              {lotes.map((lote) => (
+                <label
+                  key={lote.uuid_lote}
+                  htmlFor={lote.uuid_lote}
+                  className={`${styles.loteContainer} ${
+                    selectedLote === lote.uuid_lote
+                      ? styles.loteContainerChecked
+                      : ""
+                  }`}
+                >
+                  <div className={styles.loteContent}>
+                    {lote.nome} <br /> <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
+                  </div>
+                  <input
+                    id={lote.uuid_lote}
+                    type="radio"
+                    value={lote.uuid_lote}
+                    checked={selectedLote === lote.uuid_lote}
+                    disabled={isSubmitting}
+                    {...register("lote")}
+                  />
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <div className={styles.selectContainer}>
+            <div className={styles.selectGroup}>
+              <p>Minicursos</p>
+              <select {...register("minicurso")}>
+                <option value="">Selecione...</option>
+                {atividades.minicursos.map((minicurso) => (
+                  <option
+                    key={minicurso.uuid_atividade}
+                    value={minicurso.uuid_atividade}
+                  >
+                    {minicurso.nome}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className={styles.selectGroup}>
+              <p>Workshops</p>
+              <select {...register("workshop")}>
+                <option value="">Selecione...</option>
+                {atividades.workshops.map((workshop) => (
+                  <option
+                    key={workshop.uuid_atividade}
+                    value={workshop.uuid_atividade}
+                  >
+                    {workshop.nome}
+                  </option>
+                ))}
+              </select>
+            </div>
+
+            <div className={styles.selectGroup}>
+              <p>Oficinas</p>
+              <select {...register("oficina")}>
+                <option value="">Selecione...</option>
+                {atividades.oficinas.map((oficina) => (
+                  <option
+                    key={oficina.uuid_atividade}
+                    value={oficina.uuid_atividade}
+                  >
+                    {oficina.nome}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className={styles.submitButtonContainer}>
+            <button type="submit" disabled={isSubmitting}>
+              {isSubmitting ? (
+                <>
+                  <FaSpinner className={styles.spinner} />
+                  Aguarde...
+                </>
+              ) : (
+                "Inscrever-se"
+              )}
+            </button>
+          </div>
+        </form>
+      )}
+    </section>
+  );
 };
 
 export default Inscricoes;

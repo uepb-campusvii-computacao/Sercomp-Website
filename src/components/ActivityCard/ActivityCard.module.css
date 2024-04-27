@@ -4,6 +4,15 @@
   display: flex;
   flex-direction: row;
   padding: 24px;
+  max-width: 1200px;
+}
+
+.imagemMinistrante {
+  height: 350px;
+}
+
+.group {
+  width: 100%;
 }
 
 .ministrantes {
@@ -30,12 +39,13 @@
   width: 350px;
 }
 
-.ministrante1:hover,
-.ministrante2:hover {
-  z-index: 1;
-  transform: scale(1.1);
-  box-shadow: 0 0 10px black;
-  border-radius: 8px;
+.bodyDescription {
+  text-align: left;
+}
+
+.bodyDescription p strong{
+  font-weight: bold;
+  color: yellow;
 }
 
 .ministrante span {
@@ -58,9 +68,10 @@
 }
 
 .activityCardBody {
-  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
   margin-left: 1.3rem;
-  text-align: justify;
+  gap: 20px;
 }
 
 .activityCardFooter {
@@ -109,6 +120,26 @@
   right: 12px;
 }
 
+.textTruncated {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.textTruncated h2 {
+  font-size: 1.5rem;
+}
+
+.imageHeaderTextTruncated {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
 @media screen and (max-width: 1300px) {
   .activityCardContainer {
     display: flex;
@@ -127,6 +158,10 @@
     margin: 0.5rem;
   }
 
+  .activityCardFooter {
+    min-height: 50px;
+  }
+
   .activityCardContainer p {
     text-align: justify;
   }
@@ -141,6 +176,14 @@
 
 
 @media screen and (max-width: 450px) {
+  .activityCardContainer {
+    min-height: 580px;
+  }
+
+  .textTruncated h2 {
+    font-size: 1.2rem;
+  }
+
   .ministrante1 {
     transform: none;
     margin-left: -100px;
