@@ -164,7 +164,7 @@ const Inscricoes = () => {
                   }`}
                 >
                   <div className={styles.loteContent}>
-                    {lote.nome} <br /> <span> Valor - R${lote.preco}</span>{" "}
+                    {lote.nome} <br /> <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
                   </div>
                   <input
                     id={lote.uuid_lote}
