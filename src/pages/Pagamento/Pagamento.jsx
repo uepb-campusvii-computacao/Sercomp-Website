@@ -65,7 +65,7 @@ const Pagamento = () => {
                 </span>
                 <span>
                   <span className={styles.destaque}>Preço da inscrição: </span>{" "}
-                  {userInformations.inscricao.preco} R$
+                  {userInformations.inscricao.preco.toFixed(2)} R$
                 </span>
                 <span>
                   <span className={styles.destaque}>
@@ -100,7 +100,7 @@ const Pagamento = () => {
             acesse:<span className={styles.destaque}>*</span>
           </span>
           <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
-            {fullUrl}
+            aqui
           </a>
         </div>
       </section>
