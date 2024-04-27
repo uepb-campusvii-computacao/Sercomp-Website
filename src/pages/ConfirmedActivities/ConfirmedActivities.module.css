@@ -1,52 +1,72 @@
 .confirmedActivitiesContainer {
-    padding-top: 7rem;
-    padding-bottom: 2rem;
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-  }
-  
-  .confirmedActivitiesContainer h1 {
-    font-weight: 700;
-    font-size: 52px;
-    text-align: center;
-  }
-  
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.confirmedActivitiesContainer h1 {
+  font-weight: 700;
+  font-size: 52px;
+  text-align: center;
+}
+
+.buttonGroup {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  padding-left: 18%;
+  padding-right: 18%;
+}
+
+.categoryButton.active {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.heading {
+  font-weight: 500;
+  margin-bottom: 80px;
+  position: relative;
+  margin-top: 80px;
+}
+
+.categoryButton.active:hover {
+  background: yellow;
+  color: black;
+  font-weight: bold;
+}
+
+.categoryButton:hover {
+  background: var(--color-bg1);
+}
+
+.categoryButton {
+  margin: 0 5px;
+  padding: 7px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+  color: white;
+  width: 100%;
+  height: 50px;
+  background-color: var(--color-bg2);
+}
+
+@media screen and (max-width: 1300px) {
   .buttonGroup {
-    margin-bottom: 20px;
-    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    gap: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
   }
-  
-  .categoryButton {
-    padding: 10px 20px;
-    background: lightgray;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 15px;
-    width: 100%;
-    text-align: center;
+}
+
+@media screen and (max-width: 799px) {
+  .buttonGroup {
+    padding-left: 9%;
+    padding-right: 9%;
   }
-  
-  .categoryButton.active {
-    background: #007bff;
-    color: white;
-  }
-  
-  .categoryButton:hover {
-    background: gray;
-  }
-  
-  @media (min-width: 645px) {
-    .buttonGroup {
-      flex-direction: row;
-      justify-content: center;
-    }
-  }
-  
+}

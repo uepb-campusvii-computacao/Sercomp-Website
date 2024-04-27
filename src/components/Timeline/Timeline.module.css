@@ -17,6 +17,8 @@
     justify-content: space-evenly;
     border-radius: 30px;
     padding: 10px 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .tabsToggle {
@@ -42,7 +44,9 @@
 }
 
 .tabsToggle.isActive {
-    background: var(--color-bg1);
+    background: yellow;
+    color: rgb(0, 2, 105);
+    font-weight: bold
 }
 
 .tabsContent.isActive {
@@ -231,6 +235,8 @@
         align-items: normal;
         text-align: center;
         gap: 16px;
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
     .blockInfoTimeline img {

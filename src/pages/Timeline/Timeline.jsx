@@ -1,4 +1,4 @@
-import programacao from '../../data/ProgramacaoData.jsx'
+import programacao from '../../data/ProgramacaoData.jsx';
 
 import TimelineComponent from '../../components/Timeline/Timeline.jsx';
 
