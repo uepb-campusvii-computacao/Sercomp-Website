@@ -3,19 +3,19 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/Ellen.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Ellen Santos Ramalho.webp",
           nome_ministrante: "Ellen Santos Ramalho",
         },
         {
-          imagem_ministrante: "src/assets/images/participacoes/Emilly.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Emilly Santos Ramalho.webp",
           nome_ministrante: "Emilly Santos Ramalho",
         },
         {
-          imagem_ministrante: "src/assets/images/participacoes/Rebeca.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp",
           nome_ministrante: "Rebeca Barbosa Lourenço",
         },
         {
-          imagem_ministrante: "src/assets/images/participacoes/Yohanna.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Yohanna.webp",
           nome_ministrante: "Yohanna Barbara Pereira Costa",
         },
       ],
@@ -58,7 +58,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/victor.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Victor Meneses Pinho.webp",
           nome_ministrante: "Victor Meneses Pinho",
         },
       ],
@@ -97,7 +97,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/wellyngton.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/wellyngton.webp",
           nome_ministrante: "Wellyngton da Nobrega Targino",
         },
       ],
@@ -165,7 +165,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/Laura.jpg",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp",
           nome_ministrante: "Laura Rafaella Feitosa Alves de Oliveira",
         },
       ],
@@ -201,7 +201,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/luciano.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Luciano Claudio Alves da Silva Segundo.webp",
           nome_ministrante: "Luciano Claudio Alves da Silva Segundo",
         },
       ],
@@ -235,7 +235,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Eros Franklin Soares Felix.webp",
           nome_ministrante: "Eros Franklin Soares Felix",
         },
       ],
@@ -269,7 +269,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Thiago Alves Laurentino.webp",
           nome_ministrante: "Thiago Alves Laurentino",
         },
       ],
@@ -302,18 +302,18 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante:
-            "src/assets/images/sem-imagem.png",
-          nome_ministrante: "Caio Henrique Lopes Sousa",
-        },
-        {
-          imagem_ministrante: "src/assets/images/participacoes/eduardo.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/eduardo.webp",
           nome_ministrante: "Eduardo Paulino Dantas",
         },
         {
-          imagem_ministrante: "src/assets/images/participacoes/halan.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/halan.webp",
           nome_ministrante: "Halan Caio Pereira do Nascimento",
         },
+        {
+          imagem_ministrante:
+            "src/assets/images/sem-imagem.png",
+          nome_ministrante: "Caio Henrique Lopes Sousa",
+        }
       ],
       texto_resumo:
         "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
@@ -357,11 +357,11 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/Rebeca.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp",
           nome_ministrante: "Rebeca Barbosa Lourenço",
         },
         {
-          imagem_ministrante: "src/assets/images/participacoes/gabriel.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Gabriel Lira da Nóbrega.webp",
           nome_ministrante: "Gabriel Lira da Nóbrega",
         },
       ],
@@ -434,7 +434,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/victor.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Victor Meneses Pinho.webp",
           nome_ministrante: "Victor Meneses Pinho",
         },
       ],
@@ -473,7 +473,7 @@ export const ConfirmedActivitiesData = {
       ministrantes: [
         {
           imagem_ministrante:
-            "src/assets/images/participacoes/danielmarques.png",
+            "src/assets/images/participacoes/2024/danielmarques.webp",
           nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
@@ -507,7 +507,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/giordanni.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Giordanni Alves Formiga.webp",
           nome_ministrante: "Giordanni Alves Formiga",
         },
       ],
@@ -541,7 +541,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/yuri.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/yuri.webp",
           nome_ministrante: "Yuri dos Santos Monteiro",
         },
       ],
@@ -586,7 +586,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/giovanna_trigueiro.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/giovanna_trigueiro.webp",
           nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
         },
       ],
@@ -637,7 +637,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Dayza Meiry Barreto Silva.webp",
           nome_ministrante: "Dayza Meiry Barreto Silva",
         },
       ],
@@ -671,7 +671,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/esdras.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Esdras Samuel de Araújo Ferreira.webp",
           nome_ministrante: "Esdras Samuel de Araújo Ferreira",
         },
       ],
@@ -704,7 +704,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/João Lucas de Sousa Martins.webp",
           nome_ministrante: "João Lucas de Sousa Martins",
         },
       ],
@@ -776,15 +776,15 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: "src/assets/images/participacoes/luanny.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Luanny Kelly de Almeida Leitao.webp",
           nome_ministrante: "Luanny Kelly de Almeida Leitao",
         },
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Itallo Mendes da Silva.webp",
           nome_ministrante: "Itallo Mendes da Silva",
         },
         {
-          imagem_ministrante: "src/assets/images/sem-imagem.png",
+          imagem_ministrante: "src/assets/images/participacoes/2024/Pedro Ferreira de Lima Neto.webp",
           nome_ministrante: "Pedro Ferreira de Lima Neto",
         },
       ],
