@@ -184,6 +184,16 @@ const ratingCriteria = [
   <><strong>Portabilidade -</strong> Grau de eficácia e eficiência com o qual um sistema, produto ou componente pode ser transferido de um hardware, software ou outro ambiente operacional ou de uso para outro.</>,
 ]
 
+function SectionButton() {
+  return (
+    <div className={styles.sectionButtons}>
+      <a href={formLink} className="btn btn-primary" target="_blank">
+        Formulário de Inscrição
+      </a>
+    </div>
+  );
+}
+
 export default function Hackathon() {
    return (
       <section className={"container"}>
@@ -204,6 +214,7 @@ export default function Hackathon() {
          <Accordion title={"Disposições Gerais"} content={<HackthonList items={generalProvisions} />} />
          <Accordion title={"Orientações aos participantes"} content={<HackthonList items={guidelinesForParticipants} />} />
          <Accordion title={"Critérios de Avaliação"} content={<HackthonList items={ratingCriteria} />} />
+         <SectionButton />
       </section>
    );
 }
