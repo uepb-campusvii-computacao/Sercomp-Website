@@ -3,17 +3,17 @@ import OrganizationPeople from "../../../components/Organization/OrganizationPeo
 import styles from "./2023.module.css";
 import Palestrante from "../../../components/Palestrante/Palestrante";
 
-import cleisson from "../../../assets/images/participacoes/cleisson.png";
-import karliane from "../../../assets/images/participacoes/karliane.png";
-import matheus from "../../../assets/images/participacoes/matheus.png";
-import marcio from "../../../assets/images/participacoes/marcio.png";
-import klayton from "../../../assets/images/participacoes/klayton.png";
-import samuel from "../../../assets/images/participacoes/samuel.png";
-import harllem from "../../../assets/images/participacoes/harllem.png";
-import almeida from "../../../assets/images/participacoes/almeida.png";
-import esdras from "../../../assets/images/participacoes/esdras.png";
-import daniel from "../../../assets/images/participacoes/daniel.png";
-import jairo from "../../../assets/images/participacoes/jairo.png";
+import cleisson from "../../../assets/images/participacoes/2023/cleisson.png";
+import karliane from "../../../assets/images/participacoes/2023/karliane.png";
+import matheus from "../../../assets/images/participacoes/2023/matheus.png";
+import marcio from "../../../assets/images/participacoes/2023/marcio.png";
+import klayton from "../../../assets/images/participacoes/2023/klayton.png";
+import samuel from "../../../assets/images/participacoes/2023/samuel.png";
+import harllem from "../../../assets/images/participacoes/2023/harllem.png";
+import almeida from "../../../assets/images/participacoes/2023/almeida.png";
+import esdras from "../../../assets/images/participacoes/2023/esdras.png";
+import daniel from "../../../assets/images/participacoes/2023/daniel.png";
+import jairo from "../../../assets/images/participacoes/2023/jairo.png";
 
 import rosangela from "../../../assets/images/professores/rosangela.png";
 import demetrio from "../../../assets/images/professores/demetrio.png";
