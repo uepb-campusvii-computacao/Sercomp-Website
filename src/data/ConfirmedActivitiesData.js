@@ -143,7 +143,7 @@ export const ConfirmedActivitiesData = {
       {
           ministrantes: [
               {
-                  imagem_ministrante: "src/assets/images/participacoes/Laura.png",
+                  imagem_ministrante: "src/assets/images/participacoes/laura.png",
                   nome_ministrante: "Laura Rafaella Feitosa Alves de Oliveira",
               }
           ],
@@ -168,7 +168,7 @@ export const ConfirmedActivitiesData = {
       {
       ministrantes: [
           {
-              imagem_ministrante: "src/assets/images/participacoes/luciano.png",
+              imagem_ministrante: "src/assets/images/participacoes/Luciano.png",
               nome_ministrante: "Luciano Claudio Alves da Silva Segundo",
           }
       ],
@@ -246,7 +246,7 @@ export const ConfirmedActivitiesData = {
       {
           ministrantes: [
               {
-                  imagem_ministrante: "src/assets/images/participacoes/place_holder.png",
+                  imagem_ministrante: "src/assets/images/participacoes/Caio.png",
                   nome_ministrante: "Caio Henrique Lopes Sousa",
               },
               {
@@ -460,7 +460,7 @@ export const ConfirmedActivitiesData = {
       {
           ministrantes: [
               {
-                  imagem_ministrante: "src/assets/images/participacoes/esdras.png",
+                  imagem_ministrante: "src/assets/images/participacoes/Dayza.png",
                   nome_ministrante: "Dayza Meiry Barreto Silva",
               }
           ],
@@ -510,7 +510,7 @@ export const ConfirmedActivitiesData = {
       {
           ministrantes: [
               {
-                  imagem_ministrante: "src/assets/images/participacoes/joaolucas.png",
+                  imagem_ministrante: "src/assets/images/participacoes/JoaoLucas.png",
                   nome_ministrante: "João Lucas de Sousa Martins",
               }
           ],
