@@ -1,31 +1,36 @@
-import caioHenriqueSousa from '../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp';
-import danielMarquesGuimaraes from '../assets/images/participacoes/2024/danielmarques.webp';
-import dayzaMeiryBarretoSilva from '../assets/images/participacoes/2024/Dayza Meiry Barreto Silva.webp';
-import eduardoPaulinoDantas from '../assets/images/participacoes/2024/eduardo.webp';
-import ellenSantosRamalho from '../assets/images/participacoes/2024/Ellen Santos Ramalho.webp';
-import emillySantosRamalho from '../assets/images/participacoes/2024/Emilly Santos Ramalho.webp';
-import erosFranklinSoaresFelix from '../assets/images/participacoes/2024/Eros Franklin Soares Felix.webp';
-import esdrasSamuelFerreira from '../assets/images/participacoes/2024/Esdras Samuel de Araújo Ferreira.webp';
-import gabrielLiraNobrega from '../assets/images/participacoes/2024/Gabriel Lira da Nóbrega.webp';
+import caioHenriqueSousa from "../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp";
+import danielMarquesGuimaraes from "../assets/images/participacoes/2024/Daniel-Marques-Vasconcelos-Guimaraes.webp";
+import dayzaMeiryBarretoSilva from "../assets/images/participacoes/2024/Dayza Meiry Barreto Silva.webp";
+import eduardoPaulinoDantas from "../assets/images/participacoes/2024/eduardo.webp";
+import ellenSantosRamalho from "../assets/images/participacoes/2024/Ellen Santos Ramalho.webp";
+import emillySantosRamalho from "../assets/images/participacoes/2024/Emilly Santos Ramalho.webp";
+import erosFranklinSoaresFelix from "../assets/images/participacoes/2024/Eros Franklin Soares Felix.webp";
+import esdrasSamuelFerreira from "../assets/images/participacoes/2024/Esdras Samuel de Araújo Ferreira.webp";
+import gabrielLiraNobrega from "../assets/images/participacoes/2024/Gabriel Lira da Nóbrega.webp";
 import giordaniAlvesFormiga from "../assets/images/participacoes/2024/Giordanni Alves Formiga.webp";
-import giovannaTrigueiroAlmeida from '../assets/images/participacoes/2024/giovanna_trigueiro.webp';
-import halanCaioNascimento from '../assets/images/participacoes/2024/halan.webp';
-import italloMendesSilva from '../assets/images/participacoes/2024/Itallo Mendes da Silva.webp';
-import joaoLucasSousaMartins from '../assets/images/participacoes/2024/João Lucas de Sousa Martins.webp';
-import lauraRafaellaFeitosaAlves from '../assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp';
-import luannyKellyLeitao from '../assets/images/participacoes/2024/Luanny Kelly de Almeida Leitao.webp';
-import lucianoClaudioSilvaSegundo from '../assets/images/participacoes/2024/Luciano Claudio Alves da Silva Segundo.webp';
-import pedroFerreiraLimaNeto from '../assets/images/participacoes/2024/Pedro Ferreira de Lima Neto.webp';
-import rebecaBarbosaLourenco from '../assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp';
-import thiagoAlvesLaurentino from '../assets/images/participacoes/2024/Thiago Alves Laurentino.webp';
-import victorMenesesPinho from '../assets/images/participacoes/2024/Victor Meneses Pinho.webp';
-import wellyngtonTargino from '../assets/images/participacoes/2024/wellyngton.webp';
-import yohannaBarbaraPereiraCosta from '../assets/images/participacoes/2024/Yohanna.webp';
-import yuriSantosMonteiro from '../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp';
-import jucelioSoaresSantos from '../assets/images/professores/jucelio.png';
-import rosangelaAraújoMedeiros from '../assets/images/professores/rosangela.png';
-import { default as alysonJonasMorato, default as kallebDiasMarques, default as klaudio } from '../assets/images/sem-imagem.png';
-
+import giovannaTrigueiroAlmeida from "../assets/images/participacoes/2024/giovanna_trigueiro.webp";
+import halanCaioNascimento from "../assets/images/participacoes/2024/halan.webp";
+import italloMendesSilva from "../assets/images/participacoes/2024/Itallo Mendes da Silva.webp";
+import joaoLucasSousaMartins from "../assets/images/participacoes/2024/João Lucas de Sousa Martins.webp";
+import lauraRafaellaFeitosaAlves from "../assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp";
+import luannyKellyLeitao from "../assets/images/participacoes/2024/Luanny Kelly de Almeida Leitao.webp";
+import lucianoClaudioSilvaSegundo from "../assets/images/participacoes/2024/Luciano Claudio Alves da Silva Segundo.webp";
+import pedroFerreiraLimaNeto from "../assets/images/participacoes/2024/Pedro Ferreira de Lima Neto.webp";
+import rebecaBarbosaLourenco from "../assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp";
+import thiagoAlvesLaurentino from "../assets/images/participacoes/2024/Thiago Alves Laurentino.webp";
+import victorMenesesPinho from "../assets/images/participacoes/2024/Victor Meneses Pinho.webp";
+import wellyngtonTargino from "../assets/images/participacoes/2024/wellyngton.webp";
+import yohannaBarbaraPereiraCosta from "../assets/images/participacoes/2024/Yohanna.webp";
+import yuriSantosMonteiro from "../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
+import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp";
+import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
+import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2024/Klaudio-Henrique-Mascarenhas-Medeiros.webp";
+import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
+import {
+  default as alysonJonasMorato,
+  default as kallebDiasMarques,
+  default as JoseAldoSilvadaCosta,
+} from "../assets/images/sem-imagem.png";
 
 export const ConfirmedActivitiesData = {
   Oficina: [
@@ -115,7 +120,8 @@ export const ConfirmedActivitiesData = {
             <strong>Recursos: </strong>Notebook, laptop
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>Intellij IDEA, Java JDK, Insomnia.
+            <strong>Instalação de Softwares: </strong>Intellij IDEA, Java JDK,
+            Insomnia.
           </p>
         </>
       ),
@@ -172,13 +178,14 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição: </strong>Nesta oficina, os participantes serão guiados através
-              das principais etapas do processo de elaboração de um Trabalho de
-              Conclusão de Curso (TCC) com foco na aplicação de técnicas de
-              Inteligência Artificial (IA).
+            <strong>Descrição: </strong>Nesta oficina, os participantes serão
+            guiados através das principais etapas do processo de elaboração de
+            um Trabalho de Conclusão de Curso (TCC) com foco na aplicação de
+            técnicas de Inteligência Artificial (IA).
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Ter conhecimento básico de metodologia científica.
+            <strong>Pré-Requisito:</strong> Ter conhecimento básico de
+            metodologia científica.
           </p>
           <p>
             <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
@@ -203,24 +210,24 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Nesta oficina, os participantes serão introduzidos aos
-              princípios essenciais de Design de Interface do Usuário (UI) e
-              Experiência do Usuário (UX), utilizando a ferramenta Figma.
-              Através de exemplos práticos e exercícios guiados, os
-              participantes aprenderão a criar designs de interface atraentes e
-              funcionais, levando em consideração aspectos como usabilidade,
-              acessibilidade e estética.
+            <strong>Descrição:</strong> Nesta oficina, os participantes serão
+            introduzidos aos princípios essenciais de Design de Interface do
+            Usuário (UI) e Experiência do Usuário (UX), utilizando a ferramenta
+            Figma. Através de exemplos práticos e exercícios guiados, os
+            participantes aprenderão a criar designs de interface atraentes e
+            funcionais, levando em consideração aspectos como usabilidade,
+            acessibilidade e estética.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de design gráfico e/ou
-              interesse em aprender sobre design de interfaces.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de design
+            gráfico e/ou interesse em aprender sobre design de interfaces.
           </p>
           <p>
             <strong>Recursos:</strong> Computador.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> Ter acesso a um computador com conexão à
-              internet para utilizar o Figma.
+            <strong>Instalação de Softwares:</strong> Ter acesso a um computador
+            com conexão à internet para utilizar o Figma.
           </p>
         </>
       ),
@@ -239,22 +246,24 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Os participantes aprenderão a utilizar as estruturas de
-              dados da biblioteca Collections em Java para resolver problemas de
-              manipulação de dados de forma eficiente e elegante. Através de
-              exemplos práticos e exercícios, os participantes irão explorar
-              diferentes tipos de coleções, como Listas, Conjuntos e Mapas, e
-              aprenderão a aplicar operações comuns, como adição, remoção, busca
-              e ordenação de elementos.
+            <strong>Descrição:</strong> Os participantes aprenderão a utilizar
+            as estruturas de dados da biblioteca Collections em Java para
+            resolver problemas de manipulação de dados de forma eficiente e
+            elegante. Através de exemplos práticos e exercícios, os
+            participantes irão explorar diferentes tipos de coleções, como
+            Listas, Conjuntos e Mapas, e aprenderão a aplicar operações comuns,
+            como adição, remoção, busca e ordenação de elementos.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em Java.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+            em Java.
           </p>
           <p>
             <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> VSCode com o java instalado na máquina.
+            <strong>Instalação de Softwares:</strong> VSCode com o java
+            instalado na máquina.
           </p>
         </>
       ),
@@ -273,22 +282,22 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Os participantes serão introduzidos aos princípios e
-              práticas fundamentais do desenvolvimento front-end para criação de
-              experiências web atrativas e funcionais. Através de uma abordagem
-              prática e orientada a projetos, os participantes irão explorar
-              conceitos de HTML, CSS e JavaScript.
+            <strong>Descrição:</strong> Os participantes serão introduzidos aos
+            princípios e práticas fundamentais do desenvolvimento front-end para
+            criação de experiências web atrativas e funcionais. Através de uma
+            abordagem prática e orientada a projetos, os participantes irão
+            explorar conceitos de HTML, CSS e JavaScript.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de HTML, CSS e JavaScript.
-            
+            <strong>Pré-Requisito:</strong> Conhecimento básico de HTML, CSS e
+            JavaScript.
           </p>
           <p>
             <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> VSCode, Ferramentas de Inspeção de
-              Navegador e Figma.
+            <strong>Instalação de Softwares:</strong> VSCode, Ferramentas de
+            Inspeção de Navegador e Figma.
           </p>
         </>
       ),
@@ -307,13 +316,14 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Os participantes aprenderão a desenvolver aplicativos
-              que podem ser executados em diversos sistemas operacionais,
-              incluindo Windows, Linux e macOS, utilizando as ferramentas e
-              recursos fornecidos pelo .NET Core.
+            <strong>Descrição:</strong> Os participantes aprenderão a
+            desenvolver aplicativos que podem ser executados em diversos
+            sistemas operacionais, incluindo Windows, Linux e macOS, utilizando
+            as ferramentas e recursos fornecidos pelo .NET Core.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em C#.            
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+            em C#.
           </p>
           <p>
             <strong>Recursos:</strong> Notebooks carregados para 2h de oficina.
@@ -341,7 +351,7 @@ export const ConfirmedActivitiesData = {
         {
           imagem_ministrante: caioHenriqueSousa,
           nome_ministrante: "Caio Henrique Lopes Sousa",
-        }
+        },
       ],
       texto_resumo:
         "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
@@ -373,7 +383,8 @@ export const ConfirmedActivitiesData = {
             prática do minicurso).
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou IDE.
+            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
+            IDE.
           </p>
         </>
       ),
@@ -426,7 +437,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: klaudio,
+          imagem_ministrante: klaudioHenriqueMascarenhasMedeiros,
           nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
         },
       ],
@@ -435,18 +446,19 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Minicurso projetado para introduzir os participantes ao
-              desenvolvimento de jogos 2D usando a plataforma Construct 2. Este
-              curso é ideal para entusiastas de jogos que desejam aprender a
-              criar seus próprios jogos sem a necessidade de codificação
-              complexa.
+            <strong>Descrição:</strong> Minicurso projetado para introduzir os
+            participantes ao desenvolvimento de jogos 2D usando a plataforma
+            Construct 2. Este curso é ideal para entusiastas de jogos que
+            desejam aprender a criar seus próprios jogos sem a necessidade de
+            codificação complexa.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Criatividade e disposição para experimentar e
-              explorar novas ideias.
+            <strong>Pré-Requisito:</strong> Criatividade e disposição para
+            experimentar e explorar novas ideias.
           </p>
           <p>
-            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de minicurso.
+            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
+            minicurso.
           </p>
           <p>
             <strong>Instalação de Softwares:</strong> Construct 2.
@@ -496,7 +508,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante:danielMarquesGuimaraes,
+          imagem_ministrante: danielMarquesGuimaraes,
           nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
@@ -505,19 +517,20 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Minicurso projetado para fornecer aos participantes uma
-              introdução prática e acessível à visualização de dados usando a
-              biblioteca Vega-lite. Este curso é ideal para iniciantes e
-              profissionais que desejam aprender a criar visualizações de dados
-              informativas e envolventes de forma eficaz.
+            <strong>Descrição:</strong> Minicurso projetado para fornecer aos
+            participantes uma introdução prática e acessível à visualização de
+            dados usando a biblioteca Vega-lite. Este curso é ideal para
+            iniciantes e profissionais que desejam aprender a criar
+            visualizações de dados informativas e envolventes de forma eficaz.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação, familiaridade
-              com linguagens de marcação como JSON e YAML, noções básicas de
-              estatística e análise de dados.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
+            familiaridade com linguagens de marcação como JSON e YAML, noções
+            básicas de estatística e análise de dados.
           </p>
           <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de minicurso.
+            <strong>Recursos:</strong> Notebooks carregados para 2h de
+            minicurso.
           </p>
           <p>
             <strong>Instalação de Softwares:</strong> Navegador.
@@ -539,23 +552,26 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Minicurso focado em fornecer aos participantes uma
-              compreensão abrangente e prática do tratamento de exceções em
-              aplicações Java. Este curso é projetado para desenvolvedores Java
-              de todos os níveis de habilidade que desejam aprimorar suas
-              habilidades no tratamento de erros e exceções em seus aplicativos.
+            <strong>Descrição:</strong> Minicurso focado em fornecer aos
+            participantes uma compreensão abrangente e prática do tratamento de
+            exceções em aplicações Java. Este curso é projetado para
+            desenvolvedores Java de todos os níveis de habilidade que desejam
+            aprimorar suas habilidades no tratamento de erros e exceções em seus
+            aplicativos.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação em Java,
-              experiência com desenvolvimento de aplicativos Java, compreensão
-              básica de exceções e acesso a um ambiente de desenvolvimento Java.
-            
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+            em Java, experiência com desenvolvimento de aplicativos Java,
+            compreensão básica de exceções e acesso a um ambiente de
+            desenvolvimento Java.
           </p>
           <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de minicurso.
+            <strong>Recursos:</strong> Notebooks carregados para 2h de
+            minicurso.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> VSCode com o java instalado na máquina.
+            <strong>Instalação de Softwares:</strong> VSCode com o java
+            instalado na máquina.
           </p>
         </>
       ),
@@ -618,16 +634,16 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição: </strong>Explore os fundamentos e a prática da implementação de contratos
-              inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma
-              introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde
-              conceitos básicos até exemplos práticos de implementação.
+            <strong>Descrição: </strong>Explore os fundamentos e a prática da
+            implementação de contratos inteligentes utilizando a linguagem
+            Solidity. Este minicurso oferece uma introdução abrangente ao
+            desenvolvimento de contratos inteligentes, abordando desde conceitos
+            básicos até exemplos práticos de implementação.
           </p>
           <p>
-            <strong>Pré-Requisito: </strong>Conhecimentos básicos de
-              programação e familiaridade com conceitos de blockchain.
-              Alguma experiência com linguagens de programação
-              semelhantes, como JavaScript ou C++
+            <strong>Pré-Requisito: </strong>Conhecimentos básicos de programação
+            e familiaridade com conceitos de blockchain. Alguma experiência com
+            linguagens de programação semelhantes, como JavaScript ou C++
           </p>
           <p>
             <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
@@ -645,7 +661,8 @@ export const ConfirmedActivitiesData = {
             demandas do mercado de trabalho.
           </p>
           <p>
-            <strong>Recursos: </strong>Sim, notebooks carregados para 2h de minicurso.
+            <strong>Recursos: </strong>Sim, notebooks carregados para 2h de
+            minicurso.
           </p>
           <p>
             <strong>Instalação de Softwares: </strong>Solidity
@@ -654,7 +671,7 @@ export const ConfirmedActivitiesData = {
       ),
       titulo_atividade_confirmada:
         "Desenvolvimento de Contratos Inteligentes com Solidity",
-    }
+    },
   ],
   Workshop: [
     {
@@ -669,14 +686,15 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> É um workshop inovador projetado para proporcionar uma
-              experiência de aprendizado inclusiva e acessível para pessoas
-              surdas interessadas em computação. Este workshop tem como objetivo
-              introduzir os participantes aos conceitos básicos da Computação
-              através da Linguagem Brasileira de Sinais (Libras).
+            <strong>Descrição:</strong> É um workshop inovador projetado para
+            proporcionar uma experiência de aprendizado inclusiva e acessível
+            para pessoas surdas interessadas em computação. Este workshop tem
+            como objetivo introduzir os participantes aos conceitos básicos da
+            Computação através da Linguagem Brasileira de Sinais (Libras).
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Nenhum conhecimento prévio é necessário.
+            <strong>Pré-Requisito:</strong> Nenhum conhecimento prévio é
+            necessário.
           </p>
           <p>
             <strong>Recursos:</strong> Nenhum recurso é necessário.
@@ -692,6 +710,35 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
+          imagem_ministrante: rodrigoAlvesCosta,
+          nome_ministrante: "Rodrigo Alves Costa",
+        },
+      ],
+      texto_resumo:
+        "Esta é a oportunidade perfeita para aprender como o Docker pode revolucionar a maneira como você lida com aplicativos e ambientes de software. ",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Descrição:</strong> Esta é a oportunidade perfeita para
+            aprender como o Docker pode revolucionar a maneira como você lida
+            com aplicativos e ambientes de software. Se você já se perguntou
+            como evitar aquelas instalações confusas de programas, ou como
+            garantir que suas configurações não causem conflitos, o Docker é a
+            resposta.
+          </p>
+          <p>
+            <strong>Pré-Requisito:</strong> Conhecimento básico de
+            desenvolvimento de software e familiaridade com conceitos de
+            virtualização e contêineres, mas não é estritamente necessário.
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada:
+        "Docker 101: nunca mais instale nenhum app ?",
+    },
+    {
+      ministrantes: [
+        {
           imagem_ministrante: esdrasSamuelFerreira,
           nome_ministrante: "Esdras Samuel de Araújo Ferreira",
         },
@@ -701,16 +748,16 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Workshop projetado para oferecer aos participantes uma
-              introdução detalhada e prática ao testRigor, uma ferramenta de
-              automação de testes de software. Durante o workshop, os
-              participantes serão guiados por meio dos recursos e
-              funcionalidades do testRigor, aprendendo como criar e executar
-              testes automatizados de forma eficiente.
+            <strong>Descrição:</strong> Workshop projetado para oferecer aos
+            participantes uma introdução detalhada e prática ao testRigor, uma
+            ferramenta de automação de testes de software. Durante o workshop,
+            os participantes serão guiados por meio dos recursos e
+            funcionalidades do testRigor, aprendendo como criar e executar
+            testes automatizados de forma eficiente.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de testes de software e
-              familiaridade com conceitos de automação de testes.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de testes de
+            software e familiaridade com conceitos de automação de testes.
           </p>
           <p>
             <strong>Recursos:</strong> Não é necessário.
@@ -734,21 +781,21 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> Workshop focado em fornecer aos participantes uma
-              compreensão abrangente e prática do framework Django para
-              desenvolvimento web em Python.
+            <strong>Descrição:</strong> Workshop focado em fornecer aos
+            participantes uma compreensão abrangente e prática do framework
+            Django para desenvolvimento web em Python.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de Python, familiaridade com
-              desenvolvimento web.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de Python,
+            familiaridade com desenvolvimento web.
           </p>
           <p>
             <strong>Recursos:</strong> Não é necessário.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong> Python, Django, um ambiente virtual
-              (opcional), um editor de texto ou IDE e um banco de dados
-              relacional.
+            <strong>Instalação de Softwares:</strong> Python, Django, um
+            ambiente virtual (opcional), um editor de texto ou IDE e um banco de
+            dados relacional.
           </p>
         </>
       ),
@@ -771,16 +818,16 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> O Workshop oferece uma introdução envolvente aos
-              fundamentos da animação 2D utilizando uma das ferramentas mais
-              populares do mercado, o Paint Tool SAI. Durante este workshop, os
-              participantes serão guiados em uma jornada emocionante através dos
-              princípios essenciais da animação.
+            <strong>Descrição:</strong> O Workshop oferece uma introdução
+            envolvente aos fundamentos da animação 2D utilizando uma das
+            ferramentas mais populares do mercado, o Paint Tool SAI. Durante
+            este workshop, os participantes serão guiados em uma jornada
+            emocionante através dos princípios essenciais da animação.
           </p>
           <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de desenho digital, computador
-              com Paint Tool SAI instalado, interesse em animação 2D e motivação
-              para praticar.
+            <strong>Pré-Requisito:</strong> Conhecimento básico de desenho
+            digital, computador com Paint Tool SAI instalado, interesse em
+            animação 2D e motivação para praticar.
           </p>
           <p>
             <strong>Recursos:</strong> Notebooks carregados para 3h de workshop.
@@ -813,44 +860,28 @@ export const ConfirmedActivitiesData = {
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição: </strong>Workshop projetado para
-              proporcionar aos participantes as
-              habilidades necessárias para se
-              destacar em competições de
-              robótica utilizando a linguagem de
-              programação Java. Durante o
-              workshop, os participantes
-              aprenderão os fundamentos da
-              programação em Java e como
-              aplicá-los para programar robôs
-              destinados a competições de alto
-              nível, como as competições da FTC
-              (First Tech Challenge).
+            <strong>Descrição: </strong>Workshop projetado para proporcionar aos
+            participantes as habilidades necessárias para se destacar em
+            competições de robótica utilizando a linguagem de programação Java.
+            Durante o workshop, os participantes aprenderão os fundamentos da
+            programação em Java e como aplicá-los para programar robôs
+            destinados a competições de alto nível, como as competições da FTC
+            (First Tech Challenge).
           </p>
           <p>
-            <strong>Pré-Requisito: </strong>Conhecimento básico de
-              programação, familiaridade com
-              a linguagem Java, interesse em
-              robótica e disposição para
-              aprender.
+            <strong>Pré-Requisito: </strong>Conhecimento básico de programação,
+            familiaridade com a linguagem Java, interesse em robótica e
+            disposição para aprender.
           </p>
           <p>
             <strong>Recursos: </strong>Notebooks carregados para 3h de workshop
           </p>
           <p>
             <strong>Instalação de Softwares:</strong> Java Development Kit
-              (JDK), um ambiente de
-              desenvolvimento
-              integrado (IDE) como
-              Eclipse ou IntelliJ IDEA,
-              software de simulação
-              ou ambiente de
-              desenvolvimento para
-              robótica, controlador de
-              robô e plataforma de
-              hardware, e ferramentas
-              de controle de versão
-              como Git            
+            (JDK), um ambiente de desenvolvimento integrado (IDE) como Eclipse
+            ou IntelliJ IDEA, software de simulação ou ambiente de
+            desenvolvimento para robótica, controlador de robô e plataforma de
+            hardware, e ferramentas de controle de versão como Git
           </p>
         </>
       ),
@@ -862,28 +893,24 @@ export const ConfirmedActivitiesData = {
         {
           imagem_ministrante: jucelioSoaresSantos,
           nome_ministrante: "Jucelio Soares dos Santos ",
-        }
+        },
       ],
       texto_resumo:
-      "Descubra como transformar dados em decisões estratégicas com o Power BI! Nesse workshop, você será guiado em uma jornada prática, desde a importação de dados até a criação de dashboards interativos. Aprenda a dominar as ferramentas essenciais do Power BI e aplique técnicas avançadas de análise para impulsionar a inteligência empresarial e otimizar a tomada de decisões.",  
+        "Descubra como transformar dados em decisões estratégicas com o Power BI! Nesse workshop, você será guiado em uma jornada prática, desde a importação de dados até a criação de dashboards interativos. Aprenda a dominar as ferramentas essenciais do Power BI e aplique técnicas avançadas de análise para impulsionar a inteligência empresarial e otimizar a tomada de decisões.",
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição: </strong>Descubra como transformar dados
-            em decisões estratégicas com o
-            Power BI! Nesse workshop, você
-            será guiado em uma jornada prática,
-            desde a importação de dados até a
-            criação de dashboards interativos.
-            Aprenda a dominar as ferramentas
-            essenciais do Power BI e aplique
-            técnicas avançadas de análise para
-            impulsionar a inteligência
-            empresarial e otimizar a tomada de
+            <strong>Descrição: </strong>Descubra como transformar dados em
+            decisões estratégicas com o Power BI! Nesse workshop, você será
+            guiado em uma jornada prática, desde a importação de dados até a
+            criação de dashboards interativos. Aprenda a dominar as ferramentas
+            essenciais do Power BI e aplique técnicas avançadas de análise para
+            impulsionar a inteligência empresarial e otimizar a tomada de
             decisões.
           </p>
           <p>
-            <strong>Pré-Requisito: </strong>Conhecimento básico de análise de dados
+            <strong>Pré-Requisito: </strong>Conhecimento básico de análise de
+            dados
           </p>
           <p>
             <strong>Recursos: </strong>Notebooks carregados para 3h de workshop
@@ -895,6 +922,40 @@ export const ConfirmedActivitiesData = {
       ),
       titulo_atividade_confirmada:
         "Revolucione sua Empresa com o Power BI: Transformando Dados em Decisões Estratégicas",
-    }
+    },
+    {
+      ministrantes: [
+        {
+          imagem_ministrante: JoseAldoSilvadaCosta,
+          nome_ministrante: "José Aldo Silva da Costa",
+        },
+      ],
+      texto_resumo:
+        "Desde o esboço inicial até a prototipagem avançada no Figma, exploraremos métodos de concepção, técnicas de design e ferramentas modernas para criar experiências de usuário excepcionais. Neste Workshop você terá a oportunidade de criar protótipos de baixo e alto nível - desde rabiscos simples até designs detalhados.",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Descrição: </strong>Desde o esboço inicial até a
+            prototipagem avançada no Figma, exploraremos métodos de concepção,
+            técnicas de design e ferramentas modernas para criar experiências de
+            usuário excepcionais. Neste Workshop você terá a oportunidade de
+            criar protótipos de baixo e alto nível - desde rabiscos simples até
+            designs detalhados.
+          </p>
+          <p>
+            <strong>Pré-Requisito: </strong> Conhecimento básico de design de
+            interfaces é recomendado, mas não obrigatório
+          </p>
+          <p>
+            <strong>Recursos: </strong> notebooks carregados para 3h de workshop
+          </p>
+          <p>
+            <strong>Instalação de Softwares:</strong> Figma
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada:
+        "Do Esboço ao Figma: Criando Protótipos de Interface de Baixo e Alto Nível ",
+    },
   ],
 };

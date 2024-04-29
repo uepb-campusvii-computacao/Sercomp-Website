@@ -1,8 +1,10 @@
-import { default as daniloCouraPhoto, default as josemirMouraPhoto } from '../assets/images/image-not-found.png';
+import daniloCouraPhoto from "../assets/images/participacoes/2024/Danilo Coura Moreira.webp"
 import angelicaFelixPhoto from '../assets/images/participacoes/2024/angelica-felix-ufersa.webp';
-import ingridtMillenaPhoto from '../assets/images/participacoes/2024/ingridt.webp';
+import ingridtMillenaPhoto from '../assets/images/participacoes/2024/Ingridt-Millena-Vieira-Dantas.webp';
+import dilaniaCabralPhoto from "../assets/images/participacoes/2024/Dilania-Cabral-da-Silva.webp"
+import josemirMouraPhoto from "../assets/images/participacoes/2024/Josemir-Moura-Maia.webp"
 import jannaynaPhoto from '../assets/images/professores/jannayna.png';
-import jucelioPhoto from '../assets/images/professores/jucelio.png';
+import jucelioSoresPhoto from '../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp';
 
 const programacao = [
     {
@@ -41,7 +43,7 @@ const programacao = [
                     },
                     {
                         name: <div>Dr. Jucelio Soares dos Santos (UEPB)</div>,
-                        photo: jucelioPhoto,
+                        photo: jucelioSoresPhoto,
                     },
                     {
                         name: <div>Danilo Coura Moreira (UFCG)</div>,
@@ -66,7 +68,21 @@ const programacao = [
             { title: 'Intervalo', time: '17:00 - 18:30', timeStr: 'TARDE' },
             {
                 title: 'Painel II - Negócios em Rede: Estratégias de Inovação no Cenário de Transformação Digital',
-                time: '18:30 - 20:00', timeStr: 'NOITE', location: "Auditório Celso Furtado"
+                time: '18:30 - 20:00', timeStr: 'NOITE', location: "Auditório Celso Furtado",
+                participants: [
+                    {
+                        name: <div><strong>Mediador:</strong> Dilania Cabral da Silva (Duo Soluções)</div>,
+                        photo: dilaniaCabralPhoto,
+                    },
+                    {
+                        name: <div>Dr. Josemir Moura Maia (UEPB)</div>,
+                        photo: josemirMouraPhoto,
+                    },
+                    {
+                        name: <div>Ingridt Millena Vieira Dantas (Virtus)</div>,
+                        photo: ingridtMillenaPhoto,
+                    },
+                ]
             },
             { title: 'PitchDay (Apresentação)', time: '20:00 - 21:30', timeStr: 'NOITE' }
         ]
@@ -78,20 +94,6 @@ const programacao = [
             {
                 title: 'Painel III - Deserto Digital: Estratégias das Universidades para um Mundo mais Conectado',
                 time: '08:00 - 09:30', timeStr: 'MANHÃ', location: "Auditório Celso Furtado",
-                participants: [
-                    {
-                        name: <div><strong>Mediador:</strong> Dr. Jucelio Soares dos Santos (UEPB)</div>,
-                        photo: jucelioPhoto,
-                    },
-                    {
-                        name: <div>Dr. Josemir Moura Maia (UEPB)</div>,
-                        photo: josemirMouraPhoto,
-                    },
-                    {
-                        name: <div>Ingridt Millena Vieira Dantas (Virtus)</div>,
-                        photo: ingridtMillenaPhoto,
-                    },
-                ]
             },
             { title: 'Oficinas', time: '09:30 - 11:30', timeStr: 'MANHÃ' },
             { title: 'Intervalo', time: '11:30 - 14:00', timeStr: 'TARDE' },

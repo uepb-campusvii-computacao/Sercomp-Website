@@ -1,5 +1,5 @@
-import filipe from "../../../assets/images/participacoes/filipe.png";
-import luanderson from "../../../assets/images/participacoes/luanderson.png";
+import filipe from "../../../assets/images/participacoes/2023/filipe.png";
+import luanderson from "../../../assets/images/participacoes/2023/luanderson.png";
 import rosangela from "../../../assets/images/professores/rosangela.png";
 import janderson from "../../../assets/images/professores/janderson.png";
 import jannayna from "../../../assets/images/professores/jannayna.png";
