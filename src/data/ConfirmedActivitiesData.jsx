@@ -115,7 +115,7 @@ export const ConfirmedActivitiesData = {
             <strong>Recursos: </strong>Notebook, laptop
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>Intellij IDEA.
+            <strong>Instalação de Softwares: </strong>Intellij IDEAn JDK, Insomnia.
           </p>
         </>
       ),
