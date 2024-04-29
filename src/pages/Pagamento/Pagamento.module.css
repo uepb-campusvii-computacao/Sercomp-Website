@@ -122,6 +122,30 @@
   color: #000;
 }
 
+.pagamento {
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pago {
+  background-color: green;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: small;
+}
+
+.pendente {
+  background-color: red;
+  color: yellow;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bolder;
+  font-size: small;
+}
+
 @media screen and (max-width: 600px) {
   .sectionContainer {
       padding: 2rem;
@@ -131,9 +155,5 @@
 @media screen and (max-width: 800px) {
   .paymentGroup {
       flex-direction: column;
-  }
-
-  .fullUrl{
-    font-size: 13px;
   }
 }

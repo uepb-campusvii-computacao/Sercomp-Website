@@ -1,9 +1,15 @@
+import caioHenriqueSousa from '../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp';
+import danielMarquesGuimaraes from '../assets/images/participacoes/2024/danielmarques.webp';
 import dayzaMeiryBarretoSilva from '../assets/images/participacoes/2024/Dayza Meiry Barreto Silva.webp';
+import eduardoPaulinoDantas from '../assets/images/participacoes/2024/eduardo.webp';
 import ellenSantosRamalho from '../assets/images/participacoes/2024/Ellen Santos Ramalho.webp';
 import emillySantosRamalho from '../assets/images/participacoes/2024/Emilly Santos Ramalho.webp';
 import erosFranklinSoaresFelix from '../assets/images/participacoes/2024/Eros Franklin Soares Felix.webp';
 import esdrasSamuelFerreira from '../assets/images/participacoes/2024/Esdras Samuel de Araújo Ferreira.webp';
 import gabrielLiraNobrega from '../assets/images/participacoes/2024/Gabriel Lira da Nóbrega.webp';
+import giordaniAlvesFormiga from "../assets/images/participacoes/2024/Giordanni Alves Formiga.webp";
+import giovannaTrigueiroAlmeida from '../assets/images/participacoes/2024/giovanna_trigueiro.webp';
+import halanCaioNascimento from '../assets/images/participacoes/2024/halan.webp';
 import italloMendesSilva from '../assets/images/participacoes/2024/Itallo Mendes da Silva.webp';
 import joaoLucasSousaMartins from '../assets/images/participacoes/2024/João Lucas de Sousa Martins.webp';
 import lauraRafaellaFeitosaAlves from '../assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp';
@@ -13,16 +19,12 @@ import pedroFerreiraLimaNeto from '../assets/images/participacoes/2024/Pedro Fer
 import rebecaBarbosaLourenco from '../assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp';
 import thiagoAlvesLaurentino from '../assets/images/participacoes/2024/Thiago Alves Laurentino.webp';
 import victorMenesesPinho from '../assets/images/participacoes/2024/Victor Meneses Pinho.webp';
-import yohannaBarbaraPereiraCosta from '../assets/images/participacoes/2024/Yohanna.webp';
-import danielMarquesGuimaraes from '../assets/images/participacoes/2024/danielmarques.webp';
-import eduardoPaulinoDantas from '../assets/images/participacoes/2024/eduardo.webp';
-import giovannaTrigueiroAlmeida from '../assets/images/participacoes/2024/giovanna_trigueiro.webp';
-import halanCaioNascimento from '../assets/images/participacoes/2024/halan.webp';
 import wellyngtonTargino from '../assets/images/participacoes/2024/wellyngton.webp';
-import yuriSantosMonteiro from '../assets/images/participacoes/2024/yuri.webp';
+import yohannaBarbaraPereiraCosta from '../assets/images/participacoes/2024/Yohanna.webp';
+import yuriSantosMonteiro from '../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp';
 import jucelioSoaresSantos from '../assets/images/professores/jucelio.png';
 import rosangelaAraújoMedeiros from '../assets/images/professores/rosangela.png';
-import { default as alysonJonasMorato, default as caioHenriqueSousa, default as giordani, default as kallebDiasMarques, default as klaudio } from '../assets/images/sem-imagem.png';
+import { default as alysonJonasMorato, default as kallebDiasMarques, default as klaudio } from '../assets/images/sem-imagem.png';
 
 
 export const ConfirmedActivitiesData = {
@@ -113,7 +115,7 @@ export const ConfirmedActivitiesData = {
             <strong>Recursos: </strong>Notebook, laptop
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>Intellij IDEA.
+            <strong>Instalação de Softwares: </strong>Intellij IDEA, Java JDK, Insomnia.
           </p>
         </>
       ),
@@ -371,10 +373,7 @@ export const ConfirmedActivitiesData = {
             prática do minicurso).
           </p>
           <p>
-            <strong>
-              Instalação de Softwares: Git/Um editor de texto ou IDE
-            </strong>
-            .
+            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou IDE.
           </p>
         </>
       ),
@@ -417,8 +416,8 @@ export const ConfirmedActivitiesData = {
             <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>VSCode e . instalação de
-            extensões adequadas, como a extensão C#.
+            <strong>Instalação de Softwares: </strong>VSCode e instalação de
+            extensões adequadas(como a extensão C#).
           </p>
         </>
       ),
@@ -531,7 +530,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: giordani,
+          imagem_ministrante: giordaniAlvesFormiga,
           nome_ministrante: "Giordanni Alves Formiga",
         },
       ],
@@ -600,7 +599,7 @@ export const ConfirmedActivitiesData = {
           </p>
           <p>
             <strong>Instalação de Softwares: </strong>VSCode para escrever
-            códigos em HTML, CSS e JavaScript.e Navegador web moderno.
+            códigos em HTML, CSS e JavaScript e Navegador web moderno.
           </p>
         </>
       ),
@@ -675,17 +674,15 @@ export const ConfirmedActivitiesData = {
               surdas interessadas em computação. Este workshop tem como objetivo
               introduzir os participantes aos conceitos básicos da Computação
               através da Linguagem Brasileira de Sinais (Libras).
-            
-            .
           </p>
           <p>
             <strong>Pré-Requisito:</strong> Nenhum conhecimento prévio é necessário.
           </p>
           <p>
-            <strong>Recursos:</strong>. Nenhum recurso é necessário.
+            <strong>Recursos:</strong> Nenhum recurso é necessário.
           </p>
           <p>
-            <strong>Instalação de Softwares:</strong>. Não é necessário.
+            <strong>Instalação de Softwares:</strong> Não é necessário.
           </p>
         </>
       ),
