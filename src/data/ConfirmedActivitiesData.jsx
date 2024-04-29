@@ -16,13 +16,15 @@ import victorMenesesPinho from '../assets/images/participacoes/2024/Victor Menes
 import yohannaBarbaraPereiraCosta from '../assets/images/participacoes/2024/Yohanna.webp';
 import danielMarquesGuimaraes from '../assets/images/participacoes/2024/danielmarques.webp';
 import eduardoPaulinoDantas from '../assets/images/participacoes/2024/eduardo.webp';
+import caioHenriqueSousa from '../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp';
 import giovannaTrigueiroAlmeida from '../assets/images/participacoes/2024/giovanna_trigueiro.webp';
 import halanCaioNascimento from '../assets/images/participacoes/2024/halan.webp';
 import wellyngtonTargino from '../assets/images/participacoes/2024/wellyngton.webp';
-import yuriSantosMonteiro from '../assets/images/participacoes/2024/yuri.webp';
+import yuriSantosMonteiro from '../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp';
+import giordaniAlvesFormiga from "../assets/images/participacoes/2024/Giordanni Alves Formiga.webp"
 import jucelioSoaresSantos from '../assets/images/professores/jucelio.png';
 import rosangelaAraújoMedeiros from '../assets/images/professores/rosangela.png';
-import { default as alysonJonasMorato, default as caioHenriqueSousa, default as giordani, default as kallebDiasMarques, default as klaudio } from '../assets/images/sem-imagem.png';
+import { default as alysonJonasMorato, default as kallebDiasMarques, default as klaudio } from '../assets/images/sem-imagem.png';
 
 
 export const ConfirmedActivitiesData = {
@@ -531,7 +533,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: giordani,
+          imagem_ministrante: giordaniAlvesFormiga,
           nome_ministrante: "Giordanni Alves Formiga",
         },
       ],
