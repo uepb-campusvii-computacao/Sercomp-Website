@@ -56,7 +56,7 @@ export default function ConfirmedActivities() {
           </button>
         </div>
 
-        <ActivitySlider activities={getActivitiesForCategory(activeCategory)} />
+        <ActivitySlider key={activeCategory} activities={getActivitiesForCategory(activeCategory)} />
       </section>
     </>
   );

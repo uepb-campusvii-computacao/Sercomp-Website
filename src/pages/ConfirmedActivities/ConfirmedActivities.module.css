@@ -23,7 +23,7 @@
 }
 
 .categoryButton.active {
-  background: yellow;
+  background: #F29D35;
   color: black;
   font-weight: bold;
 }
@@ -36,7 +36,7 @@
 }
 
 .categoryButton.active:hover {
-  background: yellow;
+  background: #F29D35;
   color: black;
   font-weight: bold;
 }
