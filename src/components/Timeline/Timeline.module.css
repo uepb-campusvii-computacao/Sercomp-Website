@@ -44,8 +44,8 @@
 }
 
 .tabsToggle.isActive {
-    background: yellow;
-    color: rgb(0, 2, 105);
+    background: #F29D35;
+    color: rgb(51, 51, 51);
     font-weight: bold
 }
 
