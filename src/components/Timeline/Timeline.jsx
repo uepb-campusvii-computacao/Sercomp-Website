@@ -10,14 +10,15 @@ function EventItem({
   timeStr,
   eventIndex,
 }) {
-
   const shouldAlignParticipantImageRight = () => {
-    return eventIndex % 2 == 0
-  }
+    return eventIndex % 2 == 0;
+  };
 
   const decideParticipantsAlignment = () => {
-    return shouldAlignParticipantImageRight() ? styles.blockInfoTimelineRight : styles.blockInfoTimelineLeft
-  }
+    return shouldAlignParticipantImageRight()
+      ? styles.blockInfoTimelineRight
+      : styles.blockInfoTimelineLeft;
+  };
 
   return (
     <li>
@@ -25,27 +26,28 @@ function EventItem({
       <p>
         <i className="uil uil-clock">{time}</i>
         <br />
-        {location ?
-          <i className="uil uil-map-marker">{location}</i> : null
-        }
+        {location ? <i className="uil uil-map-marker">{location}</i> : null}
       </p>
       {participants &&
         participants.map((participant, index) => (
-          <div key={index}
+          <div
+            key={index}
             className={`
               ${styles.blockInfoTimeline} 
               ${decideParticipantsAlignment()} 
               ${styles.participantWrapper} 
-              ${shouldAlignParticipantImageRight() ? '' : styles.alignLeft}`
-            }
+              ${shouldAlignParticipantImageRight() ? "" : styles.alignLeft}`}
           >
             {participant.name}
-            <img src={participant.photo} alt={participant.name}
+            <div
               style={{
-                marginRight: shouldAlignParticipantImageRight() ? '0' : '12px',
-                marginLeft: shouldAlignParticipantImageRight() ? '12px' : '0'
+                marginRight: shouldAlignParticipantImageRight() ? "0" : "12px",
+                marginLeft: shouldAlignParticipantImageRight() ? "12px" : "0",
               }}
-            />
+              className={styles.participantPhoto}
+            >
+              <img src={participant.photo} alt={participant.name} />
+            </div>
           </div>
         ))}
       <span className={styles.circle}></span>
@@ -150,8 +152,9 @@ function Timeline({ timelines }) {
           {timelines.map((timeline, index) => (
             <div
               key={index}
-              className={`${styles.tabsToggle} ${index === 0 ? styles.isActive : ""
-                }`}
+              className={`${styles.tabsToggle} ${
+                index === 0 ? styles.isActive : ""
+              }`}
             >
               <span className={styles.tabsName}>{timeline.date}</span>
               <p>{timeline.day}</p>

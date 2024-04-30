@@ -8,8 +8,9 @@ function Partners() {
 
             <div className={`container ${styles.patrocinadores}`}>
                 <div className={styles.patrocinadoresContainer}>
-                    {partnersData.map((partner, index) => (
-                        partner.alt !== "UEPB" ?
+                    {partnersData
+                        .filter(partner => partner.alt !== "UEPB")
+                        .map((partner, index) => (
                             <article className={styles.patrocinadoresMember} key={index}>
                                 <div className={styles.patrocinadoresMemberImage}>
                                     <a href={partner.href} target="_blank">
@@ -17,9 +18,8 @@ function Partners() {
                                     </a>
                                 </div>
                             </article>
-                            :
-                            null
-                    ))}
+                        ))
+                    }
                 </div>
             </div>
         </section>

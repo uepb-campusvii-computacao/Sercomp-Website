@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import logotipo from "../../assets/images/logotipo_vvisercomp.png";
+import logotipo from "../../assets/images/logotipo_vvisercomp.webp";
 import { linksData } from "../../data/LinksData";
 import styles from "./Navbar.module.css";
 
