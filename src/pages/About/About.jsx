@@ -30,9 +30,7 @@ function About() {
                  </div>
              </section>
 
-             {/*<TeamSection title="Membros do CACC" membersData={caccMembers} />
-             <TeamSection title="Professores Participantes do VI SERCOMP" membersData={teachers} />
-            <TeamSection title="Convidados do VI SERCOMP" membersData={guests} />*/}
+
          </>
     );
 }
