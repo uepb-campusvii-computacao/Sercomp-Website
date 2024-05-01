@@ -5,7 +5,13 @@
 .submitButtonContainer {
   display: flex;
   align-items: center;
+  gap: 12px;
   justify-content: center;
+}
+
+.submitButtonContainer button:last-child{
+  background-color: var(--color-primary);
+  color: var(--color-white);
 }
 
 .formContainer {

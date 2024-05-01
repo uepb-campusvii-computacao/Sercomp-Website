@@ -1,0 +1,135 @@
+.container {
+    padding: 2rem;
+  }
+  
+  .submitButtonContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .formContainer {
+    width: 100%;
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 4rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #424890;
+  }
+  
+  .formContainer p {
+    font-weight: bold;
+    font-size: larger;
+  }
+  
+  .inputGroupLotes {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .loteContainer {
+    padding: 16px;
+    border: 2px solid var(--color-white);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loteContainer input[type="radio"] {
+    display: none;
+  }
+  
+  .loteContainerChecked {
+    background-color: #f8af55;
+    color: #502c00;
+  }
+  
+  .loteContainer .loteContent {
+    font-weight: 700;
+    font-size: 18px;
+  }
+  
+  .loteContent span {
+    font-weight: 400;
+    font-size: 16px;
+  }
+  
+  .inputGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .spinner {
+    animation: spin 0.7s linear infinite;
+    margin-right: 10px;
+  }
+  
+  @keyframes spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .formContainer input,
+  select {
+    width: 100%;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    color: #000;
+    border: 1px solid #ccc;
+  }
+  
+  .formContainer button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 30%;
+    background-color: #f29d35;
+    color: #502c00;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formContainer button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  .formContainer button:hover {
+    background-color: #ff7300;
+    color: white;
+  }
+  
+  .selectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .selectGroup {
+    flex: 1 1 30%;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .inputGroupLotes {
+      grid-template-columns: 1fr;
+    }
+  
+    .formContainer {
+      padding: 2rem;
+    }
+  
+    .formContainer button {
+      width: 80%;
+    }
+  }
+  
