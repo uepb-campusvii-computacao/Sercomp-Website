@@ -20,6 +20,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
+import BuscaInscricao from "./pages/BuscaInscricao/BuscaInscricao";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
               renderIfFalse={<Mensagem texto="Inscrições encerradas!"/>}
             />
           } />
+          <Route exact path="/busca/inscricao" element={<BuscaInscricao />} />
           <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
