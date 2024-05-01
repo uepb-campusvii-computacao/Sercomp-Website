@@ -26,9 +26,9 @@ import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soa
 import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
 import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2024/Klaudio-Henrique-Mascarenhas-Medeiros.webp";
 import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
+import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp" 
+import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp"
 import {
-  default as alysonJonasMorato,
-  default as kallebDiasMarques,
   default as JoseAldoSilvadaCosta,
 } from "../assets/images/sem-imagem.png";
 
