@@ -9,9 +9,25 @@
   justify-content: center;
 }
 
-.submitButtonContainer button:last-child{
+.submitButtonContainer button{
   background-color: var(--color-primary);
   color: var(--color-white);
+}
+
+.linkContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.linkContainer a{
+  text-decoration: underline;
+  text-align: right;
+  color: yellow;
+}
+
+.linkContainer a:hover{
+  color: #F29D35;
 }
 
 .formContainer {
@@ -81,8 +97,7 @@
   }
 }
 
-.formContainer input,
-select {
+.formContainer input, select {
   width: 100%;
   background-color: white;
   padding: 1rem;
@@ -136,5 +151,22 @@ select {
 
   .formContainer button {
     width: 80%;
+  }
+
+  .formContainer p {
+    font-weight: bold;
+    font-size: medium;
+  }
+
+  .formContainer input {
+    padding: 0.6rem;
+  }
+
+  .formContainer .selectGroup select {
+    padding: 0.6rem;
+  }
+
+  .linkContainer{
+    font-size: 15px;
   }
 }

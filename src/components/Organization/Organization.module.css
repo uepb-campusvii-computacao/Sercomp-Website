@@ -11,6 +11,9 @@
   width: 15rem;
   overflow: hidden;
   margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* MEDIA QUERIES */

@@ -31,36 +31,33 @@ const Inscricoes = () => {
 
   const selectedLote = watch("lote");
 
-  async function fecthApiData() {
-    try {
-      const atividadesPromise = api.get(
-        `/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`
-      );
-      const lotesPromise = api
-        .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`)
-
-      const [atividadesResponse, lotesResponse] = await Promise.all([
-        atividadesPromise,
-        lotesPromise
-      ]);
-
-      setAtividades(atividadesResponse.data);
-      setLotes(lotesResponse.data);
-      setIsLoading(false);
-    } catch (err) {
-      setIsLoading(false);
-      console.log(err);
-      toast.error("Erro ao buscar dados da API");
-    }
-  }
-
-  function redirectToFindUser(){
-    navigate("/busca/inscricao")
-  }
-
   useEffect(() => {
+    async function fecthApiData() {
+      try {
+        const atividadesPromise = api.get(
+          `/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`
+        );
+        const lotesPromise = api
+          .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`)
+  
+        const [atividadesResponse, lotesResponse] = await Promise.all([
+          atividadesPromise,
+          lotesPromise
+        ]);
+  
+        setAtividades(atividadesResponse.data);
+        setLotes(lotesResponse.data);
+        setIsLoading(false);
+      } catch (err) {
+        console.log(err);
+        toast.error("Erro ao buscar dados da API, recarregando página em 6 segundos");
+        await new Promise((r) => setTimeout(r, 6000));
+        navigate(0);
+      }
+    }
+
     fecthApiData();
-  }, []);
+  }, [navigate]);
 
   async function onSubmit(data) {
     const workshop_id = data.workshop;
@@ -99,7 +96,7 @@ const Inscricoes = () => {
 
   return (
     <section className={styles.container}>
-      <ToastContainer autoClose={1500} />
+      <ToastContainer autoClose={2500} />
       <h1 className="titulo-principal">
         <strong>Inscrição</strong>
       </h1>
@@ -229,6 +226,11 @@ const Inscricoes = () => {
               </select>
             </div>
           </div>
+          <div className={styles.linkContainer}>
+            <a href="/busca/inscricao">
+              Já está inscrito? Busque sua inscrição aqui!
+            </a>
+          </div>    
 
           <div className={styles.submitButtonContainer}>
             <button type="submit" disabled={isSubmitting}>
@@ -239,17 +241,6 @@ const Inscricoes = () => {
                 </>
               ) : (
                 "Inscrever-se"
-              )}
-            </button>
-
-            <button type="button" onClick={redirectToFindUser} disabled={isSubmitting}>
-              {isSubmitting ? (
-                <>
-                  <FaSpinner className={styles.spinner} />
-                  Aguarde...
-                </>
-              ) : (
-                "Buscar incricao"
               )}
             </button>
           </div>
