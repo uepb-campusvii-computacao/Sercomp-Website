@@ -42,6 +42,10 @@ export const linksData = [
     href: "/parceiros",
   },
   {
+    text: "Comitê",
+    href: "/comite",
+  },
+  {
     text: "Edições Anteriores",
     href: "/2023",
   },

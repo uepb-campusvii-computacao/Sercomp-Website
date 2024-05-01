@@ -106,31 +106,33 @@ img {
     transition: all 300ms ease-out;
 }
 
-.titulo-base, .titulo-principal {
+.titulo-base,
+.titulo-principal {
     margin-bottom: 0.1rem;
     font-weight: 500;
     margin-bottom: 80px;
     position: relative;
     margin-top: 80px;
     font-size: 1.5rem;
-  }
+}
 
 
-  .titulo-base::after, .titulo-principal::after {
+.titulo-base::after,
+.titulo-principal::after {
     position: absolute;
     content: '';
     width: 30%;
     height: 3px;
     left: 50%;
     bottom: -5px;
-    background-image: linear-gradient(to right,  rgb(106, 6, 236), rgb(220, 0, 240));
+    background-image: linear-gradient(to right, rgb(106, 6, 236), rgb(220, 0, 240));
     transform: translateX(-50%);
-  }
+}
 
-  .titulo-principal {
+.titulo-principal {
     font-size: 2rem;
     text-align: center;
-  }
+}
 
 /*NAVBAR BEGIN*/
 nav {
@@ -424,11 +426,10 @@ header {
 .org-body::before {
     content: "";
     display: block;
-    background: linear-gradient(
-        135deg,
-        transparent,
-        var(--color-primary), var(--color-primary),
-        var(--color-primary));
+    background: linear-gradient(135deg,
+            transparent,
+            var(--color-primary), var(--color-primary),
+            var(--color-primary));
     width: 3rem;
     height: 3rem;
     position: absolute;
@@ -456,7 +457,7 @@ footer {
     gap: 5rem;
 }
 
-.footer-container > div h4 {
+.footer-container>div h4 {
     margin-bottom: 1.2rem;
 }
 
@@ -489,7 +490,7 @@ footer ul li a:hover {
     padding: 1.2rem 0;
 }
 
-.popup .overlay{
+.popup .overlay {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -512,6 +513,7 @@ footer ul li a:hover {
     padding: 20px;
     box-sizing: border-box;
 }
+
 /*FOOTER  END*/
 
 /* MEDIA QUERIES */
@@ -526,7 +528,7 @@ footer ul li a:hover {
         font-size: 2.2rem;
     }
 
-    h2{
+    h2 {
         font-size: 1.7rem;
     }
 
@@ -534,7 +536,7 @@ footer ul li a:hover {
         font-size: 1.4rem;
     }
 
-    h4{
+    h4 {
         font-size: 1.2rem;
     }
 
@@ -563,7 +565,7 @@ footer ul li a:hover {
         display: none;
     }
 
-    .nav-menu{
+    .nav-menu {
         position: fixed;
         top: 5rem;
         right: 5%;
@@ -585,7 +587,7 @@ footer ul li a:hover {
 
     .nav-menu li a {
         background: var(--color-primary);
-        box-shadow:  -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
+        box-shadow: -4rem 6rem 10rem rgba(0, 0, 0, 0.6);
         width: 100%;
         height: 100%;
         display: grid;
@@ -627,7 +629,7 @@ footer ul li a:hover {
 
     /*FAQs*/
 
-    .faqs-container{
+    .faqs-container {
         grid-template-columns: 1fr;
     }
 
@@ -637,7 +639,7 @@ footer ul li a:hover {
 
     /*FOOTER*/
 
-    .footer-container{
+    .footer-container {
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -674,7 +676,7 @@ footer ul li a:hover {
         margin-bottom: 1.3rem;
     }
 
-    .btn-primary{
+    .btn-primary {
         margin-top: 10px;
     }
 
@@ -689,7 +691,7 @@ footer ul li a:hover {
     /*ORGANIZATION*/
 
     .org-body {
-        padding:  1.2rem;
+        padding: 1.2rem;
 
     }
 
@@ -697,7 +699,7 @@ footer ul li a:hover {
     /*FOOTER*/
 
     footer {
-    background-position: top left;
+        background-position: top left;
     }
 
     .footer-container {
