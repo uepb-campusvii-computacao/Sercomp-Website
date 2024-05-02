@@ -21,6 +21,7 @@ import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMaratho
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
 import Comite from "./pages/Comite/Comite";
+import BuscaInscricao from "./pages/BuscaInscricao/BuscaInscricao";
 
 function App() {
   return (
@@ -42,6 +43,7 @@ function App() {
               renderIfFalse={<Mensagem texto="Inscrições encerradas!" />}
             />
           } />
+          <Route exact path="/busca/inscricao" element={<BuscaInscricao />} />
           <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/comite" element={<Comite />} />

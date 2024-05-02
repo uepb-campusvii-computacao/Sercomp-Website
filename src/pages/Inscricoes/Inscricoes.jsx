@@ -54,6 +54,10 @@ const Inscricoes = () => {
     }
   }
 
+  function redirectToFindUser(){
+    navigate("/busca/inscricao")
+  }
+
   useEffect(() => {
     fecthApiData();
   }, []);
@@ -235,6 +239,17 @@ const Inscricoes = () => {
                 </>
               ) : (
                 "Inscrever-se"
+              )}
+            </button>
+
+            <button type="button" onClick={redirectToFindUser} disabled={isSubmitting}>
+              {isSubmitting ? (
+                <>
+                  <FaSpinner className={styles.spinner} />
+                  Aguarde...
+                </>
+              ) : (
+                "Buscar incricao"
               )}
             </button>
           </div>
