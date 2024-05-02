@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { FaSpinner } from "react-icons/fa"; // Importe o ícone de Spinner
 import { ToastContainer, toast } from "react-toastify";
@@ -42,7 +42,7 @@ const BuscaInscricao = () => {
     <section className={styles.container}>
       <ToastContainer autoClose={1500} />
       <h1 className="titulo-principal">
-        <strong>Inscrição</strong>
+        <strong>Buscar Inscrição</strong>
       </h1>
 
       {isLoading ? (
@@ -59,7 +59,7 @@ const BuscaInscricao = () => {
                 disabled={isSubmitting}
                 required
                 type="email"
-                placeholder="email"
+                placeholder="E-mail"
                 {...register("email", { required: true })}
               />
             </div>
