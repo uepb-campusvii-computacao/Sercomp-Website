@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { monitoresData } from "../../data/MonitoresData";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
