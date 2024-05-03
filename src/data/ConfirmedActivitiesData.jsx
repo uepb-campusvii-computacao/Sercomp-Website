@@ -8,8 +8,8 @@ import erosFranklinSoaresFelix from "../assets/images/participacoes/2024/Eros Fr
 import esdrasSamuelFerreira from "../assets/images/participacoes/2024/Esdras Samuel de Araújo Ferreira.webp";
 import gabrielLiraNobrega from "../assets/images/participacoes/2024/Gabriel Lira da Nóbrega.webp";
 import giordaniAlvesFormiga from "../assets/images/participacoes/2024/Giordanni Alves Formiga.webp";
-import giovannaTrigueiroAlmeida from "../assets/images/participacoes/2024/giovanna_trigueiro.webp";
-import halanCaioNascimento from "../assets/images/participacoes/2024/halan.webp";
+import giovannaTrigueiroAlmeida from "../assets/images/participacoes/2024/Giovanna-Trigueiro-de-Almeida-Araújo.webp";
+import halanCaioNascimento from "../assets/images/participacoes/2024/Halan-Caio-Nascimento.webp";
 import italloMendesSilva from "../assets/images/participacoes/2024/Itallo Mendes da Silva.webp";
 import joaoLucasSousaMartins from "../assets/images/participacoes/2024/João Lucas de Sousa Martins.webp";
 import lauraRafaellaFeitosaAlves from "../assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp";
@@ -19,8 +19,8 @@ import pedroFerreiraLimaNeto from "../assets/images/participacoes/2024/Pedro Fer
 import rebecaBarbosaLourenco from "../assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp";
 import thiagoAlvesLaurentino from "../assets/images/participacoes/2024/Thiago Alves Laurentino.webp";
 import victorMenesesPinho from "../assets/images/participacoes/2024/Victor Meneses Pinho.webp";
-import wellyngtonTargino from "../assets/images/participacoes/2024/wellyngton.webp";
-import yohannaBarbaraPereiraCosta from "../assets/images/participacoes/2024/Yohanna.webp";
+import wellyngtonDaNobregaTargino from "../assets/images/participacoes/2024/Wellyngton-da-Nobrega-Targino.webp";
+import yohannaBarbaraPereiraCosta from "../assets/images/participacoes/2024/Yohanna-Barbara-Pereira-Costa.webp";
 import yuriSantosMonteiro from "../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
 import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp";
 import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
@@ -28,9 +28,7 @@ import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2
 import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
 import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp" 
 import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp"
-import {
-  default as JoseAldoSilvadaCosta,
-} from "../assets/images/sem-imagem.png";
+import JoseAldoSilvadaCosta from "../assets/images/participacoes/2024/José-Aldo-Silva-da-Costa.webp";
 
 export const ConfirmedActivitiesData = {
   Oficina: [
@@ -132,7 +130,7 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: wellyngtonTargino,
+          imagem_ministrante: wellyngtonDaNobregaTargino,
           nome_ministrante: "Wellyngton da Nobrega Targino",
         },
       ],

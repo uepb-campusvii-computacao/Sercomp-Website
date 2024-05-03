@@ -110,12 +110,12 @@ const Inscricoes = () => {
         >
           <div className={styles.inputGroup}>
             <div>
-              <p>Nome</p>
+              <p>Nome completo</p>
               <input
                 disabled={isSubmitting}
                 required
                 type="text"
-                placeholder="Nome"
+                placeholder="Nome completo"
                 {...register("nome", { required: true })}
               />
             </div>
