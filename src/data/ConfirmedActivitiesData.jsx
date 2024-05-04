@@ -26,8 +26,8 @@ import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soa
 import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
 import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2024/Klaudio-Henrique-Mascarenhas-Medeiros.webp";
 import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
-import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp" 
-import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp"
+import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp";
+import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp";
 import JoseAldoSilvadaCosta from "../assets/images/participacoes/2024/José-Aldo-Silva-da-Costa.webp";
 
 export const ConfirmedActivitiesData = {
@@ -680,15 +680,15 @@ export const ConfirmedActivitiesData = {
         },
       ],
       texto_resumo:
-        "É um workshop inovador projetado para proporcionar uma experiência de aprendizado inclusiva e acessível para pessoas surdas interessadas em computação. Este workshop tem como objetivo introduzir os participantes aos conceitos básicos da Computação através da Linguagem Brasileira de Sinais (Libras).",
+        "Visa oferecer uma experiência de aprendizado respaldado na inclusão e acessibilidade para os  interessados, agregando conhecimentos. Ele tem como objetivo introduzir os participantes aos conceitos básicos da Língua Brasileira de Sinais (Libras) e sinais da área de Computação.",
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição:</strong> É um workshop inovador projetado para
-            proporcionar uma experiência de aprendizado inclusiva e acessível
-            para pessoas surdas interessadas em computação. Este workshop tem
-            como objetivo introduzir os participantes aos conceitos básicos da
-            Computação através da Linguagem Brasileira de Sinais (Libras).
+            <strong>Descrição:</strong> Visa oferecer uma experiência de
+            aprendizado respaldado na inclusão e acessibilidade para os
+            interessados, agregando conhecimentos. Ele tem como objetivo
+            introduzir os participantes aos conceitos básicos da Língua
+            Brasileira de Sinais (Libras) e sinais da área de Computação..
           </p>
           <p>
             <strong>Pré-Requisito:</strong> Nenhum conhecimento prévio é
