@@ -5,6 +5,9 @@ import dilaniaCabralPhoto from "../assets/images/participacoes/2024/Dilania-Cabr
 import josemirMouraPhoto from "../assets/images/participacoes/2024/Josemir-Moura-Maia.webp"
 import jannaynaPhoto from '../assets/images/professores/jannayna.png';
 import jucelioSoresPhoto from '../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp';
+import mairaRodriguesVillamagna from '../assets/images/participacoes/2024/Maira-Rodrigues-Villamagna.webp';
+import lauristonMedeirosPaixao from '../assets/images/participacoes/2024/Lauriston-Medeiros-Paixão.webp';
+import rosagelaDeAraujoMedeiros from '../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp';
 
 const programacao = [
     {
@@ -94,6 +97,20 @@ const programacao = [
             {
                 title: 'Painel III - Deserto Digital: Estratégias das Universidades para um Mundo mais Conectado',
                 time: '08:00 - 09:30', timeStr: 'MANHÃ', location: "Auditório Celso Furtado",
+                participants: [
+                    {
+                        name: <div><strong>Mediadora:</strong> Dra. Rosâgela de Araujo Medeiros (UEPB)</div>,
+                        photo: rosagelaDeAraujoMedeiros,
+                    },
+                    {
+                        name: <div>Lauriston Medeiros Paixão (NUTES - UEPB)</div>,
+                        photo: lauristonMedeirosPaixao,
+                    },
+                    {
+                        name: <div>Maira Rodrigues Villamagna (Sertão Maker - IFPB)</div>,
+                        photo: mairaRodriguesVillamagna,
+                    },
+                ]
             },
             { title: 'Oficinas', time: '09:30 - 11:30', timeStr: 'MANHÃ' },
             { title: 'Intervalo', time: '11:30 - 14:00', timeStr: 'TARDE' },
