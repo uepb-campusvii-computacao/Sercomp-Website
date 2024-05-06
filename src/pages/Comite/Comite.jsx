@@ -1,6 +1,6 @@
-import { monitoresData } from "../../data/MonitoresData";
-import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { monitoresData } from "../../data/MonitoresData";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -14,19 +14,17 @@ function Comite() {
     return (
         <section className="container">
             <h1 className="titulo-principal">Conheça o comitê do <strong>SERCOMP</strong></h1>
-            <p className={styles.paragrafo}>Conheça os monitores do SERCOMP</p>
             <section className={`container ${styles.orgsContainer} mySwiper`} >
                 <div className="swiper-wrapper">
                     <Swiper
                         modules={[Autoplay]}
                         className="mySwiper"
-                        slidesPerView={1}
                         spaceBetween={30}
-                        autoplay={{ delay: 1500 }}
+                        autoplay={{ delay: 2000 }}
                         pagination={{ clickable: true }}
                         breakpoints={{
-                            600: {
-                                slidesPerView: 4,
+                            450: {
+                                slidesPerView: 2,
                                 spaceBetween: 30,
                             },
                             800: {

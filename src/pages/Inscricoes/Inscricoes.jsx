@@ -7,6 +7,7 @@ import { api } from "../../lib/axios";
 
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
+import Partners from "../../components/Partners/Partners";
 import styles from "./Inscricoes.module.css";
 
 const Inscricoes = () => {
@@ -98,170 +99,173 @@ const Inscricoes = () => {
   }
 
   return (
-    <section className={styles.container}>
-      <ToastContainer autoClose={2500} />
-      <h1 className="titulo-principal">
-        <strong>Inscrição</strong>
-      </h1>
+    <>
+      <section className={styles.container}>
+        <ToastContainer autoClose={2500} />
+        <h1 className="titulo-principal">
+          <strong>Inscrição</strong>
+        </h1>
 
-      {isLoading ? (
-        <LoadingScreen />
-      ) : (
-        <form
-          onSubmit={handleSubmit(onSubmit)}
-          className={styles.formContainer}
-        >
-          <div className={styles.inputGroup}>
-            <div>
-              <p>Nome completo</p>
-              <input
-                disabled={isSubmitting}
-                required
-                type="text"
-                placeholder="Nome completo"
-                {...register("nome", { required: true })}
-              />
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <form
+            onSubmit={handleSubmit(onSubmit)}
+            className={styles.formContainer}
+          >
+            <div className={styles.inputGroup}>
+              <div>
+                <p>Nome completo</p>
+                <input
+                  disabled={isSubmitting}
+                  required
+                  type="text"
+                  placeholder="Nome completo"
+                  {...register("nome", { required: true })}
+                />
+              </div>
+              <div>
+                <p>Nome no crachá</p>
+                <input
+                  disabled={isSubmitting}
+                  required
+                  type="text"
+                  placeholder="Nome no crachá"
+                  {...register("nome_cracha", { required: true })}
+                />
+              </div>
+              <div>
+                <p>E-mail</p>
+                <input
+                  disabled={isSubmitting}
+                  required
+                  type="email"
+                  placeholder="Email"
+                  {...register("email", { required: true })}
+                />
+              </div>
+              <div>
+                <p>Instituição</p>
+                <input
+                  disabled={isSubmitting}
+                  required
+                  type="text"
+                  placeholder="Instituição"
+                  {...register("instituicao", { required: true })}
+                />
+              </div>
             </div>
-            <div>
-              <p>Nome no crachá</p>
-              <input
-                disabled={isSubmitting}
-                required
-                type="text"
-                placeholder="Nome no crachá"
-                {...register("nome_cracha", { required: true })}
-              />
-            </div>
-            <div>
-              <p>E-mail</p>
-              <input
-                disabled={isSubmitting}
-                required
-                type="email"
-                placeholder="Email"
-                {...register("email", { required: true })}
-              />
-            </div>
-            <div>
-              <p>Instituição</p>
-              <input
-                disabled={isSubmitting}
-                required
-                type="text"
-                placeholder="Instituição"
-                {...register("instituicao", { required: true })}
-              />
-            </div>
-          </div>
 
-          <div className={styles.inputGroup}>
-            <p>Selecione o lote</p>
-            <div className={styles.inputGroupLotes}>
-              {lotes.map((lote) => (
-                <label
-                  key={lote.uuid_lote}
-                  htmlFor={lote.uuid_lote}
-                  className={`${styles.loteContainer} ${
-                    selectedLote === lote.uuid_lote
-                      ? styles.loteContainerChecked
-                      : ""
-                  }`}
-                >
-                  <div className={styles.loteContent}>
-                    {lote.nome} <br />{" "}
-                    <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
-                  </div>
-                  <input
-                    id={lote.uuid_lote}
-                    type="radio"
-                    value={lote.uuid_lote}
-                    checked={selectedLote === lote.uuid_lote}
-                    disabled={isSubmitting}
-                    {...register("lote")}
-                  />
-                </label>
-              ))}
-            </div>
-          </div>
-
-          <div className={styles.selectContainer}>
-            <span className={styles.selectContainerAlert}>
-              <strong>Aviso: </strong>
-              Os minicursos e oficinas acontecem pela manhã, e os workshops
-              pela noite. Se não puder participar em algum desses
-              horários, não é preciso selecioná-los. Inscreva-se apenas nas
-              atividades em que estiver disponível.
-            </span>
-            <div className={styles.selectGroup}>
-              <p>Minicursos</p>
-              <select {...register("minicurso")}>
-                <option value="">Selecione...</option>
-                {atividades.minicursos.map((minicurso) => (
-                  <option
-                    key={minicurso.uuid_atividade}
-                    value={minicurso.uuid_atividade}
+            <div className={styles.inputGroup}>
+              <p>Selecione o lote</p>
+              <div className={styles.inputGroupLotes}>
+                {lotes.map((lote) => (
+                  <label
+                    key={lote.uuid_lote}
+                    htmlFor={lote.uuid_lote}
+                    className={`${styles.loteContainer} ${
+                      selectedLote === lote.uuid_lote
+                        ? styles.loteContainerChecked
+                        : ""
+                    }`}
                   >
-                    {minicurso.nome} - Vagas{" "}
-                    {`(${minicurso._count}/${minicurso.max_participants})`}
-                  </option>
+                    <div className={styles.loteContent}>
+                      {lote.nome} <br />{" "}
+                      <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
+                    </div>
+                    <input
+                      id={lote.uuid_lote}
+                      type="radio"
+                      value={lote.uuid_lote}
+                      checked={selectedLote === lote.uuid_lote}
+                      disabled={isSubmitting}
+                      {...register("lote")}
+                    />
+                  </label>
                 ))}
-              </select>
+              </div>
             </div>
 
-            <div className={styles.selectGroup}>
-              <p>Workshops</p>
-              <select {...register("workshop")}>
-                <option value="">Selecione...</option>
-                {atividades.workshops.map((workshop) => (
-                  <option
-                    key={workshop.uuid_atividade}
-                    value={workshop.uuid_atividade}
-                  >
-                    {workshop.nome} - Vagas{" "}
-                    {`(${workshop._count}/${workshop.max_participants})`}
-                  </option>
-                ))}
-              </select>
+            <div className={styles.selectContainer}>
+              <span className={styles.selectContainerAlert}>
+                <strong>Aviso: </strong>
+                Os minicursos e oficinas acontecem pela manhã, e os workshops
+                pela noite. Se não puder participar em algum desses
+                horários, não é preciso selecioná-los. Inscreva-se apenas nas
+                atividades em que estiver disponível.
+              </span>
+              <div className={styles.selectGroup}>
+                <p>Minicursos</p>
+                <select {...register("minicurso")}>
+                  <option value="">Selecione...</option>
+                  {atividades.minicursos.map((minicurso) => (
+                    <option
+                      key={minicurso.uuid_atividade}
+                      value={minicurso.uuid_atividade}
+                    >
+                      {minicurso.nome} - Vagas{" "}
+                      {`(${minicurso._count}/${minicurso.max_participants})`}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className={styles.selectGroup}>
+                <p>Workshops</p>
+                <select {...register("workshop")}>
+                  <option value="">Selecione...</option>
+                  {atividades.workshops.map((workshop) => (
+                    <option
+                      key={workshop.uuid_atividade}
+                      value={workshop.uuid_atividade}
+                    >
+                      {workshop.nome} - Vagas{" "}
+                      {`(${workshop._count}/${workshop.max_participants})`}
+                    </option>
+                  ))}
+                </select>
+              </div>
+
+              <div className={styles.selectGroup}>
+                <p>Oficinas</p>
+                <select {...register("oficina")}>
+                  <option value="">Selecione...</option>
+                  {atividades.oficinas.map((oficina) => (
+                    <option
+                      key={oficina.uuid_atividade}
+                      value={oficina.uuid_atividade}
+                    >
+                      {oficina.nome} - Vagas{" "}
+                      {`(${oficina._count}/${oficina.max_participants})`}
+                    </option>
+                  ))}
+                </select>
+              </div>
+            </div>
+            <div className={styles.linkContainer}>
+              <a href="/busca/inscricao">
+                Já está inscrito? Busque sua inscrição aqui!
+              </a>
             </div>
 
-            <div className={styles.selectGroup}>
-              <p>Oficinas</p>
-              <select {...register("oficina")}>
-                <option value="">Selecione...</option>
-                {atividades.oficinas.map((oficina) => (
-                  <option
-                    key={oficina.uuid_atividade}
-                    value={oficina.uuid_atividade}
-                  >
-                    {oficina.nome} - Vagas{" "}
-                    {`(${oficina._count}/${oficina.max_participants})`}
-                  </option>
-                ))}
-              </select>
+            <div className={styles.submitButtonContainer}>
+              <button type="submit" disabled={isSubmitting}>
+                {isSubmitting ? (
+                  <>
+                    <FaSpinner className={styles.spinner} />
+                    Aguarde...
+                  </>
+                ) : (
+                  "Inscrever-se"
+                )}
+              </button>
             </div>
-          </div>
-          <div className={styles.linkContainer}>
-            <a href="/busca/inscricao">
-              Já está inscrito? Busque sua inscrição aqui!
-            </a>
-          </div>
-
-          <div className={styles.submitButtonContainer}>
-            <button type="submit" disabled={isSubmitting}>
-              {isSubmitting ? (
-                <>
-                  <FaSpinner className={styles.spinner} />
-                  Aguarde...
-                </>
-              ) : (
-                "Inscrever-se"
-              )}
-            </button>
-          </div>
-        </form>
-      )}
-    </section>
-  );
+          </form>
+        )}
+      </section>
+      <Partners />
+    </>
+  )
 };
 
 export default Inscricoes;

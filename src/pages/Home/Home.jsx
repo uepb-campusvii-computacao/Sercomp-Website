@@ -27,10 +27,6 @@ function Home() {
 
       <Countdown />
 
-      {/*<Partners />*/}
-      
-      {/*<FAQ />*/}
-
       <Organization title={"ORGANIZAÇÃO DO VI SERCOMP"}  members={orgMembersData}/>
     </>
   );
