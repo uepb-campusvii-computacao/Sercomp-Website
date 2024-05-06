@@ -21,11 +21,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
-<<<<<<< HEAD
 import Comite from "./pages/Comite/Comite";
-import BuscaInscricao from "./pages/BuscaInscricao/BuscaInscricao";
-=======
->>>>>>> 08b6f7439793a1b258762bb44f86d49353c61432
 
 function App() {
   return (

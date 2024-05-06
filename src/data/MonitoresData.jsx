@@ -26,7 +26,7 @@ import Luciano from "../assets/images/comite/monitores/Luciano Claudio Alves da 
 import Roger from "../assets/images/comite/monitores/Roger Natan Carvalho Silva.webp";
 import Thulio from "../assets/images/comite/monitores/Thulio Bezerra Alves.webp";
 import Eduardo from "../assets/images/comite/monitores/Eduardo Paulino Dantas.webp";
-// import Giovanni from "../assets/images/comite/monitores/Giovanni Miguel Vieira.webp";
+import Giovanni from "../assets/images/comite/monitores/Giovanni Miguel Vieira.webp";
 import JoseOliveira from "../assets/images/comite/monitores/Jose Oliveira de Almeida Neto.webp";
 import Kayke from "../assets/images/comite/monitores/Kayke Nicolas Ferreira Goncalves Campos.webp";
 import Kemelly from "../assets/images/comite/monitores/Kemelly Klaricy Rufino de Lima.webp";
@@ -35,7 +35,7 @@ import MariaClara from "../assets/images/comite/monitores/Maria Clara Galvao Vie
 import Mariana from "../assets/images/comite/monitores/Mariana Alves de Souza.webp";
 import Monyca from "../assets/images/comite/monitores/Monyca Monalyza Almeida Marques.webp";
 import Pedro from "../assets/images/comite/monitores/Pedro Arthur Pereira Franco.webp";
-// import Robson from "../assets/images/comite/monitores/Robson Lourenco Filho.webp";
+import Robson from "../assets/images/comite/monitores/Robson Lourenco Filho.webp";
 // import Ana from "../assets/images/comite/monitores/Ana Silva.webp";
 // import MarianaSantos from "../assets/images/comite/monitores/Mariana Santos.webp";
 // import Rafael from "../assets/images/comite/monitores/Rafael Oliveira.webp";
@@ -82,7 +82,7 @@ export const monitoresData = [
    { name: "Roger Natan Carvalho Silva", area: "Patrocínio", image: Roger },
    { name: "Thulio Bezerra Alves", area: "Patrocínio", image: Thulio },
    { name: "Eduardo Paulino Dantas", area: "Artes e Comunicação", image: Eduardo },
-   // { name: "Giovanni Miguel Vieira", area: "Artes e Comunicação", image: Giovanni },
+   { name: "Giovanni Miguel Vieira", area: "Artes e Comunicação", image: Giovanni },
    { name: "Jose Oliveira de Almeida Neto", area: "Artes e Comunicação", image: JoseOliveira },
    { name: "Kayke Nicolas Ferreira Goncalves Campos", area: "Artes e Comunicação", image: Kayke },
    { name: "Kemelly Klaricy Rufino de Lima", area: "Artes e Comunicação", image: Kemelly },
@@ -91,7 +91,7 @@ export const monitoresData = [
    { name: "Mariana Alves de Souza", area: "Artes e Comunicação", image: Mariana },
    { name: "Monyca Monalyza Almeida Marques", area: "Artes e Comunicação", image: Monyca },
    { name: "Pedro Arthur Pereira Franco", area: "Artes e Comunicação", image: Pedro },
-   // { name: "Robson Lourenco Filho", area: "Artes e Comunicação", image: Robson },
+   { name: "Robson Lourenco Filho", area: "Artes e Comunicação", image: Robson },
    // { name: "Ana Silva", area: "Artes e Comunicação", image: Ana },
    // { name: "Mariana Santos", area: "Artes e Comunicação", image: MarianaSantos },
    // { name: "Rafael Oliveira", area: "Artes e Comunicação", image: Rafael },
