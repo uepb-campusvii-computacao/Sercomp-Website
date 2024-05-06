@@ -190,7 +190,7 @@ const Inscricoes = () => {
                     key={minicurso.uuid_atividade}
                     value={minicurso.uuid_atividade}
                   >
-                    {minicurso.nome}
+                    {minicurso.nome} - Vagas {`(${minicurso._count}/${minicurso.max_participants})`}
                   </option>
                 ))}
               </select>
@@ -205,7 +205,7 @@ const Inscricoes = () => {
                     key={workshop.uuid_atividade}
                     value={workshop.uuid_atividade}
                   >
-                    {workshop.nome}
+                    {workshop.nome} - Vagas {`(${workshop._count}/${workshop.max_participants})`}
                   </option>
                 ))}
               </select>
@@ -220,7 +220,7 @@ const Inscricoes = () => {
                     key={oficina.uuid_atividade}
                     value={oficina.uuid_atividade}
                   >
-                    {oficina.nome}
+                    {oficina.nome} - Vagas {`(${oficina._count}/${oficina.max_participants})`}
                   </option>
                 ))}
               </select>

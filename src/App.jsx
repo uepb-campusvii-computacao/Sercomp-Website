@@ -5,6 +5,7 @@ import Layout from "./components/Layout/Layout";
 import { Mensagem } from "./components/Mensagem/Mensagem";
 import About from "./pages/About/About";
 import Articles from "./pages/Articles/Articles";
+import BuscaInscricao from "./pages/BuscaInscricao/BuscaInscricao";
 import Chamadas from "./pages/Chamadas/Chamadas";
 import ConfirmedActivities from "./pages/ConfirmedActivities/ConfirmedActivities";
 import Contact from "./pages/Contact/Contact";
@@ -17,11 +18,14 @@ import Pagamento from "./pages/Pagamento/Pagamento";
 import Partners from "./pages/Partners/Partners";
 import Edition2023 from "./pages/PreviousEditions/2023";
 import Privacy from "./pages/Privacy/Privacy";
-import ProgrammingMarathon from "./pages/Programming Marathon/ProgrammingMarathon";
+import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
+<<<<<<< HEAD
 import Comite from "./pages/Comite/Comite";
 import BuscaInscricao from "./pages/BuscaInscricao/BuscaInscricao";
+=======
+>>>>>>> 08b6f7439793a1b258762bb44f86d49353c61432
 
 function App() {
   return (
