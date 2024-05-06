@@ -6,7 +6,7 @@ import ArticleList from '../../components/TextList/TextList.jsx'
 
 const importantDates = [
   <><strong>Prazo Inicial de submissão de short paper:</strong> 07/04/2024;</>,
-  <><strong>Prazo final de submissão de short paper:</strong> 06/05/2024;</>,
+  <><strong>Prazo final de submissão de short paper:</strong> 10/05/2024;</>,
   <><strong>Notificação dos autores dos short paper aprovados:</strong> 15/05/2024;</>,
   <><strong>Apresentação dos short paper:</strong> 22/05/2024.</>
 ]

@@ -4,7 +4,6 @@ import inovatec from '../assets/images/parceiros/2024/inovatec.webp'
 import moinhopatoense from '../assets/images/parceiros/2024/moinhopatoense.webp'
 import nutrimassa from '../assets/images/parceiros/2024/nutrimassa.webp'
 import papelariapatoense from '../assets/images/parceiros/2024/papelariapatoense.webp'
-import prestcontas from '../assets/images/parceiros/2024/prestcontas.webp'
 
 const partnersData = [
     {
@@ -37,11 +36,6 @@ const partnersData = [
         image: inovatec,
         alt: "Inovatec"
     },
-    {
-        href: "https://www.instagram.com/prestcontas_assessoria/?hl=pt-br",
-        image: prestcontas,
-        alt: "Prestcontas"
-    }
 ];
 
 export default partnersData;
