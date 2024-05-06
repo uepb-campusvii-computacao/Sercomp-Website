@@ -6,14 +6,14 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import styles from './Partners.module.css'
 import partnersData from '../../data/PartnersData.js';
+import styles from './Partners.module.css';
 
 export default function Partners() {
     return (
         <section className={styles.partners}>
             <div className={`container ${styles.partnersContainer}`}>
-                <h1>CONHEÇA NOSSOS PARCEIROS</h1>
+                <h2>CONHEÇA NOSSOS PARCEIROS</h2>
                 <Swiper
                     modules={[Autoplay]}
                     className={`mySwiper ${styles.mySwiper}`}

@@ -55,7 +55,11 @@
   border-radius: 50%;
   overflow: hidden;
   margin: 0 auto 1rem;
-  border: 1rem solid var(--color-bg1);
+  border: 1rem solid var(--color-bg1);  
+}
+
+.avatar img{
+  margin-top: -1rem;
 }
 
 .org-info {

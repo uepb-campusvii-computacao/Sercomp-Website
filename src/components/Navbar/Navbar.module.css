@@ -90,7 +90,22 @@ nav button {
   display: flex;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1160px) {
+  .toggleMenuContainer{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+
+  .logoContainer{
+    margin-left: 30px;
+  }
+
+  .navContainer{
+    width: 100%;
+    gap: 0px;
+  }
+
   nav button {
     display: inline-block;
     background: transparent;
