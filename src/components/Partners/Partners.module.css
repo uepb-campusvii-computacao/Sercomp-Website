@@ -19,11 +19,14 @@
 }
 
 .avatarPartner {
+  display: flex;
+  align-items: center;
   width: 16rem;
   height: 16rem;
   border-radius: 10%;
   overflow: hidden;
   margin: 0 auto 1rem;
+  padding: 2rem;
 }
 
 .partnerInfo {

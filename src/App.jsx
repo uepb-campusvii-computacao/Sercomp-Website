@@ -21,6 +21,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
+import Comite from "./pages/Comite/Comite";
 
 function App() {
   return (
@@ -39,12 +40,13 @@ function App() {
             <DateConditional
               until="2024/05/20"
               renderIfTrue={<Inscricoes />}
-              renderIfFalse={<Mensagem texto="Inscrições encerradas!"/>}
+              renderIfFalse={<Mensagem texto="Inscrições encerradas!" />}
             />
           } />
           <Route exact path="/busca/inscricao" element={<BuscaInscricao />} />
           <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
+          <Route exact path="/comite" element={<Comite />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />
           <Route exact path="/confirmed-activities" element={<ConfirmedActivities />} />
