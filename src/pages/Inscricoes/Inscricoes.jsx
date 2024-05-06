@@ -37,20 +37,23 @@ const Inscricoes = () => {
         const atividadesPromise = api.get(
           `/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`
         );
-        const lotesPromise = api
-          .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`)
-  
+        const lotesPromise = api.get(
+          `/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`
+        );
+
         const [atividadesResponse, lotesResponse] = await Promise.all([
           atividadesPromise,
-          lotesPromise
+          lotesPromise,
         ]);
-  
+
         setAtividades(atividadesResponse.data);
         setLotes(lotesResponse.data);
         setIsLoading(false);
       } catch (err) {
         console.log(err);
-        toast.error("Erro ao buscar dados da API, recarregando página em 6 segundos");
+        toast.error(
+          "Erro ao buscar dados da API, recarregando página em 6 segundos"
+        );
         await new Promise((r) => setTimeout(r, 6000));
         navigate(0);
       }
@@ -75,7 +78,7 @@ const Inscricoes = () => {
       nome_cracha,
       email,
       instituicao,
-      atividades: {workshop_id, minicurso_id, oficina_id},
+      atividades: { workshop_id, minicurso_id, oficina_id },
       lote_id: lote || lotes[0].uuid_lote,
     };
 
@@ -165,7 +168,8 @@ const Inscricoes = () => {
                   }`}
                 >
                   <div className={styles.loteContent}>
-                    {lote.nome} <br /> <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
+                    {lote.nome} <br />{" "}
+                    <span> Valor - R${lote.preco.toFixed(2)}</span>{" "}
                   </div>
                   <input
                     id={lote.uuid_lote}
@@ -181,6 +185,13 @@ const Inscricoes = () => {
           </div>
 
           <div className={styles.selectContainer}>
+            <span className={styles.selectContainerAlert}>
+              <strong>Aviso: </strong>
+              Os minicursos e oficinas acontecem pela manhã, e os workshops
+              pela noite. Se não puder participar em algum desses
+              horários, não é preciso selecioná-los. Inscreva-se apenas nas
+              atividades em que estiver disponível.
+            </span>
             <div className={styles.selectGroup}>
               <p>Minicursos</p>
               <select {...register("minicurso")}>
@@ -190,7 +201,8 @@ const Inscricoes = () => {
                     key={minicurso.uuid_atividade}
                     value={minicurso.uuid_atividade}
                   >
-                    {minicurso.nome} - Vagas {`(${minicurso._count}/${minicurso.max_participants})`}
+                    {minicurso.nome} - Vagas{" "}
+                    {`(${minicurso._count}/${minicurso.max_participants})`}
                   </option>
                 ))}
               </select>
@@ -205,7 +217,8 @@ const Inscricoes = () => {
                     key={workshop.uuid_atividade}
                     value={workshop.uuid_atividade}
                   >
-                    {workshop.nome} - Vagas {`(${workshop._count}/${workshop.max_participants})`}
+                    {workshop.nome} - Vagas{" "}
+                    {`(${workshop._count}/${workshop.max_participants})`}
                   </option>
                 ))}
               </select>
@@ -220,7 +233,8 @@ const Inscricoes = () => {
                     key={oficina.uuid_atividade}
                     value={oficina.uuid_atividade}
                   >
-                    {oficina.nome} - Vagas {`(${oficina._count}/${oficina.max_participants})`}
+                    {oficina.nome} - Vagas{" "}
+                    {`(${oficina._count}/${oficina.max_participants})`}
                   </option>
                 ))}
               </select>
@@ -230,7 +244,7 @@ const Inscricoes = () => {
             <a href="/busca/inscricao">
               Já está inscrito? Busque sua inscrição aqui!
             </a>
-          </div>    
+          </div>
 
           <div className={styles.submitButtonContainer}>
             <button type="submit" disabled={isSubmitting}>
