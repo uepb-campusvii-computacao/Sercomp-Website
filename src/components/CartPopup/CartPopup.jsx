@@ -24,9 +24,9 @@ const CartPopup = ({ products, handleBuyClick }) => {
                 <div className={styles.cartProductsEntries}>
                     {
                         products.map((product) => (
-                            <div key={product.uuid_product} className={styles.cartProduct}>
+                            <div key={product.uuid_produto} className={styles.cartProduct}>
                                 <p>{product.nome} x {product.quantidade}</p>
-                                <button className={styles.removeProduct} onClick={() => removeProduct(product.uuid_product)}>
+                                <button className={styles.removeProduct} onClick={() => removeProduct(product.uuid_produto)}>
                                     <BiTrash size={18}/>
                                 </button>
                             </div>                
@@ -49,7 +49,7 @@ const CartPopup = ({ products, handleBuyClick }) => {
 CartPopup.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
-      uuid_product: PropTypes.string.isRequired,
+      uuid_produto: PropTypes.string.isRequired,
       nome: PropTypes.string.isRequired,
       quantidade: PropTypes.number.isRequired,
       preco: PropTypes.number.isRequired,
