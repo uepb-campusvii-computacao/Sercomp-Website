@@ -8,6 +8,10 @@ export const linksData = [
     href: "/inscricao",
   },
   {
+    text: "Loja",
+    href: "/market",
+  },
+  {
     text: "Chamadas",
     href: "/chamadas",
     sublinks: [
@@ -34,7 +38,7 @@ export const linksData = [
     href: "/timeline",
   },
   {
-    text: "Atividades Confirmadas",
+    text: "Atividades",
     href: "/confirmed-activities",
   },
   {
