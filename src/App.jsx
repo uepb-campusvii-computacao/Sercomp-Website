@@ -17,7 +17,6 @@ import Ideathon from "./pages/Ideathon/Ideathon";
 import Inscricoes from "./pages/Inscricoes/Inscricoes";
 import Market from "./pages/Market/Market";
 import Pagamento from "./pages/Pagamento/Pagamento";
-import PagamentoProduto from "./pages/Pagamento/PagamentoProduto";
 import Partners from "./pages/Partners/Partners";
 import Edition2023 from "./pages/PreviousEditions/2023";
 import Privacy from "./pages/Privacy/Privacy";
@@ -56,7 +55,6 @@ function App() {
           <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />
           <Route exact path="/2023" element={<Edition2023 />} />
           <Route exact path="/market" element={<Market />} />
-          <Route exact path="/market/pagamento/:pagamento_id" element={<PagamentoProduto />} />
           <Route exact path="/market/user/:user_id/pagamentos" element={<AllPagamentoProduto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
