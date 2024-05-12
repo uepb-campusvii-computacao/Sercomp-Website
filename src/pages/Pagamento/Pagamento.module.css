@@ -52,6 +52,11 @@
   gap: 3rem 1rem;
 }
 
+.paymentGroupDivider{
+  border-bottom: dashed #fff 2px;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 .infoGroup {
   width: 100%;
   display: flex;

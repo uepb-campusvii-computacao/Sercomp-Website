@@ -5,11 +5,13 @@ import { ToastContainer, toast } from "react-toastify";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import { api } from "../../lib/axios";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import styles from "./BuscaInscricao.module.css";
 
 const BuscaInscricao = () => {
+  const { tipo_busca } = useParams();
+
   const navigate = useNavigate();
   const {
     register,
@@ -30,9 +32,15 @@ const BuscaInscricao = () => {
         data
       );
 
-      navigate(`/pagamento/user/${response.data.uuid_user}/lote/${response.data.uuid_lote}`)
+      if (!tipo_busca) {
+        navigate(
+          `/pagamento/user/${response.data.uuid_user}/lote/${response.data.uuid_lote}`
+        );
+      } else {
+        navigate(`/market/user/${response.data.uuid_user}/pagamentos`);
+      }
     } catch (err) {
-      toast.error("Erro ao buscar usuario")
+      toast.error("Erro ao buscar usuario");
     }
 
     setIsLoading(false);

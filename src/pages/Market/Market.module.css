@@ -1,0 +1,106 @@
+.marketContainer {
+  margin-top: 7rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #ffffffad;
+  border-radius: 15px;
+}
+
+.cartProduct {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.notificationBadge {
+  position: absolute;
+  top: 7px;
+  right: 7px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  font-weight: bold;  
+}
+
+.bounce{
+  animation: bounce 0.5s ease;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.productContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.marketHeader {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  padding: 1rem;
+  background: var(--color-bg1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  margin-top: 20px;
+  padding: 0.5rem;
+  padding-right: 20px;
+  background-color: var(--color-bg1);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.linkContainer a {
+  text-decoration: underline;
+  text-align: right;
+  color: yellow;
+}
+
+.linkContainer a:hover {
+  color: #f29d35;
+}
+
+.cartButton {
+  background-color: #f29d35;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.2rem;
+  color: var(--color-white);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cartButton:hover {
+  background-color: #ff7300;
+}
+
+.headerCart {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
