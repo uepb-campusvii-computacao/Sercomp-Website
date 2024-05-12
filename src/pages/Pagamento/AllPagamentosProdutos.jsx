@@ -4,50 +4,47 @@ import { useLocation, useParams } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import useWindowWidth from "../../hooks/useWindowWidth";
-import styles from "./Pagamento.module.css";
 import { api } from "../../lib/axios";
+import styles from "./Pagamento.module.css";
 
 const AllPagamentoProduto = () => {
   const location = useLocation();
   const { user_id } = useParams();
-
+  const [loading, setLoading] = useState(true);
   const [compras, setCompras] = useState([]);
 
-  async function fetchData() {
-    try {
-      const response = await api.get(`marketplace/user/${user_id}`);
-
-      setCompras(
-        response.data.map((item) => ({
-          user_name: item.usuario.nome,
-          status: item.status_pagamento,
-          preco: item.valor_total,
-          produtos: item.venda.map((venda) => ({
-            quantidade: venda.quantidade,
-            uuid_produto: venda.produto.uuid_produto,
-            preco: venda.produto.preco,
-            nome: venda.produto.nome,
-          })),
-          transaction_data: item.transaction_data,
-        }))
-      );
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  const fullUrl = `${window.location.origin}${location.pathname}${location.search}`;
+  const windowWidth = useWindowWidth();  
 
   useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await api.get(`marketplace/user/${user_id}`);
+  
+        setCompras(
+          response.data.map((item) => ({
+            user_name: item.usuario.nome,
+            status: item.status_pagamento,
+            preco: item.valor_total,
+            produtos: item.vendas.map((venda) => ({
+              quantidade: venda.quantidade,
+              uuid_produto: venda.produto.uuid_produto,
+              preco: venda.produto.preco,
+              nome: venda.produto.nome,
+            })),
+            transaction_data: item.transaction_data,
+          }))
+        );
+
+        setLoading(false);
+      } catch (error) {
+        console.log(error);
+        toast.error("Venda não encontrada!") 
+      }
+    }
+
     fetchData();
-  }, []);
-
-  //Remover esse valor padrão, ele é apenas para teste
-
-  //Tem que começar com true
-  //O valor esta false apenas para ambiente de desenvolvimento!!
-  const [loading, setLoading] = useState(false);
-
-  const fullUrl = `${window.location.origin}${location.pathname}${location.search}`;
-  const windowWidth = useWindowWidth();
+  }, [user_id]);
 
   function handleCopyPix() {
     navigator.clipboard.writeText(compras.transaction_data.qr_code);
