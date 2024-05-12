@@ -15,7 +15,7 @@ export const MarketProvider = ({ children }) => {
 
   const addProduct = (product) => {
     const existingProductIndex = products.findIndex(
-      (p) => p.uuid_product === product.uuid_product
+      (p) => p.uuid_produto === product.uuid_produto
     );
 
     if (existingProductIndex !== -1) {
@@ -27,10 +27,10 @@ export const MarketProvider = ({ children }) => {
     }
   };
 
-  const removeProduct = (uuid_product) => {
+  const removeProduct = (uuid_produto) => {
     setProducts((prevProducts) =>
       prevProducts.map((p) =>
-        p.uuid_product === uuid_product
+        p.uuid_produto === uuid_produto
           ? { ...p, quantidade: p.quantidade - 1 }
           : p
       ).filter((p) => p.quantidade > 0)

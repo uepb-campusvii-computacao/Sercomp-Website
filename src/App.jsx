@@ -24,6 +24,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
+import AllPagamentoProduto from "./pages/Pagamento/AllPagamentosProdutos";
 
 function App() {
   return (
@@ -45,7 +46,7 @@ function App() {
               renderIfFalse={<Mensagem texto="Inscrições encerradas!" />}
             />
           } />
-          <Route exact path="/busca/inscricao" element={<BuscaInscricao />} />
+          <Route exact path="/busca/inscricao/:tipo_busca?" element={<BuscaInscricao />} />
           <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/comite" element={<Comite />} />
@@ -56,6 +57,7 @@ function App() {
           <Route exact path="/2023" element={<Edition2023 />} />
           <Route exact path="/market" element={<Market />} />
           <Route exact path="/market/pagamento/:pagamento_id" element={<PagamentoProduto />} />
+          <Route exact path="/market/user/:user_id/pagamentos" element={<AllPagamentoProduto />} />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Layout>

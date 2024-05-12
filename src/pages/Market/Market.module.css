@@ -6,10 +6,10 @@
   border-radius: 15px;
 }
 
-.cartProduct{
-    display: flex;
-    justify-content: end;
-    gap: 10px;
+.cartProduct {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
 }
 
 .notificationBadge {
@@ -43,6 +43,22 @@
   background: var(--color-bg1);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.linkContainer a {
+  text-decoration: underline;
+  text-align: right;
+  color: yellow;
+}
+
+.linkContainer a:hover {
+  color: #f29d35;
 }
 
 .cartButton {
