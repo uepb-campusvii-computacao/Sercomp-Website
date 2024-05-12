@@ -1,12 +1,12 @@
 import { useContext, useEffect, useState } from "react";
-import { BiCart } from "react-icons/bi";
+import { BiCart, BiX } from "react-icons/bi";
+import { ToastContainer, toast } from "react-toastify";
 import CartPopup from "../../components/CartPopup/CartPopup";
 import EmailPopup from "../../components/EmailPopup/EmailPopup";
 import ProductCard from "../../components/ProductCard/ProductCard";
 import MarketContext from "../../context/MarketContext";
-import styles from "./Market.module.css";
 import { api } from "../../lib/axios";
-import { ToastContainer, toast } from "react-toastify";
+import styles from "./Market.module.css";
 
 const Market = () => {
   const [productsMacket, setProductsMacket] = useState([]);
@@ -17,7 +17,7 @@ const Market = () => {
       .then((response) => {
         setProductsMacket(response.data);
       })
-      .catch((err) => toast.error("Erro ao buscar os dados"));
+      .catch(() => toast.error("Erro ao buscar os dados"));
   }
 
   useEffect(() => {
@@ -46,13 +46,18 @@ const Market = () => {
       <div className={styles.marketContainer}>
         <ToastContainer autoClose={2500} />
         <section className={styles.marketHeader}>
-          <h3>Loja Online</h3>
+          <h3>🌵 Loja Online</h3>
           <div className={styles.headerCart}>
             <button className={styles.cartButton} onClick={toggleCartPopup}>
-              <BiCart size={30} />
+              { !showCartPopup 
+                ?
+                  <BiCart size={30} /> 
+                :
+                  <BiX size={30}/>
+              }
             </button>
             {products && products.length > 0 && (
-              <div className={styles.notificationBadge}>
+              <div className={`${styles.notificationBadge} ${styles.bounce}`}>
                 {products.reduce((total, product) => {
                   return total + product.quantidade;
                 }, 0)}
@@ -77,11 +82,11 @@ const Market = () => {
         </div>
 
         {showEmailPopup && <EmailPopup onClose={handleCloseEmailPopup} />}
-      </div>
-      <div className={styles.linkContainer}>
-        <a href="/busca/inscricao/pagamentos">
-          Já fez alguma compra? Busque aqui!
-        </a>
+        <div className={styles.linkContainer}>
+          <a href="/busca/inscricao/pagamentos">
+            Já fez alguma compra? Busque aqui!
+          </a>
+        </div>
       </div>
     </>
   );
