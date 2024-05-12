@@ -1,10 +1,10 @@
 import PropTypes from "prop-types";
 import { useContext, useState } from "react";
-import MarketContext from "../../context/MarketContext";
-import styles from "./EmailPopup.module.css";
-import { api } from "../../lib/axios";
-import { ToastContainer, toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+import MarketContext from "../../context/MarketContext";
+import { api } from "../../lib/axios";
+import styles from "./EmailPopup.module.css";
 
 const EmailPopup = ({ onClose }) => {
   const { products, reset } = useContext(MarketContext);
@@ -42,7 +42,6 @@ const EmailPopup = ({ onClose }) => {
 
   return (
     <div>
-      <ToastContainer autoClose={2500} />
       <div className={styles.popupOverlay} onClick={handleClickOutside}>
         <div className={styles.popup}>
           <h3>Insira seu email</h3>
