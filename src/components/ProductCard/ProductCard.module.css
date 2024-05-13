@@ -32,6 +32,11 @@
   border-radius: 15px;
 }
 
+.productInfo{
+  display: flex;
+  flex-direction: column;
+}
+
 .cardFooter {
   color: #666;
   margin-top: 1rem;
@@ -41,6 +46,7 @@
   color: var(--color-bg1);
   font-weight: bold;
   font-size: x-large;
+  line-height: 24px;
 }
 
 .footerBottom {

@@ -5,10 +5,12 @@ import { toast } from "react-toastify";
 import MarketContext from "../../context/MarketContext";
 import { api } from "../../lib/axios";
 import styles from "./EmailPopup.module.css";
+import LoadingScreen from "../LoadingScreen/LoadingScreen";
 
 const EmailPopup = ({ onClose }) => {
   const { products, reset } = useContext(MarketContext);
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   const navigate = useNavigate();
 
   const handleEmailChange = (event) => {
@@ -17,6 +19,7 @@ const EmailPopup = ({ onClose }) => {
 
   const handleConfirm = async () => {
     if (!email) return;
+    setIsLoading(true);
 
     await api
       .post("/marketplace", { email, produtos: products })
@@ -24,13 +27,13 @@ const EmailPopup = ({ onClose }) => {
         toast.success("Items adicionado ao email");
 
         reset();
-        navigate(`/market/user/${response.data.uuid_user}/pagamentos`)
+        navigate(`/market/user/${response.data.uuid_user}/pagamentos`);
       })
       .catch((err) => {
-        console.log(err.response.data)
         toast.error(err.response.data);
       });
 
+    setIsLoading(false);
     onClose();
   };
 
@@ -43,23 +46,27 @@ const EmailPopup = ({ onClose }) => {
   return (
     <div>
       <div className={styles.popupOverlay} onClick={handleClickOutside}>
-        <div className={styles.popup}>
-          <h3>Insira seu email</h3>
-          <p>
-            Para confirmar a compra,{" "}
-            <strong>
-              é necessário um e-mail que foi utilizado na inscrição
-            </strong>{" "}
-            do VI Sercomp.
-          </p>
-          <input
-            type="email"
-            placeholder="Seu email"
-            value={email}
-            onChange={handleEmailChange}
-          />
-          <button onClick={handleConfirm}>Confirmar</button>
-        </div>
+        {isLoading ? (
+          <LoadingScreen />
+        ) : (
+          <div className={styles.popup}>
+            <h3>Insira seu email</h3>
+            <p>
+              Para confirmar a compra,{" "}
+              <strong>
+                é necessário um e-mail que foi utilizado na inscrição
+              </strong>{" "}
+              do VI Sercomp.
+            </p>
+            <input
+              type="email"
+              placeholder="Seu email"
+              value={email}
+              onChange={handleEmailChange}
+            />
+            <button onClick={handleConfirm}>Confirmar</button>
+          </div>
+        )}
       </div>
     </div>
   );
