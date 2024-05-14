@@ -6,6 +6,7 @@ import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { api } from "../../lib/axios";
 import styles from "./Pagamento.module.css";
+import moment from "moment";
 
 const AllPagamentoProduto = () => {
   const location = useLocation();
@@ -14,32 +15,39 @@ const AllPagamentoProduto = () => {
   const [compras, setCompras] = useState([]);
 
   const fullUrl = `${window.location.origin}${location.pathname}${location.search}`;
-  const windowWidth = useWindowWidth();  
+  const windowWidth = useWindowWidth();
 
   useEffect(() => {
     async function fetchData() {
       try {
         const response = await api.get(`marketplace/user/${user_id}`);
-  
+
         setCompras(
-          response.data.map((item) => ({
-            user_name: item.usuario.nome,
-            status: item.status_pagamento,
-            preco: item.valor_total,
-            produtos: item.vendas.map((venda) => ({
-              quantidade: venda.quantidade,
-              uuid_produto: venda.produto.uuid_produto,
-              preco: venda.produto.preco,
-              nome: venda.produto.nome,
-            })),
-            transaction_data: item.transaction_data,
-          }))
+          response.data.map((item) => {
+            let data_formatada = moment(item.data_criacao).format(
+              "DD/MM/YYYY HH:mm:ss"
+            );
+
+            return {
+              user_name: item.usuario.nome,
+              status: item.status_pagamento,
+              data_criacao: data_formatada,
+              preco: item.valor_total,
+              produtos: item.vendas.map((venda) => ({
+                quantidade: venda.quantidade,
+                uuid_produto: venda.produto.uuid_produto,
+                preco: venda.produto.preco,
+                nome: venda.produto.nome,
+              })),
+              transaction_data: item.transaction_data,
+            };
+          })
         );
 
         setLoading(false);
       } catch (error) {
         console.log(error);
-        toast.error("Venda não encontrada!") 
+        toast.error("Venda não encontrada!");
       }
     }
 
@@ -75,9 +83,12 @@ const AllPagamentoProduto = () => {
         </span>
 
         {compras.length != 0 && (
-          <div >
+          <div>
             {compras.map((userInformations, index) => (
-              <div key={index} className={`${styles.paymentGroupDivider} ${styles.paymentGroup}`}>
+              <div
+                key={index}
+                className={`${styles.paymentGroupDivider} ${styles.paymentGroup}`}
+              >
                 <div className={styles.infoGroup}>
                   <span>
                     <span className={styles.destaque}>Participante: </span>{" "}
@@ -100,6 +111,10 @@ const AllPagamentoProduto = () => {
                       Preço total da compra:{" "}
                     </span>{" "}
                     R$ {userInformations.preco.toFixed(2)}
+                  </span>
+                  <span>
+                    <span className={styles.destaque}>Data do pedido: </span>
+                    {userInformations.data_criacao}
                   </span>
                   <span>
                     <span className={styles.destaque}>
@@ -126,17 +141,17 @@ const AllPagamentoProduto = () => {
                 </div>
               </div>
             ))}
+            <div className={styles.aviso} style={{marginTop: "16px"}}>
+              <span>
+                <span className={styles.destaque}>*</span>Para validar esse
+                recibo acesse:<span className={styles.destaque}>*</span>
+              </span>
+              <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
+                {windowWidth > 600 ? fullUrl : "Aqui"}
+              </a>
+            </div>
           </div>
         )}
-        <div className={styles.aviso}>
-          <span>
-            <span className={styles.destaque}>*</span>Para validar esse recibo
-            acesse:<span className={styles.destaque}>*</span>
-          </span>
-          <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
-            {windowWidth > 600 ? fullUrl : "Aqui"}
-          </a>
-        </div>
       </section>
     </section>
   );
