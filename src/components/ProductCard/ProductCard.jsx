@@ -1,11 +1,18 @@
 import PropTypes from "prop-types";
 import { useContext } from "react";
 import { BiCartAdd } from "react-icons/bi";
-import MarketContext from '../../context/MarketContext';
+import MarketContext from "../../context/MarketContext";
 import styles from "./ProductCard.module.css";
 
-const ProductCard = ({ uuid_produto, nome, descricao, imagem_url, preco }) => {
-  const { addProduct } = useContext(MarketContext)
+const ProductCard = ({
+  uuid_produto,
+  nome,
+  descricao,
+  imagem_url,
+  preco,
+  estoque,
+}) => {
+  const { addProduct } = useContext(MarketContext);
 
   const formattedPrice = new Intl.NumberFormat("pt-BR", {
     style: "currency",
@@ -27,7 +34,10 @@ const ProductCard = ({ uuid_produto, nome, descricao, imagem_url, preco }) => {
       <div className={styles.cardFooter}>
         <p className={styles.productDesc}>{descricao}</p>
         <div className={styles.footerBottom}>
-          <p className={styles.productPrice}>{formattedPrice}</p>
+          <div className={styles.productInfo}>
+            <span className={styles.productPrice}>{formattedPrice}</span>
+            <span>Estoque: {estoque}</span>
+          </div>
           <button className={styles.addToCartButton} onClick={addToCart}>
             <BiCartAdd size={24} />
           </button>
