@@ -1,15 +1,15 @@
+import artway from '../assets/images/parceiros/2024/artway.webp'
 import eletrolaser from '../assets/images/parceiros/2024/eletrolaser.webp'
+import feedback from '../assets/images/parceiros/2024/feedback.webp'
 import guedes from '../assets/images/parceiros/2024/guedes.webp'
 import inovatec from '../assets/images/parceiros/2024/inovatec.webp'
 import moinhopatoense from '../assets/images/parceiros/2024/moinhopatoense.webp'
 import nutrimassa from '../assets/images/parceiros/2024/nutrimassa.webp'
-import papelariapatoense from '../assets/images/parceiros/2024/papelariapatoense.webp'
-import artway from '../assets/images/parceiros/2024/artway.webp'
-import vialeste from '../assets/images/parceiros/2024/viaLeste.webp'
-import sesi from '../assets/images/parceiros/2024/sesi.webp'
-import sertaomaker from '../assets/images/parceiros/2024/sertaomaker.webp'
 import onitelecom from '../assets/images/parceiros/2024/onitelecom.webp'
-import feedback from '../assets/images/parceiros/2024/feedback.webp'
+import papelariapatoense from '../assets/images/parceiros/2024/papelariapatoense.webp'
+import sertaomaker from '../assets/images/parceiros/2024/sertaomaker.webp'
+import sesi from '../assets/images/parceiros/2024/sesi.webp'
+import vialeste from '../assets/images/parceiros/2024/via_leste.webp'
 
 const partnersData = [
     {
