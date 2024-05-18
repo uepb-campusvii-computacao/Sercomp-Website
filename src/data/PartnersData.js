@@ -10,6 +10,13 @@ import sesi from '../assets/images/parceiros/2024/sesi.webp'
 import sertaomaker from '../assets/images/parceiros/2024/sertaomaker.webp'
 import onitelecom from '../assets/images/parceiros/2024/onitelecom.webp'
 import feedback from '../assets/images/parceiros/2024/feedback.webp'
+import feedback from '../assets/images/parceiros/2024/af.webp'
+import feedback from '../assets/images/parceiros/2024/cdc.webp'
+import feedback from '../assets/images/parceiros/2024/knex.webp'
+import feedback from '../assets/images/parceiros/2024/nutes.webp'
+import feedback from '../assets/images/parceiros/2024/uepb.webp'
+import feedback from '../assets/images/parceiros/2024/urbano.webp'
+import feedback from '../assets/images/parceiros/2024/virtus.webp'
 
 const partnersData = [
     {
@@ -71,6 +78,41 @@ const partnersData = [
         href: "https://www.instagram.com/biatic/",
         image: feedback,
         alt: "EsusFeedback"
+    },
+    {
+        href: "https://www.instagram.com/urbanonortepatospb/",
+        image: urbano,
+        alt: "Urbano Norte"
+    },
+    {
+        href: "",
+        image: af,
+        alt: "Arthur Fotos"
+    },
+    {
+        href: "",
+        image: cdc,
+        alt: "Ciencias Da Computação"
+    },
+    {
+        href: "",
+        image: knex,
+        alt: "Knex"
+    },
+    {
+        href: "",
+        image: nutes,
+        alt: "Nutes"
+    },
+    {
+        href: "https://www.instagram.com/UEPBOficial/",
+        image: uepb,
+        alt: "UEPB"
+    },
+    {
+        href: "https://www.instagram.com/virtuscursos/",
+        image: virtus,
+        alt: "Virtus"
     },
 ];
 
