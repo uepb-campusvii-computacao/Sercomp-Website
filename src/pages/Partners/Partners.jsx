@@ -9,7 +9,6 @@ function Partners() {
             <div className={`container ${styles.patrocinadores}`}>
                 <div className={styles.patrocinadoresContainer}>
                     {partnersData
-                        .filter(partner => partner.alt !== "UEPB")
                         .map((partner, index) => (
                             <article className={styles.patrocinadoresMember} key={index}>
                                 <div className={styles.patrocinadoresMemberImage}>
