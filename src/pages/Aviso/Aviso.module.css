@@ -1,0 +1,32 @@
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: var(--color-bg2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.body strong{
+    color: yellow;
+}
+
+.body p{
+    text-align: justify;
+}
+
+@media screen and (max-width: 450px) {
+
+    .mainContainer{
+        gap: 10px;
+    }
+}

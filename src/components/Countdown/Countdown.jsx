@@ -112,7 +112,7 @@ export default function Countdown() {
         )}
         {eventStatus === 'after' && (
           <div className={styles.countdown}>
-            <p>Ano que vem tem mais! 🫡</p>
+            <p>Até a próxima edição! 🫡</p>
           </div>
         )}
       </div>

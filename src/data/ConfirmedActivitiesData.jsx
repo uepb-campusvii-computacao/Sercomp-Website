@@ -1,3 +1,4 @@
+import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp";
 import caioHenriqueSousa from "../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp";
 import danielMarquesGuimaraes from "../assets/images/participacoes/2024/Daniel-Marques-Vasconcelos-Guimaraes.webp";
 import dayzaMeiryBarretoSilva from "../assets/images/participacoes/2024/Dayza Meiry Barreto Silva.webp";
@@ -11,24 +12,22 @@ import giordaniAlvesFormiga from "../assets/images/participacoes/2024/Giordanni 
 import giovannaTrigueiroAlmeida from "../assets/images/participacoes/2024/Giovanna-Trigueiro-de-Almeida-Araújo.webp";
 import halanCaioNascimento from "../assets/images/participacoes/2024/Halan-Caio-Nascimento.webp";
 import italloMendesSilva from "../assets/images/participacoes/2024/Itallo Mendes da Silva.webp";
+import JoseAldoSilvadaCosta from "../assets/images/participacoes/2024/José-Aldo-Silva-da-Costa.webp";
 import joaoLucasSousaMartins from "../assets/images/participacoes/2024/João Lucas de Sousa Martins.webp";
+import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp";
+import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp";
+import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2024/Klaudio-Henrique-Mascarenhas-Medeiros.webp";
 import lauraRafaellaFeitosaAlves from "../assets/images/participacoes/2024/Laura Rafaella Feitosa Alves de Oliveira.webp";
 import luannyKellyLeitao from "../assets/images/participacoes/2024/Luanny Kelly de Almeida Leitao.webp";
 import lucianoClaudioSilvaSegundo from "../assets/images/participacoes/2024/Luciano Claudio Alves da Silva Segundo.webp";
 import pedroFerreiraLimaNeto from "../assets/images/participacoes/2024/Pedro Ferreira de Lima Neto.webp";
 import rebecaBarbosaLourenco from "../assets/images/participacoes/2024/Rebeca Barbosa Lourenço.webp";
+import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
+import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
 import thiagoAlvesLaurentino from "../assets/images/participacoes/2024/Thiago Alves Laurentino.webp";
 import victorMenesesPinho from "../assets/images/participacoes/2024/Victor Meneses Pinho.webp";
 import wellyngtonDaNobregaTargino from "../assets/images/participacoes/2024/Wellyngton-da-Nobrega-Targino.webp";
-import yohannaBarbaraPereiraCosta from "../assets/images/participacoes/2024/Yohanna-Barbara-Pereira-Costa.webp";
 import yuriSantosMonteiro from "../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
-import jucelioSoaresSantos from "../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp";
-import rosangelaAraújoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
-import klaudioHenriqueMascarenhasMedeiros from "../assets/images/participacoes/2024/Klaudio-Henrique-Mascarenhas-Medeiros.webp";
-import rodrigoAlvesCosta from "../assets/images/participacoes/2024/Rodrigo Alves Costa.webp";
-import alysonJonasMorato from "../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp";
-import kallebDiasMarques from "../assets/images/participacoes/2024/Kalleb-Dias-Rodrigues-Marques.webp";
-import JoseAldoSilvadaCosta from "../assets/images/participacoes/2024/José-Aldo-Silva-da-Costa.webp";
 
 export const ConfirmedActivitiesData = {
   Oficina: [
@@ -45,11 +44,7 @@ export const ConfirmedActivitiesData = {
         {
           imagem_ministrante: rebecaBarbosaLourenco,
           nome_ministrante: "Rebeca Barbosa Lourenço",
-        },
-        {
-          imagem_ministrante: yohannaBarbaraPereiraCosta,
-          nome_ministrante: "Yohanna Barbara Pereira Costa",
-        },
+        }
       ],
       texto_resumo:
         "Mostrar aos participantes a oportunidade de alavancar suas carreiras por meio do LinkedIn, fornecendo estratégias eficazes para aumentar sua visibilidade, expandir sua rede e explorar oportunidades profissionais na plataforma.",
