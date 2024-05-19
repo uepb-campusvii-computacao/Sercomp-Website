@@ -1,14 +1,14 @@
-import daniloCouraPhoto from "../assets/images/participacoes/2024/Danilo Coura Moreira.webp";
 import angelicaFelixPhoto from "../assets/images/participacoes/2024/angelica-felix-ufersa.webp";
-import ingridtMillenaPhoto from "../assets/images/participacoes/2024/Ingridt-Millena-Vieira-Dantas.webp";
+import daniloCouraPhoto from "../assets/images/participacoes/2024/Danilo Coura Moreira.webp";
+import demetrioGomesMestre from "../assets/images/participacoes/2024/Demetrio-Gomes-Mestre.webp";
 import dilaniaCabralPhoto from "../assets/images/participacoes/2024/Dilania-Cabral-da-Silva.webp";
+import ingridtMillenaPhoto from "../assets/images/participacoes/2024/Ingridt-Millena-Vieira-Dantas.webp";
 import josemirMouraPhoto from "../assets/images/participacoes/2024/Josemir-Moura-Maia.webp";
-import jannaynaPhoto from "../assets/images/professores/jannayna.png";
 import jucelioSoresPhoto from "../assets/images/participacoes/2024/Jucelio Soares dos Santos.webp";
-import mairaRodriguesVillamagna from "../assets/images/participacoes/2024/Maira-Rodrigues-Villamagna.webp";
 import lauristonMedeirosPaixao from "../assets/images/participacoes/2024/Lauriston-Medeiros-Paixão.webp";
+import mairaRodriguesVillamagna from "../assets/images/participacoes/2024/Maira-Rodrigues-Villamagna.webp";
 import rosagelaDeAraujoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
-import demetrioGomesMestre from "../assets/images/participacoes/2024/Demetrio-Gomes-Mestre.webp"
+import jannaynaPhoto from "../assets/images/professores/jannayna.png";
 
 const programacao = [
   {
@@ -193,7 +193,7 @@ const programacao = [
           {
             name: (
               <div>
-                <strong>Mediadora:</strong> Dra. Rosâgela de Araujo Medeiros
+                <strong>Mediadora:</strong> Dra. Rosângela de Araujo Medeiros
                 (UEPB)
               </div>
             ),
