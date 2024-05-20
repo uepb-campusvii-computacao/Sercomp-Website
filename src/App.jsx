@@ -46,6 +46,8 @@ function App() {
 
                   <p><strong>Atenção:</strong> Para as novas inscrições feitas no local, não será possível fornecer materiais como crachá e boton.</p>
 
+                  <p>Para buscar sua inscrição, clique <a href="/busca/inscricao">aqui</a></p>
+
                   <p>Agradecemos pela compreensão e esperamos por você!</p>
                 </>
               }

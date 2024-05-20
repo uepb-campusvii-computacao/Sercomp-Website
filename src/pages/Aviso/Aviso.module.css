@@ -20,6 +20,11 @@
     color: yellow;
 }
 
+.body a{
+    color: yellow;
+    text-decoration: underline;
+}
+
 .body p{
     text-align: justify;
 }
