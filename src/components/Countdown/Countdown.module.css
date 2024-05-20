@@ -1,14 +1,15 @@
 /* Countdown.module.css */
 
-.container-timer {
+.containerTimer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 70vh;
+  margin: 5%;
 }
 
-.container-timer h1 {
+.containerTimer h1 {
   text-align: center;
   font-size: 30px;
   text-transform: uppercase;
@@ -34,6 +35,18 @@
   top: 0;
   left: 0;
   z-index: 0;
+}
+
+.duringContainer{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 25px;
+}
+
+.duringContainer a{
+  color: yellow;
+  text-decoration: underline;
 }
 
 .countdown div {
