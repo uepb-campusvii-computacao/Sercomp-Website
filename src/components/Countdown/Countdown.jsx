@@ -1,8 +1,14 @@
+import PropTypes from 'prop-types';
 import { useEffect, useRef, useState } from 'react';
 import Confetti from 'react-confetti';
 import styles from './Countdown.module.css';
 
-export default function Countdown() {
+Countdown.propTypes = {
+  eventStart: PropTypes.string.isRequired,
+  eventEnd: PropTypes.string.isRequired
+}
+
+export default function Countdown({eventStart, eventEnd}) {
   const [countdownValues, setCountdownValues] = useState({
     days: '00',
     hours: '00',
@@ -13,8 +19,8 @@ export default function Countdown() {
   const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
   const confettiRef = useRef(null);
 
-  const finalDate = new Date("May 20, 2024 00:00:00").getTime();
-  const eventEndDate = new Date("May 24, 2024 23:59:59").getTime();
+  const finalDate = new Date(eventStart).getTime();
+  const eventEndDate = new Date(eventEnd).getTime();
 
   useEffect(() => {
     const countdown = () => {
@@ -81,9 +87,9 @@ export default function Countdown() {
   }, [eventStatus]);
 
   return (
-    <div className={styles['container-timer']}>
+    <div className={styles.containerTimer}>
       {eventStatus === 'before' && <h1>Contagem Regressiva até o VI SERCOMP</h1>}
-      <div className={styles.confettiWrapper} ref={confettiRef}>
+      <div className={styles.confettiWrapper}>
       {eventStatus === 'during' && <Confetti gravity={0.01} initialVelocityX={2} initialVelocityY={2} width={dimensions.width} height={dimensions.height} numberOfPieces={50}/>}
         {eventStatus === 'before' && (
           <div className={styles.countdown}>
@@ -106,8 +112,11 @@ export default function Countdown() {
           </div>
         )}
         {eventStatus === 'during' && (
-          <div className={styles.countdown}>
-            <p>O evento começou! 🎉</p>
+          <div className={styles.duringContainer}>
+            <div className={styles.countdown} ref={confettiRef}>
+              <p>O evento começou!</p>
+            </div>
+            <h3>Confira nossa <a href='/timeline'>programação</a>!</h3>
           </div>
         )}
         {eventStatus === 'after' && (
