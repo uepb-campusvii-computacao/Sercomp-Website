@@ -22,6 +22,7 @@ import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
 import Timeline from "./pages/Timeline/Timeline";
+import Inscricoes from "./pages/Inscricoes/Inscricoes";
 
 function App() {
   return (
@@ -36,47 +37,57 @@ function App() {
           <Route exact path="/hackathon" element={<Hackthon />} />
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/inscricao" element={
-            <Aviso
-              title="Inscrições encerradas!"
-              body={
-                <>
-                  <p>Informamos que as inscrições online para o nosso evento estão encerradas. 
-                  No entanto, ainda é possível realizar sua inscrição presencialmente no dia do evento.</p>
-
-                  <p><strong>Atenção:</strong> Para as novas inscrições feitas no local, não será possível fornecer materiais como crachá e boton.</p>
-
-                  <p>Para buscar sua inscrição, clique <a href="/busca/inscricao">aqui</a></p>
-
-                  <p>Agradecemos pela compreensão e esperamos por você!</p>
-                </>
-              }
-              append={<PartnersComponent />}
-            />
-          } />
-          <Route exact path="/busca/inscricao/:tipo_busca?" element={<BuscaInscricao />} />
-          <Route exact path="/pagamento/user/:user_id/lote/:lote_id" element={<Pagamento />} />
+          <Route exact path="/inscricao" element={<Inscricoes />} />
+          <Route
+            exact
+            path="/busca/inscricao/:tipo_busca?"
+            element={<BuscaInscricao />}
+          />
+          <Route
+            exact
+            path="/pagamento/user/:user_id/lote/:lote_id"
+            element={<Pagamento />}
+          />
           <Route exact path="/chamadas" element={<Chamadas />} />
           <Route exact path="/comite" element={<Comite />} />
           <Route exact path="/ideathon" element={<Ideathon />} />
           <Route exact path="/technology-fair" element={<TechnologyFair />} />
-          <Route exact path="/confirmed-activities" element={<ConfirmedActivities />} />
-          <Route exact path="/programming-marathon" element={<ProgrammingMarathon />} />
+          <Route
+            exact
+            path="/confirmed-activities"
+            element={<ConfirmedActivities />}
+          />
+          <Route
+            exact
+            path="/programming-marathon"
+            element={<ProgrammingMarathon />}
+          />
           <Route exact path="/2023" element={<Edition2023 />} />
-          <Route exact path="/market" element={
-            <Aviso
-              title="Pedidos online encerrados!"
-              body={
-                <>
-                  <p>Informamos que os pedidos online em nossa loja estão temporariamente encerrados.</p>
+          <Route
+            exact
+            path="/market"
+            element={
+              <Aviso
+                title="Pedidos online encerrados!"
+                body={
+                  <>
+                    <p>
+                      Informamos que os pedidos online em nossa loja estão
+                      temporariamente encerrados.
+                    </p>
 
-                  <p>Agradecemos pela compreensão e esperamos por você!</p>
-                </>
-              }
-              append={<PartnersComponent />}
-            />
-          } />
-          <Route exact path="/market/user/:user_id/pagamentos" element={<AllPagamentoProduto />} />
+                    <p>Agradecemos pela compreensão e esperamos por você!</p>
+                  </>
+                }
+                append={<PartnersComponent />}
+              />
+            }
+          />
+          <Route
+            exact
+            path="/market/user/:user_id/pagamentos"
+            element={<AllPagamentoProduto />}
+          />
           <Route path="*" element={<Error404 />} />
         </Routes>
       </Layout>
