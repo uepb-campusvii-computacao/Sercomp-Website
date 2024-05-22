@@ -37,7 +37,38 @@ function App() {
           <Route exact path="/hackathon" element={<Hackthon />} />
           <Route exact path="/timeline" element={<Timeline />} />
           <Route exact path="/privacy" element={<Privacy />} />
-          <Route exact path="/inscricao" element={<Inscricoes />} />
+          <Route
+            exact
+            path="/inscricao"
+            element={
+              <Aviso
+                title="Inscrições encerradas!"
+                body={
+                  <>
+                    <p>
+                      Informamos que as inscrições online para o nosso evento
+                      estão encerradas. No entanto, ainda é possível realizar
+                      sua inscrição presencialmente no dia do evento.
+                    </p>
+
+                    <p>
+                      <strong>Atenção:</strong> Para as novas inscrições feitas
+                      no local, não será possível fornecer materiais como crachá
+                      e boton.
+                    </p>
+
+                    <p>
+                      Para buscar sua inscrição, clique{" "}
+                      <a href="/busca/inscricao">aqui</a>
+                    </p>
+
+                    <p>Agradecemos pela compreensão e esperamos por você!</p>
+                  </>
+                }
+                append={<PartnersComponent />}
+              />
+            }
+          />
           <Route
             exact
             path="/busca/inscricao/:tipo_busca?"
