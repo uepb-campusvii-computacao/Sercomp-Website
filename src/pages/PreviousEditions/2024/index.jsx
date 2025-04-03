@@ -103,13 +103,13 @@ function Edition2024() {
           />
         </section>
       </section>
-      <section>
+      {/* <section>
         <h2 className={styles.tituloBase}>Mesa</h2>
         <MesaRedonda 
           titulo="ChapGPT: possibilidades e desafios no cenário acadêmico e profissional em Computação"
           membros={mesaData}
         />
-      </section>
+      </section> */}
 
       <section className={`container ${styles.cronContainer}`}>
         <h2 className={styles.tituloBase}>Minicursos</h2>
