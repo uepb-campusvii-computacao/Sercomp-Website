@@ -18,6 +18,7 @@ import AllPagamentoProduto from "./pages/Pagamento/AllPagamentosProdutos";
 import Pagamento from "./pages/Pagamento/Pagamento";
 import Partners from "./pages/Partners/Partners";
 import Edition2023 from "./pages/PreviousEditions/2023";
+import Edition2024 from "./pages/PreviousEditions/2024";
 import Privacy from "./pages/Privacy/Privacy";
 import ProgrammingMarathon from "./pages/ProgrammingMarathon/ProgrammingMarathon";
 import TechnologyFair from "./pages/TechnologyFair/TechnologyFair";
@@ -94,6 +95,7 @@ function App() {
             element={<ProgrammingMarathon />}
           />
           <Route exact path="/2023" element={<Edition2023 />} />
+          <Route exact path="/2024" element={<Edition2024 />} />
           <Route
             exact
             path="/market"
