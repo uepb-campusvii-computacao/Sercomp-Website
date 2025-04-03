@@ -11,11 +11,11 @@ function Partners() {
                     {partnersData
                         .map((partner, index) => (
                             <article className={styles.patrocinadoresMember} key={index}>
-                                <div className={styles.patrocinadoresMemberImage}>
+                                {/* <div className={styles.patrocinadoresMemberImage}>
                                     <a href={partner.href} target="_blank">
                                         <img src={partner.image} alt={partner.alt} />
                                     </a>
-                                </div>
+                                </div> */}
                             </article>
                         ))
                     }
