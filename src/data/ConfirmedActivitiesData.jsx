@@ -28,6 +28,7 @@ import thiagoAlvesLaurentino from "../assets/images/participacoes/2024/Thiago Al
 import victorMenesesPinho from "../assets/images/participacoes/2024/Victor Meneses Pinho.webp";
 import wellyngtonDaNobregaTargino from "../assets/images/participacoes/2024/Wellyngton-da-Nobrega-Targino.webp";
 import yuriSantosMonteiro from "../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
+import avatarNotFound from "../assets/images/image-not-found.png"
 
 export const ConfirmedActivitiesData = {
   Oficina: [
@@ -334,240 +335,240 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: eduardoPaulinoDantas,
-          nome_ministrante: "Eduardo Paulino Dantas",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Eduardo Paulino Dantas",
         },
-        {
-          imagem_ministrante: halanCaioNascimento,
-          nome_ministrante: "Halan Caio Pereira do Nascimento",
-        },
-        {
-          imagem_ministrante: caioHenriqueSousa,
-          nome_ministrante: "Caio Henrique Lopes Sousa",
-        },
+        // {
+        //   imagem_ministrante: halanCaioNascimento,
+        //   nome_ministrante: "Halan Caio Pereira do Nascimento",
+        // },
+        // {
+        //   imagem_ministrante: caioHenriqueSousa,
+        //   nome_ministrante: "Caio Henrique Lopes Sousa",
+        // },
       ],
-      texto_resumo:
-        "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>O minicurso tem como público
-            alvo quaisquer pessoas que queiram aprender sobre como utilizar as
-            ferramentas Git e GitHub.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Não são necessários conhecimentos
-            prévios.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>O minicurso tem como objetivo introduzir
-            os participantes às ferramentas Git e GitHub.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>Este minicurso faz-se necessário
-            devido ao fato de que as ferramentas que serão ensinadas ao longo do
-            minicurso estão fortemente presentes na vida de qualquer
-            desenvolvedor, portanto torna-se relevante que, através deste
-            minicurso, os interessados possam ser introduzidos aos conceitos
-            iniciais e avançados de Git e GitHub.
-          </p>
-          <p>
-            <strong>Recursos: </strong>datashow, notebook (opcional para a parte
-            prática do minicurso).
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
-            IDE.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>O minicurso tem como público
+      //       alvo quaisquer pessoas que queiram aprender sobre como utilizar as
+      //       ferramentas Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Não são necessários conhecimentos
+      //       prévios.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>O minicurso tem como objetivo introduzir
+      //       os participantes às ferramentas Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>Este minicurso faz-se necessário
+      //       devido ao fato de que as ferramentas que serão ensinadas ao longo do
+      //       minicurso estão fortemente presentes na vida de qualquer
+      //       desenvolvedor, portanto torna-se relevante que, através deste
+      //       minicurso, os interessados possam ser introduzidos aos conceitos
+      //       iniciais e avançados de Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>datashow, notebook (opcional para a parte
+      //       prática do minicurso).
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
+      //       IDE.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " English for Tech Interviews: Como se Sair Bem em Entrevistas em Inglês",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: rebecaBarbosaLourenco,
-          nome_ministrante: "Rebeca Barbosa Lourenço",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Rebeca Barbosa Lourenço",
         },
-        {
-          imagem_ministrante: gabrielLiraNobrega,
-          nome_ministrante: "Gabriel Lira da Nóbrega",
-        },
+        // {
+        //   imagem_ministrante: gabrielLiraNobrega,
+        //   nome_ministrante: "Gabriel Lira da Nóbrega",
+        // },
       ],
-      texto_resumo: "Introduzir a linguagem C# na Universidade.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>Alunos de qualquer período.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Lógica de programação.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>Introduzir a linguagem C# na
-            Universidade.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>Introduzir a linguagem C# na
-            faculdade é uma iniciativa importante, pois amplia as opções de
-            carreira para os alunos e preenche uma lacuna muitas vezes
-            negligenciada. Como uma linguagem robusta e amplamente utilizada, o
-            conhecimento em C# pode proporcionar aos estudantes oportunidades em
-            uma variedade de setores, incluindo desenvolvimento de software,
-            jogos, aplicativos web e móveis.
-          </p>
-          <p>
-            <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
-          </p>
-          <p>
-            <strong>Instalação de Softwares: </strong>VSCode e instalação de
-            extensões adequadas(como a extensão C#).
-          </p>
-        </>
-      ),
+      // texto_resumo: "Introduzir a linguagem C# na Universidade.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>Alunos de qualquer período.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Lógica de programação.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>Introduzir a linguagem C# na
+      //       Universidade.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>Introduzir a linguagem C# na
+      //       faculdade é uma iniciativa importante, pois amplia as opções de
+      //       carreira para os alunos e preenche uma lacuna muitas vezes
+      //       negligenciada. Como uma linguagem robusta e amplamente utilizada, o
+      //       conhecimento em C# pode proporcionar aos estudantes oportunidades em
+      //       uma variedade de setores, incluindo desenvolvimento de software,
+      //       jogos, aplicativos web e móveis.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares: </strong>VSCode e instalação de
+      //       extensões adequadas(como a extensão C#).
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Produtividade Sem Burnout: Equilibrando Entregas e Bem-Estar",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: klaudioHenriqueMascarenhasMedeiros,
-          nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
         },
       ],
-      texto_resumo:
-        "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso projetado para introduzir os
-            participantes ao desenvolvimento de jogos 2D usando a plataforma
-            Construct 2. Este curso é ideal para entusiastas de jogos que
-            desejam aprender a criar seus próprios jogos sem a necessidade de
-            codificação complexa.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Criatividade e disposição para
-            experimentar e explorar novas ideias.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Construct 2.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso projetado para introduzir os
+      //       participantes ao desenvolvimento de jogos 2D usando a plataforma
+      //       Construct 2. Este curso é ideal para entusiastas de jogos que
+      //       desejam aprender a criar seus próprios jogos sem a necessidade de
+      //       codificação complexa.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Criatividade e disposição para
+      //       experimentar e explorar novas ideias.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Construct 2.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Currículo e LinkedIn para Carreira em Tecnologia: Como se Destacar no Brasil e no Exterior",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: victorMenesesPinho,
-          nome_ministrante: "Victor Meneses Pinho",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Victor Meneses Pinho",
         },
       ],
-      texto_resumo:
-        "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>Pessoas de computação que
-            tenham interesse por programação e linguagem JAVA.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Linguagem de programação Java,
-            conhecimento básico de Spring.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>Ensinar criar uma aplicação no framework
-            SpringBoot que utiliza Inteligencia Artificial.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>É uma novidade na área e se encaixa
-            no tema do evento.
-          </p>
-          <p>
-            <strong>Recursos: </strong>Notebook, laptop.
-          </p>
-          <p>
-            <strong>Instalação de Softwares: </strong>Intellij IDEA.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>Pessoas de computação que
+      //       tenham interesse por programação e linguagem JAVA.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Linguagem de programação Java,
+      //       conhecimento básico de Spring.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>Ensinar criar uma aplicação no framework
+      //       SpringBoot que utiliza Inteligencia Artificial.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>É uma novidade na área e se encaixa
+      //       no tema do evento.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>Notebook, laptop.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares: </strong>Intellij IDEA.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada:
         " Fundamentos de Inteligência Artificial e Machine Learning",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: danielMarquesGuimaraes,
-          nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
-      texto_resumo:
-        "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso projetado para fornecer aos
-            participantes uma introdução prática e acessível à visualização de
-            dados usando a biblioteca Vega-lite. Este curso é ideal para
-            iniciantes e profissionais que desejam aprender a criar
-            visualizações de dados informativas e envolventes de forma eficaz.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
-            familiaridade com linguagens de marcação como JSON e YAML, noções
-            básicas de estatística e análise de dados.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Navegador.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso projetado para fornecer aos
+      //       participantes uma introdução prática e acessível à visualização de
+      //       dados usando a biblioteca Vega-lite. Este curso é ideal para
+      //       iniciantes e profissionais que desejam aprender a criar
+      //       visualizações de dados informativas e envolventes de forma eficaz.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
+      //       familiaridade com linguagens de marcação como JSON e YAML, noções
+      //       básicas de estatística e análise de dados.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Navegador.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada:
         " Desenvolvimento de Aplicativos Móveis com Flutter ",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: giordaniAlvesFormiga,
-          nome_ministrante: "Giordanni Alves Formiga",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Giordanni Alves Formiga",
         },
       ],
-      texto_resumo:
-        "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso focado em fornecer aos
-            participantes uma compreensão abrangente e prática do tratamento de
-            exceções em aplicações Java. Este curso é projetado para
-            desenvolvedores Java de todos os níveis de habilidade que desejam
-            aprimorar suas habilidades no tratamento de erros e exceções em seus
-            aplicativos.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
-            em Java, experiência com desenvolvimento de aplicativos Java,
-            compreensão básica de exceções e acesso a um ambiente de
-            desenvolvimento Java.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> VSCode com o java
-            instalado na máquina.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso focado em fornecer aos
+      //       participantes uma compreensão abrangente e prática do tratamento de
+      //       exceções em aplicações Java. Este curso é projetado para
+      //       desenvolvedores Java de todos os níveis de habilidade que desejam
+      //       aprimorar suas habilidades no tratamento de erros e exceções em seus
+      //       aplicativos.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+      //       em Java, experiência com desenvolvimento de aplicativos Java,
+      //       compreensão básica de exceções e acesso a um ambiente de
+      //       desenvolvimento Java.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> VSCode com o java
+      //       instalado na máquina.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Aplicações Descentralizadas com Blockchain na AWS: Da Teoria ao Deploy",
     },
     // {
@@ -670,240 +671,240 @@ export const ConfirmedActivitiesData = {
     {
       ministrantes: [
         {
-          imagem_ministrante: eduardoPaulinoDantas,
-          nome_ministrante: "Eduardo Paulino Dantas",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Eduardo Paulino Dantas",
         },
-        {
-          imagem_ministrante: halanCaioNascimento,
-          nome_ministrante: "Halan Caio Pereira do Nascimento",
-        },
-        {
-          imagem_ministrante: caioHenriqueSousa,
-          nome_ministrante: "Caio Henrique Lopes Sousa",
-        },
+        // {
+        //   imagem_ministrante: halanCaioNascimento,
+        //   nome_ministrante: "Halan Caio Pereira do Nascimento",
+        // },
+        // {
+        //   imagem_ministrante: caioHenriqueSousa,
+        //   nome_ministrante: "Caio Henrique Lopes Sousa",
+        // },
       ],
-      texto_resumo:
-        "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>O minicurso tem como público
-            alvo quaisquer pessoas que queiram aprender sobre como utilizar as
-            ferramentas Git e GitHub.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Não são necessários conhecimentos
-            prévios.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>O minicurso tem como objetivo introduzir
-            os participantes às ferramentas Git e GitHub.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>Este minicurso faz-se necessário
-            devido ao fato de que as ferramentas que serão ensinadas ao longo do
-            minicurso estão fortemente presentes na vida de qualquer
-            desenvolvedor, portanto torna-se relevante que, através deste
-            minicurso, os interessados possam ser introduzidos aos conceitos
-            iniciais e avançados de Git e GitHub.
-          </p>
-          <p>
-            <strong>Recursos: </strong>datashow, notebook (opcional para a parte
-            prática do minicurso).
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
-            IDE.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>O minicurso tem como público
+      //       alvo quaisquer pessoas que queiram aprender sobre como utilizar as
+      //       ferramentas Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Não são necessários conhecimentos
+      //       prévios.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>O minicurso tem como objetivo introduzir
+      //       os participantes às ferramentas Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>Este minicurso faz-se necessário
+      //       devido ao fato de que as ferramentas que serão ensinadas ao longo do
+      //       minicurso estão fortemente presentes na vida de qualquer
+      //       desenvolvedor, portanto torna-se relevante que, através deste
+      //       minicurso, os interessados possam ser introduzidos aos conceitos
+      //       iniciais e avançados de Git e GitHub.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>datashow, notebook (opcional para a parte
+      //       prática do minicurso).
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
+      //       IDE.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Inteligência Emocional e Gestão de Conflitos na Carreira Tech",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: rebecaBarbosaLourenco,
-          nome_ministrante: "Rebeca Barbosa Lourenço",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Rebeca Barbosa Lourenço",
         },
-        {
-          imagem_ministrante: gabrielLiraNobrega,
-          nome_ministrante: "Gabriel Lira da Nóbrega",
-        },
+        // {
+        //   imagem_ministrante: gabrielLiraNobrega,
+        //   nome_ministrante: "Gabriel Lira da Nóbrega",
+        // },
       ],
-      texto_resumo: "Introduzir a linguagem C# na Universidade.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>Alunos de qualquer período.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Lógica de programação.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>Introduzir a linguagem C# na
-            Universidade.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>Introduzir a linguagem C# na
-            faculdade é uma iniciativa importante, pois amplia as opções de
-            carreira para os alunos e preenche uma lacuna muitas vezes
-            negligenciada. Como uma linguagem robusta e amplamente utilizada, o
-            conhecimento em C# pode proporcionar aos estudantes oportunidades em
-            uma variedade de setores, incluindo desenvolvimento de software,
-            jogos, aplicativos web e móveis.
-          </p>
-          <p>
-            <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
-          </p>
-          <p>
-            <strong>Instalação de Softwares: </strong>VSCode e instalação de
-            extensões adequadas(como a extensão C#).
-          </p>
-        </>
-      ),
+      // texto_resumo: "Introduzir a linguagem C# na Universidade.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>Alunos de qualquer período.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Lógica de programação.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>Introduzir a linguagem C# na
+      //       Universidade.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>Introduzir a linguagem C# na
+      //       faculdade é uma iniciativa importante, pois amplia as opções de
+      //       carreira para os alunos e preenche uma lacuna muitas vezes
+      //       negligenciada. Como uma linguagem robusta e amplamente utilizada, o
+      //       conhecimento em C# pode proporcionar aos estudantes oportunidades em
+      //       uma variedade de setores, incluindo desenvolvimento de software,
+      //       jogos, aplicativos web e móveis.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares: </strong>VSCode e instalação de
+      //       extensões adequadas(como a extensão C#).
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Pitch e Storytelling: Como Apresentar Projetos de Forma Impactante",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: klaudioHenriqueMascarenhasMedeiros,
-          nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
         },
       ],
-      texto_resumo:
-        "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso projetado para introduzir os
-            participantes ao desenvolvimento de jogos 2D usando a plataforma
-            Construct 2. Este curso é ideal para entusiastas de jogos que
-            desejam aprender a criar seus próprios jogos sem a necessidade de
-            codificação complexa.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Criatividade e disposição para
-            experimentar e explorar novas ideias.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Construct 2.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso projetado para introduzir os
+      //       participantes ao desenvolvimento de jogos 2D usando a plataforma
+      //       Construct 2. Este curso é ideal para entusiastas de jogos que
+      //       desejam aprender a criar seus próprios jogos sem a necessidade de
+      //       codificação complexa.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Criatividade e disposição para
+      //       experimentar e explorar novas ideias.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Construct 2.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Comunicação Eficaz para Profissionais de Tecnologia",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: victorMenesesPinho,
-          nome_ministrante: "Victor Meneses Pinho",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Victor Meneses Pinho",
         },
       ],
-      texto_resumo:
-        "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Idicação de Público: </strong>Pessoas de computação que
-            tenham interesse por programação e linguagem JAVA.
-          </p>
-          <p>
-            <strong>Pré-Requisito: </strong>Linguagem de programação Java,
-            conhecimento básico de Spring.
-          </p>
-          <p>
-            <strong>Objetivo: </strong>Ensinar criar uma aplicação no framework
-            SpringBoot que utiliza Inteligencia Artificial.
-          </p>
-          <p>
-            <strong>Justificativa: </strong>É uma novidade na área e se encaixa
-            no tema do evento.
-          </p>
-          <p>
-            <strong>Recursos: </strong>Notebook, laptop.
-          </p>
-          <p>
-            <strong>Instalação de Softwares: </strong>Intellij IDEA.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Idicação de Público: </strong>Pessoas de computação que
+      //       tenham interesse por programação e linguagem JAVA.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito: </strong>Linguagem de programação Java,
+      //       conhecimento básico de Spring.
+      //     </p>
+      //     <p>
+      //       <strong>Objetivo: </strong>Ensinar criar uma aplicação no framework
+      //       SpringBoot que utiliza Inteligencia Artificial.
+      //     </p>
+      //     <p>
+      //       <strong>Justificativa: </strong>É uma novidade na área e se encaixa
+      //       no tema do evento.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos: </strong>Notebook, laptop.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares: </strong>Intellij IDEA.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada:
         " Cibersegurança na Prática: Testes de Vulnerabilidade e Boas Práticas",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: danielMarquesGuimaraes,
-          nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
-      texto_resumo:
-        "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso projetado para fornecer aos
-            participantes uma introdução prática e acessível à visualização de
-            dados usando a biblioteca Vega-lite. Este curso é ideal para
-            iniciantes e profissionais que desejam aprender a criar
-            visualizações de dados informativas e envolventes de forma eficaz.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
-            familiaridade com linguagens de marcação como JSON e YAML, noções
-            básicas de estatística e análise de dados.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> Navegador.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso projetado para fornecer aos
+      //       participantes uma introdução prática e acessível à visualização de
+      //       dados usando a biblioteca Vega-lite. Este curso é ideal para
+      //       iniciantes e profissionais que desejam aprender a criar
+      //       visualizações de dados informativas e envolventes de forma eficaz.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
+      //       familiaridade com linguagens de marcação como JSON e YAML, noções
+      //       básicas de estatística e análise de dados.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> Navegador.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada:
         " Desenvolvimento Web Avançado: Frameworks Modernos",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: giordaniAlvesFormiga,
-          nome_ministrante: "Giordanni Alves Formiga",
+          imagem_ministrante: avatarNotFound,
+          // nome_ministrante: "Giordanni Alves Formiga",
         },
       ],
-      texto_resumo:
-        "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
-      descricao_atividade_confirmada: (
-        <>
-          <p>
-            <strong>Descrição:</strong> Minicurso focado em fornecer aos
-            participantes uma compreensão abrangente e prática do tratamento de
-            exceções em aplicações Java. Este curso é projetado para
-            desenvolvedores Java de todos os níveis de habilidade que desejam
-            aprimorar suas habilidades no tratamento de erros e exceções em seus
-            aplicativos.
-          </p>
-          <p>
-            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
-            em Java, experiência com desenvolvimento de aplicativos Java,
-            compreensão básica de exceções e acesso a um ambiente de
-            desenvolvimento Java.
-          </p>
-          <p>
-            <strong>Recursos:</strong> Notebooks carregados para 2h de
-            minicurso.
-          </p>
-          <p>
-            <strong>Instalação de Softwares:</strong> VSCode com o java
-            instalado na máquina.
-          </p>
-        </>
-      ),
+      // texto_resumo:
+      //   "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
+      // descricao_atividade_confirmada: (
+      //   <>
+      //     <p>
+      //       <strong>Descrição:</strong> Minicurso focado em fornecer aos
+      //       participantes uma compreensão abrangente e prática do tratamento de
+      //       exceções em aplicações Java. Este curso é projetado para
+      //       desenvolvedores Java de todos os níveis de habilidade que desejam
+      //       aprimorar suas habilidades no tratamento de erros e exceções em seus
+      //       aplicativos.
+      //     </p>
+      //     <p>
+      //       <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+      //       em Java, experiência com desenvolvimento de aplicativos Java,
+      //       compreensão básica de exceções e acesso a um ambiente de
+      //       desenvolvimento Java.
+      //     </p>
+      //     <p>
+      //       <strong>Recursos:</strong> Notebooks carregados para 2h de
+      //       minicurso.
+      //     </p>
+      //     <p>
+      //       <strong>Instalação de Softwares:</strong> VSCode com o java
+      //       instalado na máquina.
+      //     </p>
+      //   </>
+      // ),
       titulo_atividade_confirmada: " Introdução à Ciência de Dados com Python e Pandas",
     },
     // {
