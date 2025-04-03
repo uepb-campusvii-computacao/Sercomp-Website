@@ -51,6 +51,16 @@ export const linksData = [
   },
   {
     text: "Edições Anteriores",
-    href: "/2023",
+    href: "/2024",
+    sublinks: [
+      {
+        text: 'Edição 2024',
+        href: '/2024'
+      },
+      {
+        text: 'Edição 2023',
+        href: '/2023'
+      },
+    ]
   },
 ];
