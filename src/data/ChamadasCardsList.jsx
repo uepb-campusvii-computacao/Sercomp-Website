@@ -21,12 +21,12 @@ export const chamadasData = [
     text: 'Aqui você encontrará informações sobre o hackathon',
     url: '/hackathon',
   },
-  {
-    icon: <SparklesIcon width={90} color="#f7c94b" />,
-    title: 'Ideathon',
-    text: 'Aqui você encontrará informações sobre o ideathon',
-    url: '/ideathon',
-  },
+  // {
+  //   icon: <SparklesIcon width={90} color="#f7c94b" />,
+  //   title: 'Ideathon',
+  //   text: 'Aqui você encontrará informações sobre o ideathon',
+  //   url: '/ideathon',
+  // },
   {
     icon: <TrophyIcon width={90} color="#f7c94b" />,
     title: 'Maratona de Programação',

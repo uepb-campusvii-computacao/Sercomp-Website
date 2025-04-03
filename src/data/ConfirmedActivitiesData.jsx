@@ -330,7 +330,7 @@ export const ConfirmedActivitiesData = {
         "Desenvolvimento Multiplataforma com C# utilizando . NET Core.",
     },
   ],
-  Minicurso: [
+  MinicursoManha: [
     {
       ministrantes: [
         {
@@ -381,7 +381,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada: "Git e GitHub: Do Básico ao Avançado",
+      titulo_atividade_confirmada: " English for Tech Interviews: Como se Sair Bem em Entrevistas em Inglês",
     },
     {
       ministrantes: [
@@ -425,7 +425,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada: "Programação C# para iniciantes",
+      titulo_atividade_confirmada: " Produtividade Sem Burnout: Equilibrando Entregas e Bem-Estar",
     },
     {
       ministrantes: [
@@ -458,7 +458,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada: "Criando Jogos 2D com Construct 2",
+      titulo_atividade_confirmada: " Currículo e LinkedIn para Carreira em Tecnologia: Como se Destacar no Brasil e no Exterior",
     },
     {
       ministrantes: [
@@ -496,7 +496,7 @@ export const ConfirmedActivitiesData = {
         </>
       ),
       titulo_atividade_confirmada:
-        "Explorando o Potencial do Spring Boot para Integração com IA: Conceitos Básicos e Aplicações Práticas",
+        " Fundamentos de Inteligência Artificial e Machine Learning",
     },
     {
       ministrantes: [
@@ -531,7 +531,7 @@ export const ConfirmedActivitiesData = {
         </>
       ),
       titulo_atividade_confirmada:
-        "Introdução à Visualização de Dados com Vega-lite",
+        " Desenvolvimento de Aplicativos Móveis com Flutter ",
     },
     {
       ministrantes: [
@@ -568,103 +568,439 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada: "Tratamento de Exceções em Aplicações Java",
+      titulo_atividade_confirmada: " Aplicações Descentralizadas com Blockchain na AWS: Da Teoria ao Deploy",
     },
+    // {
+    //   ministrantes: [
+    //     {
+    //       imagem_ministrante: yuriSantosMonteiro,
+    //       nome_ministrante: "Yuri dos Santos Monteiro",
+    //     },
+    //   ],
+    //   texto_resumo:
+    //     "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
+    //   descricao_atividade_confirmada: (
+    //     <>
+    //       <p>
+    //         <strong>Idicação de Público: </strong>Pessoas que queiram aprender
+    //         programação web mas ainda não tem uma base.
+    //       </p>
+    //       <p>
+    //         <strong>Pré-Requisito: </strong>Sem pré-requisitos.
+    //       </p>
+    //       <p>
+    //         <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
+    //         fundamental e prática dos conceitos básicos de desenvolvimento web,
+    //         abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
+    //         próprias aplicações web simples.
+    //       </p>
+    //       <p>
+    //         <strong>Justificativa: </strong>Devido à alta demanda por
+    //         programadores web no mercado atual, é crucial adquirir habilidades
+    //         nessa área. No entanto, algumas universidades oferecem aulas de
+    //         programação web apenas nos períodos finais do curso. Nesse contexto,
+    //         cursos complementares, se torna uma estratégia valiosa para
+    //         antecipar e fortalecer as habilidades necessárias para atender às
+    //         demandas do mercado de trabalho.
+    //       </p>
+    //       <p>
+    //         <strong>Recursos: </strong>Datashow e se possível o laboratório.
+    //       </p>
+    //       <p>
+    //         <strong>Instalação de Softwares: </strong>VSCode para escrever
+    //         códigos em HTML, CSS e JavaScript e Navegador web moderno.
+    //       </p>
+    //     </>
+    //   ),
+    //   titulo_atividade_confirmada:
+    //     "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
+    // },
+    // {
+    //   ministrantes: [
+    //     {
+    //       imagem_ministrante: giovannaTrigueiroAlmeida,
+    //       nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
+    //     },
+    //   ],
+    //   texto_resumo:
+    //     "Explore os fundamentos e a prática da implementação de contratos inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde conceitos básicos até exemplos práticos de implementação.",
+    //   descricao_atividade_confirmada: (
+    //     <>
+    //       <p>
+    //         <strong>Descrição: </strong>Explore os fundamentos e a prática da
+    //         implementação de contratos inteligentes utilizando a linguagem
+    //         Solidity. Este minicurso oferece uma introdução abrangente ao
+    //         desenvolvimento de contratos inteligentes, abordando desde conceitos
+    //         básicos até exemplos práticos de implementação.
+    //       </p>
+    //       <p>
+    //         <strong>Pré-Requisito: </strong>Conhecimentos básicos de programação
+    //         e familiaridade com conceitos de blockchain. Alguma experiência com
+    //         linguagens de programação semelhantes, como JavaScript ou C++
+    //       </p>
+    //       <p>
+    //         <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
+    //         fundamental e prática dos conceitos básicos de desenvolvimento web,
+    //         abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
+    //         próprias aplicações web simples.
+    //       </p>
+    //       <p>
+    //         <strong>Justificativa: </strong>Devido à alta demanda por
+    //         programadores web no mercado atual, é crucial adquirir habilidades
+    //         nessa área. No entanto, algumas universidades oferecem aulas de
+    //         programação web apenas nos períodos finais do curso. Nesse contexto,
+    //         cursos complementares, se torna uma estratégia valiosa para
+    //         antecipar e fortalecer as habilidades necessárias para atender às
+    //         demandas do mercado de trabalho.
+    //       </p>
+    //       <p>
+    //         <strong>Recursos: </strong>Sim, notebooks carregados para 2h de
+    //         minicurso.
+    //       </p>
+    //       <p>
+    //         <strong>Instalação de Softwares: </strong>Solidity
+    //       </p>
+    //     </>
+    //   ),
+    //   titulo_atividade_confirmada:
+    //     "Desenvolvimento de Contratos Inteligentes com Solidity",
+    // },
+  ],
+  MinicursoNoite: [
     {
       ministrantes: [
         {
-          imagem_ministrante: yuriSantosMonteiro,
-          nome_ministrante: "Yuri dos Santos Monteiro",
+          imagem_ministrante: eduardoPaulinoDantas,
+          nome_ministrante: "Eduardo Paulino Dantas",
+        },
+        {
+          imagem_ministrante: halanCaioNascimento,
+          nome_ministrante: "Halan Caio Pereira do Nascimento",
+        },
+        {
+          imagem_ministrante: caioHenriqueSousa,
+          nome_ministrante: "Caio Henrique Lopes Sousa",
         },
       ],
       texto_resumo:
-        "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
+        "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Idicação de Público: </strong>Pessoas que queiram aprender
-            programação web mas ainda não tem uma base.
+            <strong>Idicação de Público: </strong>O minicurso tem como público
+            alvo quaisquer pessoas que queiram aprender sobre como utilizar as
+            ferramentas Git e GitHub.
           </p>
           <p>
-            <strong>Pré-Requisito: </strong>Sem pré-requisitos.
+            <strong>Pré-Requisito: </strong>Não são necessários conhecimentos
+            prévios.
           </p>
           <p>
-            <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
-            fundamental e prática dos conceitos básicos de desenvolvimento web,
-            abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
-            próprias aplicações web simples.
+            <strong>Objetivo: </strong>O minicurso tem como objetivo introduzir
+            os participantes às ferramentas Git e GitHub.
           </p>
           <p>
-            <strong>Justificativa: </strong>Devido à alta demanda por
-            programadores web no mercado atual, é crucial adquirir habilidades
-            nessa área. No entanto, algumas universidades oferecem aulas de
-            programação web apenas nos períodos finais do curso. Nesse contexto,
-            cursos complementares, se torna uma estratégia valiosa para
-            antecipar e fortalecer as habilidades necessárias para atender às
-            demandas do mercado de trabalho.
+            <strong>Justificativa: </strong>Este minicurso faz-se necessário
+            devido ao fato de que as ferramentas que serão ensinadas ao longo do
+            minicurso estão fortemente presentes na vida de qualquer
+            desenvolvedor, portanto torna-se relevante que, através deste
+            minicurso, os interessados possam ser introduzidos aos conceitos
+            iniciais e avançados de Git e GitHub.
           </p>
           <p>
-            <strong>Recursos: </strong>Datashow e se possível o laboratório.
+            <strong>Recursos: </strong>datashow, notebook (opcional para a parte
+            prática do minicurso).
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>VSCode para escrever
-            códigos em HTML, CSS e JavaScript e Navegador web moderno.
+            <strong>Instalação de Softwares:</strong> Git/Um editor de texto ou
+            IDE.
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
-        "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
+      titulo_atividade_confirmada: " Inteligência Emocional e Gestão de Conflitos na Carreira Tech",
     },
     {
       ministrantes: [
         {
-          imagem_ministrante: giovannaTrigueiroAlmeida,
-          nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
+          imagem_ministrante: rebecaBarbosaLourenco,
+          nome_ministrante: "Rebeca Barbosa Lourenço",
+        },
+        {
+          imagem_ministrante: gabrielLiraNobrega,
+          nome_ministrante: "Gabriel Lira da Nóbrega",
         },
       ],
-      texto_resumo:
-        "Explore os fundamentos e a prática da implementação de contratos inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde conceitos básicos até exemplos práticos de implementação.",
+      texto_resumo: "Introduzir a linguagem C# na Universidade.",
       descricao_atividade_confirmada: (
         <>
           <p>
-            <strong>Descrição: </strong>Explore os fundamentos e a prática da
-            implementação de contratos inteligentes utilizando a linguagem
-            Solidity. Este minicurso oferece uma introdução abrangente ao
-            desenvolvimento de contratos inteligentes, abordando desde conceitos
-            básicos até exemplos práticos de implementação.
+            <strong>Idicação de Público: </strong>Alunos de qualquer período.
           </p>
           <p>
-            <strong>Pré-Requisito: </strong>Conhecimentos básicos de programação
-            e familiaridade com conceitos de blockchain. Alguma experiência com
-            linguagens de programação semelhantes, como JavaScript ou C++
+            <strong>Pré-Requisito: </strong>Lógica de programação.
           </p>
           <p>
-            <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
-            fundamental e prática dos conceitos básicos de desenvolvimento web,
-            abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
-            próprias aplicações web simples.
+            <strong>Objetivo: </strong>Introduzir a linguagem C# na
+            Universidade.
           </p>
           <p>
-            <strong>Justificativa: </strong>Devido à alta demanda por
-            programadores web no mercado atual, é crucial adquirir habilidades
-            nessa área. No entanto, algumas universidades oferecem aulas de
-            programação web apenas nos períodos finais do curso. Nesse contexto,
-            cursos complementares, se torna uma estratégia valiosa para
-            antecipar e fortalecer as habilidades necessárias para atender às
-            demandas do mercado de trabalho.
+            <strong>Justificativa: </strong>Introduzir a linguagem C# na
+            faculdade é uma iniciativa importante, pois amplia as opções de
+            carreira para os alunos e preenche uma lacuna muitas vezes
+            negligenciada. Como uma linguagem robusta e amplamente utilizada, o
+            conhecimento em C# pode proporcionar aos estudantes oportunidades em
+            uma variedade de setores, incluindo desenvolvimento de software,
+            jogos, aplicativos web e móveis.
           </p>
           <p>
-            <strong>Recursos: </strong>Sim, notebooks carregados para 2h de
+            <strong>Recursos: </strong>Notebook, Datashow, lápis e apagador.
+          </p>
+          <p>
+            <strong>Instalação de Softwares: </strong>VSCode e instalação de
+            extensões adequadas(como a extensão C#).
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada: " Pitch e Storytelling: Como Apresentar Projetos de Forma Impactante",
+    },
+    {
+      ministrantes: [
+        {
+          imagem_ministrante: klaudioHenriqueMascarenhasMedeiros,
+          nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
+        },
+      ],
+      texto_resumo:
+        "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Descrição:</strong> Minicurso projetado para introduzir os
+            participantes ao desenvolvimento de jogos 2D usando a plataforma
+            Construct 2. Este curso é ideal para entusiastas de jogos que
+            desejam aprender a criar seus próprios jogos sem a necessidade de
+            codificação complexa.
+          </p>
+          <p>
+            <strong>Pré-Requisito:</strong> Criatividade e disposição para
+            experimentar e explorar novas ideias.
+          </p>
+          <p>
+            <strong>Recursos:</strong> Sim, notebooks carregados para 2h de
             minicurso.
           </p>
           <p>
-            <strong>Instalação de Softwares: </strong>Solidity
+            <strong>Instalação de Softwares:</strong> Construct 2.
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada: " Comunicação Eficaz para Profissionais de Tecnologia",
+    },
+    {
+      ministrantes: [
+        {
+          imagem_ministrante: victorMenesesPinho,
+          nome_ministrante: "Victor Meneses Pinho",
+        },
+      ],
+      texto_resumo:
+        "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Idicação de Público: </strong>Pessoas de computação que
+            tenham interesse por programação e linguagem JAVA.
+          </p>
+          <p>
+            <strong>Pré-Requisito: </strong>Linguagem de programação Java,
+            conhecimento básico de Spring.
+          </p>
+          <p>
+            <strong>Objetivo: </strong>Ensinar criar uma aplicação no framework
+            SpringBoot que utiliza Inteligencia Artificial.
+          </p>
+          <p>
+            <strong>Justificativa: </strong>É uma novidade na área e se encaixa
+            no tema do evento.
+          </p>
+          <p>
+            <strong>Recursos: </strong>Notebook, laptop.
+          </p>
+          <p>
+            <strong>Instalação de Softwares: </strong>Intellij IDEA.
           </p>
         </>
       ),
       titulo_atividade_confirmada:
-        "Desenvolvimento de Contratos Inteligentes com Solidity",
+        " Cibersegurança na Prática: Testes de Vulnerabilidade e Boas Práticas",
     },
+    {
+      ministrantes: [
+        {
+          imagem_ministrante: danielMarquesGuimaraes,
+          nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
+        },
+      ],
+      texto_resumo:
+        "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Descrição:</strong> Minicurso projetado para fornecer aos
+            participantes uma introdução prática e acessível à visualização de
+            dados usando a biblioteca Vega-lite. Este curso é ideal para
+            iniciantes e profissionais que desejam aprender a criar
+            visualizações de dados informativas e envolventes de forma eficaz.
+          </p>
+          <p>
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação,
+            familiaridade com linguagens de marcação como JSON e YAML, noções
+            básicas de estatística e análise de dados.
+          </p>
+          <p>
+            <strong>Recursos:</strong> Notebooks carregados para 2h de
+            minicurso.
+          </p>
+          <p>
+            <strong>Instalação de Softwares:</strong> Navegador.
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada:
+        " Desenvolvimento Web Avançado: Frameworks Modernos",
+    },
+    {
+      ministrantes: [
+        {
+          imagem_ministrante: giordaniAlvesFormiga,
+          nome_ministrante: "Giordanni Alves Formiga",
+        },
+      ],
+      texto_resumo:
+        "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
+      descricao_atividade_confirmada: (
+        <>
+          <p>
+            <strong>Descrição:</strong> Minicurso focado em fornecer aos
+            participantes uma compreensão abrangente e prática do tratamento de
+            exceções em aplicações Java. Este curso é projetado para
+            desenvolvedores Java de todos os níveis de habilidade que desejam
+            aprimorar suas habilidades no tratamento de erros e exceções em seus
+            aplicativos.
+          </p>
+          <p>
+            <strong>Pré-Requisito:</strong> Conhecimento básico de programação
+            em Java, experiência com desenvolvimento de aplicativos Java,
+            compreensão básica de exceções e acesso a um ambiente de
+            desenvolvimento Java.
+          </p>
+          <p>
+            <strong>Recursos:</strong> Notebooks carregados para 2h de
+            minicurso.
+          </p>
+          <p>
+            <strong>Instalação de Softwares:</strong> VSCode com o java
+            instalado na máquina.
+          </p>
+        </>
+      ),
+      titulo_atividade_confirmada: " Introdução à Ciência de Dados com Python e Pandas",
+    },
+    // {
+    //   ministrantes: [
+    //     {
+    //       imagem_ministrante: yuriSantosMonteiro,
+    //       nome_ministrante: "Yuri dos Santos Monteiro",
+    //     },
+    //   ],
+    //   texto_resumo:
+    //     "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
+    //   descricao_atividade_confirmada: (
+    //     <>
+    //       <p>
+    //         <strong>Idicação de Público: </strong>Pessoas que queiram aprender
+    //         programação web mas ainda não tem uma base.
+    //       </p>
+    //       <p>
+    //         <strong>Pré-Requisito: </strong>Sem pré-requisitos.
+    //       </p>
+    //       <p>
+    //         <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
+    //         fundamental e prática dos conceitos básicos de desenvolvimento web,
+    //         abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
+    //         próprias aplicações web simples.
+    //       </p>
+    //       <p>
+    //         <strong>Justificativa: </strong>Devido à alta demanda por
+    //         programadores web no mercado atual, é crucial adquirir habilidades
+    //         nessa área. No entanto, algumas universidades oferecem aulas de
+    //         programação web apenas nos períodos finais do curso. Nesse contexto,
+    //         cursos complementares, se torna uma estratégia valiosa para
+    //         antecipar e fortalecer as habilidades necessárias para atender às
+    //         demandas do mercado de trabalho.
+    //       </p>
+    //       <p>
+    //         <strong>Recursos: </strong>Datashow e se possível o laboratório.
+    //       </p>
+    //       <p>
+    //         <strong>Instalação de Softwares: </strong>VSCode para escrever
+    //         códigos em HTML, CSS e JavaScript e Navegador web moderno.
+    //       </p>
+    //     </>
+    //   ),
+    //   titulo_atividade_confirmada:
+    //     "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
+    // },
+    // {
+    //   ministrantes: [
+    //     {
+    //       imagem_ministrante: giovannaTrigueiroAlmeida,
+    //       nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
+    //     },
+    //   ],
+    //   texto_resumo:
+    //     "Explore os fundamentos e a prática da implementação de contratos inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde conceitos básicos até exemplos práticos de implementação.",
+    //   descricao_atividade_confirmada: (
+    //     <>
+    //       <p>
+    //         <strong>Descrição: </strong>Explore os fundamentos e a prática da
+    //         implementação de contratos inteligentes utilizando a linguagem
+    //         Solidity. Este minicurso oferece uma introdução abrangente ao
+    //         desenvolvimento de contratos inteligentes, abordando desde conceitos
+    //         básicos até exemplos práticos de implementação.
+    //       </p>
+    //       <p>
+    //         <strong>Pré-Requisito: </strong>Conhecimentos básicos de programação
+    //         e familiaridade com conceitos de blockchain. Alguma experiência com
+    //         linguagens de programação semelhantes, como JavaScript ou C++
+    //       </p>
+    //       <p>
+    //         <strong>Objetivo: </strong>Proporcionar aos alunos uma compreensão
+    //         fundamental e prática dos conceitos básicos de desenvolvimento web,
+    //         abrangendo HTML, CSS e JavaScript, preparando-os para construir suas
+    //         próprias aplicações web simples.
+    //       </p>
+    //       <p>
+    //         <strong>Justificativa: </strong>Devido à alta demanda por
+    //         programadores web no mercado atual, é crucial adquirir habilidades
+    //         nessa área. No entanto, algumas universidades oferecem aulas de
+    //         programação web apenas nos períodos finais do curso. Nesse contexto,
+    //         cursos complementares, se torna uma estratégia valiosa para
+    //         antecipar e fortalecer as habilidades necessárias para atender às
+    //         demandas do mercado de trabalho.
+    //       </p>
+    //       <p>
+    //         <strong>Recursos: </strong>Sim, notebooks carregados para 2h de
+    //         minicurso.
+    //       </p>
+    //       <p>
+    //         <strong>Instalação de Softwares: </strong>Solidity
+    //       </p>
+    //     </>
+    //   ),
+    //   titulo_atividade_confirmada:
+    //     "Desenvolvimento de Contratos Inteligentes com Solidity",
+    // },
   ],
   Workshop: [
     {

@@ -4,7 +4,7 @@ import { ConfirmedActivitiesData } from '../../data/ConfirmedActivitiesData.jsx'
 import styles from './ConfirmedActivities.module.css';
 
 export default function ConfirmedActivities() {
-  const [activeCategory, setActiveCategory] = useState('Workshop');
+  const [activeCategory, setActiveCategory] = useState('MinicursoManha');
 
   const handleCategoryChange = (category) => {
     setActiveCategory(category);
@@ -16,8 +16,10 @@ export default function ConfirmedActivities() {
         return ConfirmedActivitiesData.Workshop;
       case 'Oficina':
         return ConfirmedActivitiesData.Oficina;
-      case 'Minicurso':
-        return ConfirmedActivitiesData.Minicurso;
+      case 'MinicursoManha':
+        return ConfirmedActivitiesData.MinicursoManha;
+      case 'MinicursoNoite':
+        return ConfirmedActivitiesData.MinicursoNoite;
       default:
         return [];
     }
@@ -30,7 +32,7 @@ export default function ConfirmedActivities() {
       </h1>
       <section className={styles.confirmedActivitiesContainer}>      
         <div className={styles.buttonGroup}>
-          <button
+          {/* <button
             onClick={() => handleCategoryChange('Workshop')}
             className={`${styles.categoryButton} ${
               activeCategory === 'Workshop' ? styles.active : ''
@@ -45,14 +47,22 @@ export default function ConfirmedActivities() {
             }`}
           >
             Oficinas
-          </button>
+          </button> */}
           <button
-            onClick={() => handleCategoryChange('Minicurso')}
+            onClick={() => handleCategoryChange('MinicursoManha')}
             className={`${styles.categoryButton} ${
-              activeCategory === 'Minicurso' ? styles.active : ''
+              activeCategory === 'MinicursoManha' ? styles.active : ''
             }`}
           >
-            Minicursos
+            Minicursos Manhã
+          </button>
+          <button
+            onClick={() => handleCategoryChange('MinicursoNoite')}
+            className={`${styles.categoryButton} ${
+              activeCategory === 'MinicursoNoite' ? styles.active : ''
+            }`}
+          >
+            Minicursos Noite
           </button>
         </div>
 

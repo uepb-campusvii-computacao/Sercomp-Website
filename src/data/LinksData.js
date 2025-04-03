@@ -3,14 +3,14 @@ export const linksData = [
     text: "Inicio",
     href: "/",
   },
-  {
-    text: "Inscrição",
-    href: "/inscricao",
-  },
-  {
-    text: "Loja",
-    href: "/market",
-  },
+  // {
+  //   text: "Inscrição",
+  //   href: "/inscricao",
+  // },
+  // {
+  //   text: "Loja",
+  //   href: "/market",
+  // },
   {
     text: "Chamadas",
     href: "/chamadas",
@@ -23,10 +23,10 @@ export const linksData = [
         text: 'Hackathon',
         href: '/hackathon'
       },
-      {
-        text: 'Ideathon',
-        href: '/ideathon'
-      },
+      // {
+      //   text: 'Ideathon',
+      //   href: '/ideathon'
+      // },
       {
         text: 'Maratona de Programação',
         href: '/programming-marathon'

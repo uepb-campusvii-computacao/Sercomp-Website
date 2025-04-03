@@ -37,11 +37,11 @@ function Comite() {
                             <SwiperSlide key={index}>
                                 <article className={`swiper-slide ${styles.org}`}>
                                     <div className={styles.avatar}>
-                                        <img src={monitor.image} alt={monitor.name} />
+                                        {/* <img src={monitor.image} alt={monitor.name} /> */}
                                     </div>
                                     <div className={styles.orgInfo}>
-                                        <h5>{monitor.name}</h5>
-                                        <h6>{monitor.area}</h6>
+                                        {/* <h5>{monitor.name}</h5>
+                                        <h6>{monitor.area}</h6> */}
                                     </div>
                                 </article>
                             </SwiperSlide>
