@@ -12,7 +12,7 @@ function Home() {
           <div className="main-left">
             <h1>VII SERCOMP</h1>
             <h3>Congresso Sertanejo de Computação</h3>
-            <h5>19 a 20 de maio de 2025</h5>
+            <h5>19 a 21 de maio de 2025</h5>
             <p> Do  Código  à  Liderança: <br></br>  A  Importância  do  Equilíbrio  entre  Soft  e  Hard 
             Skills </p>
           </div>
