@@ -1,8 +1,8 @@
 import logo from "../../../assets/images/logo_header_home.webp";
 import OrganizationPeople from "../../../components/Organization/OrganizationPeople";
 import styles from "./2024.module.css";
-import Palestrante from "../../../components/Palestrante/Palestrante";
 import { ToggleExpand } from './toggleExpand';
+import Chamadas from "./Chamadas/Chamadas.jsx";
 
 import alysonJonasMorato from "../../../assets/images/participacoes/2024/Alyson-Jonas-Alves-Morato.webp";
 import caioHenriqueSousa from "../../../assets/images/participacoes/2024/Caio-Henrique-Lopes-Sousa.webp";
@@ -34,35 +34,12 @@ import thiagoAlvesLaurentino from "../../../assets/images/participacoes/2024/Thi
 import victorMenesesPinho from "../../../assets/images/participacoes/2024/Victor Meneses Pinho.webp";
 import wellyngtonDaNobregaTargino from "../../../assets/images/participacoes/2024/Wellyngton-da-Nobrega-Targino.webp";
 import yuriSantosMonteiro from "../../../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
-
-
-
-
-import cleisson from "../../../assets/images/participacoes/2023/cleisson.png";
-import karliane from "../../../assets/images/participacoes/2023/karliane.png";
-import klayton from "../../../assets/images/participacoes/2023/klayton.png";
-import samuel from "../../../assets/images/participacoes/2023/samuel.png";
-import harllem from "../../../assets/images/participacoes/2023/harllem.png";
-import almeida from "../../../assets/images/participacoes/2023/almeida.png";
-import esdras from "../../../assets/images/participacoes/2023/esdras.png";
-import daniel from "../../../assets/images/participacoes/2023/daniel.png";
-import jairo from "../../../assets/images/participacoes/2023/jairo.png";
-
-import rosangela from "../../../assets/images/professores/rosangela.png";
-import demetrio from "../../../assets/images/professores/demetrio.png";
-import vinicius from "../../../assets/images/professores/vinicius.png";
-import jucelio from "../../../assets/images/professores/jucelio.png";
-import mikaelle from "../../../assets/images/professores/mikaelle.png";
-import francisco from "../../../assets/images/professores/francisco.png";
-
 import TimelineComponent from "../../../components/Timeline/Timeline.jsx";
-
 import shedule from "./schedule.jsx";
 import { comissaoArtigosData } from "./commissions.js";
 import Comissao from "../../../components/Comissao/Comissao";
 import orgMembersData from '../../../data/orgData2024.js';
-import { mesaData } from './mesaData.js'
-import MesaRedonda from "../../../components/MesaRedonda/MesaRedonda.jsx";
+
 
 function Edition2024() {
   return (
@@ -85,22 +62,9 @@ function Edition2024() {
       </main>
       <OrganizationPeople title={"ORGANIZAÇÃO DO VI SERCOMP"} members={orgMembersData}/>
       <section className={styles.cron}>
-        <h2 className={styles.tituloBase}>Palestras</h2>
-
+        <h2 className={styles.tituloBase}>Atividades</h2>
         <section className={`container ${styles.cronContainer}`}>
-          <Palestrante
-            nome="Cleisson Christian Lima da Costa Ramos"
-            imagemSrc={cleisson}
-            tituloPalestra="Palestra I: Desafios e Estratégias de Mitigação de Vulnerabilidades em Sistemas Operacionais - Explorando na prática"
-            descricao="Bacharel em Sistemas de Informação; Pós-graduação em Segurança de Informação; Pós em Educação, Desenvolvimento e Políticas Educativas; MBA em Gestão em TI; Pós em Formação em Educação a Distância. Atualmente trabalha como analista de segurança da informação (Red Team - Cyber Security) na Under Protection, além de trabalhar como docente do curso de Sistemas de Informação da UNIFACISA. Tem experiência como docente no ensino superior, graduação e pós (dez anos), além do ensino técnico na área de computação, totalizando vinte anos ministrando disciplinas nas áreas de tecnologia da informação e comunicação, computação, sistemas de informação e segurança da informação. Trabalhou durante cinco anos como coordenador de curso (Análise e Desenvolvimento de Sistemas), além de ministrar palestras e cursos de capacitação nas áreas de Segurança da Informação (Pentest) e Tecnologias da Informação."
-          />
-
-          <Palestrante
-            nome="Karliane Medeiros Ovidio Vale"
-            imagemSrc={karliane}
-            tituloPalestra="Palestra II: Desvendando insights valiosos: como a mineração de dados pode impulsionar a tomada de decisão estratégica"
-            descricao="Graduada em Tecnologia em Processamento de Dados pela Universidade Potiguar em 1999, com especialização em Tecnologia e Desenvolvimento de Sistemas Orientado a Objeto para Web em 2005 pela mesma universidade, além de mestrado e doutorado em Sistemas e Computação pela UFRN. Ela possui experiência na área de Ciência da Computação, com ênfase em desenvolvimento de sistemas, e é professora na Universidade Federal do Rio Grande do Norte, onde participa de pesquisas no laboratório de inteligência computacional aplicada a negócios. Também tem experiência como coordenadora de curso técnico e docente em outras universidades e faculdades."
-          />
+          <Chamadas></Chamadas>
         </section>
       </section>
       {/* <section>
