@@ -41,14 +41,14 @@ export const linksData = [
     text: "Atividades",
     href: "/confirmed-activities",
   },
-  {
-    text: "Parceiros",
-    href: "/parceiros",
-  },
-  {
-    text: "Comitê",
-    href: "/comite",
-  },
+  // {
+  //   text: "Parceiros",
+  //   href: "/parceiros",
+  // },
+  // {
+  //   text: "Comitê",
+  //   href: "/comite",
+  // },
   {
     text: "Edições Anteriores",
     href: "/2024",
