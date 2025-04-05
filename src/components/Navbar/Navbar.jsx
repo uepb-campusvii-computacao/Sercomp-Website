@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import logotipo from "../../assets/images/logotipo_vvisercomp.webp";
+import logotipo from "../../assets/images/logotipo_viisercomp.png";
 import { linksData } from "../../data/LinksData";
 import styles from "./Navbar.module.css";
 
@@ -34,7 +34,7 @@ export default function Navbar() {
       <div className={`${styles.navContainer}`}>
         <div className={styles.logoContainer}>
           <a href="/">
-            <img src={logotipo} alt="vi sercomp" />
+            <img src={logotipo} alt="vii sercomp" />
           </a>
         </div>
         <div className={styles.toggleMenuContainer}>
