@@ -21,7 +21,7 @@ const Inscricoes = () => {
     mode: "all",
   });
 
-  const [activities, setAtivities] = useState({
+  const [activities, setActivities] = useState({
     minicursos: [],
     oficinas: [],
     workshops: [],
@@ -47,7 +47,7 @@ const Inscricoes = () => {
           lotesPromise,
         ]);
 
-        setActivitie(ativitiesResponse.data);
+        setActivities(ativitiesResponse.data);
         setLotes(lotesResponse.data);
         setIsLoading(false);
       } catch (err) {
