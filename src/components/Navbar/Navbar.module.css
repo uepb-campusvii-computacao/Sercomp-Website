@@ -30,8 +30,9 @@ nav button {
 }
 
 .navContainer a img{
+  margin-top: 10px;
   height: 64px;
-  width: auto;
+  width: 200px;
   margin-right: 24px;
 }
 
