@@ -1,4 +1,4 @@
-import logo from '../../assets/images/logo_header_home.webp';
+import logo from '../../assets/images/logo_header_homevii.png';
 import Countdown from '../../components/Countdown/Countdown';
 import Organization from '../../components/Organization/Organization';
 import orgMembersData from '../../data/orgData2024.js';
