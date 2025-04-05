@@ -15,74 +15,74 @@ const organizationData = [
   {
     image: vanderleiaImage,
     alt: "vanderleia",
-    nome: "Vanderleia Lucena",
-    cargo: "Presidente do CACC"
+    name: "Vanderleia Lucena",
+    role: "Presidente do CACC"
   },
   {
     image: franciscoImage,
     alt: "francisco",
-    nome: "Francisco Gabriel",
-    cargo: "Vice Presidente do CACC"
+    name: "Francisco Gabriel",
+    role: "Vice Presidente do CACC"
   },
   {
     image: luizImage,
     alt: "luiz",
-    nome: "Luiz Felipe",
-    cargo: "1° Tesoureiro"
+    name: "Luiz Felipe",
+    role: "1° Tesoureiro"
   },
   {
     image: jucelioImage,
     alt: "jucelio",
-    nome: "Jucelio Soares",
-    cargo: "Diretor de Eventos"
+    name: "Jucelio Soares",
+    role: "Diretor de Eventos"
   },
   {
     image: arthurImage,
     alt: "arthur",
-    nome: "Arthur Franco",
-    cargo: "Diretor de Comunicação"
+    name: "Arthur Franco",
+    role: "Diretor de Comunicação"
   },
   {
     image: francileudoImage,
     alt: "francileudo",
-    nome: "Francileudo Oliveira",
-    cargo: "1º Secretário"
+    name: "Francileudo Oliveira",
+    role: "1º Secretário"
   },
   {
     image: yohannaImage,
     alt: "yohanna",
-    nome: "Yohanna Bárbara",
-    cargo: "2ª Secretária"
+    name: "Yohanna Bárbara",
+    role: "2ª Secretária"
   },
   {
     image: hallanImage,
     alt: "hallan",
-    nome: "Hallan Caio",
-    cargo: "Diretor de Esportes"
+    name: "Hallan Caio",
+    role: "Diretor de Esportes"
   },
   {
     image: rebecaImage,
     alt: "rebeca",
-    nome: "Rebeca Barbosa",
-    cargo: "Secretária de Comunicação"
+    name: "Rebeca Barbosa",
+    role: "Secretária de Comunicação"
   },
   {
     image: emersonImage,
     alt: "emerson",
-    nome: "Emerson Rodrigues",
-    cargo: "Secretário de Cultura"
+    name: "Emerson Rodrigues",
+    role: "Secretário de Cultura"
   },
   {
     image: daniloImage,
     alt: "danilo",
-    nome: "Danilo Leite",
-    cargo: "A definir"
+    name: "Danilo Leite",
+    role: "A definir"
   },
   {
     image: kemyImage,
     alt: "kemy",
-    nome: "Kemelly",
-    cargo: "2° Tesoureira"
+    name: "Kemelly",
+    role: "2° Tesoureira"
   }
 ];
 

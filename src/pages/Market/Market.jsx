@@ -10,25 +10,25 @@ import styles from "./Market.module.css";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 
 const Market = () => {
-  const [productsMacket, setProductsMacket] = useState([]);
+  const [marketProducts, setMarketProducts] = useState([]);
   const { products } = useContext(MarketContext);
   const [showCartPopup, setShowCartPopup] = useState(false);
   const [showEmailPopup, setShowEmailPopup] = useState(false);
   const [loading, setLoading] = useState(false);
 
-  async function fecthData() {
+  async function fetchData() {
     setLoading(true);
     await api
       .get(`/events/${import.meta.env.VITE_EVENTO_UUID}/produtos`)
       .then((response) => {
-        setProductsMacket(response.data);
+        setMarketProducts(response.data);
       })
       .catch(() => toast.error("Erro ao buscar os dados"));
     setLoading(false);
   }
 
   useEffect(() => {
-    fecthData();
+    fetchData();
   }, []);
 
   const toggleCartPopup = () => {
@@ -57,7 +57,7 @@ const Market = () => {
             {products && products.length > 0 && (
               <div className={`${styles.notificationBadge} ${styles.bounce}`}>
                 {products.reduce((total, product) => {
-                  return total + product.quantidade;
+                  return total + product.quantity;
                 }, 0)}
               </div>
             )}
@@ -70,15 +70,15 @@ const Market = () => {
           <LoadingScreen />
         ) : (
           <div className={styles.productContainer}>
-            {productsMacket.map((product) => (
+            {marketProducts.map((product) => (
               <ProductCard
-                key={product.uuid_produto}
-                uuid_produto={product.uuid_produto}
-                nome={product.nome}
-                descricao={product.descricao}
-                imagem_url={product.imagem_url}
-                preco={product.preco}
-                estoque={product.estoque}
+                key={product.productId}
+                productId={product.productId}
+                name={product.name}
+                description={product.description}
+                imageUrl={product.imageUrl}
+                price={product.price}
+                stock={product.stock}
               />
             ))}
           </div>

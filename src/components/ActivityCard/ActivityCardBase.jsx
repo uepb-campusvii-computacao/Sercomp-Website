@@ -20,15 +20,15 @@ const extractTextFromFragment = (node) => {
 
 const MAX_CHARACTERS = 200;
 
-export default function ActivityCardBase({ imageNode, title, description, texto_resumo }) {
-  const [showText, setShowText] = useState(false);
+export default function ActivityCardBase({ imageNode, title, description, summaryText }) {
+  const [isTextExpanded, setIsTextExpanded] = useState(false);
   const width = useWindowWidth();
 
   const toggleText = () => {
-    setShowText(!showText);
+    setIsTextExpanded(!isTextExpanded);
   };
 
-  const fullText = extractTextFromFragment(texto_resumo);
+  const fullText = extractTextFromFragment(summaryText);
   const truncatedText = fullText.slice(0, MAX_CHARACTERS);
 
   return (
@@ -44,7 +44,7 @@ export default function ActivityCardBase({ imageNode, title, description, texto_
             </div>
           </Tooltip>         
           <div className={styles.bodyDescription}>
-            {showText ? (
+            {isTextExpanded ? (
               description
             ) : (
               width > 1300 &&
@@ -56,7 +56,7 @@ export default function ActivityCardBase({ imageNode, title, description, texto_
         </div>
         <div className={styles.activityCardFooter}>
           <button className={styles.link} onClick={toggleText}>
-            {showText ? "Ler menos" : "Ler mais..." }
+            {isTextExpanded ? "Ler menos" : "Ler mais..." }
           </button>
         </div>
       </div>
@@ -68,5 +68,5 @@ ActivityCardBase.propTypes = {
   imageNode: PropTypes.node.isRequired,
   title: PropTypes.string.isRequired,
   description: PropTypes.node.isRequired,
-  texto_resumo: PropTypes.string.isRequired
+  summaryText: PropTypes.string.isRequired
 };

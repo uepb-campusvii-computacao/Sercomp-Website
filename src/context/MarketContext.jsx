@@ -15,25 +15,27 @@ export const MarketProvider = ({ children }) => {
 
   const addProduct = (product) => {
     const existingProductIndex = products.findIndex(
-      (p) => p.uuid_produto === product.uuid_produto
+      (p) => p.productId === product.productId
     );
 
     if (existingProductIndex !== -1) {
       const updatedProducts = [...products];
-      updatedProducts[existingProductIndex].quantidade++;
+      updatedProducts[existingProductIndex].quantity++;
       setProducts(updatedProducts);
     } else {
-      setProducts((prevProducts) => [...prevProducts, { ...product, quantidade: 1 }]);
+      setProducts((prevProducts) => [...prevProducts, { ...product, quantity: 1 }]);
     }
   };
 
-  const removeProduct = (uuid_produto) => {
+  const removeProduct = (productId) => {
     setProducts((prevProducts) =>
-      prevProducts.map((p) =>
-        p.uuid_produto === uuid_produto
-          ? { ...p, quantidade: p.quantidade - 1 }
-          : p
-      ).filter((p) => p.quantidade > 0)
+      prevProducts
+        .map((p) =>
+          p.productId === productId
+            ? { ...p, quantity: p.quantity - 1 }
+            : p
+        )
+        .filter((p) => p.quantity > 0)
     );
   };
 

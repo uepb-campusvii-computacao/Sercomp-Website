@@ -27,7 +27,7 @@ export default function ConfirmedActivities() {
 
   return (
     <>
-      <h1 className={"titulo-principal"} style={{paddingTop: '2rem'}}>
+      <h1 className={"mainTitle"} style={{paddingTop: '2rem'}}>
         Atividades Confirmadas
       </h1>
       <section className={styles.confirmedActivitiesContainer}>      

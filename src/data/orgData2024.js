@@ -38,162 +38,162 @@ import Yasmin from "../assets/images/comite/monitores/Yasmin Dantas de Araújo.w
 import Yuri from "../assets/images/comite/monitores/Yuri dos Santos Monteiro.webp";
 
 const organizationData = [
-  { 
-    nome: "Alessandro Viana Figueiredo de Oliveira", 
-    cargo: "Credenciamento", 
+  {
+    name: "Alessandro Viana Figueiredo de Oliveira",
+    role: "Credenciamento",
     image: Alessandro,
-    alt: "alessandro" 
+    alt: "alessandro",
   },
-  { 
-    nome: "Davi Argemiro Henrique Cardoso de Oliveira Filho", 
-    cargo: "Credenciamento", 
+  {
+    name: "Davi Argemiro Henrique Cardoso de Oliveira Filho",
+    role: "Credenciamento",
     image: Davi,
-    alt: "davi" 
+    alt: "davi",
   },
-  { 
-    nome: "Isaque Batista Nobrega", 
-    cargo: "Credenciamento", 
+  {
+    name: "Isaque Batista Nobrega",
+    role: "Credenciamento",
     image: Isaque,
-    alt: "isaque" 
+    alt: "isaque",
   },
-  { 
-    nome: "Joao Pedro Goncalves Dias da Silva", 
-    cargo: "Credenciamento", 
+  {
+    name: "Joao Pedro Goncalves Dias da Silva",
+    role: "Credenciamento",
     image: Joao,
-    alt: "joao" 
+    alt: "joao",
   },
-  { 
-    nome: "Laryssa Albuquerque Marques", 
-    cargo: "Credenciamento", 
+  {
+    name: "Laryssa Albuquerque Marques",
+    role: "Credenciamento",
     image: Laryssa,
-    alt: "laryssa" 
+    alt: "laryssa",
   },
-  { 
-    nome: "Luanny Kelly de Almeida Leitao", 
-    cargo: "Credenciamento", 
+  {
+    name: "Luanny Kelly de Almeida Leitao",
+    role: "Credenciamento",
     image: Luanny,
-    alt: "luanny" 
+    alt: "luanny",
   },
-  { 
-    nome: "Maria Gabriela Galvao Vieira", 
-    cargo: "Credenciamento", 
+  {
+    name: "Maria Gabriela Galvao Vieira",
+    role: "Credenciamento",
     image: MariaGabriela,
-    alt: "maria" 
+    alt: "maria",
   },
-  { 
-    nome: "Yuri dos Santos Monteiro", 
-    cargo: "Credenciamento", 
+  {
+    name: "Yuri dos Santos Monteiro",
+    role: "Credenciamento",
     image: Yuri,
-    alt: "yuri" 
+    alt: "yuri",
   },
-  { 
-    nome: "Aryosmar Felipe Almeida", 
-    cargo: "Infraestrutura", 
+  {
+    name: "Aryosmar Felipe Almeida",
+    role: "Infraestrutura",
     image: Aryosmar,
-    alt: "aryosmar" 
+    alt: "aryosmar",
   },
-  { 
-    nome: "Deivid dos Santos Souza", 
-    cargo: "Infraestrutura", 
+  {
+    name: "Deivid dos Santos Souza",
+    role: "Infraestrutura",
     image: Deivid,
-    alt: "deivid" 
+    alt: "deivid",
   },
-  { 
-    nome: "Gilberto Domingos Cassiano Junior", 
-    cargo: "Infraestrutura", 
+  {
+    name: "Gilberto Domingos Cassiano Junior",
+    role: "Infraestrutura",
     image: Gilberto,
-    alt: "gilberto" 
+    alt: "gilberto",
   },
-  { 
-    nome: "Kaua Ferreira Marques", 
-    cargo: "Infraestrutura", 
+  {
+    name: "Kaua Ferreira Marques",
+    role: "Infraestrutura",
     image: Kaua,
-    alt: "kaua" 
+    alt: "kaua",
   },
-  { 
-    nome: "Jose Samuel Pinho Clementino", 
-    cargo: "Patrocínio", 
+  {
+    name: "Jose Samuel Pinho Clementino",
+    role: "Patrocínio",
     image: JoseSamuel,
-    alt: "jose" 
+    alt: "jose",
   },
-  { 
-    nome: "Roger Natan Carvalho Silva", 
-    cargo: "Patrocínio", 
+  {
+    name: "Roger Natan Carvalho Silva",
+    role: "Patrocínio",
     image: Roger,
-    alt: "roger" 
+    alt: "roger",
   },
-  { 
-    nome: "Thulio Bezerra Alves", 
-    cargo: "Patrocínio", 
+  {
+    name: "Thulio Bezerra Alves",
+    role: "Patrocínio",
     image: Thulio,
-    alt: "thulio" 
+    alt: "thulio",
   },
-  { 
-    nome: "Giovanni Miguel Vieira", 
-    cargo: "Comunicação", 
+  {
+    name: "Giovanni Miguel Vieira",
+    role: "Comunicação",
     image: Giovanni,
-    alt: "giovanni" 
+    alt: "giovanni",
   },
-  { 
-    nome: "Jose Oliveira de Almeida Neto", 
-    cargo: "Comunicação", 
+  {
+    name: "Jose Oliveira de Almeida Neto",
+    role: "Comunicação",
     image: JoseOliveira,
-    alt: "jose" 
+    alt: "jose",
   },
-  { 
-    nome: "Kayke Nicolas Ferreira Goncalves Campos", 
-    cargo: "Comunicação", 
+  {
+    name: "Kayke Nicolas Ferreira Goncalves Campos",
+    role: "Comunicação",
     image: Kayke,
-    alt: "kayke" 
+    alt: "kayke",
   },
-  { 
-    nome: "Marcia Crystina Viana de Oliveira", 
-    cargo: "Comunicação", 
+  {
+    name: "Marcia Crystina Viana de Oliveira",
+    role: "Comunicação",
     image: Marcia,
-    alt: "marcia" 
+    alt: "marcia",
   },
-  { 
-    nome: "Maria Clara Galvao Vieira", 
-    cargo: "Comunicação", 
+  {
+    name: "Maria Clara Galvao Vieira",
+    role: "Comunicação",
     image: MariaClara,
-    alt: "maria" 
+    alt: "maria",
   },
-  { 
-    nome: "Mariana Alves de Souza", 
-    cargo: "Comunicação", 
+  {
+    name: "Mariana Alves de Souza",
+    role: "Comunicação",
     image: Mariana,
-    alt: "mariana" 
+    alt: "mariana",
   },
-  { 
-    nome: "Monyca Monalyza Almeida Marques", 
-    cargo: "Comunicação", 
+  {
+    name: "Monyca Monalyza Almeida Marques",
+    role: "Comunicação",
     image: Monyca,
-    alt: "monyca" 
+    alt: "monyca",
   },
-  { 
-    nome: "Pedro Arthur Pereira Franco", 
-    cargo: "Comunicação", 
+  {
+    name: "Pedro Arthur Pereira Franco",
+    role: "Comunicação",
     image: Pedro,
-    alt: "pedro" 
+    alt: "pedro",
   },
-  { 
-    nome: "Robson Lourenco Filho", 
-    cargo: "Comunicação", 
+  {
+    name: "Robson Lourenco Filho",
+    role: "Comunicação",
     image: Robson,
-    alt: "robson" 
+    alt: "robson",
   },
-  { 
-    nome: "Lucas Henrique Oliveira de Araujo", 
-    cargo: "Sistemas", 
+  {
+    name: "Lucas Henrique Oliveira de Araujo",
+    role: "Sistemas",
     image: LucasHenrique,
-    alt: "lucas" 
+    alt: "lucas",
   },
-  { 
-    nome: "Yasmin Dantas de Araújo", 
-    cargo: "Sistemas", 
+  {
+    name: "Yasmin Dantas de Araújo",
+    role: "Sistemas",
     image: Yasmin,
-    alt: "yasmin" 
-  }
+    alt: "yasmin",
+  },
 ];
 
 export default organizationData;

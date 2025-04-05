@@ -36,10 +36,11 @@ import wellyngtonDaNobregaTargino from "../../../assets/images/participacoes/202
 import yuriSantosMonteiro from "../../../assets/images/participacoes/2024/Yuri dos Santos Monteiro.webp";
 import TimelineComponent from "../../../components/Timeline/Timeline.jsx";
 import shedule from "./schedule.jsx";
-import { comissaoArtigosData } from "./commissions.js";
-import Comissao from "../../../components/Comissao/Comissao";
+import { ArticlesCommitteeData } from "./commissions.js";
+import Committee from "../../../components/Committee/Committee";
 import orgMembersData from '../../../data/orgData2024.js';
-
+import { roundData } from './roundData.js'
+import RoundTable from "../../../components/RoundTable/RoundTable.jsx";
 
 function Edition2024() {
   return (
@@ -62,21 +63,22 @@ function Edition2024() {
       </main>
       <OrganizationPeople title={"ORGANIZAÇÃO DO VI SERCOMP"} members={orgMembersData}/>
       <section className={styles.cron}>
-        <h2 className={styles.tituloBase}>Atividades</h2>
+        <h2 className={styles.baseTitle}>Palestras</h2>
+
         <section className={`container ${styles.cronContainer}`}>
           <Chamadas></Chamadas>
         </section>
       </section>
       {/* <section>
-        <h2 className={styles.tituloBase}>Mesa</h2>
-        <MesaRedonda 
+        <h2 className={styles.baseTitle}>Mesa</h2>
+        <RoundTable 
           titulo="ChapGPT: possibilidades e desafios no cenário acadêmico e profissional em Computação"
-          membros={mesaData}
+          membros={roundData}
         />
       </section> */}
 
       <section className={`container ${styles.cronContainer}`}>
-        <h2 className={styles.tituloBase}>Minicursos</h2>
+        <h2 className={styles.baseTitle}>Minicursos</h2>
         {/* Minicurso 1 */}
         <article className={`${styles.cronMember} ${styles.leftAligned}`}>
           <div className={styles.cronDetails}>
@@ -299,7 +301,7 @@ function Edition2024() {
       </section>
 
       <section className={`container ${styles.cronContainer}`}>
-        <h2 className={styles.tituloBase}>Oficinas</h2>
+        <h2 className={styles.baseTitle}>Oficinas</h2>
 
         {/* Oficina 1 */}
         <article className={`${styles.cronMember} ${styles.leftAligned}`}>
@@ -521,7 +523,7 @@ function Edition2024() {
       </section>
 
       <section className={`container ${styles.cronContainer}`}>
-        <h2 className={styles.tituloBase}>Workshops</h2>
+        <h2 className={styles.baseTitle}>Workshops</h2>
 
         <article className={`${styles.cronMember} ${styles.leftAligned}`}>
           <div className={styles.cronDetails}>
@@ -747,10 +749,10 @@ function Edition2024() {
       <TimelineComponent timelines={shedule} />
 
        <section className={"container"}>
-        {/* <h1 className={"titulo-principal"}>
+        {/* <h1 className={"mainTitle"}>
           Conheça mais sobre a <strong>Submissão de Artigos</strong>
         </h1>
-        <h2 className={`titulo-base ${styles.h2}`}>Datas Importantes</h2>
+        <h2 className={`baseTitle ${styles.h2}`}>Datas Importantes</h2>
         <ul className={styles.articleList}>
           <li className={`${styles.articleListRisc} ${styles.ulLi}`}>
             Prazo Inicial de submissão de artigos: 30/03/2023;
@@ -765,8 +767,8 @@ function Edition2024() {
             Apresentação dos artigos: 24/05/2023.
           </li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>Tópicos de Interesse</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Tópicos de Interesse</h2>
+        <p className={`paragraph ${styles.p}`}>
           São especialmente esperadas contribuições que abordem o tema principal
           do evento - &ldquo;Segurança em Tecnologia da Informação e Sistemas
           Inteligentes&ldquo;, bem como os grandes temas de desafios de pesquisa
@@ -782,7 +784,7 @@ function Edition2024() {
             conhecimento).
           </li>
         </ul>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Outros tópicos são também esperados, mas não limitados a:
         </p>
         <ul className={styles.articleList}>
@@ -852,17 +854,17 @@ function Edition2024() {
           </li>
           <li className={styles.ulLi}>Sistemas de apoio à decisão.</li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>
           Instruções para Submissão
         </h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Os artigos podem ser submetidos para o V SERCOMP somente nas
           categorias “relatos de caso” (case reports), sobre projetos em
           desenvolvimento, e &ldquo;artigo completo&ldquo; (full paper) sobre
           trabalhos de pesquisas já concluídas, com ideias e resultados
           inovadores, e seguindo metodologia científica adequada.
         </p>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Os relatos de caso devem ter entre 3 e 5 páginas (incluindo figuras,
           tabelas, diagramas, referências em anexos). O artigo completo deve ter
           entre 7 e 10 páginas (incluindo as figuras, tabelas, diagramas,
@@ -875,7 +877,7 @@ function Edition2024() {
         >
           Modelo de relato de caso e artigo.
         </a>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Alguns aspectos adicionais devem ser observados:
         </p>
         <ul className={styles.articleList}>
@@ -922,20 +924,20 @@ function Edition2024() {
             ao escopo, qualidade técnica, clareza e pertinência.
           </li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>Publicação</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Publicação</h2>
+        <p className={`paragraph ${styles.p}`}>
           Os artigos aceitos serão publicados nos anais do evento, condicionados
           à inscrição, de, pelo menos, um dos autores no evento, bem como à
           apresentação do trabalho no evento.
         </p>
-        <h2 className={`titulo-base ${styles.h2}`}>Apresentação</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Apresentação</h2>
+        <p className={`paragraph ${styles.p}`}>
           Cada artigo aceito deverá ter pelo menos um autor inscrito para
           apresentá-lo em sessão técnica, tendo 60 minutos para
           apresentação/discussão por meio de painel digital/poster.
         </p> */}
-        <Comissao
-          comissaoData={comissaoArtigosData}
+        <Committee
+          committeeData={ArticlesCommitteeData}
           title={"Comitê de Programa"}
           description={
             "O Comitê de Programa é formado pelos seguintes professores do curso de Ciência da Computação da Universidade Estadual da Paraíba, Campus VII."
