@@ -46,10 +46,10 @@ export default function ActivitySlider({ activities }) {
         {activities.map((activity, index) => (
           <SwiperSlide key={index}>
             <ActivityCardMultipleImage
-              ministrantes={activity.ministrantes}
-              title={activity.titulo_atividade_confirmada}
-              description={activity.descricao_atividade_confirmada}
-              texto_resumo={activity.texto_resumo}
+              speakers={activity.speakers}
+              title={activity.confirmedActivityTitle}
+              description={activity.confirmedActivityDescription}
+              summaryText={activity.summaryText}
             />
           </SwiperSlide>
         ))}
@@ -74,15 +74,15 @@ export default function ActivitySlider({ activities }) {
 ActivitySlider.propTypes = {
   activities: PropTypes.arrayOf(
     PropTypes.shape({
-      ministrantes: PropTypes.arrayOf(
+      speakers: PropTypes.arrayOf(
         PropTypes.shape({
-          imagem_ministrante: PropTypes.string.isRequired,
-          nome_ministrante: PropTypes.string.isRequired,
+          speakerImage: PropTypes.string.isRequired,
+          speakerName: PropTypes.string.isRequired,
         })
       ).isRequired,
-      titulo_atividade_confirmada: PropTypes.string.isRequired,
-      descricao_atividade_confirmada: PropTypes.node.isRequired,
-      texto_resumo: PropTypes.string.isRequired
+      confirmedActivityTitle: PropTypes.string.isRequired,
+      confirmedActivityDescription: PropTypes.node.isRequired,
+      summaryText: PropTypes.string.isRequired,
     })
   ).isRequired,
 };

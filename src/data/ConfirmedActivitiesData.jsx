@@ -33,23 +33,23 @@ import avatarNotFound from "../assets/images/image-not-found.png"
 export const ConfirmedActivitiesData = {
   Oficina: [
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: ellenSantosRamalho,
-          nome_ministrante: "Ellen Santos Ramalho",
+          speakerImage: ellenSantosRamalho,
+          speakerName: "Ellen Santos Ramalho",
         },
         {
-          imagem_ministrante: emillySantosRamalho,
-          nome_ministrante: "Emilly Santos Ramalho",
+          speakerImage: emillySantosRamalho,
+          speakerName: "Emilly Santos Ramalho",
         },
         {
-          imagem_ministrante: rebecaBarbosaLourenco,
-          nome_ministrante: "Rebeca Barbosa Lourenço",
+          speakerImage: rebecaBarbosaLourenco,
+          speakerName: "Rebeca Barbosa Lourenço",
         }
       ],
-      texto_resumo:
+      summaryText:
         "Mostrar aos participantes a oportunidade de alavancar suas carreiras por meio do LinkedIn, fornecendo estratégias eficazes para aumentar sua visibilidade, expandir sua rede e explorar oportunidades profissionais na plataforma.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Idicação de Público: </strong>Todos os públicos.
@@ -79,20 +79,20 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "LinkedIn na Prática: Estratégias e Oportunidades para Impulsionar sua Carreira",
     },
 
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: victorMenesesPinho,
-          nome_ministrante: "Victor Meneses Pinho",
+          speakerImage: victorMenesesPinho,
+          speakerName: "Victor Meneses Pinho",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Introduzir o aluno a um universo mais profundo em Java e backend",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Idicação de Público: </strong>Estudantes que gostem de
@@ -119,20 +119,20 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Explorando o Spring Boot: Criando uma API Java para Operações CRUD",
     },
 
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: wellyngtonDaNobregaTargino,
-          nome_ministrante: "Wellyngton da Nobrega Targino",
+          speakerImage: wellyngtonDaNobregaTargino,
+          speakerName: "Wellyngton da Nobrega Targino",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Ensinar aos alunos conceitos de tratamento de dados e plotagem de gráficos",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Idicação de Público: </strong>Alunos do p1-p4.
@@ -157,19 +157,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Plotagem de Gráficos com Pandas e Matplotlib a partir de Arquivos CSV",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: rosangelaAraújoMedeiros,
-          nome_ministrante: "Rosângela de Araújo Medeiros",
+          speakerImage: rosangelaAraújoMedeiros,
+          speakerName: "Rosângela de Araújo Medeiros",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Nesta oficina, os participantes serão guiados através das principais etapas do processo de elaboração de um Trabalho de Conclusão de Curso (TCC) com foco na aplicação de técnicas de Inteligência Artificial (IA).",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição: </strong>Nesta oficina, os participantes serão
@@ -189,19 +189,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Estratégias para Elaboração de TCC com Aplicação de Inteligência Artificial",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: lauraRafaellaFeitosaAlves,
-          nome_ministrante: "Laura Rafaella Feitosa Alves de Oliveira",
+          speakerImage: lauraRafaellaFeitosaAlves,
+          speakerName: "Laura Rafaella Feitosa Alves de Oliveira",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Nesta oficina, os participantes serão introduzidos aos princípios essenciais de Design de Interface do Usuário (UI) e Experiência do Usuário (UX), utilizando a ferramenta Figma. Através de exemplos práticos e exercícios guiados, os participantes aprenderão a criar designs de interface atraentes e funcionais, levando em consideração aspectos como usabilidade, acessibilidade e estética.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Nesta oficina, os participantes serão
@@ -225,19 +225,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Princípios Essenciais de Design UI/UX no Figma",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: lucianoClaudioSilvaSegundo,
-          nome_ministrante: "Luciano Claudio Alves da Silva Segundo",
+          speakerImage: lucianoClaudioSilvaSegundo,
+          speakerName: "Luciano Claudio Alves da Silva Segundo",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Os participantes aprenderão a utilizar as estruturas de dados da biblioteca Collections em Java para resolver problemas de manipulação de dados de forma eficiente e elegante. Através de exemplos práticos e exercícios, os participantes irão explorar diferentes tipos de coleções, como Listas, Conjuntos e Mapas, e aprenderão a aplicar operações comuns, como adição, remoção, busca e ordenação de elementos.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Os participantes aprenderão a utilizar
@@ -261,19 +261,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Utilizando Collections em Java para Resolução de Problemas de Manipulação de Dados",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: erosFranklinSoaresFelix,
-          nome_ministrante: "Eros Franklin Soares Felix",
+          speakerImage: erosFranklinSoaresFelix,
+          speakerName: "Eros Franklin Soares Felix",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Os participantes serão introduzidos aos princípios e práticas fundamentais do desenvolvimento front-end para criação de experiências web atrativas e funcionais. Através de uma abordagem prática e orientada a projetos, os participantes irão explorar conceitos de HTML, CSS e JavaScript.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Os participantes serão introduzidos aos
@@ -295,19 +295,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Front-end: Criando Experiências Web Atraentes e Funcionais.",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: thiagoAlvesLaurentino,
-          nome_ministrante: "Thiago Alves Laurentino",
+          speakerImage: thiagoAlvesLaurentino,
+          speakerName: "Thiago Alves Laurentino",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Os participantes aprenderão a desenvolver aplicativos que podem ser executados em diversos sistemas operacionais, incluindo Windows, Linux e macOS, utilizando as ferramentas e recursos fornecidos pelo .NET Core.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Os participantes aprenderão a
@@ -327,29 +327,29 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Desenvolvimento Multiplataforma com C# utilizando . NET Core.",
     },
   ],
   MinicursoManha: [
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Eduardo Paulino Dantas",
+          speakerImage: avatarNotFound,
+          // speakerName: "Eduardo Paulino Dantas",
         },
         // {
-        //   imagem_ministrante: halanCaioNascimento,
-        //   nome_ministrante: "Halan Caio Pereira do Nascimento",
+        //   speakerImage: halanCaioNascimento,
+        //   speakerName: "Halan Caio Pereira do Nascimento",
         // },
         // {
-        //   imagem_ministrante: caioHenriqueSousa,
-        //   nome_ministrante: "Caio Henrique Lopes Sousa",
+        //   speakerImage: caioHenriqueSousa,
+        //   speakerName: "Caio Henrique Lopes Sousa",
         // },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>O minicurso tem como público
@@ -382,21 +382,21 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " English for Tech Interviews: Como se Sair Bem em Entrevistas em Inglês",
+      confirmedActivityTitle: " English for Tech Interviews: Como se Sair Bem em Entrevistas em Inglês",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Rebeca Barbosa Lourenço",
+          speakerImage: avatarNotFound,
+          // speakerName: "Rebeca Barbosa Lourenço",
         },
         // {
-        //   imagem_ministrante: gabrielLiraNobrega,
-        //   nome_ministrante: "Gabriel Lira da Nóbrega",
+        //   speakerImage: gabrielLiraNobrega,
+        //   speakerName: "Gabriel Lira da Nóbrega",
         // },
       ],
-      // texto_resumo: "Introduzir a linguagem C# na Universidade.",
-      // descricao_atividade_confirmada: (
+      // summaryText: "Introduzir a linguagem C# na Universidade.",
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>Alunos de qualquer período.
@@ -426,18 +426,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Produtividade Sem Burnout: Equilibrando Entregas e Bem-Estar",
+      confirmedActivityTitle: " Produtividade Sem Burnout: Equilibrando Entregas e Bem-Estar",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
+          speakerImage: avatarNotFound,
+          // speakerName: "Klaudio Henrique Mascarenhas Medeiros",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso projetado para introduzir os
@@ -459,18 +459,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Currículo e LinkedIn para Carreira em Tecnologia: Como se Destacar no Brasil e no Exterior",
+      confirmedActivityTitle: " Currículo e LinkedIn para Carreira em Tecnologia: Como se Destacar no Brasil e no Exterior",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Victor Meneses Pinho",
+          speakerImage: avatarNotFound,
+          // speakerName: "Victor Meneses Pinho",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>Pessoas de computação que
@@ -496,19 +496,19 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         " Fundamentos de Inteligência Artificial e Machine Learning",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
+          speakerImage: avatarNotFound,
+          // speakerName: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso projetado para fornecer aos
@@ -531,19 +531,19 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         " Desenvolvimento de Aplicativos Móveis com Flutter ",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Giordanni Alves Formiga",
+          speakerImage: avatarNotFound,
+          // speakerName: "Giordanni Alves Formiga",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso focado em fornecer aos
@@ -569,18 +569,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Aplicações Descentralizadas com Blockchain na AWS: Da Teoria ao Deploy",
+      confirmedActivityTitle: " Aplicações Descentralizadas com Blockchain na AWS: Da Teoria ao Deploy",
     },
     // {
-    //   ministrantes: [
+    //   speakers: [
     //     {
-    //       imagem_ministrante: yuriSantosMonteiro,
-    //       nome_ministrante: "Yuri dos Santos Monteiro",
+    //       speakerImage: yuriSantosMonteiro,
+    //       speakerName: "Yuri dos Santos Monteiro",
     //     },
     //   ],
-    //   texto_resumo:
+    //   summaryText:
     //     "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
-    //   descricao_atividade_confirmada: (
+    //   confirmedActivityDescription: (
     //     <>
     //       <p>
     //         <strong>Idicação de Público: </strong>Pessoas que queiram aprender
@@ -613,19 +613,19 @@ export const ConfirmedActivitiesData = {
     //       </p>
     //     </>
     //   ),
-    //   titulo_atividade_confirmada:
+    //   confirmedActivityTitle:
     //     "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
     // },
     // {
-    //   ministrantes: [
+    //   speakers: [
     //     {
-    //       imagem_ministrante: giovannaTrigueiroAlmeida,
-    //       nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
+    //       speakerImage: giovannaTrigueiroAlmeida,
+    //       speakerName: "Giovanna Trigueiro de Almeida Araújo",
     //     },
     //   ],
-    //   texto_resumo:
+    //   summaryText:
     //     "Explore os fundamentos e a prática da implementação de contratos inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde conceitos básicos até exemplos práticos de implementação.",
-    //   descricao_atividade_confirmada: (
+    //   confirmedActivityDescription: (
     //     <>
     //       <p>
     //         <strong>Descrição: </strong>Explore os fundamentos e a prática da
@@ -663,29 +663,29 @@ export const ConfirmedActivitiesData = {
     //       </p>
     //     </>
     //   ),
-    //   titulo_atividade_confirmada:
+    //   confirmedActivityTitle:
     //     "Desenvolvimento de Contratos Inteligentes com Solidity",
     // },
   ],
   MinicursoNoite: [
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Eduardo Paulino Dantas",
+          speakerImage: avatarNotFound,
+          // speakerName: "Eduardo Paulino Dantas",
         },
         // {
-        //   imagem_ministrante: halanCaioNascimento,
-        //   nome_ministrante: "Halan Caio Pereira do Nascimento",
+        //   speakerImage: halanCaioNascimento,
+        //   speakerName: "Halan Caio Pereira do Nascimento",
         // },
         // {
-        //   imagem_ministrante: caioHenriqueSousa,
-        //   nome_ministrante: "Caio Henrique Lopes Sousa",
+        //   speakerImage: caioHenriqueSousa,
+        //   speakerName: "Caio Henrique Lopes Sousa",
         // },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "O minicurso tem como objetivo introduzir os participantes às ferramentas Git e GitHub.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>O minicurso tem como público
@@ -718,21 +718,21 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Inteligência Emocional e Gestão de Conflitos na Carreira Tech",
+      confirmedActivityTitle: " Inteligência Emocional e Gestão de Conflitos na Carreira Tech",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Rebeca Barbosa Lourenço",
+          speakerImage: avatarNotFound,
+          // speakerName: "Rebeca Barbosa Lourenço",
         },
         // {
-        //   imagem_ministrante: gabrielLiraNobrega,
-        //   nome_ministrante: "Gabriel Lira da Nóbrega",
+        //   speakerImage: gabrielLiraNobrega,
+        //   speakerName: "Gabriel Lira da Nóbrega",
         // },
       ],
-      // texto_resumo: "Introduzir a linguagem C# na Universidade.",
-      // descricao_atividade_confirmada: (
+      // summaryText: "Introduzir a linguagem C# na Universidade.",
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>Alunos de qualquer período.
@@ -762,18 +762,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Pitch e Storytelling: Como Apresentar Projetos de Forma Impactante",
+      confirmedActivityTitle: " Pitch e Storytelling: Como Apresentar Projetos de Forma Impactante",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Klaudio Henrique Mascarenhas Medeiros",
+          speakerImage: avatarNotFound,
+          // speakerName: "Klaudio Henrique Mascarenhas Medeiros",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso projetado para introduzir os participantes ao desenvolvimento de jogos 2D usando a plataforma Construct 2. Este curso é ideal para entusiastas de jogos que desejam aprender a criar seus próprios jogos sem a necessidade de codificação complexa.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso projetado para introduzir os
@@ -795,18 +795,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Comunicação Eficaz para Profissionais de Tecnologia",
+      confirmedActivityTitle: " Comunicação Eficaz para Profissionais de Tecnologia",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Victor Meneses Pinho",
+          speakerImage: avatarNotFound,
+          // speakerName: "Victor Meneses Pinho",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Ensinar criar uma aplicação no framework SpringBoot que utiliza Inteligencia Artificial.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Idicação de Público: </strong>Pessoas de computação que
@@ -832,19 +832,19 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         " Cibersegurança na Prática: Testes de Vulnerabilidade e Boas Práticas",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Daniel Marques Vasconcelos Guimaraes",
+          speakerImage: avatarNotFound,
+          // speakerName: "Daniel Marques Vasconcelos Guimaraes",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso projetado para fornecer aos participantes uma introdução prática e acessível à visualização de dados usando a biblioteca Vega-lite. Este curso é ideal para iniciantes e profissionais que desejam aprender a criar visualizações de dados informativas e envolventes de forma eficaz.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso projetado para fornecer aos
@@ -867,19 +867,19 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         " Desenvolvimento Web Avançado: Frameworks Modernos",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: avatarNotFound,
-          // nome_ministrante: "Giordanni Alves Formiga",
+          speakerImage: avatarNotFound,
+          // speakerName: "Giordanni Alves Formiga",
         },
       ],
-      // texto_resumo:
+      // summaryText:
       //   "Minicurso focado em fornecer aos participantes uma compreensão abrangente e prática do tratamento de exceções em aplicações Java. Este curso é projetado para desenvolvedores Java de todos os níveis de habilidade que desejam aprimorar suas habilidades no tratamento de erros e exceções em seus aplicativos.",
-      // descricao_atividade_confirmada: (
+      // confirmedActivityDescription: (
       //   <>
       //     <p>
       //       <strong>Descrição:</strong> Minicurso focado em fornecer aos
@@ -905,18 +905,18 @@ export const ConfirmedActivitiesData = {
       //     </p>
       //   </>
       // ),
-      titulo_atividade_confirmada: " Introdução à Ciência de Dados com Python e Pandas",
+      confirmedActivityTitle: " Introdução à Ciência de Dados com Python e Pandas",
     },
     // {
-    //   ministrantes: [
+    //   speakers: [
     //     {
-    //       imagem_ministrante: yuriSantosMonteiro,
-    //       nome_ministrante: "Yuri dos Santos Monteiro",
+    //       speakerImage: yuriSantosMonteiro,
+    //       speakerName: "Yuri dos Santos Monteiro",
     //     },
     //   ],
-    //   texto_resumo:
+    //   summaryText:
     //     "Proporcionar aos alunos uma compreensão fundamental e prática dos conceitos básicos de desenvolvimento web, abrangendo HTML, CSS e JavaScript, preparando-os para construir suas próprias aplicações web simples.",
-    //   descricao_atividade_confirmada: (
+    //   confirmedActivityDescription: (
     //     <>
     //       <p>
     //         <strong>Idicação de Público: </strong>Pessoas que queiram aprender
@@ -949,19 +949,19 @@ export const ConfirmedActivitiesData = {
     //       </p>
     //     </>
     //   ),
-    //   titulo_atividade_confirmada:
+    //   confirmedActivityTitle:
     //     "Introdução à Programação Web: Guia Básico em HTML, CSS e JavaScript",
     // },
     // {
-    //   ministrantes: [
+    //   speakers: [
     //     {
-    //       imagem_ministrante: giovannaTrigueiroAlmeida,
-    //       nome_ministrante: "Giovanna Trigueiro de Almeida Araújo",
+    //       speakerImage: giovannaTrigueiroAlmeida,
+    //       speakerName: "Giovanna Trigueiro de Almeida Araújo",
     //     },
     //   ],
-    //   texto_resumo:
+    //   summaryText:
     //     "Explore os fundamentos e a prática da implementação de contratos inteligentes utilizando a linguagem Solidity. Este minicurso oferece uma introdução abrangente ao desenvolvimento de contratos inteligentes, abordando desde conceitos básicos até exemplos práticos de implementação.",
-    //   descricao_atividade_confirmada: (
+    //   confirmedActivityDescription: (
     //     <>
     //       <p>
     //         <strong>Descrição: </strong>Explore os fundamentos e a prática da
@@ -999,21 +999,21 @@ export const ConfirmedActivitiesData = {
     //       </p>
     //     </>
     //   ),
-    //   titulo_atividade_confirmada:
+    //   confirmedActivityTitle:
     //     "Desenvolvimento de Contratos Inteligentes com Solidity",
     // },
   ],
   Workshop: [
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: dayzaMeiryBarretoSilva,
-          nome_ministrante: "Dayza Meiry Barreto Silva",
+          speakerImage: dayzaMeiryBarretoSilva,
+          speakerName: "Dayza Meiry Barreto Silva",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Visa oferecer uma experiência de aprendizado respaldado na inclusão e acessibilidade para os  interessados, agregando conhecimentos. Ele tem como objetivo introduzir os participantes aos conceitos básicos da Língua Brasileira de Sinais (Libras) e sinais da área de Computação.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Visa oferecer uma experiência de
@@ -1034,19 +1034,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Code em Libras: Aprendendo Computação com Sinais",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: rodrigoAlvesCosta,
-          nome_ministrante: "Rodrigo Alves Costa",
+          speakerImage: rodrigoAlvesCosta,
+          speakerName: "Rodrigo Alves Costa",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Esta é a oportunidade perfeita para aprender como o Docker pode revolucionar a maneira como você lida com aplicativos e ambientes de software. ",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Esta é a oportunidade perfeita para
@@ -1063,19 +1063,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Docker 101: nunca mais instale nenhum app ?",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: esdrasSamuelFerreira,
-          nome_ministrante: "Esdras Samuel de Araújo Ferreira",
+          speakerImage: esdrasSamuelFerreira,
+          speakerName: "Esdras Samuel de Araújo Ferreira",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Workshop projetado para oferecer aos participantes uma introdução detalhada e prática ao testRigor, uma ferramenta de automação de testes de software. Durante o workshop, os participantes serão guiados por meio dos recursos e funcionalidades do testRigor, aprendendo como criar e executar testes automatizados de forma eficiente.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Workshop projetado para oferecer aos
@@ -1097,18 +1097,18 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada: "Explorando o testRigor: Um Guia Prático",
+      confirmedActivityTitle: "Explorando o testRigor: Um Guia Prático",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: joaoLucasSousaMartins,
-          nome_ministrante: "João Lucas de Sousa Martins",
+          speakerImage: joaoLucasSousaMartins,
+          speakerName: "João Lucas de Sousa Martins",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Workshop focado em fornecer aos participantes uma compreensão abrangente e prática do framework Django para desenvolvimento web em Python.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> Workshop focado em fornecer aos
@@ -1129,23 +1129,23 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Django em Foco: Tecnologias, Arquitetura e Projeto Prático",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: kallebDiasMarques,
-          nome_ministrante: "Kalleb Dias Rodrigues Marques",
+          speakerImage: kallebDiasMarques,
+          speakerName: "Kalleb Dias Rodrigues Marques",
         },
         {
-          imagem_ministrante: alysonJonasMorato,
-          nome_ministrante: "Alyson Jonas Alves Morato",
+          speakerImage: alysonJonasMorato,
+          speakerName: "Alyson Jonas Alves Morato",
         },
       ],
-      texto_resumo:
+      summaryText:
         "O Workshop oferece uma introdução envolvente aos fundamentos da animação 2D utilizando uma das ferramentas mais populares do mercado, o Paint Tool SAI. Durante este workshop, os participantes serão guiados em uma jornada emocionante através dos princípios essenciais da animação.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição:</strong> O Workshop oferece uma introdução
@@ -1167,27 +1167,27 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Explorando os Princípios da Animação 2D com Paint Tool SAI",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: luannyKellyLeitao,
-          nome_ministrante: "Luanny Kelly de Almeida Leitao",
+          speakerImage: luannyKellyLeitao,
+          speakerName: "Luanny Kelly de Almeida Leitao",
         },
         {
-          imagem_ministrante: italloMendesSilva,
-          nome_ministrante: "Itallo Mendes da Silva",
+          speakerImage: italloMendesSilva,
+          speakerName: "Itallo Mendes da Silva",
         },
         {
-          imagem_ministrante: pedroFerreiraLimaNeto,
-          nome_ministrante: "Pedro Ferreira de Lima Neto",
+          speakerImage: pedroFerreiraLimaNeto,
+          speakerName: "Pedro Ferreira de Lima Neto",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Workshop projetado para proporcionar aos participantes as habilidades necessárias para se destacar em competições de robótica utilizando a linguagem de programação Java. Durante o workshop, os participantes aprenderão os fundamentos da programação em Java e como aplicá-los para programar robôs destinados a competições de alto nível, como as competições da FTC (First Tech Challenge).",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição: </strong>Workshop projetado para proporcionar aos
@@ -1215,19 +1215,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Desenvolvimento de Competências para Competições de Robótica com Java",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: jucelioSoaresSantos,
-          nome_ministrante: "Jucelio Soares dos Santos ",
+          speakerImage: jucelioSoaresSantos,
+          speakerName: "Jucelio Soares dos Santos ",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Descubra como transformar dados em decisões estratégicas com o Power BI! Nesse workshop, você será guiado em uma jornada prática, desde a importação de dados até a criação de dashboards interativos. Aprenda a dominar as ferramentas essenciais do Power BI e aplique técnicas avançadas de análise para impulsionar a inteligência empresarial e otimizar a tomada de decisões.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição: </strong>Descubra como transformar dados em
@@ -1250,19 +1250,19 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Revolucione sua Empresa com o Power BI: Transformando Dados em Decisões Estratégicas",
     },
     {
-      ministrantes: [
+      speakers: [
         {
-          imagem_ministrante: JoseAldoSilvadaCosta,
-          nome_ministrante: "José Aldo Silva da Costa",
+          speakerImage: JoseAldoSilvadaCosta,
+          speakerName: "José Aldo Silva da Costa",
         },
       ],
-      texto_resumo:
+      summaryText:
         "Desde o esboço inicial até a prototipagem avançada no Figma, exploraremos métodos de concepção, técnicas de design e ferramentas modernas para criar experiências de usuário excepcionais. Neste Workshop você terá a oportunidade de criar protótipos de baixo e alto nível - desde rabiscos simples até designs detalhados.",
-      descricao_atividade_confirmada: (
+      confirmedActivityDescription: (
         <>
           <p>
             <strong>Descrição: </strong>Desde o esboço inicial até a
@@ -1284,7 +1284,7 @@ export const ConfirmedActivitiesData = {
           </p>
         </>
       ),
-      titulo_atividade_confirmada:
+      confirmedActivityTitle:
         "Do Esboço ao Figma: Criando Protótipos de Interface de Baixo e Alto Nível ",
     },
   ],

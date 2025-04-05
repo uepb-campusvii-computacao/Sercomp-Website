@@ -169,8 +169,8 @@ img {
   text-align: center;
 }
 
-.titulo-base,
-.titulo-principal {
+.baseTitle,
+.mainTitle {
   margin-bottom: 44px;
   position: relative;
   margin-top: 32px;
@@ -180,8 +180,8 @@ img {
 }
 
 
-.titulo-base::after,
-.titulo-principal::after {
+.baseTitle::after,
+.mainTitle::after {
   position: absolute;
   content: '';
   width: 30%;
@@ -192,7 +192,7 @@ img {
   transform: translateX(-50%);
 }
 
-.titulo-principal {
+.mainTitle {
   margin-top: 88px;
 }
 
@@ -217,8 +217,8 @@ img {
     width: var(--container-width-md);
   }  
 
-  .titulo-base,
-  .titulo-principal {
+  .baseTitle,
+  .mainTitle {
     font-size: 28px;
   }
 

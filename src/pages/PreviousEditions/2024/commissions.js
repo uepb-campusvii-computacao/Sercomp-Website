@@ -7,7 +7,7 @@ import pabloImg from "../../../assets/images/professores/pablo.png";
 import ricardoImg from "../../../assets/images/professores/Ricardo.png";
 import rodrigoImg from "../../../assets/images/professores/rodrigo.png";
 
-const comissaoArtigosData = [
+const ArticlesCommitteeData = [
   {
     name: "Dr. Demetrio Gomes Mestre",
     image: demetrioImg,
@@ -42,7 +42,7 @@ const comissaoArtigosData = [
   },
 ];
 
-const comissaoHackdayData = [
+const committeeHackdayData = [
   {
     name: "Dr. Demetrio Gomes Mestre",
     image: demetrioImg,
@@ -57,4 +57,4 @@ const comissaoHackdayData = [
   },
 ];
 
-export { comissaoArtigosData, comissaoHackdayData };
+export { ArticlesCommitteeData, committeeHackdayData };
