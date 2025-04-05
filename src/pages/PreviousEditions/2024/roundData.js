@@ -4,7 +4,7 @@ import rosangela from "../../../assets/images/professores/rosangela.png";
 import janderson from "../../../assets/images/professores/janderson.png";
 import jannayna from "../../../assets/images/professores/jannayna.png";
 
-export const mesaData = [
+export const roundData = [
   { imagem: rosangela, nome: "Rosângela Araújo de Medeiros" },
   { imagem: janderson, nome: "Janderson Jason Barbosa Aguiar" },
   { imagem: jannayna, nome: "Jannayna Domingues Barros Filgueira" },

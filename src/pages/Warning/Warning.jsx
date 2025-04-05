@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types'
-import styles from './Aviso.module.css'
+import styles from './Warning.module.css'
 
-const Aviso = ({ title, body, append }) => {
+const Warning = ({ title, body, append }) => {
   return (
     <div className={styles.mainContainer}>
-        <h1 className="titulo-principal">
+        <h1 className="mainTitle">
           <strong>{title}</strong>
         </h1>
         <div className={styles.body}>
@@ -15,10 +15,10 @@ const Aviso = ({ title, body, append }) => {
   )
 }
 
-Aviso.propTypes = {
+Warning.propTypes = {
     title: PropTypes.string.isRequired,
     append: PropTypes.node,
     body: PropTypes.node.isRequired
 }
 
-export default Aviso
+export default Warning

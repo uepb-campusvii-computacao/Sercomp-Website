@@ -8,7 +8,7 @@ import { api } from "../../lib/axios";
 import { useNavigate } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
 import Partners from "../../components/Partners/Partners";
-import styles from "./Inscricoes.module.css";
+import styles from "./Registrations.module.css";
 
 const Inscricoes = () => {
   const navigate = useNavigate();
@@ -21,7 +21,7 @@ const Inscricoes = () => {
     mode: "all",
   });
 
-  const [atividades, setAtividades] = useState({
+  const [activities, setAtivities] = useState({
     minicursos: [],
     oficinas: [],
     workshops: [],
@@ -35,19 +35,19 @@ const Inscricoes = () => {
   useEffect(() => {
     async function fecthApiData() {
       try {
-        const atividadesPromise = api.get(
+        const ativitiesPromise = api.get(
           `/events/${import.meta.env.VITE_EVENTO_UUID}/atividades`
         );
         const lotesPromise = api.get(
           `/events/${import.meta.env.VITE_EVENTO_UUID}/lotes`
         );
 
-        const [atividadesResponse, lotesResponse] = await Promise.all([
-          atividadesPromise,
+        const [ativitiesResponse, lotesResponse] = await Promise.all([
+          ativitiesPromise,
           lotesPromise,
         ]);
 
-        setAtividades(atividadesResponse.data);
+        setActivitie(ativitiesResponse.data);
         setLotes(lotesResponse.data);
         setIsLoading(false);
       } catch (err) {
@@ -102,7 +102,7 @@ const Inscricoes = () => {
     <>
       <section className={styles.container}>
         <ToastContainer autoClose={2500} />
-        <h1 className="titulo-principal">
+        <h1 className="mainTitle">
           <strong>Inscrição</strong>
         </h1>
 
@@ -198,7 +198,7 @@ const Inscricoes = () => {
                 <p>Minicursos</p>
                 <select {...register("minicurso")}>
                   <option value="">Selecione...</option>
-                  {atividades.minicursos.map((minicurso) => (
+                  {activities.minicursos.map((minicurso) => (
                     <option
                       key={minicurso.uuid_atividade}
                       value={minicurso.uuid_atividade}
@@ -214,7 +214,7 @@ const Inscricoes = () => {
                 <p>Workshops</p>
                 <select {...register("workshop")}>
                   <option value="">Selecione...</option>
-                  {atividades.workshops.map((workshop) => (
+                  {activities.workshops.map((workshop) => (
                     <option
                       key={workshop.uuid_atividade}
                       value={workshop.uuid_atividade}
@@ -230,7 +230,7 @@ const Inscricoes = () => {
                 <p>Oficinas</p>
                 <select {...register("oficina")}>
                   <option value="">Selecione...</option>
-                  {atividades.oficinas.map((oficina) => (
+                  {activities.oficinas.map((oficina) => (
                     <option
                       key={oficina.uuid_atividade}
                       value={oficina.uuid_atividade}

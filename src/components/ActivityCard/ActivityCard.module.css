@@ -8,7 +8,7 @@
   user-select: none;
 }
 
-.imagemMinistrante {
+.speakerImage {
   height: 350px;
 }
 
@@ -16,14 +16,14 @@
   width: 100%;
 }
 
-.ministrantes {
+.speakers {
   display: flex;
   flex-direction: row;
   margin: 1.1rem;
   text-align: center;
 }
 
-.ministrante {
+.speaker {
   position: relative;
   display: flex;
   align-items: center;
@@ -44,12 +44,12 @@
   text-align: left;
 }
 
-.bodyDescription p strong{
+.bodyDescription p strong {
   font-weight: bold;
   color: yellow;
 }
 
-.ministrante span {
+.speaker span {
   font-weight: bold;
   text-align: center;
   font-size: medium;
@@ -125,6 +125,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
+  line-clamp: 2;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -137,6 +138,7 @@
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+  line-clamp: 1;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -175,7 +177,6 @@
   }
 }
 
-
 @media screen and (max-width: 450px) {
   .activityCardContainer {
     min-height: 580px;
@@ -185,17 +186,16 @@
     font-size: 1.2rem;
   }
 
-  .ministrante1 {
+  .speaker1 {
     transform: none;
     margin-left: -100px;
   }
-  
-  .ministrante2 {
+
+  .speaker2 {
     transform: none;
   }
 
   .swiperImages {
     width: 250px;
-  }  
-
+  }
 }

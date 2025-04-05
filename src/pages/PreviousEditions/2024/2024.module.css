@@ -5,7 +5,7 @@
   padding: 0 20px;
 }
 
-.tituloBase {
+.baseTitle {
   margin: 2rem 0;
   font-weight: 600;
   position: relative;
@@ -14,7 +14,7 @@
   color: #ffffff;
 }
 
-.tituloBase::after {
+.baseTitle::after {
   position: absolute;
   content: "";
   width: 300px;
@@ -158,7 +158,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .tituloBase {
+  .baseTitle {
     font-size: 2rem;
   }
   
@@ -177,12 +177,12 @@
     padding: 0 15px;
   }
   
-  .tituloBase {
+  .baseTitle {
     font-size: 1.8rem;
     margin: 1.5rem 0;
   }
   
-  .tituloBase::after {
+  .baseTitle::after {
     width: 80px;
     bottom: -8px;
   }

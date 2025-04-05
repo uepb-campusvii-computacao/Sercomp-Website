@@ -5,9 +5,9 @@ import { toast, ToastContainer } from "react-toastify";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { api } from "../../lib/axios";
-import styles from "./Pagamento.module.css";
+import styles from "./Payment.module.css";
 
-const Pagamento = () => {
+const Payment = () => {
   const location = useLocation();
   const { user_id, lote_id } = useParams();
   const [userInformations, setUserInfomation] = useState(null);
@@ -23,9 +23,9 @@ const Pagamento = () => {
         const { data : userData } = await api.get(`/lote/${lote_id}/inscricoes/user/${user_id}`);
         setUserInfomation(userData);
     
-        const { data : pagamentoData } = await api.get(`/pagamento/user/${user_id}/lote/${lote_id}`);
-        setPixCopy(pagamentoData.qr_code);
-        setQrBase64(pagamentoData.qr_code_base64);
+        const { data : paymentData } = await api.get(`/pagamento/user/${user_id}/lote/${lote_id}`);
+        setPixCopy(paymentData.qr_code);
+        setQrBase64(paymentData.qr_code_base64);
 
         setLoading(false);
       }catch(error){
@@ -54,14 +54,14 @@ const Pagamento = () => {
   return (
     <section className={styles.container}>
       <ToastContainer autoClose={1500} />
-      <h1 className="titulo-principal">
+      <h1 className="mainTitle">
         <strong>Pagamentos</strong>
       </h1>
 
       <section className={styles.sectionContainer}>
         <h2>Recibo de Inscrição no VI SERCOMP 2024</h2>
         <span>
-          <span className={styles.destaque}>Guarde esse link</span>, ele é útil
+          <span className={styles.detach}>Guarde esse link</span>, ele é útil
           para informar o status de pagamento da sua inscrição!
         </span>
 
@@ -69,25 +69,25 @@ const Pagamento = () => {
           <div className={styles.infoGroup}>
           <>
             <span>
-              <span className={styles.destaque}>Participante: </span>{" "}
+              <span className={styles.detach}>Participante: </span>{" "}
               {userInformations.user_name}
             </span>
-            <div className={styles.pagamento}>
-              <span className={styles.destaque}>Status pagamento: </span>{" "}
-              <div className={userInformations.inscricao.status === 'REALIZADO'? styles.pago : styles.pendente }>
+            <div className={styles.payment}>
+              <span className={styles.detach}>Status pagamento: </span>{" "}
+              <div className={userInformations.inscricao.status === 'REALIZADO'? styles.paid : styles.pending }>
                 {userInformations.inscricao.status}
               </div>
             </div>
             <span>
-              <span className={styles.destaque}>Lote selecionado: </span>{" "}
+              <span className={styles.detach}>Lote selecionado: </span>{" "}
               {userInformations.inscricao.nome_lote}
             </span>
             <span>
-              <span className={styles.destaque}>Preço da inscrição: </span>{" "}
+              <span className={styles.detach}>Preço da inscrição: </span>{" "}
               R$ {userInformations.inscricao.preco.toFixed(2)}
             </span>
             <span>
-              <span className={styles.destaque}>
+              <span className={styles.detach}>
                 Atividades selecionadas: <br></br>
               </span>
               {userInformations.atividades?.length > 0 ? (
@@ -110,10 +110,10 @@ const Pagamento = () => {
             </button>
           </div>
         </div>
-        <div className={styles.aviso}>
+        <div className={styles.warning}>
           <span>
-            <span className={styles.destaque}>*</span>Para validar esse recibo
-            acesse:<span className={styles.destaque}>*</span>
+            <span className={styles.detach}>*</span>Para validar esse recibo
+            acesse:<span className={styles.detach}>*</span>
           </span>
           <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
             {windowWidth > 600 ? fullUrl : "Aqui"}
@@ -124,4 +124,4 @@ const Pagamento = () => {
   );
 };
 
-export default Pagamento;
+export default Payment;

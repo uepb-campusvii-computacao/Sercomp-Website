@@ -20,7 +20,7 @@
   font-size: larger;
 }
 
-.destaque{
+.detach {
   font-weight: bold;
   color: #f2b035;
 }
@@ -31,7 +31,7 @@
   color: #f2b035;
 }
 
-.aviso {
+.warning {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -127,14 +127,14 @@
   color: #000;
 }
 
-.pagamento {
+.payment {
   display: flex;
   gap: 5px;
   flex-direction: row;
   align-items: center;
 }
 
-.pago {
+.paid {
   background-color: green;
   border-radius: 10px;
   padding: 5px;
@@ -142,7 +142,7 @@
   font-size: small;
 }
 
-.pendente {
+.pending {
   background-color: red;
   color: yellow;
   border-radius: 10px;

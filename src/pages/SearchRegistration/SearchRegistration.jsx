@@ -1,16 +1,16 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
-import { FaSpinner } from "react-icons/fa"; // Importe o ícone de Spinner
+import { FaSpinner } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import { api } from "../../lib/axios";
 
 import { useNavigate, useParams } from "react-router-dom";
 import "react-toastify/dist/ReactToastify.css";
-import styles from "./BuscaInscricao.module.css";
+import styles from "./SearchRegistration.module.css";
 
-const BuscaInscricao = () => {
-  const { tipo_busca } = useParams();
+const SearchRegistration = () => {
+  const { searchType } = useParams();
 
   const navigate = useNavigate();
   const {
@@ -32,7 +32,7 @@ const BuscaInscricao = () => {
         data
       );
 
-      if (!tipo_busca) {
+      if (!searchType) {
         navigate(
           `/pagamento/user/${response.data.uuid_user}/lote/${response.data.uuid_lote}`
         );
@@ -49,7 +49,7 @@ const BuscaInscricao = () => {
   return (
     <section className={styles.container}>
       <ToastContainer autoClose={1500} />
-      <h1 className="titulo-principal">
+      <h1 className="mainTitle">
         <strong>Buscar Inscrição</strong>
       </h1>
 
@@ -91,4 +91,4 @@ const BuscaInscricao = () => {
   );
 };
 
-export default BuscaInscricao;
+export default SearchRegistration;

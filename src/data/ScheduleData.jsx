@@ -10,7 +10,7 @@ import mairaRodriguesVillamagna from "../assets/images/participacoes/2024/Maira-
 import rosagelaDeAraujoMedeiros from "../assets/images/participacoes/2024/Rosângela de Araújo Medeiros.webp";
 import jannaynaPhoto from "../assets/images/professores/jannayna.png";
 
-const programacao = [
+const schedule = [
   {
     date: (
       <>
@@ -286,4 +286,4 @@ const programacao = [
   // },
 ];
 
-export default programacao;
+export default schedule;

@@ -7,13 +7,13 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import styles from './Comissao.module.css';
+import styles from './Committee.module.css';
 
-const Comissao = ({ comissaoData, title, description }) => {
+const Committee = ({ committeeData, title, description }) => {
     return (
-        <section className={`container ${styles.orgsContainer} mySwiper`}>
-            <h2 className="titulo-base">{title}</h2>
-            <p className={styles.paragrafo}>{description}</p>
+        <section className={`container ${styles.committeeContainer} mySwiper`}>
+            <h2 className="baseTitle">{title}</h2>
+            <p className={styles.paragraph}>{description}</p>
             <div className="swiper-wrapper">
                 <Swiper
                     modules={[Autoplay]}
@@ -33,14 +33,14 @@ const Comissao = ({ comissaoData, title, description }) => {
                         }
                     }}
                 >
-                    {comissaoData.map((professor, index) => (
+                    {committeeData.map((member, index) => (
                         <SwiperSlide key={index}>
-                            <article className={`swiper-slide ${styles.org}`}>
+                            <article className={`swiper-slide ${styles.committee}`}>
                                 <div className={styles.avatar}>
-                                    <img src={professor.image} alt={professor.name} />
+                                    <img src={member.image} alt={member.name} />
                                 </div>
-                                <div className={styles.orgInfo}>
-                                    <h5>{professor.name}</h5>
+                                <div className={styles.memberInfo}>
+                                    <h5>{member.name}</h5>
                                 </div>
                             </article>
                         </SwiperSlide>
@@ -51,8 +51,8 @@ const Comissao = ({ comissaoData, title, description }) => {
     );
 };
 
-Comissao.propTypes = {
-    comissaoData: PropTypes.arrayOf(
+Committee.propTypes = {
+    committeeData: PropTypes.arrayOf(
         PropTypes.shape({
             name: PropTypes.string.isRequired,
             image: PropTypes.string.isRequired,
@@ -62,4 +62,4 @@ Comissao.propTypes = {
     description: PropTypes.string.isRequired
 };
 
-export default Comissao;
+export default Committee;

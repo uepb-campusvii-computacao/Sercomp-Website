@@ -38,8 +38,8 @@ export default function OrganizationPeople({title, members}) {
                                 <img src={member.image} alt={member.alt}/>
                             </div>
                             <div className={styles.orgInfo}>
-                                <h5>{member.nome}</h5>
-                                <small>{member.cargo}</small>
+                                <h5>{member.name}</h5>
+                                <small>{member.role}</small>
                             </div>
                         </article>
                     </SwiperSlide>
@@ -55,8 +55,8 @@ OrganizationPeople.propTypes = {
         PropTypes.shape({
             image: PropTypes.string.isRequired,
             alt: PropTypes.string.isRequired,
-            nome: PropTypes.string.isRequired,
-            cargo: PropTypes.string,
+            name: PropTypes.string.isRequired,
+            role: PropTypes.string,
         })
     )
 }

@@ -5,14 +5,14 @@ import { toast, ToastContainer } from "react-toastify";
 import LoadingScreen from "../../components/LoadingScreen/LoadingScreen";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import { api } from "../../lib/axios";
-import styles from "./Pagamento.module.css";
+import styles from "./Payment.module.css";
 import moment from "moment";
 
-const AllPagamentoProduto = () => {
+const AllProductPayments = () => {
   const location = useLocation();
   const { user_id } = useParams();
   const [loading, setLoading] = useState(true);
-  const [compras, setCompras] = useState([]);
+  const [purchases, setPurchases] = useState([]);
 
   const fullUrl = `${window.location.origin}${location.pathname}${location.search}`;
   const windowWidth = useWindowWidth();
@@ -22,24 +22,24 @@ const AllPagamentoProduto = () => {
       try {
         const response = await api.get(`marketplace/user/${user_id}`);
 
-        setCompras(
+        setPurchases(
           response.data.map((item) => {
-            let data_formatada = moment(item.data_criacao).format(
+            let formattedDate = moment(item.creationDate).format(
               "DD/MM/YYYY HH:mm:ss"
             );
 
             return {
-              user_name: item.usuario.nome,
-              status: item.status_pagamento,
-              data_criacao: data_formatada,
-              preco: item.valor_total,
-              produtos: item.vendas.map((venda) => ({
-                quantidade: venda.quantidade,
-                uuid_produto: venda.produto.uuid_produto,
-                preco: venda.produto.preco,
-                nome: venda.produto.nome,
+              userName: item.user.name,
+              paymentStatus: item.paymentStatus,
+              creationDate: formattedDate,
+              totalPrice: item.totalValue,
+              products: item.sales.map((sale) => ({
+                quantity: sale.quantity,
+                productId: sale.product.productId,
+                price: sale.product.price,
+                name: sale.product.name,
               })),
-              transaction_data: item.transaction_data,
+              transactionData: item.transactionData,
             };
           })
         );
@@ -55,7 +55,7 @@ const AllPagamentoProduto = () => {
   }, [user_id]);
 
   function handleCopyPix() {
-    navigator.clipboard.writeText(compras.transaction_data.qr_code);
+    navigator.clipboard.writeText(purchases.transactionData.qr_code);
     toast.success("Chave copiada!");
   }
 
@@ -71,59 +71,59 @@ const AllPagamentoProduto = () => {
   return (
     <section className={styles.container}>
       <ToastContainer autoClose={1500} />
-      <h1 className="titulo-principal">
+      <h1 className="mainTitle">
         <strong>Pagamentos</strong>
       </h1>
 
       <section className={styles.sectionContainer}>
         <h2>Recibo de Compra - Loja Online</h2>
         <span>
-          <span className={styles.destaque}>Guarde esse link</span>, ele é útil
+          <span className={styles.detach}>Guarde esse link</span>, ele é útil
           para informar o status de pagamento da sua compra!
         </span>
 
-        {compras.length != 0 && (
+        {purchases.length !== 0 && (
           <div>
-            {compras.map((userInformations, index) => (
+            {purchases.map((userInformations, index) => (
               <div
                 key={index}
                 className={`${styles.paymentGroupDivider} ${styles.paymentGroup}`}
               >
                 <div className={styles.infoGroup}>
                   <span>
-                    <span className={styles.destaque}>Participante: </span>{" "}
-                    {userInformations.user_name}
+                    <span className={styles.detach}>Participante: </span>{" "}
+                    {userInformations.userName}
                   </span>
-                  <div className={styles.pagamento}>
-                    <span className={styles.destaque}>Status pagamento: </span>{" "}
+                  <div className={styles.payment}>
+                    <span className={styles.detach}>Status pagamento: </span>{" "}
                     <div
                       className={
-                        userInformations.status === "REALIZADO"
-                          ? styles.pago
-                          : styles.pendente
+                        userInformations.paymentStatus === "REALIZADO"
+                          ? styles.paid
+                          : styles.pending
                       }
                     >
-                      {userInformations.status}
+                      {userInformations.paymentStatus}
                     </div>
                   </div>
                   <span>
-                    <span className={styles.destaque}>
+                    <span className={styles.detach}>
                       Preço total da compra:{" "}
                     </span>{" "}
-                    R$ {userInformations.preco.toFixed(2)}
+                    R$ {userInformations.totalPrice.toFixed(2)}
                   </span>
                   <span>
-                    <span className={styles.destaque}>Data do pedido: </span>
-                    {userInformations.data_criacao}
+                    <span className={styles.detach}>Data do pedido: </span>
+                    {userInformations.creationDate}
                   </span>
                   <span>
-                    <span className={styles.destaque}>
+                    <span className={styles.detach}>
                       Produtos comprados:{" "}
                     </span>{" "}
-                    {userInformations.produtos.map((produto) => (
-                      <div key={produto.uuid_produto}>
-                        {produto.nome} - {produto.quantidade} x R${" "}
-                        {produto.preco.toFixed(2)}{" "}
+                    {userInformations.products.map((product) => (
+                      <div key={product.productId}>
+                        {product.name} - {product.quantity} x R${" "}
+                        {product.price.toFixed(2)}{" "}
                       </div>
                     ))}
                   </span>
@@ -131,7 +131,7 @@ const AllPagamentoProduto = () => {
 
                 <div className={styles.QRContainer}>
                   <img
-                    src={userInformations.transaction_data.qr_code_base64}
+                    src={userInformations.transactionData.qr_code_base64}
                     className={styles.QRCode}
                     alt="QR Code"
                   />
@@ -141,10 +141,10 @@ const AllPagamentoProduto = () => {
                 </div>
               </div>
             ))}
-            <div className={styles.aviso} style={{marginTop: "16px"}}>
+            <div className={styles.warning} style={{ marginTop: "16px" }}>
               <span>
-                <span className={styles.destaque}>*</span>Para validar esse
-                recibo acesse:<span className={styles.destaque}>*</span>
+                <span className={styles.detach}>*</span>Para validar esse
+                recibo acesse:<span className={styles.detach}>*</span>
               </span>
               <a className={`${styles.link} ${styles.fullUrl}`} href={fullUrl}>
                 {windowWidth > 600 ? fullUrl : "Aqui"}
@@ -157,4 +157,4 @@ const AllPagamentoProduto = () => {
   );
 };
 
-export default AllPagamentoProduto;
+export default AllProductPayments;

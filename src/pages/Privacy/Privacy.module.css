@@ -7,8 +7,8 @@
     line-height: 1.2;
 }
 
-.tituloBase,
-.tituloPrincipal {
+.baseTitle,
+.mainTitle {
     margin-bottom: 0.1rem;
     font-weight: 500;
     margin-bottom: 80px;
@@ -18,8 +18,8 @@
 }
 
 
-.tituloBase::after,
-.tituloPrincipal::after {
+.baseTitle::after,
+.mainTitle::after {
     position: absolute;
     content: '';
     width: 30%;
@@ -30,21 +30,21 @@
     transform: translateX(-50%);
 }
 
-.tituloPrincipal {
+.mainTitle {
     font-size: 2rem;
     text-align: center;
 }
 
-.paragrafo {
+.paragraph {
     padding: 1rem;
     text-align: justify;
 }
 
-.politicaList {
+.policyList {
     margin-bottom: 0.5rem;
 }
 
-.politicaList li {
+.policyList li {
     list-style: disc;
     text-align: justify;
 }

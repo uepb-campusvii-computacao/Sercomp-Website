@@ -1,19 +1,19 @@
 import { Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { monitoresData } from "../../data/MonitoresData";
+import { classMonitorsData } from "../../data/ClassMonitorsData";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-import styles from './Comite.module.css';
+import styles from './Committee.module.css';
 
 
-function Comite() {
+function Committee() {
     return (
         <section className="container">
-            <h1 className="titulo-principal">Conheça o comitê do <strong>SERCOMP</strong></h1>
+            <h1 className="mainTitle">Conheça o comitê do <strong>SERCOMP</strong></h1>
             <section className={`container ${styles.orgsContainer} mySwiper`} >
                 <div className="swiper-wrapper">
                     <Swiper
@@ -33,15 +33,15 @@ function Comite() {
                             }
                         }}
                     >
-                        {monitoresData.map((monitor, index) => (
+                        {classMonitorsData.map((classMonitor, index) => (
                             <SwiperSlide key={index}>
                                 <article className={`swiper-slide ${styles.org}`}>
                                     <div className={styles.avatar}>
-                                        {/* <img src={monitor.image} alt={monitor.name} /> */}
+                                        {/* <img src={classMonitor.image} alt={classMonitor.name} /> */}
                                     </div>
-                                    <div className={styles.orgInfo}>
-                                        {/* <h5>{monitor.name}</h5>
-                                        <h6>{monitor.area}</h6> */}
+                                    <div className={styles.committeeInfo}>
+                                        {/* <h5>{classMonitor.name}</h5>
+                                        <h6>{classMonitor.area}</h6> */}
                                     </div>
                                 </article>
                             </SwiperSlide>
@@ -54,4 +54,4 @@ function Comite() {
 }
 
 
-export default Comite;
+export default Committee;

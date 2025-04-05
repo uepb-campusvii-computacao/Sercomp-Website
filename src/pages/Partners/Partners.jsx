@@ -4,7 +4,7 @@ import styles from './Partners.module.css';
 function Partners() {
     return (
         <section className="container">
-            <h1 className="titulo-principal">Conheça as instituições que apoiam o <strong>SERCOMP</strong></h1>
+            <h1 className="mainTitle">Conheça as instituições que apoiam o <strong>SERCOMP</strong></h1>
 
             <div className={`container ${styles.patrocinadores}`}>
                 <div className={styles.patrocinadoresContainer}>

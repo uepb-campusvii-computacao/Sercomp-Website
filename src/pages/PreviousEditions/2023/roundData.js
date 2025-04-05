@@ -4,10 +4,10 @@ import rosangela from "../../../assets/images/professores/rosangela.png";
 import janderson from "../../../assets/images/professores/janderson.png";
 import jannayna from "../../../assets/images/professores/jannayna.png";
 
-export const mesaData = [
-  { imagem: rosangela, nome: "Rosângela Araújo de Medeiros" },
-  { imagem: janderson, nome: "Janderson Jason Barbosa Aguiar" },
-  { imagem: jannayna, nome: "Jannayna Domingues Barros Filgueira" },
-  { imagem: filipe, nome: "Filipe Lucena Medeiros de Andrade" },
-  { imagem: luanderson, nome: "Luanderson Bruno Martins Silva" },
+export const roundData = [
+  { image: rosangela, name: "Rosângela Araújo de Medeiros" },
+  { image: janderson, name: "Janderson Jason Barbosa Aguiar" },
+  { image: jannayna, name: "Jannayna Domingues Barros Filgueira" },
+  { image: filipe, name: "Filipe Lucena Medeiros de Andrade" },
+  { image: luanderson, name: "Luanderson Bruno Martins Silva" },
 ];

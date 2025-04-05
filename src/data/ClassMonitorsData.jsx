@@ -37,7 +37,7 @@ import Thulio from "../assets/images/comite/monitores/Thulio Bezerra Alves.webp"
 import Yasmin from "../assets/images/comite/monitores/Yasmin Dantas de Araújo.webp";
 import Yuri from "../assets/images/comite/monitores/Yuri dos Santos Monteiro.webp";
 
-export const monitoresData = [
+export const classMonitorsData = [
    { name: "Alessandro Viana Figueiredo de Oliveira", area: "Credenciamento", image: Alessandro },
    { name: "Barbara Alves de Araujo Cabral", area: "Credenciamento", image: Barbara },
    { name: "Davi Argemiro Henrique Cardoso de Oliveira Filho", area: "Credenciamento", image: Davi },

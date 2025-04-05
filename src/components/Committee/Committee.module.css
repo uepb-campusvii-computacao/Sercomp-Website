@@ -1,4 +1,4 @@
-.paragrafo {
+.paragraph {
     padding: 1rem;
     text-align: justify;
 }
@@ -12,16 +12,16 @@
     border: 1rem solid var(--color-bg1);
 }
 
-.orgsContainer {
+.committeeContainer {
     overflow-x: hidden;
     position: relative;
 }
 
-.org {
+.committee {
     padding: 2rem;
 }
 
-.orgInfo {
+.memberInfo {
     text-align: center;
 }
 
