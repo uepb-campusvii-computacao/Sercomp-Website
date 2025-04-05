@@ -1,4 +1,4 @@
-import styles from './Error404.module.css'
+import styles from './error404.module.css'
 
 function Pagina404() {
   return (
