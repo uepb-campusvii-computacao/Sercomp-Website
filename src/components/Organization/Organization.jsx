@@ -12,7 +12,7 @@ import PropTypes from "prop-types";
 export default function Organization({title, members}) {
     return (
         <section className={`${styles.orgsContainer} container mySwiper`}>
-            <h2>{title}</h2>
+            {/* <h2>{title}</h2> */}
             <Swiper
                 modules={[Autoplay]}
                 className={`mySwiper ${styles.mySwiper}`}
@@ -31,7 +31,7 @@ export default function Organization({title, members}) {
                     }
                 }}
             >
-                {members.map((member, index) => (
+                {/* {members.map((member, index) => (
                     <SwiperSlide key={index}>
                         <article className={styles.org}>
                             <div className={styles.avatar}>
@@ -39,7 +39,7 @@ export default function Organization({title, members}) {
                             </div>
                         </article>
                     </SwiperSlide>
-                ))}
+                ))} */}
             </Swiper>
         </section>
     );

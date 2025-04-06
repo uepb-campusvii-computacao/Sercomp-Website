@@ -144,7 +144,7 @@ TabsContent.propTypes = {
 function Timeline({ timelines }) {
   return (
     <section className={`${styles.timelineMain} event-timelines`}>
-      <h1 className={"titulo-principal"}>
+      <h1 className={"mainTitle"}>
         Acompanhe nossa <strong>Programação</strong>
       </h1>
       <div className={`container ${styles.tabs}`}>

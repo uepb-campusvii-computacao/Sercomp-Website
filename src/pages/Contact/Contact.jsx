@@ -1,4 +1,4 @@
-import contato from '../../assets/images/contato.png';
+import contactImage from '../../assets/images/contato.png';
 import './Contact.css';
 
 export default function Contact() {
@@ -7,7 +7,7 @@ export default function Contact() {
             <div className="contact-container">
                 <aside className="contact-aside">
                     <div className="aside-image">
-                        <img src={contato} alt="contato" />
+                        <img src={contactImage} alt="contato" />
                     </div>
                     <h2>Entre em contato conosco</h2>
                     <p>

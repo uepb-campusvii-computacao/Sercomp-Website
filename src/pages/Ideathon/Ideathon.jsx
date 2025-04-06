@@ -92,7 +92,7 @@ function SectionButton() {
 export default function Ideathon() {
    return (
       <section className={"container"}>
-         <h1 className={"titulo-principal"}>
+         <h1 className={"mainTitle"}>
             Conheça mais sobre o <strong>Ideathon</strong>
          </h1>
          <Accordion title={"Visão Geral"} content={<IdeathonList items={overview} />} />

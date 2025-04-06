@@ -8,7 +8,7 @@ const CartPopup = ({ products, handleBuyClick }) => {
     const { removeProduct } = useContext(MarketContext);
     
     const totalPrice = products.reduce((total, product) => {
-        return total + (product.preco * product.quantidade);
+        return total + (product.price * product.quantity);
     }, 0);
     
     const formattedTotalPrice = new Intl.NumberFormat("pt-BR", {
@@ -19,28 +19,26 @@ const CartPopup = ({ products, handleBuyClick }) => {
   return (
     <div className={styles.cartPopup}>
       <div className={styles.cartProducts}>
-        {products.length > 0 ?
+        {products.length > 0 ? (
             <>
                 <div className={styles.cartProductsEntries}>
-                    {
-                        products.map((product) => (
-                            <div key={product.uuid_produto} className={styles.cartProduct}>
-                                <p>{product.nome} x {product.quantidade}</p>
-                                <button className={styles.removeProduct} onClick={() => removeProduct(product.uuid_produto)}>
-                                    <BiTrash size={18}/>
-                                </button>
-                            </div>                
-                        ))
-                    }
+                    {products.map((product) => (
+                        <div key={product.productId} className={styles.cartProduct}>
+                            <p>{product.name} x {product.quantity}</p>
+                            <button className={styles.removeProduct} onClick={() => removeProduct(product.productId)}>
+                                <BiTrash size={18}/>
+                            </button>
+                        </div>                
+                    ))}
                 </div>
                 <p>Total: {formattedTotalPrice}</p>
-                <button className={styles.comprarButton} onClick={() => handleBuyClick()}>
-                    Comprar
+                <button className={styles.buyButton} onClick={() => handleBuyClick()}>
+                    Buy
                 </button>                
             </>            
-        :
-            <p>Vazio</p>
-        }
+        ) : (
+            <p>Empty</p>
+        )}
       </div>
     </div>
   );
@@ -49,10 +47,10 @@ const CartPopup = ({ products, handleBuyClick }) => {
 CartPopup.propTypes = {
   products: PropTypes.arrayOf(
     PropTypes.shape({
-      uuid_produto: PropTypes.string.isRequired,
-      nome: PropTypes.string.isRequired,
-      quantidade: PropTypes.number.isRequired,
-      preco: PropTypes.number.isRequired,
+      productId: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      quantity: PropTypes.number.isRequired,
+      price: PropTypes.number.isRequired,
     })
   ).isRequired,
   handleBuyClick: PropTypes.func.isRequired

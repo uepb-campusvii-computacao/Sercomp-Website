@@ -3,14 +3,14 @@ export const linksData = [
     text: "Inicio",
     href: "/",
   },
-  {
-    text: "Inscrição",
-    href: "/inscricao",
-  },
-  {
-    text: "Loja",
-    href: "/market",
-  },
+  // {
+  //   text: "Inscrição",
+  //   href: "/inscricao",
+  // },
+  // {
+  //   text: "Loja",
+  //   href: "/market",
+  // },
   {
     text: "Chamadas",
     href: "/chamadas",
@@ -23,10 +23,10 @@ export const linksData = [
         text: 'Hackathon',
         href: '/hackathon'
       },
-      {
-        text: 'Ideathon',
-        href: '/ideathon'
-      },
+      // {
+      //   text: 'Ideathon',
+      //   href: '/ideathon'
+      // },
       {
         text: 'Maratona de Programação',
         href: '/programming-marathon'
@@ -41,16 +41,25 @@ export const linksData = [
     text: "Atividades",
     href: "/confirmed-activities",
   },
-  {
-    text: "Parceiros",
-    href: "/parceiros",
-  },
-  {
-    text: "Comitê",
-    href: "/comite",
-  },
+  // {
+  //   text: "Parceiros",
+  //   href: "/parceiros",
+  // },
+  // {
+  //   text: "Comitê",
+  //   href: "/comite",
+  // },
   {
     text: "Edições Anteriores",
-    href: "/2023",
+    sublinks: [
+      {
+        text: 'Edição 2024',
+        href: '/2024'
+      },
+      {
+        text: 'Edição 2023',
+        href: '/2023'
+      },
+    ]
   },
 ];

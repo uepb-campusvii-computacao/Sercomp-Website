@@ -1,4 +1,4 @@
-.removeProduct{
+.removeProduct {
     background-color: transparent;
     color: rgb(252, 117, 117);
     display: flex;
@@ -17,7 +17,7 @@
     gap: 10px;
 }
 
-.cartProduct{
+.cartProduct {
     display: flex;
     justify-content: end;
     gap: 10px;
@@ -27,7 +27,7 @@
     color: rgb(252, 0, 0);
 }
 
-.comprarButton{
+.buyButton {
   margin-top: 0.4rem;
   padding: 0.4rem;
   background-color: green;
@@ -48,7 +48,7 @@
   color: var(--color-bg1);
 }
 
-.cartProductsEntries{
+.cartProductsEntries {
   display: flex;
   flex-direction: column;
 }

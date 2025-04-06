@@ -1,11 +1,12 @@
 .footer {
   background-size: cover;
-  padding-top: 25rem;
+  padding-top: 5rem;
   font-size: 0.9rem;
+  background-color: var(--color-bg1);
 }
 
 .footerContainer {
-  margin-top: 20rem;
+  margin-top: 5rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 5rem;
@@ -42,6 +43,7 @@ footer ul li a:hover {
   text-align: center;
   margin-top: 4rem;
   padding: 1.2rem 0;
+  background-color: var(--color-bg2);
 }
 
 .popup .overlay {

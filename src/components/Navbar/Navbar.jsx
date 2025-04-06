@@ -1,11 +1,12 @@
 import { useEffect, useRef, useState } from "react";
-import logotipo from "../../assets/images/logotipo_vvisercomp.webp";
+import logotipo from "../../assets/images/logotipo_viisercomp.png";
 import { linksData } from "../../data/LinksData";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
   const navRef = useRef(null);
   const [menuOpen, setMenuOpen] = useState(false);
+  const [activeSubmenu, setActiveSubmenu] = useState(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,6 +28,11 @@ export default function Navbar() {
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
+    setActiveSubmenu(null); // Fecha submenus ao alternar menu principal
+  };
+
+  const toggleSubmenu = (index) => {
+    setActiveSubmenu(activeSubmenu === index ? null : index);
   };
 
   return (
@@ -34,7 +40,7 @@ export default function Navbar() {
       <div className={`${styles.navContainer}`}>
         <div className={styles.logoContainer}>
           <a href="/">
-            <img src={logotipo} alt="vi sercomp" />
+            <img src={logotipo} alt="vii sercomp" />
           </a>
         </div>
         <div className={styles.toggleMenuContainer}>
@@ -45,14 +51,38 @@ export default function Navbar() {
           >
             {linksData.map((link, index) => (
               <li style={{position: 'relative'}} key={index}>
-                <a className={styles.link} href={link.href}>
-                  {link.text}
-                </a>
-                <div className={styles.menuSuspenso} style={{padding: link.sublinks ? 'auto 16px' : '0'}}>
-                  {link.sublinks && link.sublinks.map((sublink, index) => (   
-                    <a key={index} href={sublink.href}>{sublink.text}</a>
-                  ))}
-                </div>
+                {link.text === "Edições Anteriores" ? (
+                  <>
+                    <a 
+                      className={styles.link} 
+                      onClick={() => window.innerWidth <= 1160 && toggleSubmenu(index)}
+                      style={{cursor: 'pointer'}}
+                    >
+                      {link.text}
+                    </a>
+                    <div 
+                      className={`${styles.menuSuspenso} ${
+                        activeSubmenu === index ? styles.menuSuspensoAtivo : ''
+                      }`}
+                      style={{padding: link.sublinks ? 'auto 16px' : '0'}}
+                    >
+                      {link.sublinks && link.sublinks.map((sublink, i) => (   
+                        <a key={i} href={sublink.href}>{sublink.text}</a>
+                      ))}
+                    </div>
+                  </>
+                ) : (
+                  <>
+                    <a className={styles.link} href={link.href}>
+                      {link.text}
+                    </a>
+                    <div className={styles.menuSuspenso} style={{padding: link.sublinks ? 'auto 16px' : '0'}}>
+                      {link.sublinks && link.sublinks.map((sublink, i) => (   
+                        <a key={i} href={sublink.href}>{sublink.text}</a>
+                      ))}
+                    </div>
+                  </>
+                )}
               </li>
             ))}
           </ul>
