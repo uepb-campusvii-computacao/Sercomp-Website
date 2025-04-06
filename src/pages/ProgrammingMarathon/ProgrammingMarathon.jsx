@@ -62,7 +62,7 @@ function SectionButton() {
 export default function ProgrammingMarathon() {
    return (
       <section className={"container"}>
-         <h1 className={"titulo-principal"}>
+         <h1 className={"mainTitle"}>
             Conheça mais sobre a <strong>Maratona de Programação</strong>
          </h1>
          <Accordion title={"Disposições Gerais"} content={<ProgrammingMarathonList items={generalProvisions} />} />

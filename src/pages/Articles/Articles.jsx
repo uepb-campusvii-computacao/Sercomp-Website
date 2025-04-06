@@ -1,5 +1,5 @@
 import Accordion from "../../components/Accordion/Accordion.jsx";
-// import Comissao from "../../components/Comissao/Comissao";
+// import Committee from "../../components/Committee/Committee.jsx";
 import styles from "./Articles.module.css";
 
 import ArticleList from '../../components/TextList/TextList.jsx'
@@ -37,7 +37,7 @@ const interestTopics = [
 function TopicsOfInterest() {
   return (
     <>
-      <p className={`paragrafo ${styles.p}`}>
+      <p className={`paragraph ${styles.p}`}>
         São especialmente esperadas contribuições que abordem o tema principal
         do evento - &ldquo;Ciência de Dados na Web 3.0: Desvendando o Futuro da
         Informação Digital&ldquo;, bem como os grandes temas de desafios de
@@ -45,7 +45,7 @@ function TopicsOfInterest() {
         nessas áreas.
       </p>
       <br></br>
-      <p className={`paragrafo ${styles.p}`}>
+      <p className={`paragraph ${styles.p}`}>
         Outros tópicos são também esperados, mas não limitados a:
       </p>
       <ArticleList items={interestTopics} />
@@ -113,7 +113,7 @@ const subInstructions = [
 function SubmissionInstructions() {
   return (
     <>
-      <p className={`paragrafo ${styles.p}`}>
+      <p className={`paragraph ${styles.p}`}>
         Os short papers podem ser submetidos para o VI SERCOMP sobre trabalhos
         de pesquisas já concluídas, com ideias e resultados, e seguindo as
         normas da ABNT. Os short papers devem ter entre 3 e 5 páginas (incluindo
@@ -121,7 +121,7 @@ function SubmissionInstructions() {
       </p>
 
       <br />
-      <p className={`paragrafo ${styles.p}`}>
+      <p className={`paragraph ${styles.p}`}>
         Alguns aspectos adicionais devem ser observados:
       </p>
       <ArticleList items={subInstructions} />
@@ -169,7 +169,7 @@ function SectionButton() {
 export default function Articles() {
   return (
     <section className={"container"}>
-      <h1 className={"titulo-principal"}>
+      <h1 className={"mainTitle"}>
         Conheça mais sobre a <strong>Submissão de Artigos</strong>
       </h1>
       <Accordion title={"Datas Importantes"} content={<ArticleList items={importantDates} />} />
@@ -187,8 +187,8 @@ export default function Articles() {
       <SectionButton />
 
       {/* 
-        <Comissao
-          comissaoData={comissaoArtigosData}
+        <Committee
+          committeeData={committeeArticlesData}
           title={"Comitê de Programa"}
           description={
             "O Comitê de Programa é formado pelos seguintes professores do curso de Ciência da Computação da Universidade Estadual da Paraíba, Campus VII."

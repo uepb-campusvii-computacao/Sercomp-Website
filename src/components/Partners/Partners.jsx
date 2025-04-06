@@ -13,7 +13,7 @@ export default function Partners() {
     return (
         <section className={styles.partners}>
             <div className={`container ${styles.partnersContainer}`}>
-                <h2>CONHEÇA NOSSOS PARCEIROS</h2>
+                {/* <h2>CONHEÇA NOSSOS PARCEIROS</h2> */}
                 <Swiper
                     modules={[Autoplay]}
                     className={`mySwiper ${styles.mySwiper}`}
@@ -34,11 +34,11 @@ export default function Partners() {
                 >
                     {partnersData.map((partner, index) => (
                         <SwiperSlide key={index}>
-                            <div className={styles.avatarPartner}>
+                            {/* <div className={styles.avatarPartner}>
                                 <a href={partner.href} target="_blank" rel="noreferrer">
                                     <img src={partner.image} alt={partner.alt} />
                                 </a>
-                            </div>
+                            </div> */}
                         </SwiperSlide>
                     ))}
 

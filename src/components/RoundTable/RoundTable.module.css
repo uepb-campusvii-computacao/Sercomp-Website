@@ -1,0 +1,102 @@
+.roundContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.roundTableContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.roundTable {
+  margin-top: 1rem;
+}
+
+.roundTableDetails p {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.roundTableMember {
+  background: var(--color-bg2);
+  padding: 2rem;
+  margin: 1rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+.roundTableMember:hover {
+  background: transparent;
+  border-color: var(--color-primary);
+}
+
+.roundTableDetailsTitle {
+  padding-bottom: 30px;
+}
+
+.roundTableMemberImage img {
+  width: 15rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+}
+
+.roundContainer p {
+  max-width: 15rem;
+}
+
+.cardWithoutText {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cardWithoutText .cronDetailsTitle {
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.roundTableMemberImage div {
+  text-align: center;
+}
+
+/*MEDIA QUERIES PHONE*/
+
+@media screen and (max-width: 690px) {
+  .roundTableContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 0.7rem;
+  }
+
+  .roundTableDetails {
+    display: block;
+  }
+
+  .roundTableMember p {
+    margin-bottom: 1.5rem;
+  }
+
+  .roundTableMemberImage {
+    flex-direction: column;
+  }
+
+  .roundTableMemberImage img {
+    width: 350px;
+  }
+  
+  .roundContainer p {
+    max-width: 350px;
+  }
+
+}

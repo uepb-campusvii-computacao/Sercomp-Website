@@ -88,7 +88,7 @@ export default function Countdown({eventStart, eventEnd}) {
 
   return (
     <div className={styles.containerTimer}>
-      {eventStatus === 'before' && <h1>Contagem Regressiva até o VI SERCOMP</h1>}
+      {eventStatus === 'before' && <h1>Contagem Regressiva até o VII SERCOMP</h1>}
       <div className={styles.confettiWrapper}>
       {eventStatus === 'during' && <Confetti gravity={0.01} initialVelocityX={2} initialVelocityY={2} width={dimensions.width} height={dimensions.height} numberOfPieces={50}/>}
         {eventStatus === 'before' && (

@@ -1,0 +1,228 @@
+/* Estilos base */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.baseTitle {
+  margin: 2rem 0;
+  font-weight: 600;
+  position: relative;
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ffffff;
+}
+
+.baseTitle::after {
+  position: absolute;
+  content: "";
+  width: 300px;
+  height: 4px;
+  left: 50%;
+  bottom: -10px;
+  background-image: linear-gradient(to right, #6a06ec, #dc00f0);
+  transform: translateX(-50%);
+  border-radius: 2px;
+}
+
+.cronContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 2rem 0;
+}
+
+/* Cards dos minicursos/oficinas/workshops */
+.cronMember {
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  color: white; /* Texto branco */
+  position: relative;
+  width: 95%;
+  margin: 0 auto;
+  background-color: #2e3267ec;
+}
+
+.cronMember:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Seção de detalhes */
+.cronDetails {
+  padding: 1.5rem;
+}
+
+.cronMemberImage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cronMemberImage p {
+  color: white;
+  font-weight: 500;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Container dos ministrantes */
+.ministrantesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  background-color: transparent; /* Fundo transparente */
+  padding: 20px 0;
+}
+
+.ministrante {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 100px;
+}
+
+.ministrante img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.ministrante img:hover {
+  transform: scale(1.05);
+  border-color: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.ministrante p {
+  margin-top: 0.5rem;
+  font-weight: 500;
+  color: white;
+  text-align: center;
+  max-width: 120px;
+  word-break: break-word;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Parte da informação */
+.cronMemberInfo {
+  padding: 2rem;
+  position: relative;
+  padding-bottom: 3.5rem;
+}
+
+.cronMemberInfo h4 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 1.4;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cronMemberInfo p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  text-align: justify;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajustes para o conteúdo dentro do ToggleExpand */
+.cronMemberInfo .expandContent p {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+  .cronMember {
+    width: 90%;
+  }
+  
+  .cronDetails, .cronMemberInfo {
+    padding: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .baseTitle {
+    font-size: 2rem;
+  }
+  
+  .ministrante img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .cronMember {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .baseTitle {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+  }
+  
+  .baseTitle::after {
+    width: 80px;
+    bottom: -8px;
+  }
+  
+  .ministrantesContainer {
+    gap: 1rem;
+  }
+  
+  .ministrante img {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .ministrante p {
+    font-size: 0.9rem;
+    max-width: 90px;
+  }
+  
+  .cronMemberInfo p, 
+  .cronMemberInfo h4 {
+    font-size: 1rem;
+  }
+  
+  .cronMember {
+    border-radius: 8px;
+  }
+}
+
+/* Efeito de loading para imagens */
+.ministrante img {
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

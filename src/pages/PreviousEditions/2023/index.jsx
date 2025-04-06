@@ -1,7 +1,7 @@
 import logo from "../../../assets/images/v-sercomp.png";
 import OrganizationPeople from "../../../components/Organization/OrganizationPeople";
 import styles from "./2023.module.css";
-import Palestrante from "../../../components/Palestrante/Palestrante";
+import Speaker from "../../../components/Speaker/Speaker";
 
 import cleisson from "../../../assets/images/participacoes/2023/cleisson.png";
 import karliane from "../../../assets/images/participacoes/2023/karliane.png";
@@ -25,11 +25,11 @@ import francisco from "../../../assets/images/professores/francisco.png";
 import TimelineComponent from "../../../components/Timeline/Timeline.jsx";
 
 import shedule from "./schedule.jsx";
-import { comissaoArtigosData } from "./commissions.js";
-import Comissao from "../../../components/Comissao/Comissao";
+import { ArticlesCommitteeData } from "./commissions.js";
+import Committee from "../../../components/Committee/Committee";
 import orgMembersData from '../../../data/orgData2023.js';
-import { mesaData } from './mesaData.js'
-import MesaRedonda from "../../../components/MesaRedonda/MesaRedonda.jsx";
+import { roundData } from './roundData.js'
+import RoundTable from "../../../components/RoundTable/RoundTable.jsx";
 
 function Edition2023() {
   return (
@@ -52,34 +52,34 @@ function Edition2023() {
       </main>
       <OrganizationPeople title={"ORGANIZAÇÃO DO V SERCOMP"} members={orgMembersData}/>
       <section className={styles.cron}>
-        <h2 className={styles.tituloBase}>Palestras</h2>
+        <h2 className={styles.baseTitle}>Palestras</h2>
 
         <section className={`container ${styles.cronContainer}`}>
-          <Palestrante
-            nome="Cleisson Christian Lima da Costa Ramos"
+          <Speaker
+            name="Cleisson Christian Lima da Costa Ramos"
             imagemSrc={cleisson}
-            tituloPalestra="Palestra I: Desafios e Estratégias de Mitigação de Vulnerabilidades em Sistemas Operacionais - Explorando na prática"
-            descricao="Bacharel em Sistemas de Informação; Pós-graduação em Segurança de Informação; Pós em Educação, Desenvolvimento e Políticas Educativas; MBA em Gestão em TI; Pós em Formação em Educação a Distância. Atualmente trabalha como analista de segurança da informação (Red Team - Cyber Security) na Under Protection, além de trabalhar como docente do curso de Sistemas de Informação da UNIFACISA. Tem experiência como docente no ensino superior, graduação e pós (dez anos), além do ensino técnico na área de computação, totalizando vinte anos ministrando disciplinas nas áreas de tecnologia da informação e comunicação, computação, sistemas de informação e segurança da informação. Trabalhou durante cinco anos como coordenador de curso (Análise e Desenvolvimento de Sistemas), além de ministrar palestras e cursos de capacitação nas áreas de Segurança da Informação (Pentest) e Tecnologias da Informação."
+            lectureTitle="Palestra I: Desafios e Estratégias de Mitigação de Vulnerabilidades em Sistemas Operacionais - Explorando na prática"
+            description="Bacharel em Sistemas de Informação; Pós-graduação em Segurança de Informação; Pós em Educação, Desenvolvimento e Políticas Educativas; MBA em Gestão em TI; Pós em Formação em Educação a Distância. Atualmente trabalha como analista de segurança da informação (Red Team - Cyber Security) na Under Protection, além de trabalhar como docente do curso de Sistemas de Informação da UNIFACISA. Tem experiência como docente no ensino superior, graduação e pós (dez anos), além do ensino técnico na área de computação, totalizando vinte anos ministrando disciplinas nas áreas de tecnologia da informação e comunicação, computação, sistemas de informação e segurança da informação. Trabalhou durante cinco anos como coordenador de curso (Análise e Desenvolvimento de Sistemas), além de ministrar palestras e cursos de capacitação nas áreas de Segurança da Informação (Pentest) e Tecnologias da Informação."
           />
 
-          <Palestrante
-            nome="Karliane Medeiros Ovidio Vale"
+          <Speaker
+            name="Karliane Medeiros Ovidio Vale"
             imagemSrc={karliane}
-            tituloPalestra="Palestra II: Desvendando insights valiosos: como a mineração de dados pode impulsionar a tomada de decisão estratégica"
-            descricao="Graduada em Tecnologia em Processamento de Dados pela Universidade Potiguar em 1999, com especialização em Tecnologia e Desenvolvimento de Sistemas Orientado a Objeto para Web em 2005 pela mesma universidade, além de mestrado e doutorado em Sistemas e Computação pela UFRN. Ela possui experiência na área de Ciência da Computação, com ênfase em desenvolvimento de sistemas, e é professora na Universidade Federal do Rio Grande do Norte, onde participa de pesquisas no laboratório de inteligência computacional aplicada a negócios. Também tem experiência como coordenadora de curso técnico e docente em outras universidades e faculdades."
+            lectureTitle="Palestra II: Desvendando insights valiosos: como a mineração de dados pode impulsionar a tomada de decisão estratégica"
+            description="Graduada em Tecnologia em Processamento de Dados pela Universidade Potiguar em 1999, com especialização em Tecnologia e Desenvolvimento de Sistemas Orientado a Objeto para Web em 2005 pela mesma universidade, além de mestrado e doutorado em Sistemas e Computação pela UFRN. Ela possui experiência na área de Ciência da Computação, com ênfase em desenvolvimento de sistemas, e é professora na Universidade Federal do Rio Grande do Norte, onde participa de pesquisas no laboratório de inteligência computacional aplicada a negócios. Também tem experiência como coordenadora de curso técnico e docente em outras universidades e faculdades."
           />
         </section>
       </section>
       <section>
-        <h2 className={styles.tituloBase}>Mesa</h2>
-        <MesaRedonda 
-          titulo="ChapGPT: possibilidades e desafios no cenário acadêmico e profissional em Computação"
-          membros={mesaData}
+        <h2 className={styles.baseTitle}>Mesa</h2>
+        <RoundTable 
+          title="ChapGPT: possibilidades e desafios no cenário acadêmico e profissional em Computação"
+          members={roundData}
         />
       </section>
 
       <section className={`container ${styles.cronContainer}`}>
-        <h2 className={styles.tituloBase}>Minicursos</h2>
+        <h2 className={styles.baseTitle}>Minicursos</h2>
         <article className={`${styles.cronMember}`}>
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
@@ -321,7 +321,7 @@ function Edition2023() {
       </section>
 
       <section className={`container ${styles.cronContainer}`}>
-        <h2 className={styles.tituloBase}>Oficinas</h2>
+        <h2 className={styles.baseTitle}>Oficinas</h2>
         <article className={`${styles.cronMember}`}>
           <div className={`${styles.cronDetails}`}>
             <div className={`${styles.cronMemberImage}`}>
@@ -667,10 +667,10 @@ function Edition2023() {
       <TimelineComponent timelines={shedule} />
 
       <section className={"container"}>
-        <h1 className={"titulo-principal"}>
+        <h1 className={"mainTitle"}>
           Conheça mais sobre a <strong>Submissão de Artigos</strong>
         </h1>
-        <h2 className={`titulo-base ${styles.h2}`}>Datas Importantes</h2>
+        <h2 className={`baseTitle ${styles.h2}`}>Datas Importantes</h2>
         <ul className={styles.articleList}>
           <li className={`${styles.articleListRisc} ${styles.ulLi}`}>
             Prazo Inicial de submissão de artigos: 30/03/2023;
@@ -685,8 +685,8 @@ function Edition2023() {
             Apresentação dos artigos: 24/05/2023.
           </li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>Tópicos de Interesse</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Tópicos de Interesse</h2>
+        <p className={`paragraph ${styles.p}`}>
           São especialmente esperadas contribuições que abordem o tema principal
           do evento - &ldquo;Segurança em Tecnologia da Informação e Sistemas
           Inteligentes&ldquo;, bem como os grandes temas de desafios de pesquisa
@@ -702,7 +702,7 @@ function Edition2023() {
             conhecimento).
           </li>
         </ul>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Outros tópicos são também esperados, mas não limitados a:
         </p>
         <ul className={styles.articleList}>
@@ -772,17 +772,17 @@ function Edition2023() {
           </li>
           <li className={styles.ulLi}>Sistemas de apoio à decisão.</li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>
           Instruções para Submissão
         </h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Os artigos podem ser submetidos para o V SERCOMP somente nas
           categorias “relatos de caso” (case reports), sobre projetos em
           desenvolvimento, e &ldquo;artigo completo&ldquo; (full paper) sobre
           trabalhos de pesquisas já concluídas, com ideias e resultados
           inovadores, e seguindo metodologia científica adequada.
         </p>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Os relatos de caso devem ter entre 3 e 5 páginas (incluindo figuras,
           tabelas, diagramas, referências em anexos). O artigo completo deve ter
           entre 7 e 10 páginas (incluindo as figuras, tabelas, diagramas,
@@ -795,7 +795,7 @@ function Edition2023() {
         >
           Modelo de relato de caso e artigo.
         </a>
-        <p className={`paragrafo ${styles.p}`}>
+        <p className={`paragraph ${styles.p}`}>
           Alguns aspectos adicionais devem ser observados:
         </p>
         <ul className={styles.articleList}>
@@ -842,20 +842,20 @@ function Edition2023() {
             ao escopo, qualidade técnica, clareza e pertinência.
           </li>
         </ul>
-        <h2 className={`titulo-base ${styles.h2}`}>Publicação</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Publicação</h2>
+        <p className={`paragraph ${styles.p}`}>
           Os artigos aceitos serão publicados nos anais do evento, condicionados
           à inscrição, de, pelo menos, um dos autores no evento, bem como à
           apresentação do trabalho no evento.
         </p>
-        <h2 className={`titulo-base ${styles.h2}`}>Apresentação</h2>
-        <p className={`paragrafo ${styles.p}`}>
+        <h2 className={`baseTitle ${styles.h2}`}>Apresentação</h2>
+        <p className={`paragraph ${styles.p}`}>
           Cada artigo aceito deverá ter pelo menos um autor inscrito para
           apresentá-lo em sessão técnica, tendo 60 minutos para
           apresentação/discussão por meio de painel digital/poster.
         </p>
-        <Comissao
-          comissaoData={comissaoArtigosData}
+        <Committee
+          committeeData={ArticlesCommitteeData}
           title={"Comitê de Programa"}
           description={
             "O Comitê de Programa é formado pelos seguintes professores do curso de Ciência da Computação da Universidade Estadual da Paraíba, Campus VII."
