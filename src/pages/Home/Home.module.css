@@ -1,0 +1,27 @@
+.mainButton {
+    padding: 12px 24px;
+    background: var(  --color-danger); 
+    color: var(--color-white); /* Cor do texto */
+    border: 2px solid var(--color-primary); /* Borda azul mais escura */
+    border-radius: 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+  }
+
+    .mainButton:hover {
+        transform: translateY(-2px);
+        background: var(--color-primary); 
+        color: var(--color-white); /* Cor do texto */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+    }
+  
+
+  
+  .mainButton:active {
+    transform: translateY(0);
+    background: var(--color-primary); /* Azul mais escuro quando clicado */
+  }
