@@ -2,6 +2,7 @@ import logo from '../../assets/images/logo_header_homevii.png';
 import Countdown from '../../components/Countdown/Countdown';
 import Organization from '../../components/Organization/Organization';
 import orgMembersData from '../../data/orgData2024.js';
+import styles from './Home.module.css';
 
 function Home() {
   
@@ -15,6 +16,11 @@ function Home() {
             <h5>19 a 21 de maio de 2025</h5>
             <p> Do  Código  à  Liderança: <br></br>  A  Importância  do  Equilíbrio  entre  Soft  e  Hard 
             Skills </p>
+
+            <a href="https://eventflow.com.br/sign-in" target="_blank" rel="noopener noreferrer">
+              <button className={styles.mainButton}>Inscreva-se</button>
+            </a>
+
           </div>
 
           <div className="main-right">
@@ -34,3 +40,4 @@ function Home() {
 }
 
 export default Home;
+

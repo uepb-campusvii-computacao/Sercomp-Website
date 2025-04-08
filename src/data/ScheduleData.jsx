@@ -18,7 +18,8 @@ const schedule = [
       </>
     ),
     day: "1º Dia",
-    events: [{ title: "CREDENCIAMENTO", time: "17:30 - 18:30", timeStr: "NOITE" },
+    events: [
+      { title: "CREDENCIAMENTO", time: "17:30 - 18:30", timeStr: "NOITE" },
       {
         title: "CERIMONIAL DE ABERTURA",
         time: "18:30 - 19:00",
@@ -26,14 +27,14 @@ const schedule = [
         location: "Auditório Celso Furtado",
       },
       {
-        title: "PALESTRA I: Profissional 5.0 – Inovação, Consciência e  Habilidades para o Futuro ",
+        title:
+          "PALESTRA I: Profissional 5.0 – Inovação, Consciência e  Habilidades para o Futuro ",
         time: "19:00 - 20:30",
         timeStr: "NOITE",
         location: "Auditório Celso Furtado",
       },
       {
-        title:
-          "HAPPY HOUR & NETWORKING",
+        title: "HAPPY HOUR & NETWORKING",
         time: "20:30 - 21:30",
         timeStr: "NOITE",
         location: "Centro de Vivências",
@@ -61,7 +62,8 @@ const schedule = [
         location: "Auditório Celso Furtado",
       },
       {
-        title: "HACKTHON [DESAFIO CENTRAL] - Inovar para Transformar: Soluções Criativas  para os Desafios da Nossa Cidade ",
+        title:
+          "HACKTHON [DESAFIO CENTRAL] - Inovar para Transformar: Soluções Criativas  para os Desafios da Nossa Cidade ",
         time: "08:15 - 09:00",
         timeStr: "MANHÃ",
         location: "Auditório Celso Furtado",
@@ -101,14 +103,14 @@ const schedule = [
         timeStr: "TARDE",
       },
       {
-        title: "PALESTRA II:  Tecnologia com Propósito: Liderar, Inovar  e Conectar no Sertão Digital ",
+        title:
+          "PALESTRA II:  Tecnologia com Propósito: Liderar, Inovar  e Conectar no Sertão Digital ",
         time: "18:30 - 19:30",
         timeStr: "TARDE",
         // location: "Hall de Entrada da UEPB",
       },
       {
-        title:
-          " MINICURSOS",
+        title: " MINICURSOS",
         time: "19:30 - 21:30",
         timeStr: "NOITE",
         // location: "Auditório Celso Furtado",
@@ -154,26 +156,25 @@ const schedule = [
       {
         title:
           "PAINEL III -   Soft Skills para Profissionais de TI – Como  se Comunicar, Liderar e Trabalhar em Equipe ",
-        time: "07:00 - 10:00",
+        time: "08:00 - 10:00",
         timeStr: "MANHÃ",
         location: "Hall de Entrada da UEPB",
       },
       {
-        title:
-          "FEIRA CIENTIFÍCA",
-        time: "08:00 - 11:30",
+        title: "FEIRA CIENTÍFICA",
+        time: "10:00 - 11:30",
         timeStr: "MANHÃ",
       },
       { title: "Intervalo Almoço", time: "11:30 - 14:00", timeStr: "TARDE" },
       {
-        title:
-          "HACKTHON [PROGRAMAÇÃO]",
+        title: "HACKTHON [PROGRAMAÇÃO]",
         time: "14:00 - 16:30",
         timeStr: "TARDE",
-        location: "Lab I"
+        location: "Lab I",
       },
-      { title: "HACKTHON [PITCHDAY]", 
-        time: "16:30 - 17:30", 
+      {
+        title: "HACKTHON [PITCHDAY]",
+        time: "16:30 - 17:30",
         timeStr: "TARDE",
         location: "Auditório Celso Furtado",
       },
@@ -210,12 +211,12 @@ const schedule = [
         timeStr: "NOITE",
       },
       {
-        title: "HAPPY HOUR & NETWORKING", 
+        title: "HAPPY HOUR & NETWORKING",
         time: "20:30 - 21:30",
         timeStr: "NOITE",
       },
     ],
-   },
+  },
   // {
   //   date: (
   //     <>
