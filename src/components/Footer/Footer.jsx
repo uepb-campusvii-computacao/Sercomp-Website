@@ -9,7 +9,9 @@ export default function Footer(){
                     <a href="/" className={styles.footerLogo}>
                         <h4>SERCOMP</h4>
                     </a>
-                    <p>Ciência de Dados na Web 3.0: Desvendando o Futuro da Informação Digital</p>
+                    <p>Do Código à Liderança: <br/>
+                      A Importância do Equilíbrio <br/>
+                      entre Soft e Hard Skills</p>
                 </div>
                 <div className={styles.footer2}>
                     <h4>Permalinks</h4>
