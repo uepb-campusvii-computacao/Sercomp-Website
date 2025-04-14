@@ -2,7 +2,7 @@ import { useState } from "react";
 import styles from "./Accordion.module.css";
 
 export default function Accordion({ title, content }) {
-  const [openAccordion, setOpenAccordion] = useState(false);
+  const [openAccordion, setOpenAccordion] = useState(true);
 
   function handleToggleAccordion(){
     setOpenAccordion(!openAccordion)
