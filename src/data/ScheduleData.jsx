@@ -28,7 +28,7 @@ const schedule = [
       },
       {
         title:
-          "PALESTRA I: Profissional 5.0 – Inovação, Consciência e  Habilidades para o Futuro ",
+          "PAINEL I: Profissional 5.0 – Inovação, Consciência e  Habilidades para o Futuro ",
         time: "19:00 - 20:30",
         timeStr: "NOITE",
         location: "Auditório Celso Furtado",
@@ -104,7 +104,7 @@ const schedule = [
       },
       {
         title:
-          "PALESTRA II:  Tecnologia com Propósito: Liderar, Inovar  e Conectar no Sertão Digital ",
+          "PAINEL II:  Tecnologia com Propósito: Liderar, Inovar  e Conectar no Sertão Digital ",
         time: "18:30 - 19:30",
         timeStr: "TARDE",
         // location: "Hall de Entrada da UEPB",
@@ -181,7 +181,7 @@ const schedule = [
       { title: "Intervalo Janta", time: "17:30 - 18:30", timeStr: "NOITE" },
       {
         title:
-          "PAINEL II -  Hard Skills que Você Precisa Dominar para  se Destacar no Mercado",
+          "PAINEL IV -  Hard Skills que Você Precisa Dominar para  se Destacar no Mercado",
         time: "18:30 - 20:00",
         timeStr: "NOITE",
         location: "Auditório Celso Furtado",
