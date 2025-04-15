@@ -5,19 +5,18 @@ function About() {
     <>
       <section className={styles.header}>
         <div className={`container ${styles.title}`}>
-            <h1>Sobre o VI SERCOMP</h1>
+            <h1>Sobre o VII SERCOMP</h1>
         </div>
       </section>
       <div className={`container ${styles.description}`}>
         <p>
-          O <strong>VI SERCOMP</strong>, ou Congresso Sertanejo de Computação, é
+          O <strong>VII SERCOMP</strong>, ou Congresso Sertanejo de Computação, é
           um evento anual de destaque no cenário acadêmico e profissional,
           organizado pela Universidade Estadual da Paraíba (UEPB). Este ano, o
           evento será realizado nos dias{" "}
-          <strong>20 a 24 de maio de 2024</strong>, sob o tema{" "}&quot;
+          <strong>19 a 21 de maio de 2024</strong>, sob o tema{" "}&quot;
           <strong>
-            Ciência de Dados na Web 3.0: Desvendando o Futuro da
-            Informação Digital
+          Do Código à Liderança: A Importância do Equilíbrio entre Soft e Hard Skills
           </strong>&quot;
           . Com linhas de ação que englobam desde a Transformação Digital e
           Inovação até a Gestão na Era Digital, o congresso visa promover
@@ -34,7 +33,7 @@ function About() {
           inovação são cruciais.
         </p>
         <p>
-          Neste sentido, o <strong>VI SERCOMP</strong> surge como uma resposta
+          Neste sentido, o <strong>VII SERCOMP</strong> surge como uma resposta
           estratégica, proporcionando um espaço para a reflexão, discussão e
           aprendizado coletivo sobre os impactos da Transformação Digital.
           Reunindo especialistas, pesquisadores, profissionais e entusiastas das
@@ -43,7 +42,7 @@ function About() {
           oportunidades da era digital.
         </p>
         <p>
-          Os objetivos do <strong>VI SERCOMP</strong> são variados e ambiciosos,
+          Os objetivos do <strong>VII SERCOMP</strong> são variados e ambiciosos,
           indo desde a troca de conhecimento e experiências até a identificação
           de soluções para os desafios da Transformação Digital. O evento
           oferece palestras, painéis, workshops, minicursos e outras atividades
@@ -51,7 +50,7 @@ function About() {
           participantes.
         </p>
         <p>
-          A relevância do <strong>VI SERCOMP</strong> é evidente em diversos
+          A relevância do <strong>VII SERCOMP</strong> é evidente em diversos
           aspectos. Além de promover a atualização profissional e o networking
           estratégico, o congresso contribui para o avanço do conhecimento na
           área de Transformação Digital. Sediado pela UEPB, o evento projeta
@@ -60,13 +59,13 @@ function About() {
         </p>
         <p>
           Em um mundo em constante evolução tecnológica, o{" "}
-          <strong>VI SERCOMP</strong> desempenha um papel crucial ao preparar os 
+          <strong>VII SERCOMP</strong> desempenha um papel crucial ao preparar os 
           participantes para os desafios futuros. Capacitar líderes e influenciadores 
           a antecipar e enfrentar as mudanças é essencial para a sustentabilidade e sucesso
           nas organizações e comunidades.
         </p>
         <p>
-          Assim, o <strong>VI SERCOMP</strong> se apresenta como um espaço
+          Assim, o <strong>VII SERCOMP</strong> se apresenta como um espaço
           fundamental para explorar as inovações e desafios no cenário da
           Transformação Digital, contribuindo para o avanço do conhecimento e a
           formação de profissionais preparados para enfrentar os desafios do
