@@ -2,23 +2,48 @@ import Accordion from "../../components/Accordion/Accordion.jsx";
 // import Committee from "../../components/Committee/Committee.jsx";
 import styles from "./Articles.module.css";
 
-import ArticleList from "../../components/TextList/TextList.jsx";
+import ArticleList from '../../components/TextList/TextList.jsx'
+
+function CalledSubmission() {
+  return (
+    <>
+      <p className={`paragraph ${styles.p}`}>
+        A Universidade Estadual da Paraíba (UEPB), por meio do Centro de Ciências Exatas e Sociais Aplicadas (CCEA) do Campus VII, em Patos-PB, tem a honra de anunciar a realização do <strong>VII SERCOMP – Congresso Sertanejo de Computação</strong>, que ocorrerá entre os dias <strong>19 e 21 de maio de 2025.</strong>
+      </p>
+      <p className={`paragraph ${styles.p}`}>
+        O SERCOMP tem se consolidado como um dos principais eventos científicos e tecnológicos da região do Sertão Nordestino, promovendo um espaço de integração entre estudantes, pesquisadores, professores, profissionais da área de Computação e Tecnologia da Informação, além de representantes do setor público e do setor produtivo. O evento visa fortalecer as redes de cooperação acadêmica e estimular a divulgação e a produção científica regional.
+      </p>
+    </>
+  )
+}
+
+function Theme() {
+  return (
+    <>
+      <p className={`paragraph ${styles.p}`}>
+        A edição de 2025 tem como tema central: <strong>“Do Código à Liderança: A Importância do Equilíbrio entre Soft e Hard Skills”.</strong> Esse tema busca promover reflexões e debates acerca do papel das competências técnicas (hard skills) e das habilidades interpessoais (soft skills) na formação de profissionais mais completos e preparados para os desafios contemporâneos. Em um cenário cada vez mais multidisciplinar, colaborativo e dinâmico, torna-se imprescindível fomentar tanto o domínio de tecnologias e ferramentas quanto as capacidades de comunicação, empatia, liderança, gestão de tempo, trabalho em equipe, entre outras habilidades humanas essenciais.
+      </p>
+    </>
+  )
+}
+
+function CallObjective() {
+  return (
+    <>
+      <p className={`paragraph ${styles.p}`}>
+        A presente chamada tem como objetivo convidar pesquisadores, estudantes de graduação e pós-graduação, docentes, profissionais da área de tecnologia e membros da comunidade científica em geral para submissão de artigos científicos inéditos, que versem sobre o tema central do evento ou que se enquadrem nos tópicos de interesse elencados abaixo.
+      </p>
+    </>
+  )
+}
 
 const importantDates = [
-  <>
-    <strong>Prazo Inicial de submissão de short paper:</strong> 31/03/2025;
-  </>,
-  <>
-    <strong>Prazo final de submissão de short paper:</strong> 30/04/2025;
-  </>,
-  <>
-    <strong>Notificação dos autores dos short paper aprovados:</strong>{" "}
-    14/05/2025;
-  </>,
-  <>
-    <strong>Apresentação dos short paper:</strong> 21/05/2025.
-  </>,
-];
+  <><strong>Início do período de submissões:</strong> 31/03/2025;</>,
+  <><strong>Prazo final para submissão dos artigos:</strong> 30/04/2025;</>,
+  <><strong>Divulgação dos artigos aprovados:</strong> 14/05/2025;</>,
+  <><strong>Apresentação dos trabalhos no evento:</strong> 21/05/2025.</>,
+  <><strong>Prazo final para envio da versão corrigida do artigo, considerando as revisões recomendadas pelo Comitê Científico:</strong> 30/05/2025.</>
+]
 
 const interestTopics = [
   <>Desenvolvimento de Soft Skills em cursos de Computação;</>,
@@ -35,23 +60,15 @@ const interestTopics = [
   <>Inclusão digital e diversidade na tecnologia;</>,
   <>Jogos digitais e gamificação;</>,
   <>Soluções computacionais voltadas ao desenvolvimento regional;</>,
-];
+]
 
 function TopicsOfInterest() {
   return (
     <>
       <p className={`paragraph ${styles.p}`}>
-        São especialmente esperadas contribuições que abordem o tema principal
-        do evento - &ldquo;Do Código à Liderança: A Importância do Equilíbrio
-        entre Soft e Hard Skills&ldquo;, Esse tema busca promover reflexões e
-        debates acerca do papel das competências técnicas (hard skills) e das
-        habilidades interpessoais (soft skills) na formação de profissionais
-        mais completos e preparados para os desafios contemporâneos..
+        Os trabalhos submetidos poderão abordar, mas não se limitar aos seguintes temas:
       </p>
-      <br></br>
-      <p className={`paragraph ${styles.p}`}>
-        Outros tópicos são também esperados, mas não limitados a:
-      </p>
+      <br />
       <ArticleList items={interestTopics} />
     </>
   );
@@ -59,122 +76,171 @@ function TopicsOfInterest() {
 
 const subInstructions = [
   <>
-    Em um cenário cada vez mais multidisciplinar, colaborativo e dinâmico,
-    torna-se imprescindível fomentar tanto o domínio de tecnologias e
-    ferramentas quanto as capacidades de comunicação, empatia, liderança, gestão
-    de tempo, trabalho em equipe, entre outras habilidades humanas essenciais. ;
+    Título do artigo, claro, conciso e representativo do conteúdo abordado;
   </>,
   <>
-    Todas as produções podem ser submetidas em Português ou Inglês, em formato
-    PDF e seguindo o{" "}
-    <a
-      className={styles.link}
-      target="_blank"
-      href="https://docs.google.com/document/d/10NmMCyjb7yvL8G0-KjRFJlvRQ_dYcEp5/edit?tab=t.0"
-    >
-      template
-    </a>{" "}
-    para publicação conforme as regras da ABNT. As submissões devem ser feitas
-    por meio do{" "}
-    <a
-      className={styles.link}
-      target="_blank"
-      href="https://docs.google.com/forms/d/e/1FAIpQLSfrycRREg3ggTQYOa63cOlFWKqqY-YqIuUfqSnEdoacJW6SIA/viewform"
-    >
-      formulário
-    </a>
-    . Submissões em inglês são recomendadas. Os short papers devem conter apenas
-    um abstract, mesmo que escrito em português;
+    Resumo e Palavras-chave em língua portuguesa;
   </>,
   <>
-    Os trabalhos submetidos não devem ter sido publicados nem estar em processo
-    de avaliação ou edição para publicação em outro lugar;
+    Abstract e Keywords em língua inglesa;
   </>,
   <>
-    Na versão de submissão do trabalho, o cabeçalho não deverá conter qualquer
-    tipo de identificação dos autores. Toda e qualquer referência que
-    identifique a proveniência do trabalho deve ser removida, como nomes de
-    projetos, instituições, ferramentas e citações que identifiquem os autores.
-    Trabalhos que possuírem identificação serão rejeitados nesta etapa. Caso
-    aceitos, os autores deverão incluir na versão final seus dados, como nomes,
-    filiações, e-mails, bem como demais informações necessárias ao artigo,
-    incluindo citações a outros trabalhos dos autores;
+    Introdução, com contextualização, justificativa e objetivos;
   </>,
   <>
-    A seleção de trabalhos será realizada por membros do Comitê de Programa do
-    VII SERCOMP. O processo de revisão será conduzido de forma duplamente
-    anônima (double-blind review) por pelo menos dois revisores;
+    Referencial Teórico, com fundamentação teórica e revisão de literatura;
   </>,
   <>
-    Os seguintes critérios serão considerados na avaliação: relevância ao
-    escopo, qualidade técnica, clareza e pertinência.
+    Metodologia, detalhando os procedimentos, instrumentos e abordagens adotadas;
   </>,
-];
+  <>
+    Resultados e Discussões, apresentando e interpretando os achados do estudo;
+  </>,
+  <>
+    Considerações Finais, com as conclusões, limitações e sugestões para trabalhos futuros;
+  </>,
+  <>
+    Referências bibliográficas, formatadas de acordo com as normas da ABNT NBR 6023:2018.
+  </>
+]
+
+const SubPreviousEditions = [
+  <>
+    Anais do I SERCOMP: <a className={styles.link} target="_blank" href={"https://www.pimentacultural.com/livro/sercomp/"}>Clique aqui</a>
+  </>,
+  <>
+    Anais do II SERCOMP: <a className={styles.link} target="_blank" href={"https://www.pimentacultural.com/livro/sercomp-2019/"}>Clique aqui</a>
+  </>,
+  <>
+    Anais do V SERCOMP: <a className={styles.link} target="_blank" href={" https://www.pimentacultural.com/livro/anais-v-sercomp/"}>Clique aqui</a>
+  </>
+]
 
 function SubmissionInstructions() {
   return (
     <>
       <p className={`paragraph ${styles.p}`}>
-        Os short papers podem ser submetidos para o VII SERCOMP sobre trabalhos
-        de pesquisas já concluídas, com ideias e resultados, e seguindo as
-        normas da ABNT. Os short papers devem ter entre 8 e 10 páginas
-        (incluindo figuras, tabelas, diagramas, referências em anexos).
+        Os artigos submetidos ao VII SERCOMP deverão ser elaborados em conformidade com o <a href={"https://docs.google.com/document/d/10NmMCyjb7yvL8G0-KjRFJlvRQ_dYcEp5/edit?usp=sharing&ouid=103862556168592401800&rtpof=true&sd=true"} className={styles.link} target="_blank">
+          Template oficial</a> disponibilizado pela organização do evento. A estrutura do manuscrito deverá conter, obrigatoriamente, os seguintes elementos:
       </p>
-
+      <br />
+      <ArticleList items={subInstructions} />
       <br />
       <p className={`paragraph ${styles.p}`}>
-        Alguns aspectos adicionais devem ser observados:
+        Como forma de valorizar e dar continuidade à produção científica já consolidada nas edições anteriores do evento, é obrigatório que o artigo submetido ao VII SERCOMP 2025 contenha, em sua fundamentação teórica ou contextualização, pelo menos uma citação a trabalhos publicados nos anais de edições anteriores do SERCOMP. A ausência dessa referência poderá ser considerada um critério eliminatório durante o processo de avaliação. Os anais das edições anteriores estão disponíveis para consulta no site oficial do evento:
       </p>
-      <ArticleList items={subInstructions} />
+      <br />
+      <ArticleList items={SubPreviousEditions} />
+      <br />
+      <p className={`paragraph ${styles.p}`}>
+        A extensão dos artigos deverá ser de, no mínimo, 8 (oito) e, no máximo, 10 (dez) páginas, incluindo todas as seções obrigatórias, tabelas, figuras, quadros e referências bibliográficas.
+      </p>
+      <p className={`paragraph ${styles.p}`}>
+        No que diz respeito ao formato do arquivo, os trabalhos deverão ser submetidos exclusivamente em formato DOCX, respeitando integralmente o template oficial do evento.
+      </p>
+      <p className={`paragraph ${styles.p}`}>
+        Importante ressaltar que, para fins de avaliação, a versão submetida deverá estar anonimizada, ou seja, sem identificação de autoria, afiliações institucionais ou qualquer informação que possa revelar a identidade dos(as) autores(as), garantindo, assim, o rigor do processo de avaliação duplamente cega.
+      </p>
+      <p className={`paragraph ${styles.p}`}>
+        A submissão dos trabalhos deverá ser realizada por meio do <a
+          href={"https://docs.google.com/forms/d/e/1FAIpQLSfrycRREg3ggTQYOa63cOlFWKqqY-YqIuUfqSnEdoacJW6SIA/viewform"}
+          className={styles.link} target="_blank"
+        >Formulário eletrônico</a> indicado pela comissão organizadora, dentro do prazo estabelecido no cronograma oficial do evento.
+
+      </p>
+    </>
+  );
+}
+
+const CriterioAvaliação = [
+  <>
+    Relevância e originalidade do tema
+  </>,
+  <>
+    Clareza na apresentação dos objetivos, métodos e resultados
+  </>,
+  <>
+    Fundamentação teórica adequada
+  </>,
+  <>
+    Qualidade da escrita e organização textual
+  </>,
+  <>
+    Contribuições para o campo da Computação ou áreas correlatas
+  </>,
+  <>
+    Adequação ao escopo temático do evento
+  </>,
+]
+
+function EvaluationCriteria() {
+  return (
+    <>
+      <p className={`paragraph ${styles.p}`}>
+        Os trabalhos submetidos serão avaliados por membros do Comitê Científico do evento, com base nos seguintes critérios:
+      </p>
+      <ArticleList items={CriterioAvaliação} />
     </>
   );
 }
 
 const publication = [
-  <>
-    Para que os short papers aceitos sejam publicados nos anais do evento, será
-    necessário passar por uma segunda etapa, na qual serão transformados em
-    artigos completos (full papers) com 8 a 10 páginas. A publicação está
-    condicionada à inscrição de pelo menos um dos autores no VII SERCOMP, assim
-    como à apresentação do trabalho durante o evento;
-  </>,
-  <>
-    As datas para esta segunda etapa serão divulgadas posteriormente, e os
-    autores serão informados por e-mail com instruções e confirmação.
-  </>,
-];
 
+  <>
+    Inscrição de pelo menos um dos autores no evento.
+  </>,
+  <>
+    Apresentação efetiva do trabalho durante a sessão técnica.
+  </>,
+  <>
+    Entrega do arquivo final revisado dentro do prazo estipulado.
+  </>
+]
 const presentation = [
   <>
-    Os artigos aprovados serão apresentados em sessões técnicas no formato oral,
-    durante o evento, prevista para acontecer no dia 21 de maio de 2025.
+    Os artigos aprovados serão apresentados em sessões técnicas no formato oral, durante o evento, prevista para acontecer no dia 21 de maio de 2025.
   </>,
-];
+  <>
+    Para que o trabalho aprovado seja incluído nos anais oficiais do evento, é obrigatória a inscrição de pelo menos um dos autores no VII SERCOMP.
+  </>,
+  <>
+    A presença do autor apresentador no dia da sessão técnica é indispensável. A ausência na apresentação implicará na exclusão do trabalho dos anais do evento.
+  </>
+]
+
+const finalProvisions = [
+  <>
+    A Comissão Organizadora reserva-se o direito de excluir do processo de avaliação ou publicação qualquer trabalho que não atenda aos critérios estabelecidos nesta chamada. Casos omissos serão resolvidos pela coordenação científica do evento.
+  </>
+]
 
 function SectionButton() {
   return (
     <div className={styles.sectionButtons}>
-      <a
-        href={
-          "https://docs.google.com/document/d/10NmMCyjb7yvL8G0-KjRFJlvRQ_dYcEp5/edit?rtpof=true&sd=true&tab=t.0"
-        }
-        className="btn btn-primary"
-        target="_blank"
-      >
+      <a href={"https://docs.google.com/document/d/10NmMCyjb7yvL8G0-KjRFJlvRQ_dYcEp5/edit?usp=sharing&ouid=103862556168592401800&rtpof=true&sd=true"} className="btn btn-primary" target="_blank">
         Template de Artigo
       </a>
-      <a
-        href={
-          "https://docs.google.com/forms/d/e/1FAIpQLSfrycRREg3ggTQYOa63cOlFWKqqY-YqIuUfqSnEdoacJW6SIA/viewform"
-        }
-        className="btn btn-primary"
-        target="_blank"
-      >
+      <a href={"https://docs.google.com/forms/d/e/1FAIpQLSfrycRREg3ggTQYOa63cOlFWKqqY-YqIuUfqSnEdoacJW6SIA/viewform"} className="btn btn-primary" target="_blank">
         Submissão de Artigos
       </a>
     </div>
   );
 }
+
+function Contact() {
+  return (
+    <>
+      <p className={`paragraph ${styles.p}`}>
+        Para esclarecimentos adicionais, entre em contato com a organização através do e-mail:
+      </p>
+      <p className={`paragraph ${styles.p}`}>
+        <a className={styles.link}>sercomp@evento.uepb.edu.br</a>
+      </p>
+
+    </>
+  )
+}
+
 
 export default function Articles() {
   return (
@@ -182,26 +248,43 @@ export default function Articles() {
       <h1 className={"mainTitle"}>
         Conheça mais sobre a <strong>Submissão de Artigos</strong>
       </h1>
+
       <Accordion
-        title={"Datas Importantes"}
-        content={<ArticleList items={importantDates} />}
+        title={"Chamada para Submissão de Artigos Científicos – VII SERCOMP 2025"}
+        content={<CalledSubmission />}
       />
+      <Accordion
+        title={"Tema da Edição 2025"}
+        content={<Theme />}
+      />
+      <Accordion
+        title={"Objetivo das Chamadas"}
+        content={<CallObjective />}
+      />
+      <Accordion title={"Datas Importantes"} content={<ArticleList items={importantDates} />} />
+
       <Accordion
         title={"Tópicos de Interesse"}
         content={<TopicsOfInterest />}
       />
       <Accordion
-        title={"Instruções para Submissão"}
+        title={"Formato e Normas para Submissão"}
         content={<SubmissionInstructions />}
       />
       <Accordion
-        title={"Publicação"}
-        content={<ArticleList items={publication} />}
-      />
+        title={"Critérios de Avaliação"}
+        content={<EvaluationCriteria />} />
+
+      <Accordion title={"Apresentação dos trabalhos"} content={<ArticleList items={presentation} />} />
+
+      <Accordion title={"Publicação"} content={<ArticleList items={publication} />} />
+
+      <Accordion title={"Disposições Finais"} content={<ArticleList items={finalProvisions} />} />
+
       <Accordion
-        title={"Apresentação"}
-        content={<ArticleList items={presentation} />}
-      />
+        title={"Contato"}
+        content={<Contact />} />
+
 
       <SectionButton />
 
