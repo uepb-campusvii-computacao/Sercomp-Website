@@ -83,7 +83,7 @@ footer ul li a:hover {
 @media screen and (max-width: 600px) {
   .footer {
       background-position: top left; /* Posição da imagem na esquerda */
-      padding-top: 35rem; /* Ajuste o espaçamento superior para mover a imagem um pouco para cima */
+      padding-top: 4rem; /* Ajuste o espaçamento superior para mover a imagem um pouco para cima */
   }
 
   .footerContainer {
@@ -99,5 +99,6 @@ footer ul li a:hover {
 
   .footerSocials {
       justify-content: center;
+      
   }
 }
