@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./ActivityCard.module.css";
 import ActivityCardBase from "./ActivityCardBase";
@@ -9,8 +9,9 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Tooltip from "../ToolTip/ToolTip";
+import { TitleProp, DescriptionProp, SpeakerProp, SummaryProp } from "../../types/TextProps";
 
-function ActivityCardMultipleImage({ speakers, title, description, summaryText }) {
+export default function ActivityCardMultipleImage({speakers}: SpeakerProp, {title}: TitleProp, {description}: DescriptionProp, {summary}: SummaryProp) {
   return (
     <ActivityCardBase
       title={title}
@@ -56,5 +57,3 @@ ActivityCardMultipleImage.propTypes = {
   description: PropTypes.node.isRequired,
   summaryText: PropTypes.string.isRequired,
 };
-
-export default ActivityCardMultipleImage;

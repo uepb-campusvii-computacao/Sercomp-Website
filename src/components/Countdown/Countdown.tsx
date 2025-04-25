@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import * as PropTypes from "prop-types";
 import { useEffect, useRef, useState } from 'react';
 import Confetti from 'react-confetti';
 import styles from './Countdown.module.css';

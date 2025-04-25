@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import { useContext } from "react";
 import { BiTrash } from "react-icons/bi";
 import MarketContext from "../../context/MarketContext";

@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import React, { useState } from "react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import Tooltip from "../ToolTip/ToolTip";
