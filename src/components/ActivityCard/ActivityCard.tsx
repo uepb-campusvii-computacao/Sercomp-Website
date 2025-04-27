@@ -1,14 +1,13 @@
 import * as PropTypes from "prop-types";
-import { TitleProp, DescriptionProp, SpeakerProp, SummaryProp } from "../../types/TextProps";
+import { TitleProp, DescriptionProp, SpeakerProp, SummaryProp, ContentProp } from "../../types/TextProps";
 
 import ActivityCardBase from "./ActivityCardBase";
 import styles from "./ActivityCard.module.css";
 
-export default function ActivityCard( {imageUrl}:SpeakerProp, {speakers}:SpeakerProp,{title}:TitleProp, {description}:DescriptionProp, {summary}:SummaryProp ) {
+export default function ActivityCard( {imageUrl}:ContentProp, {speakerName}:SpeakerProp,{title}:TitleProp, {description}:DescriptionProp, {summaryText}:SummaryProp ) {
   return (
     <ActivityCardBase
       title={title}
-      name={speakerName}
       description={description}
       summaryText={summaryText}
       imageNode={

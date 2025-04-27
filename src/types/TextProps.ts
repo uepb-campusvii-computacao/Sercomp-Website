@@ -2,8 +2,8 @@ export type TitleProp = {
   title: string;
 };
 
-export type contentProp = {
-  content: string;
+export type ContentProp = {
+  imageUrl: string;
 };
 
 export type DescriptionProp = {
@@ -11,9 +11,10 @@ export type DescriptionProp = {
 };
 
 export type SpeakerProp = {
-  speakers: string;
+  speakerImage: string | undefined;
+  speakerName: string;
 };
 
 export type SummaryProp = {
-    summary: string;
+  summaryText: string;
 }

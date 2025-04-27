@@ -1,5 +1,5 @@
-import { Swiper, SwiperSlide } from "swiper/react";
-import * as PropTypes from "prop-types";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
+import { Swiper as SwiperCore } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -7,26 +7,27 @@ import "swiper/css/scrollbar";
 import { useRef } from "react";
 import styles from "./ActivitySlider.module.css";
 import ActivityCardMultipleImage from "../ActivityCard/ActivityCardMultipleImage";
+import { ActivitySliderProps } from "../../types/ActivityProps";
 
-export default function ActivitySlider({ activities }) {
-  const swiperRef = useRef(null);
+export default function ActivitySlider({ activities }: ActivitySliderProps) {
+  const swiperRef = useRef<SwiperCore | null>(null);
 
   const handleNextClick = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slideNext();
+    if (swiperRef.current) {
+      swiperRef.current.slideNext();
     }
   };
 
   const handlePrevClick = () => {
-    if (swiperRef.current && swiperRef.current.swiper) {
-      swiperRef.current.swiper.slidePrev();
+    if (swiperRef.current) {
+      swiperRef.current.slidePrev();
     }
   };
 
   return (
     <div className={`${styles.activitySliderContainer} confirmed-activities`}>
       <Swiper
-        ref={swiperRef}
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
         className={`mySwiper ${styles.activitySliderSwiper}`}
         slidesPerView={1.2}
         spaceBetween={16}
@@ -47,8 +48,8 @@ export default function ActivitySlider({ activities }) {
           <SwiperSlide key={index}>
             <ActivityCardMultipleImage
               speakers={activity.speakers}
-              title={activity.confirmedActivityTitle}
-              description={activity.confirmedActivityDescription}
+              confirmedActivityTitle={activity.confirmedActivityTitle}
+              confirmedActivityDescription={activity.confirmedActivityDescription}
               summaryText={activity.summaryText}
             />
           </SwiperSlide>
@@ -70,19 +71,3 @@ export default function ActivitySlider({ activities }) {
     </div>
   );
 }
-
-ActivitySlider.propTypes = {
-  activities: PropTypes.arrayOf(
-    PropTypes.shape({
-      speakers: PropTypes.arrayOf(
-        PropTypes.shape({
-          speakerImage: PropTypes.string.isRequired,
-          speakerName: PropTypes.string.isRequired,
-        })
-      ).isRequired,
-      confirmedActivityTitle: PropTypes.string.isRequired,
-      confirmedActivityDescription: PropTypes.node.isRequired,
-      summaryText: PropTypes.string.isRequired,
-    })
-  ).isRequired,
-};

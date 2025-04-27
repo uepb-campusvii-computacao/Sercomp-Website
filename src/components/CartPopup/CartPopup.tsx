@@ -3,8 +3,10 @@ import { useContext } from "react";
 import { BiTrash } from "react-icons/bi";
 import MarketContext from "../../context/MarketContext";
 import styles from "./CartPopup.module.css";
+import { Product } from "../../types/CartPopupProps";
+import { CartPopupProps } from "../../types/CartPopupProps";
 
-const CartPopup = ({ products, handleBuyClick }) => {
+const CartPopup = ({products, handleBuyClick}: CartPopupProps) => {
     const { removeProduct } = useContext(MarketContext);
     
     const totalPrice = products.reduce((total, product) => {

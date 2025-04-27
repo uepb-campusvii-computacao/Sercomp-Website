@@ -3,15 +3,16 @@ import React, { useState } from "react";
 import useWindowWidth from "../../hooks/useWindowWidth";
 import Tooltip from "../ToolTip/ToolTip";
 import styles from "./ActivityCard.module.css";
+import { ActivityCardBaseProps } from "../../types/ActivityCardProps";
 
-const extractTextFromFragment = (node) => {
+const extractTextFromFragment = (node: any) => {
   let text = "";
 
   React.Children.forEach(node, (child) => {
     if (typeof child === "string") {
       text += child;
     } else if (React.isValidElement(child)) {
-      text += extractTextFromFragment(child.props.children);
+      text += extractTextFromFragment((child as React.ReactElement).props.children);
     }
   });
 
@@ -20,7 +21,7 @@ const extractTextFromFragment = (node) => {
 
 const MAX_CHARACTERS = 200;
 
-export default function ActivityCardBase({ imageNode, title, description, summaryText }) {
+export default function ActivityCardBase({ imageNode, title, description, summaryText }: ActivityCardBaseProps) {
   const [isTextExpanded, setIsTextExpanded] = useState(false);
   const width = useWindowWidth();
 

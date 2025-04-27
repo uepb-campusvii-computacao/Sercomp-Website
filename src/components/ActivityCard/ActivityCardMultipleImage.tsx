@@ -9,13 +9,17 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Tooltip from "../ToolTip/ToolTip";
-import { TitleProp, DescriptionProp, SpeakerProp, SummaryProp } from "../../types/TextProps";
+import { Activity } from "../../types/ActivityProps";
 
-export default function ActivityCardMultipleImage({speakers}: SpeakerProp, {title}: TitleProp, {description}: DescriptionProp, {summary}: SummaryProp) {
+export default function ActivityCardMultipleImage( {
+  speakers,
+  confirmedActivityTitle,
+  confirmedActivityDescription,
+  summaryText}: Activity) {
   return (
     <ActivityCardBase
-      title={title}
-      description={description}
+      title={confirmedActivityTitle}
+      description={confirmedActivityDescription}
       summaryText={summaryText}
       imageNode={
         <Swiper
@@ -53,7 +57,7 @@ ActivityCardMultipleImage.propTypes = {
       speakerName: PropTypes.string.isRequired,
     })
   ).isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.node.isRequired,
+  confirmedActivityTitle: PropTypes.string.isRequired,
+  confirmedActivityDescription: PropTypes.node.isRequired,
   summaryText: PropTypes.string.isRequired,
 };
