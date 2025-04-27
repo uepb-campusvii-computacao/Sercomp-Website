@@ -37,6 +37,7 @@ import dunfreyAragao from '../assets/images/minicursos/DunfreyAragao.jpg'
 import andreAlmeida from '../assets/images/minicursos/AndreAlmeida.jpg'
 import jozieleAlmeida from '../assets/images/minicursos/JozieleAlmeida.jpg'
 import humbertoNunes from '../assets/images/minicursos/HumbertoNunes.jpg'
+import ohanaLucena from '../assets/images/minicursos/OhanaLucena.jpg'
 
 export const ConfirmedActivitiesData = {
   Oficina: [
@@ -374,7 +375,7 @@ export const ConfirmedActivitiesData = {
     {
       speakers: [
         {
-          speakerImage: avatarNotFound,
+          speakerImage: ohanaLucena,
           speakerName: "Ohana Lucena",
         },
       ],
