@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+import * as PropTypes from "prop-types";
 import { Swiper, SwiperSlide } from "swiper/react";
 import styles from "./ActivityCard.module.css";
 import ActivityCardBase from "./ActivityCardBase";
@@ -9,12 +9,17 @@ import 'swiper/css/pagination';
 
 import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import Tooltip from "../ToolTip/ToolTip";
+import { Activity } from "../../types/ActivityProps";
 
-function ActivityCardMultipleImage({ speakers, title, description, summaryText }) {
+export default function ActivityCardMultipleImage( {
+  speakers,
+  confirmedActivityTitle,
+  confirmedActivityDescription,
+  summaryText}: Activity) {
   return (
     <ActivityCardBase
-      title={title}
-      description={description}
+      title={confirmedActivityTitle}
+      description={confirmedActivityDescription}
       summaryText={summaryText}
       imageNode={
         <Swiper
@@ -52,9 +57,7 @@ ActivityCardMultipleImage.propTypes = {
       speakerName: PropTypes.string.isRequired,
     })
   ).isRequired,
-  title: PropTypes.string.isRequired,
-  description: PropTypes.node.isRequired,
+  confirmedActivityTitle: PropTypes.string.isRequired,
+  confirmedActivityDescription: PropTypes.node.isRequired,
   summaryText: PropTypes.string.isRequired,
 };
-
-export default ActivityCardMultipleImage;

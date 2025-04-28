@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import * as PropTypes from "prop-types";
 import styles from './TeamSection.module.css';
 
 const TeamSection = ({ title, membersData }) => {

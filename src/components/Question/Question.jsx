@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import PropTypes from 'prop-types';
+import * as PropTypes from "prop-types";
 import styles from './Question.module.css';
 
 export default function Question({ question, answer }) {
