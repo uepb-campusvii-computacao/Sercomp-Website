@@ -4,6 +4,7 @@ export type TitleProp = {
 
 export type ContentProp = {
   imageUrl: string;
+  content: string;
 };
 
 export type DescriptionProp = {

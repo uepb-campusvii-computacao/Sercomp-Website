@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./Accordion.module.css";
-import { TitleProp, contentProp } from "../../types/TextProps";
+import { TitleProp, ContentProp } from "../../types/TextProps";
 
-export default function Accordion({title}: TitleProp, {content}: contentProp) {
+export default function Accordion({title}: TitleProp, {content}: ContentProp) {
   const [openAccordion, setOpenAccordion] = useState(true);
 
   function handleToggleAccordion(){
