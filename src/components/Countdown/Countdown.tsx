@@ -1,23 +1,18 @@
-import PropTypes from 'prop-types';
-import { useEffect, useRef, useState } from 'react';
-import Confetti from 'react-confetti';
-import styles from './Countdown.module.css';
+import { useEffect, useRef, useState } from "react";
+import Confetti from "react-confetti";
+import styles from "./Countdown.module.css";
+import { CountdownProps, CountdownValues } from "../../types/CountdownProps";
 
-Countdown.propTypes = {
-  eventStart: PropTypes.string.isRequired,
-  eventEnd: PropTypes.string.isRequired
-}
-
-export default function Countdown({eventStart, eventEnd}) {
-  const [countdownValues, setCountdownValues] = useState({
-    days: '00',
-    hours: '00',
-    minutes: '00',
-    seconds: '00',
+export default function Countdown({ eventStart, eventEnd }: CountdownProps): JSX.Element {
+  const [countdownValues, setCountdownValues] = useState<CountdownValues>({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
   });
-  const [eventStatus, setEventStatus] = useState('before');
-  const [dimensions, setDimensions] = useState({ width: 0, height: 0 });
-  const confettiRef = useRef(null);
+  const [eventStatus, setEventStatus] = useState<"before" | "during" | "after">("before");
+  const [dimensions, setDimensions] = useState<{ width: number; height: number }>({ width: 0, height: 0 });
+  const confettiRef = useRef<HTMLDivElement | null>(null);
 
   const finalDate = new Date(eventStart).getTime();
   const eventEndDate = new Date(eventEnd).getTime();
@@ -27,11 +22,11 @@ export default function Countdown({eventStart, eventEnd}) {
       const nowDate = new Date().getTime();
 
       if (nowDate >= finalDate && nowDate <= eventEndDate) {
-        setEventStatus('during');
+        setEventStatus("during");
       } else if (nowDate > eventEndDate) {
-        setEventStatus('after');
+        setEventStatus("after");
       } else {
-        setEventStatus('before');
+        setEventStatus("before");
         const difference = finalDate - nowDate;
 
         const seconds = 1000;
@@ -44,20 +39,20 @@ export default function Countdown({eventStart, eventEnd}) {
         const timeMinutes = Math.floor((difference % hours) / minutes);
         const timeSeconds = Math.floor((difference % minutes) / seconds);
 
-        updateCountdownValues({ 
-          days: formatValue(timeDays), 
-          hours: formatValue(timeHours), 
-          minutes: formatValue(timeMinutes), 
-          seconds: formatValue(timeSeconds) 
+        updateCountdownValues({
+          days: formatValue(timeDays),
+          hours: formatValue(timeHours),
+          minutes: formatValue(timeMinutes),
+          seconds: formatValue(timeSeconds),
         });
       }
     };
 
-    const formatValue = (value) => {
-      return value < 10 ? '0' + value : value.toString();
+    const formatValue = (value: number): string => {
+      return value < 10 ? "0" + value : value.toString();
     };
 
-    const updateCountdownValues = (values) => {
+    const updateCountdownValues = (values: CountdownValues): void => {
       setCountdownValues(values);
     };
 
@@ -73,25 +68,34 @@ export default function Countdown({eventStart, eventEnd}) {
       if (confettiRef.current) {
         setDimensions({
           width: confettiRef.current.offsetWidth,
-          height: confettiRef.current.offsetHeight
+          height: confettiRef.current.offsetHeight,
         });
       }
     };
 
     updateDimensions();
-    window.addEventListener('resize', updateDimensions);
+    window.addEventListener("resize", updateDimensions);
 
     return () => {
-      window.removeEventListener('resize', updateDimensions);
+      window.removeEventListener("resize", updateDimensions);
     };
   }, [eventStatus]);
 
   return (
     <div className={styles.containerTimer}>
-      {eventStatus === 'before' && <h1>Contagem Regressiva até o VII SERCOMP</h1>}
+      {eventStatus === "before" && <h1>Contagem Regressiva até o VII SERCOMP</h1>}
       <div className={styles.confettiWrapper}>
-      {eventStatus === 'during' && <Confetti gravity={0.01} initialVelocityX={2} initialVelocityY={2} width={dimensions.width} height={dimensions.height} numberOfPieces={50}/>}
-        {eventStatus === 'before' && (
+        {eventStatus === "during" && (
+          <Confetti
+            gravity={0.01}
+            initialVelocityX={2}
+            initialVelocityY={2}
+            width={dimensions.width}
+            height={dimensions.height}
+            numberOfPieces={50}
+          />
+        )}
+        {eventStatus === "before" && (
           <div className={styles.countdown}>
             <div>
               <p id="days">{countdownValues.days}</p>
@@ -111,15 +115,17 @@ export default function Countdown({eventStart, eventEnd}) {
             </div>
           </div>
         )}
-        {eventStatus === 'during' && (
+        {eventStatus === "during" && (
           <div className={styles.duringContainer}>
             <div className={styles.countdown} ref={confettiRef}>
               <p>O evento começou!</p>
             </div>
-            <h3>Confira nossa <a href='/timeline'>programação</a>!</h3>
+            <h3>
+              Confira nossa <a href="/timeline">programação</a>!
+            </h3>
           </div>
         )}
-        {eventStatus === 'after' && (
+        {eventStatus === "after" && (
           <div className={styles.countdown}>
             <p>Até a próxima edição! 🫡</p>
           </div>

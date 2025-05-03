@@ -1,5 +1,5 @@
 import styles from './IconCard.module.css';
-import PropTypes from 'prop-types';
+import * as PropTypes from "prop-types";
 
 const IconCard = ({ icon, title, text, url }) => {
   return (

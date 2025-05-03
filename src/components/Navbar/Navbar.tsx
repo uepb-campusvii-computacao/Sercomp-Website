@@ -4,9 +4,9 @@ import { linksData } from "../../data/LinksData";
 import styles from "./Navbar.module.css";
 
 export default function Navbar() {
-  const navRef = useRef(null);
+  const navRef = useRef<HTMLDivElement | null>(null);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [activeSubmenu, setActiveSubmenu] = useState(null);
+  const [activeSubmenu, setActiveSubmenu] = useState<number | null>(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,24 +20,21 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    setActiveSubmenu(null); // Fecha submenus ao alternar menu principal
+    setActiveSubmenu(null);
   };
 
-  const toggleSubmenu = (index) => {
+  const toggleSubmenu = (index: number) => {
     setActiveSubmenu(activeSubmenu === index ? null : index);
   };
 
   return (
     <nav className={`${styles.nav} ${menuOpen ? styles.windowScroll : ""}`}>
-      <div className={`${styles.navContainer}`}>
+      <div className={styles.navContainer} ref={navRef}>
         <div className={styles.logoContainer}>
           <a href="/">
             <img src={logotipo} alt="vii sercomp" />
@@ -45,30 +42,31 @@ export default function Navbar() {
         </div>
         <div className={styles.toggleMenuContainer}>
           <ul
-            className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${
-              styles.navMenu
-            }`}
+            className={`${menuOpen ? styles.menuOpened : styles.menuClosed} ${styles.navMenu}`}
           >
             {linksData.map((link, index) => (
-              <li style={{position: 'relative'}} key={index}>
+              <li style={{ position: "relative" }} key={index}>
                 {link.text === "Edições Anteriores" ? (
                   <>
-                    <a 
-                      className={styles.link} 
+                    <a
+                      className={styles.link}
                       onClick={() => window.innerWidth <= 1160 && toggleSubmenu(index)}
-                      style={{cursor: 'pointer'}}
+                      style={{ cursor: "pointer" }}
                     >
                       {link.text}
                     </a>
-                    <div 
+                    <div
                       className={`${styles.menuSuspenso} ${
-                        activeSubmenu === index ? styles.menuSuspensoAtivo : ''
+                        activeSubmenu === index ? styles.menuSuspensoAtivo : ""
                       }`}
-                      style={{padding: link.sublinks ? 'auto 16px' : '0'}}
+                      style={{ padding: link.sublinks ? "auto 16px" : "0" }}
                     >
-                      {link.sublinks && link.sublinks.map((sublink, i) => (   
-                        <a key={i} href={sublink.href}>{sublink.text}</a>
-                      ))}
+                      {link.sublinks &&
+                        link.sublinks.map((sublink, i) => (
+                          <a key={i} href={sublink.href}>
+                            {sublink.text}
+                          </a>
+                        ))}
                     </div>
                   </>
                 ) : (
@@ -76,10 +74,16 @@ export default function Navbar() {
                     <a className={styles.link} href={link.href}>
                       {link.text}
                     </a>
-                    <div className={styles.menuSuspenso} style={{padding: link.sublinks ? 'auto 16px' : '0'}}>
-                      {link.sublinks && link.sublinks.map((sublink, i) => (   
-                        <a key={i} href={sublink.href}>{sublink.text}</a>
-                      ))}
+                    <div
+                      className={styles.menuSuspenso}
+                      style={{ padding: link.sublinks ? "auto 16px" : "0" }}
+                    >
+                      {link.sublinks &&
+                        link.sublinks.map((sublink, i) => (
+                          <a key={i} href={sublink.href}>
+                            {sublink.text}
+                          </a>
+                        ))}
                     </div>
                   </>
                 )}
