@@ -1,8 +1,12 @@
 import { useState } from 'react';
-import * as PropTypes from "prop-types";
 import styles from './Question.module.css';
 
-export default function Question({ question, answer }) {
+interface QuestionProps {
+  question: string;
+  answer: React.ReactNode;
+}
+
+export default function Question({ question, answer }: QuestionProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleQuestion = () => {
@@ -10,7 +14,10 @@ export default function Question({ question, answer }) {
   };
 
   return (
-    <article className={`${styles.faq} ${isOpen ? styles.open : ''}`} onClick={toggleQuestion}>
+    <article
+      className={`${styles.faq} ${isOpen ? styles.open : ''}`}
+      onClick={toggleQuestion}
+    >
       <div className={styles['faq-icon']}>
         <i className={`uil ${isOpen ? 'uil-minus' : 'uil-plus'}`}></i>
       </div>
@@ -21,8 +28,3 @@ export default function Question({ question, answer }) {
     </article>
   );
 }
-
-Question.propTypes = {
-  question: PropTypes.string.isRequired,
-  answer: PropTypes.node.isRequired,
-};
