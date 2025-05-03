@@ -60,6 +60,7 @@ const interestTopics = [
   <>Inclusão digital e diversidade na tecnologia;</>,
   <>Jogos digitais e gamificação;</>,
   <>Soluções computacionais voltadas ao desenvolvimento regional;</>,
+  <>Segurança da informação.</>,
 ]
 
 function TopicsOfInterest() {
