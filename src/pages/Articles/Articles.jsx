@@ -1,4 +1,4 @@
-import Accordion from "../../components/Accordion/Accordion.jsx";
+import Accordion from "../../components/Accordion/Accordion.js";
 // import Committee from "../../components/Committee/Committee.jsx";
 import styles from "./Articles.module.css";
 

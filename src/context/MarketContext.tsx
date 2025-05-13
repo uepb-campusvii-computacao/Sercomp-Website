@@ -1,10 +1,21 @@
 import PropTypes from "prop-types";
-import { createContext, useEffect, useState } from "react";
+import { createContext, useEffect, useState, ReactNode } from "react";
+import { Product } from "../types/CartPopupProps";
 
-const MarketContext = createContext();
+const MarketContext = createContext<{
+  products: Product[];
+  addProduct: (product: Product) => void;
+  removeProduct: (productId: string) => void;
+  reset: () => void;
+}>({
+  products: [],
+  addProduct: () => {},
+  removeProduct: () => {},
+  reset: () => {},
+});
 
-export const MarketProvider = ({ children }) => {
-  const [products, setProducts] = useState([]);
+export const MarketProvider = ({ children }: { children: ReactNode }) => {
+  const [products, setProducts] = useState<Product[]>([]); // Tipando o estado como Product[]
 
   useEffect(() => {
     const storedProducts = localStorage.getItem("products");
@@ -13,7 +24,7 @@ export const MarketProvider = ({ children }) => {
     }
   }, []);
 
-  const addProduct = (product) => {
+  const addProduct = (product: Product) => {
     const existingProductIndex = products.findIndex(
       (p) => p.productId === product.productId
     );
@@ -23,11 +34,14 @@ export const MarketProvider = ({ children }) => {
       updatedProducts[existingProductIndex].quantity++;
       setProducts(updatedProducts);
     } else {
-      setProducts((prevProducts) => [...prevProducts, { ...product, quantity: 1 }]);
+      setProducts((prevProducts) => [
+        ...prevProducts,
+        { ...product, quantity: 1 },
+      ]);
     }
   };
 
-  const removeProduct = (productId) => {
+  const removeProduct = (productId: string) => {
     setProducts((prevProducts) =>
       prevProducts
         .map((p) =>
@@ -49,7 +63,9 @@ export const MarketProvider = ({ children }) => {
   }, [products]);
 
   return (
-    <MarketContext.Provider value={{ products, addProduct, removeProduct, reset }}>
+    <MarketContext.Provider
+      value={{ products, addProduct, removeProduct, reset }}
+    >
       {children}
     </MarketContext.Provider>
   );

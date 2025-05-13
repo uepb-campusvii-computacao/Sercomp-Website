@@ -1,10 +1,18 @@
-import PropTypes from "prop-types";
 import { useContext } from "react";
 import { BiCartAdd } from "react-icons/bi";
 import MarketContext from "../../context/MarketContext";
 import styles from "./ProductCard.module.css";
 
-const ProductCard = ({
+interface ProductCardProps {
+  uuid_produto: string;
+  nome: string;
+  descricao: string;
+  imagem_url: string;
+  preco: number;
+  estoque: number;
+}
+
+const ProductCard: React.FC<ProductCardProps> = ({
   uuid_produto,
   nome,
   descricao,
@@ -45,14 +53,6 @@ const ProductCard = ({
       </div>
     </div>
   );
-};
-
-ProductCard.propTypes = {
-  uuid_produto: PropTypes.string.isRequired,
-  nome: PropTypes.string.isRequired,
-  descricao: PropTypes.string.isRequired,
-  imagem_url: PropTypes.string.isRequired,
-  preco: PropTypes.number.isRequired,
 };
 
 export default ProductCard;
